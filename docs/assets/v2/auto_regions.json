@@ -1,0 +1,572 @@
+{
+  "version": "2.0",
+  "source_image": "lecture_01_10423/source.png",
+  "width": 1920,
+  "height": 1080,
+  "timestamp": null,
+  "regions": [
+    {
+      "id": "candidate_0000",
+      "type": "unknown",
+      "bbox": [
+        235,
+        197,
+        473,
+        311
+      ],
+      "status": "needs_review",
+      "suggested_type": "text",
+      "candidate_text": "LECTURE",
+      "confidence": 0.9847021102905273,
+      "model": "PP-OCRv5_mobile_det + recognition",
+      "content": null,
+      "latex": null,
+      "error": null
+    },
+    {
+      "id": "candidate_0001",
+      "type": "unknown",
+      "bbox": [
+        414,
+        197,
+        723,
+        303
+      ],
+      "status": "needs_review",
+      "suggested_type": "text",
+      "candidate_text": "EI (nith mimi)",
+      "confidence": 0.7520753145217896,
+      "model": "PP-OCRv5_mobile_det + recognition",
+      "content": null,
+      "latex": null,
+      "error": null
+    },
+    {
+      "id": "candidate_0002",
+      "type": "unknown",
+      "bbox": [
+        887,
+        199,
+        1439,
+        313
+      ],
+      "status": "needs_review",
+      "suggested_type": "text",
+      "candidate_text": "① Geometical Intupetatiom",
+      "confidence": 0.8604850172996521,
+      "model": "PP-OCRv5_mobile_det + recognition",
+      "content": null,
+      "latex": null,
+      "error": null
+    },
+    {
+      "id": "candidate_0004",
+      "type": "unknown",
+      "bbox": [
+        869,
+        279,
+        1427,
+        415
+      ],
+      "status": "needs_review",
+      "suggested_type": "text",
+      "candidate_text": "②Algbraic Iteupretation.",
+      "confidence": 0.8182397484779358,
+      "model": "PP-OCRv5_mobile_det + recognition",
+      "content": null,
+      "latex": null,
+      "error": null
+    },
+    {
+      "id": "candidate_0003",
+      "type": "unknown",
+      "bbox": [
+        242,
+        307,
+        889,
+        434
+      ],
+      "status": "needs_review",
+      "suggested_type": "text",
+      "candidate_text": "Sysam of linear equations.",
+      "confidence": 0.7798333764076233,
+      "model": "PP-OCRv5_mobile_det + recognition",
+      "content": null,
+      "latex": null,
+      "error": null
+    },
+    {
+      "id": "candidate_0006",
+      "type": "unknown",
+      "bbox": [
+        343,
+        425,
+        579,
+        542
+      ],
+      "status": "needs_review",
+      "suggested_type": "text",
+      "candidate_text": "3x=1}",
+      "confidence": 0.896336555480957,
+      "model": "PP-OCRv5_mobile_det + recognition",
+      "content": null,
+      "latex": null,
+      "error": null
+    },
+    {
+      "id": "candidate_0008",
+      "type": "unknown",
+      "bbox": [
+        919,
+        431,
+        1078,
+        515
+      ],
+      "status": "needs_review",
+      "suggested_type": "text",
+      "candidate_text": "x=1",
+      "confidence": 0.893916666507721,
+      "model": "PP-OCRv5_mobile_det + recognition",
+      "content": null,
+      "latex": null,
+      "error": null
+    },
+    {
+      "id": "candidate_0007",
+      "type": "unknown",
+      "bbox": [
+        880,
+        475,
+        1675,
+        603
+      ],
+      "status": "needs_review",
+      "suggested_type": "text",
+      "candidate_text": "Wat   i",
+      "confidence": 0.5628711581230164,
+      "model": "PP-OCRv5_mobile_det + recognition",
+      "content": null,
+      "latex": null,
+      "error": null
+    },
+    {
+      "id": "candidate_0005",
+      "type": "unknown",
+      "bbox": [
+        319,
+        514,
+        564,
+        600
+      ],
+      "status": "needs_review",
+      "suggested_type": "text",
+      "candidate_text": "x+2y=3",
+      "confidence": 0.9905444979667664,
+      "model": "PP-OCRv5_mobile_det + recognition",
+      "content": null,
+      "latex": null,
+      "error": null
+    },
+    {
+      "id": "candidate_0009",
+      "type": "unknown",
+      "bbox": [
+        290,
+        575,
+        768,
+        701
+      ],
+      "status": "needs_review",
+      "suggested_type": "text",
+      "candidate_text": "poness of x&y are ≤ 1.",
+      "confidence": 0.7898620367050171,
+      "model": "PP-OCRv5_mobile_det + recognition",
+      "content": null,
+      "latex": null,
+      "error": null
+    },
+    {
+      "id": "candidate_0012",
+      "type": "unknown",
+      "bbox": [
+        1344,
+        572,
+        1508,
+        662
+      ],
+      "status": "needs_review",
+      "suggested_type": "text",
+      "candidate_text": "3^din",
+      "confidence": 0.7242732644081116,
+      "model": "PP-OCRv5_mobile_det + recognition",
+      "content": null,
+      "latex": null,
+      "error": null
+    },
+    {
+      "id": "candidate_0010",
+      "type": "unknown",
+      "bbox": [
+        876,
+        581,
+        1022,
+        672
+      ],
+      "status": "needs_review",
+      "suggested_type": "text",
+      "candidate_text": "1-dimn",
+      "confidence": 0.8677425980567932,
+      "model": "PP-OCRv5_mobile_det + recognition",
+      "content": null,
+      "latex": null,
+      "error": null
+    },
+    {
+      "id": "candidate_0013",
+      "type": "unknown",
+      "bbox": [
+        1557,
+        580,
+        1691,
+        678
+      ],
+      "status": "needs_review",
+      "suggested_type": "text",
+      "candidate_text": "plame",
+      "confidence": 0.826698899269104,
+      "model": "PP-OCRv5_mobile_det + recognition",
+      "content": null,
+      "latex": null,
+      "error": null
+    },
+    {
+      "id": "candidate_0011",
+      "type": "unknown",
+      "bbox": [
+        1139,
+        640,
+        1175,
+        664
+      ],
+      "status": "needs_review",
+      "suggested_type": "text",
+      "candidate_text": "x=1",
+      "confidence": 0.8921580910682678,
+      "model": "PP-OCRv5_mobile_det + recognition",
+      "content": null,
+      "latex": null,
+      "error": null
+    },
+    {
+      "id": "candidate_0014",
+      "type": "unknown",
+      "bbox": [
+        880,
+        667,
+        1030,
+        768
+      ],
+      "status": "needs_review",
+      "suggested_type": "text",
+      "candidate_text": "2-dim",
+      "confidence": 0.9792925715446472,
+      "model": "PP-OCRv5_mobile_det + recognition",
+      "content": null,
+      "latex": null,
+      "error": null
+    }
+  ],
+  "metadata": {
+    "automation": "OCR text-line proposals only; formula classification unavailable; unboxed content remains in source image",
+    "reading_order": "heuristic row bands, not mathematical layout understanding",
+    "worker": {
+      "items": [
+        {
+          "id": "page",
+          "status": "ok",
+          "error": null,
+          "seconds": 6.591638612000679,
+          "content": "LECTURE EI (nith mimi) ① Geometical Intupetatiom\nSysam of linear equations. ②Algbraic Iteupretation.\nx+2y=3 3x=1} Wat   i x=1\nponess of x&y are ≤ 1. 1-dimn x=1 3^din plame\n2-dim",
+          "latex": null,
+          "confidence": 0.841268793741862,
+          "line_texts": [
+            "LECTURE",
+            "EI (nith mimi)",
+            "① Geometical Intupetatiom",
+            "Sysam of linear equations.",
+            "②Algbraic Iteupretation.",
+            "x+2y=3",
+            "3x=1}",
+            "Wat   i",
+            "x=1",
+            "poness of x&y are ≤ 1.",
+            "1-dimn",
+            "x=1",
+            "3^din",
+            "plame",
+            "2-dim"
+          ],
+          "line_scores": [
+            0.9847021102905273,
+            0.7520753145217896,
+            0.8604850172996521,
+            0.7798333764076233,
+            0.8182397484779358,
+            0.9905444979667664,
+            0.896336555480957,
+            0.5628711581230164,
+            0.893916666507721,
+            0.7898620367050171,
+            0.8677425980567932,
+            0.8921580910682678,
+            0.7242732644081116,
+            0.826698899269104,
+            0.9792925715446472
+          ],
+          "line_boxes": [
+            [
+              235.0,
+              197.0,
+              473.0,
+              311.0
+            ],
+            [
+              414.0,
+              197.0,
+              723.0,
+              303.0
+            ],
+            [
+              887.0,
+              199.0,
+              1439.0,
+              313.0
+            ],
+            [
+              242.0,
+              307.0,
+              889.0,
+              434.0
+            ],
+            [
+              869.0,
+              279.0,
+              1427.0,
+              415.0
+            ],
+            [
+              319.0,
+              514.0,
+              564.0,
+              600.0
+            ],
+            [
+              343.0,
+              425.0,
+              579.0,
+              542.0
+            ],
+            [
+              880.0,
+              475.0,
+              1675.0,
+              603.0
+            ],
+            [
+              919.0,
+              431.0,
+              1078.0,
+              515.0
+            ],
+            [
+              290.0,
+              575.0,
+              768.0,
+              701.0
+            ],
+            [
+              876.0,
+              581.0,
+              1022.0,
+              672.0
+            ],
+            [
+              1139.0,
+              640.0,
+              1175.0,
+              664.0
+            ],
+            [
+              1344.0,
+              572.0,
+              1508.0,
+              662.0
+            ],
+            [
+              1557.0,
+              580.0,
+              1691.0,
+              678.0
+            ],
+            [
+              880.0,
+              667.0,
+              1030.0,
+              768.0
+            ]
+          ],
+          "raw_engine_lines": {
+            "texts": [
+              "EI (nith mimi)",
+              "① Geometical Intupetatiom",
+              "LECTURE",
+              "②Algbraic Iteupretation.",
+              "Sysam of linear equations.",
+              "3x=1}",
+              "x=1",
+              "Wat   i",
+              "x+2y=3",
+              "1-dimn",
+              "3^din",
+              "plame",
+              "poness of x&y are ≤ 1.",
+              "x=1",
+              "2-dim"
+            ],
+            "scores": [
+              0.7520753145217896,
+              0.8604850172996521,
+              0.9847021102905273,
+              0.8182397484779358,
+              0.7798333764076233,
+              0.896336555480957,
+              0.893916666507721,
+              0.5628711581230164,
+              0.9905444979667664,
+              0.8677425980567932,
+              0.7242732644081116,
+              0.826698899269104,
+              0.7898620367050171,
+              0.8921580910682678,
+              0.9792925715446472
+            ],
+            "boxes": [
+              [
+                414.0,
+                197.0,
+                723.0,
+                303.0
+              ],
+              [
+                887.0,
+                199.0,
+                1439.0,
+                313.0
+              ],
+              [
+                235.0,
+                197.0,
+                473.0,
+                311.0
+              ],
+              [
+                869.0,
+                279.0,
+                1427.0,
+                415.0
+              ],
+              [
+                242.0,
+                307.0,
+                889.0,
+                434.0
+              ],
+              [
+                343.0,
+                425.0,
+                579.0,
+                542.0
+              ],
+              [
+                919.0,
+                431.0,
+                1078.0,
+                515.0
+              ],
+              [
+                880.0,
+                475.0,
+                1675.0,
+                603.0
+              ],
+              [
+                319.0,
+                514.0,
+                564.0,
+                600.0
+              ],
+              [
+                876.0,
+                581.0,
+                1022.0,
+                672.0
+              ],
+              [
+                1344.0,
+                572.0,
+                1508.0,
+                662.0
+              ],
+              [
+                1557.0,
+                580.0,
+                1691.0,
+                678.0
+              ],
+              [
+                290.0,
+                575.0,
+                768.0,
+                701.0
+              ],
+              [
+                1139.0,
+                640.0,
+                1175.0,
+                664.0
+              ],
+              [
+                880.0,
+                667.0,
+                1030.0,
+                768.0
+              ]
+            ]
+          },
+          "reading_order": "vertical overlap >= 0.5; rows top-to-bottom, boxes left-to-right; heuristic",
+          "confidence_definition": "arithmetic mean of nonempty engine line recognition scores; not calibrated document confidence"
+        }
+      ],
+      "model_load_seconds": 3.4752382920014497,
+      "model_load_error": null,
+      "process_seconds": 10.06688223600213,
+      "process_peak_rss_mib": 1240.1171875,
+      "versions": {
+        "paddlepaddle": "3.2.2",
+        "paddleocr": "3.3.2",
+        "paddlex": "3.3.11",
+        "numpy": "1.26.4",
+        "opencv-contrib-python": "4.10.0.84"
+      },
+      "kind": "detect",
+      "config": {
+        "threads": 2,
+        "language": "en",
+        "det_dir": "/workspace/lecturemath/models/v2/PP-OCRv5_mobile_det_infer",
+        "rec_dir": "/workspace/lecturemath/models/v2/en_PP-OCRv5_mobile_rec_infer",
+        "formula_dir": "/workspace/lecturemath/models/v2/PP-FormulaNet-S_infer"
+      },
+      "subprocess_wall_seconds": 10.911851517998002
+    }
+  }
+}

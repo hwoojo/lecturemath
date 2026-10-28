@@ -1,0 +1,890 @@
+{
+  "scope": "3 real frames, 3 text titles + 3 simple handwritten equations + 3 multi-line/fraction crops, original 1080p, manually specified regions",
+  "references": {
+    "lecture_01_10423": {
+      "text": [
+        [
+          965,
+          300,
+          1435,
+          380
+        ],
+        "Algebraic Interpretation."
+      ],
+      "formula": [
+        [
+          340,
+          440,
+          515,
+          510
+        ],
+        "3x=1"
+      ],
+      "formula_system": [
+        [
+          290,
+          430,
+          600,
+          610
+        ],
+        "\\left.\\begin{aligned}3x&=1\\\\x+2y&=3\\end{aligned}\\right\\}"
+      ]
+    },
+    "lecture_02_44601": {
+      "text": [
+        [
+          275,
+          270,
+          745,
+          340
+        ],
+        "Multiplication by a"
+      ],
+      "formula": [
+        [
+          405,
+          490,
+          710,
+          565
+        ],
+        "x+3y=4"
+      ],
+      "formula_fraction": [
+        [
+          990,
+          315,
+          1095,
+          385
+        ],
+        "y=\\frac{27}{19}"
+      ]
+    },
+    "nm_lecture_01_19899": {
+      "text": [
+        [
+          225,
+          315,
+          825,
+          410
+        ],
+        "System of Linear Equations."
+      ],
+      "formula": [
+        [
+          180,
+          480,
+          410,
+          535
+        ],
+        "3x-y+z=7"
+      ],
+      "formula_fraction": [
+        [
+          1470,
+          420,
+          1820,
+          555
+        ],
+        "y=\\frac{3-x}{2}=\\frac{3-\\frac{1}{3}}{2}=\\frac{8}{6}"
+      ]
+    }
+  },
+  "normalization": {
+    "text": "lowercase and collapse whitespace; punctuation retained",
+    "formula": "remove whitespace only; not mathematical equivalence"
+  },
+  "b3_settings": {
+    "window": 25,
+    "k": 0.2,
+    "radius": 2,
+    "clahe": false
+  },
+  "config": {
+    "threads": 2,
+    "language": "en",
+    "det_dir": "/workspace/lecturemath/models/v2/PP-OCRv5_mobile_det_infer",
+    "rec_dir": "/workspace/lecturemath/models/v2/en_PP-OCRv5_mobile_rec_infer",
+    "formula_dir": "/workspace/lecturemath/models/v2/PP-FormulaNet-S_infer"
+  },
+  "runs": [
+    {
+      "image": "lecture_01_10423",
+      "wall_seconds": 22.071348072997353,
+      "stages": {
+        "text": {
+          "model_load_seconds": 2.9747065259980445,
+          "model_load_error": null,
+          "process_seconds": 4.456080774998554,
+          "process_peak_rss_mib": 533.3203125,
+          "versions": {
+            "paddlepaddle": "3.2.2",
+            "paddleocr": "3.3.2",
+            "paddlex": "3.3.11",
+            "numpy": "1.26.4",
+            "opencv-contrib-python": "4.10.0.84"
+          },
+          "kind": "text",
+          "config": {
+            "threads": 2,
+            "language": "en",
+            "det_dir": "/workspace/lecturemath/models/v2/PP-OCRv5_mobile_det_infer",
+            "rec_dir": "/workspace/lecturemath/models/v2/en_PP-OCRv5_mobile_rec_infer",
+            "formula_dir": "/workspace/lecturemath/models/v2/PP-FormulaNet-S_infer"
+          },
+          "subprocess_wall_seconds": 5.246757559001708
+        },
+        "formula": {
+          "model_load_seconds": 9.865495768000983,
+          "model_load_error": null,
+          "process_seconds": 14.667905433001579,
+          "process_peak_rss_mib": 878.796875,
+          "versions": {
+            "paddlepaddle": "3.2.2",
+            "paddleocr": "3.3.2",
+            "paddlex": "3.3.11",
+            "numpy": "1.26.4",
+            "opencv-contrib-python": "4.10.0.84"
+          },
+          "kind": "formula",
+          "config": {
+            "threads": 2,
+            "language": "en",
+            "det_dir": "/workspace/lecturemath/models/v2/PP-OCRv5_mobile_det_infer",
+            "rec_dir": "/workspace/lecturemath/models/v2/en_PP-OCRv5_mobile_rec_infer",
+            "formula_dir": "/workspace/lecturemath/models/v2/PP-FormulaNet-S_infer"
+          },
+          "subprocess_wall_seconds": 16.025341909000417
+        }
+      }
+    },
+    {
+      "image": "lecture_02_44601",
+      "wall_seconds": 22.106204982002964,
+      "stages": {
+        "text": {
+          "model_load_seconds": 2.6013030159992923,
+          "model_load_error": null,
+          "process_seconds": 5.625865727997734,
+          "process_peak_rss_mib": 530.74609375,
+          "versions": {
+            "paddlepaddle": "3.2.2",
+            "paddleocr": "3.3.2",
+            "paddlex": "3.3.11",
+            "numpy": "1.26.4",
+            "opencv-contrib-python": "4.10.0.84"
+          },
+          "kind": "text",
+          "config": {
+            "threads": 2,
+            "language": "en",
+            "det_dir": "/workspace/lecturemath/models/v2/PP-OCRv5_mobile_det_infer",
+            "rec_dir": "/workspace/lecturemath/models/v2/en_PP-OCRv5_mobile_rec_infer",
+            "formula_dir": "/workspace/lecturemath/models/v2/PP-FormulaNet-S_infer"
+          },
+          "subprocess_wall_seconds": 6.24303442299788
+        },
+        "formula": {
+          "model_load_seconds": 8.085353678998217,
+          "model_load_error": null,
+          "process_seconds": 12.91799823600013,
+          "process_peak_rss_mib": 889.546875,
+          "versions": {
+            "paddlepaddle": "3.2.2",
+            "paddleocr": "3.3.2",
+            "paddlex": "3.3.11",
+            "numpy": "1.26.4",
+            "opencv-contrib-python": "4.10.0.84"
+          },
+          "kind": "formula",
+          "config": {
+            "threads": 2,
+            "language": "en",
+            "det_dir": "/workspace/lecturemath/models/v2/PP-OCRv5_mobile_det_infer",
+            "rec_dir": "/workspace/lecturemath/models/v2/en_PP-OCRv5_mobile_rec_infer",
+            "formula_dir": "/workspace/lecturemath/models/v2/PP-FormulaNet-S_infer"
+          },
+          "subprocess_wall_seconds": 14.442020056998444
+        }
+      }
+    },
+    {
+      "image": "nm_lecture_01_19899",
+      "wall_seconds": 21.25891614200009,
+      "stages": {
+        "text": {
+          "model_load_seconds": 3.000735171000997,
+          "model_load_error": null,
+          "process_seconds": 4.856426439000643,
+          "process_peak_rss_mib": 542.77734375,
+          "versions": {
+            "paddlepaddle": "3.2.2",
+            "paddleocr": "3.3.2",
+            "paddlex": "3.3.11",
+            "numpy": "1.26.4",
+            "opencv-contrib-python": "4.10.0.84"
+          },
+          "kind": "text",
+          "config": {
+            "threads": 2,
+            "language": "en",
+            "det_dir": "/workspace/lecturemath/models/v2/PP-OCRv5_mobile_det_infer",
+            "rec_dir": "/workspace/lecturemath/models/v2/en_PP-OCRv5_mobile_rec_infer",
+            "formula_dir": "/workspace/lecturemath/models/v2/PP-FormulaNet-S_infer"
+          },
+          "subprocess_wall_seconds": 5.696739945000445
+        },
+        "formula": {
+          "model_load_seconds": 9.102206259001832,
+          "model_load_error": null,
+          "process_seconds": 13.7909286360009,
+          "process_peak_rss_mib": 878.7734375,
+          "versions": {
+            "paddlepaddle": "3.2.2",
+            "paddleocr": "3.3.2",
+            "paddlex": "3.3.11",
+            "numpy": "1.26.4",
+            "opencv-contrib-python": "4.10.0.84"
+          },
+          "kind": "formula",
+          "config": {
+            "threads": 2,
+            "language": "en",
+            "det_dir": "/workspace/lecturemath/models/v2/PP-OCRv5_mobile_det_infer",
+            "rec_dir": "/workspace/lecturemath/models/v2/en_PP-OCRv5_mobile_rec_infer",
+            "formula_dir": "/workspace/lecturemath/models/v2/PP-FormulaNet-S_infer"
+          },
+          "subprocess_wall_seconds": 14.565549569000723
+        }
+      }
+    }
+  ],
+  "metrics": [
+    {
+      "image": "lecture_01_10423",
+      "variant": "rgb",
+      "region_id": "text",
+      "type": "text",
+      "bbox": [
+        965,
+        300,
+        1435,
+        380
+      ],
+      "reference": "Algebraic Interpretation.",
+      "prediction": "Algebraic Interpretation",
+      "status": "ok",
+      "model": "PP-OCRv5_mobile_det + en_PP-OCRv5_mobile_rec",
+      "confidence": 0.9762973487377167,
+      "edit_distance": 1,
+      "cer": 0.04,
+      "exact_match": false,
+      "seconds": 0.5832742390011845,
+      "cache_hit": false,
+      "error": null
+    },
+    {
+      "image": "lecture_01_10423",
+      "variant": "rgb",
+      "region_id": "formula",
+      "type": "formula",
+      "bbox": [
+        340,
+        440,
+        515,
+        510
+      ],
+      "reference": "3x=1",
+      "prediction": "3x=1",
+      "status": "ok",
+      "model": "PP-FormulaNet-S",
+      "confidence": null,
+      "edit_distance": 0,
+      "normalized_edit_distance": 0.0,
+      "exact_match": true,
+      "seconds": 1.0321909720005351,
+      "cache_hit": false,
+      "error": null
+    },
+    {
+      "image": "lecture_01_10423",
+      "variant": "rgb",
+      "region_id": "formula_system",
+      "type": "formula",
+      "bbox": [
+        290,
+        430,
+        600,
+        610
+      ],
+      "reference": "\\left.\\begin{aligned}3x&=1\\\\x+2y&=3\\end{aligned}\\right\\}",
+      "prediction": "3+2y=33",
+      "status": "ok",
+      "model": "PP-FormulaNet-S",
+      "confidence": null,
+      "edit_distance": 50,
+      "normalized_edit_distance": 0.8928571428571429,
+      "exact_match": false,
+      "seconds": 0.5106425449994276,
+      "cache_hit": false,
+      "error": null
+    },
+    {
+      "image": "lecture_01_10423",
+      "variant": "b0",
+      "region_id": "text",
+      "type": "text",
+      "bbox": [
+        965,
+        300,
+        1435,
+        380
+      ],
+      "reference": "Algebraic Interpretation.",
+      "prediction": "Algebraic Inteupretation.",
+      "status": "ok",
+      "model": "PP-OCRv5_mobile_det + en_PP-OCRv5_mobile_rec",
+      "confidence": 0.9522002041339874,
+      "edit_distance": 1,
+      "cer": 0.04,
+      "exact_match": false,
+      "seconds": 0.44320040399907157,
+      "cache_hit": false,
+      "error": null
+    },
+    {
+      "image": "lecture_01_10423",
+      "variant": "b0",
+      "region_id": "formula",
+      "type": "formula",
+      "bbox": [
+        340,
+        440,
+        515,
+        510
+      ],
+      "reference": "3x=1",
+      "prediction": "3x=1",
+      "status": "ok",
+      "model": "PP-FormulaNet-S",
+      "confidence": null,
+      "edit_distance": 0,
+      "normalized_edit_distance": 0.0,
+      "exact_match": true,
+      "seconds": 0.5397892000000866,
+      "cache_hit": false,
+      "error": null
+    },
+    {
+      "image": "lecture_01_10423",
+      "variant": "b0",
+      "region_id": "formula_system",
+      "type": "formula",
+      "bbox": [
+        290,
+        430,
+        600,
+        610
+      ],
+      "reference": "\\left.\\begin{aligned}3x&=1\\\\x+2y&=3\\end{aligned}\\right\\}",
+      "prediction": "3left+x=1\\right\\",
+      "status": "ok",
+      "model": "PP-FormulaNet-S",
+      "confidence": null,
+      "edit_distance": 42,
+      "normalized_edit_distance": 0.75,
+      "exact_match": false,
+      "seconds": 1.1959148749992892,
+      "cache_hit": false,
+      "error": null
+    },
+    {
+      "image": "lecture_01_10423",
+      "variant": "b3",
+      "region_id": "text",
+      "type": "text",
+      "bbox": [
+        965,
+        300,
+        1435,
+        380
+      ],
+      "reference": "Algebraic Interpretation.",
+      "prediction": "Algebraic Inteupretation.",
+      "status": "ok",
+      "model": "PP-OCRv5_mobile_det + en_PP-OCRv5_mobile_rec",
+      "confidence": 0.9522002041339874,
+      "edit_distance": 1,
+      "cer": 0.04,
+      "exact_match": false,
+      "seconds": 0.4548854210006539,
+      "cache_hit": false,
+      "error": null
+    },
+    {
+      "image": "lecture_01_10423",
+      "variant": "b3",
+      "region_id": "formula",
+      "type": "formula",
+      "bbox": [
+        340,
+        440,
+        515,
+        510
+      ],
+      "reference": "3x=1",
+      "prediction": "3x=1",
+      "status": "ok",
+      "model": "PP-FormulaNet-S",
+      "confidence": null,
+      "edit_distance": 0,
+      "normalized_edit_distance": 0.0,
+      "exact_match": true,
+      "seconds": 0.6325089189995197,
+      "cache_hit": false,
+      "error": null
+    },
+    {
+      "image": "lecture_01_10423",
+      "variant": "b3",
+      "region_id": "formula_system",
+      "type": "formula",
+      "bbox": [
+        290,
+        430,
+        600,
+        610
+      ],
+      "reference": "\\left.\\begin{aligned}3x&=1\\\\x+2y&=3\\end{aligned}\\right\\}",
+      "prediction": "3left+x=1\\right\\",
+      "status": "ok",
+      "model": "PP-FormulaNet-S",
+      "confidence": null,
+      "edit_distance": 42,
+      "normalized_edit_distance": 0.75,
+      "exact_match": false,
+      "seconds": 0.8913424889979069,
+      "cache_hit": false,
+      "error": null
+    },
+    {
+      "image": "lecture_02_44601",
+      "variant": "rgb",
+      "region_id": "text",
+      "type": "text",
+      "bbox": [
+        275,
+        270,
+        745,
+        340
+      ],
+      "reference": "Multiplication by a",
+      "prediction": "Multidication",
+      "status": "ok",
+      "model": "PP-OCRv5_mobile_det + en_PP-OCRv5_mobile_rec",
+      "confidence": 0.9898963570594788,
+      "edit_distance": 7,
+      "cer": 0.3684210526315789,
+      "exact_match": false,
+      "seconds": 0.8708779699991283,
+      "cache_hit": false,
+      "error": null
+    },
+    {
+      "image": "lecture_02_44601",
+      "variant": "rgb",
+      "region_id": "formula",
+      "type": "formula",
+      "bbox": [
+        405,
+        490,
+        710,
+        565
+      ],
+      "reference": "x+3y=4",
+      "prediction": "x+3y=4",
+      "status": "ok",
+      "model": "PP-FormulaNet-S",
+      "confidence": null,
+      "edit_distance": 0,
+      "normalized_edit_distance": 0.0,
+      "exact_match": true,
+      "seconds": 1.1811176849987532,
+      "cache_hit": false,
+      "error": null
+    },
+    {
+      "image": "lecture_02_44601",
+      "variant": "rgb",
+      "region_id": "formula_fraction",
+      "type": "formula",
+      "bbox": [
+        990,
+        315,
+        1095,
+        385
+      ],
+      "reference": "y=\\frac{27}{19}",
+      "prediction": "y=\\frac{27}{19}",
+      "status": "ok",
+      "model": "PP-FormulaNet-S",
+      "confidence": null,
+      "edit_distance": 0,
+      "normalized_edit_distance": 0.0,
+      "exact_match": true,
+      "seconds": 0.5154418439997244,
+      "cache_hit": false,
+      "error": null
+    },
+    {
+      "image": "lecture_02_44601",
+      "variant": "b0",
+      "region_id": "text",
+      "type": "text",
+      "bbox": [
+        275,
+        270,
+        745,
+        340
+      ],
+      "reference": "Multiplication by a",
+      "prediction": "Multidication by a",
+      "status": "ok",
+      "model": "PP-OCRv5_mobile_det + en_PP-OCRv5_mobile_rec",
+      "confidence": 0.9931061565876007,
+      "edit_distance": 2,
+      "cer": 0.10526315789473684,
+      "exact_match": false,
+      "seconds": 1.486650032999023,
+      "cache_hit": false,
+      "error": null
+    },
+    {
+      "image": "lecture_02_44601",
+      "variant": "b0",
+      "region_id": "formula",
+      "type": "formula",
+      "bbox": [
+        405,
+        490,
+        710,
+        565
+      ],
+      "reference": "x+3y=4",
+      "prediction": "x+3y=4",
+      "status": "ok",
+      "model": "PP-FormulaNet-S",
+      "confidence": null,
+      "edit_distance": 0,
+      "normalized_edit_distance": 0.0,
+      "exact_match": true,
+      "seconds": 0.7374599450013193,
+      "cache_hit": false,
+      "error": null
+    },
+    {
+      "image": "lecture_02_44601",
+      "variant": "b0",
+      "region_id": "formula_fraction",
+      "type": "formula",
+      "bbox": [
+        990,
+        315,
+        1095,
+        385
+      ],
+      "reference": "y=\\frac{27}{19}",
+      "prediction": "y=\\frac{27}{19}",
+      "status": "ok",
+      "model": "PP-FormulaNet-S",
+      "confidence": null,
+      "edit_distance": 0,
+      "normalized_edit_distance": 0.0,
+      "exact_match": true,
+      "seconds": 0.9183639949987992,
+      "cache_hit": false,
+      "error": null
+    },
+    {
+      "image": "lecture_02_44601",
+      "variant": "b3",
+      "region_id": "text",
+      "type": "text",
+      "bbox": [
+        275,
+        270,
+        745,
+        340
+      ],
+      "reference": "Multiplication by a",
+      "prediction": "Multidication by a",
+      "status": "ok",
+      "model": "PP-OCRv5_mobile_det + en_PP-OCRv5_mobile_rec",
+      "confidence": 0.9931061565876007,
+      "edit_distance": 2,
+      "cer": 0.10526315789473684,
+      "exact_match": false,
+      "seconds": 0.6670164729985117,
+      "cache_hit": false,
+      "error": null
+    },
+    {
+      "image": "lecture_02_44601",
+      "variant": "b3",
+      "region_id": "formula",
+      "type": "formula",
+      "bbox": [
+        405,
+        490,
+        710,
+        565
+      ],
+      "reference": "x+3y=4",
+      "prediction": "x+3y=4",
+      "status": "ok",
+      "model": "PP-FormulaNet-S",
+      "confidence": null,
+      "edit_distance": 0,
+      "normalized_edit_distance": 0.0,
+      "exact_match": true,
+      "seconds": 0.7635053199992399,
+      "cache_hit": false,
+      "error": null
+    },
+    {
+      "image": "lecture_02_44601",
+      "variant": "b3",
+      "region_id": "formula_fraction",
+      "type": "formula",
+      "bbox": [
+        990,
+        315,
+        1095,
+        385
+      ],
+      "reference": "y=\\frac{27}{19}",
+      "prediction": "y=\\frac{27}{19}",
+      "status": "ok",
+      "model": "PP-FormulaNet-S",
+      "confidence": null,
+      "edit_distance": 0,
+      "normalized_edit_distance": 0.0,
+      "exact_match": true,
+      "seconds": 0.7167357279977296,
+      "cache_hit": false,
+      "error": null
+    },
+    {
+      "image": "nm_lecture_01_19899",
+      "variant": "rgb",
+      "region_id": "text",
+      "type": "text",
+      "bbox": [
+        225,
+        315,
+        825,
+        410
+      ],
+      "reference": "System of Linear Equations.",
+      "prediction": "System of Linear Equations.",
+      "status": "ok",
+      "model": "PP-OCRv5_mobile_det + en_PP-OCRv5_mobile_rec",
+      "confidence": 0.7969317436218262,
+      "edit_distance": 0,
+      "cer": 0.0,
+      "exact_match": true,
+      "seconds": 0.36882019599943305,
+      "cache_hit": false,
+      "error": null
+    },
+    {
+      "image": "nm_lecture_01_19899",
+      "variant": "rgb",
+      "region_id": "formula",
+      "type": "formula",
+      "bbox": [
+        180,
+        480,
+        410,
+        535
+      ],
+      "reference": "3x-y+z=7",
+      "prediction": "3x-y+z=7",
+      "status": "ok",
+      "model": "PP-FormulaNet-S",
+      "confidence": null,
+      "edit_distance": 0,
+      "normalized_edit_distance": 0.0,
+      "exact_match": true,
+      "seconds": 1.20275269099875,
+      "cache_hit": false,
+      "error": null
+    },
+    {
+      "image": "nm_lecture_01_19899",
+      "variant": "rgb",
+      "region_id": "formula_fraction",
+      "type": "formula",
+      "bbox": [
+        1470,
+        420,
+        1820,
+        555
+      ],
+      "reference": "y=\\frac{3-x}{2}=\\frac{3-\\frac{1}{3}}{2}=\\frac{8}{6}",
+      "prediction": "y=\\frac{3-x}{2}=\\frac{3-\\frac{1}{3}}{2}=\\frac{8}{6}=\\frac{8}{6}",
+      "status": "ok",
+      "model": "PP-FormulaNet-S",
+      "confidence": null,
+      "edit_distance": 12,
+      "normalized_edit_distance": 0.23529411764705882,
+      "exact_match": false,
+      "seconds": 0.9067550069994468,
+      "cache_hit": false,
+      "error": null
+    },
+    {
+      "image": "nm_lecture_01_19899",
+      "variant": "b0",
+      "region_id": "text",
+      "type": "text",
+      "bbox": [
+        225,
+        315,
+        825,
+        410
+      ],
+      "reference": "System of Linear Equations.",
+      "prediction": "System of Linear Equations.",
+      "status": "ok",
+      "model": "PP-OCRv5_mobile_det + en_PP-OCRv5_mobile_rec",
+      "confidence": 0.9830805659294128,
+      "edit_distance": 0,
+      "cer": 0.0,
+      "exact_match": true,
+      "seconds": 0.7593241239992494,
+      "cache_hit": false,
+      "error": null
+    },
+    {
+      "image": "nm_lecture_01_19899",
+      "variant": "b0",
+      "region_id": "formula",
+      "type": "formula",
+      "bbox": [
+        180,
+        480,
+        410,
+        535
+      ],
+      "reference": "3x-y+z=7",
+      "prediction": "3x-y+z=7",
+      "status": "ok",
+      "model": "PP-FormulaNet-S",
+      "confidence": null,
+      "edit_distance": 0,
+      "normalized_edit_distance": 0.0,
+      "exact_match": true,
+      "seconds": 0.4855604409967782,
+      "cache_hit": false,
+      "error": null
+    },
+    {
+      "image": "nm_lecture_01_19899",
+      "variant": "b0",
+      "region_id": "formula_fraction",
+      "type": "formula",
+      "bbox": [
+        1470,
+        420,
+        1820,
+        555
+      ],
+      "reference": "y=\\frac{3-x}{2}=\\frac{3-\\frac{1}{3}}{2}=\\frac{8}{6}",
+      "prediction": "y=\\frac{3-x}{2}=\\frac{3-\\frac{1}{3}}{2}=\\frac{8}{6}",
+      "status": "ok",
+      "model": "PP-FormulaNet-S",
+      "confidence": null,
+      "edit_distance": 0,
+      "normalized_edit_distance": 0.0,
+      "exact_match": true,
+      "seconds": 0.8047426880002604,
+      "cache_hit": false,
+      "error": null
+    },
+    {
+      "image": "nm_lecture_01_19899",
+      "variant": "b3",
+      "region_id": "text",
+      "type": "text",
+      "bbox": [
+        225,
+        315,
+        825,
+        410
+      ],
+      "reference": "System of Linear Equations.",
+      "prediction": "System of Linear Equations.",
+      "status": "ok",
+      "model": "PP-OCRv5_mobile_det + en_PP-OCRv5_mobile_rec",
+      "confidence": 0.9833385050296783,
+      "edit_distance": 0,
+      "cer": 0.0,
+      "exact_match": true,
+      "seconds": 0.7275350529998832,
+      "cache_hit": false,
+      "error": null
+    },
+    {
+      "image": "nm_lecture_01_19899",
+      "variant": "b3",
+      "region_id": "formula",
+      "type": "formula",
+      "bbox": [
+        180,
+        480,
+        410,
+        535
+      ],
+      "reference": "3x-y+z=7",
+      "prediction": "3x-y+z=7",
+      "status": "ok",
+      "model": "PP-FormulaNet-S",
+      "confidence": null,
+      "edit_distance": 0,
+      "normalized_edit_distance": 0.0,
+      "exact_match": true,
+      "seconds": 0.5136306640015391,
+      "cache_hit": false,
+      "error": null
+    },
+    {
+      "image": "nm_lecture_01_19899",
+      "variant": "b3",
+      "region_id": "formula_fraction",
+      "type": "formula",
+      "bbox": [
+        1470,
+        420,
+        1820,
+        555
+      ],
+      "reference": "y=\\frac{3-x}{2}=\\frac{3-\\frac{1}{3}}{2}=\\frac{8}{6}",
+      "prediction": "y=\\frac{3-x}{2}=\\frac{3-\\frac{1}{3}}{2}=\\frac{8}{6}",
+      "status": "ok",
+      "model": "PP-FormulaNet-S",
+      "confidence": null,
+      "edit_distance": 0,
+      "normalized_edit_distance": 0.0,
+      "exact_match": true,
+      "seconds": 0.7752625129978696,
+      "cache_hit": false,
+      "error": null
+    }
+  ],
+  "caveats": [
+    "PP-FormulaNet-S is officially aimed at simple printed formulas; handwriting is exploratory.",
+    "Tiny convenience sample; not held-out generalization.",
+    "No Korean/complex formula evaluation.",
+    "No mock predictions in this report. Model failures have null accuracy metrics."
+  ]
+}

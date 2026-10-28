@@ -3,6 +3,10 @@
 일반 강의 영상 → **사전 학습 FCN-LectureNet 판서 추출** → 원본 ST3D CC 분석·그룹화 → 삭제 이벤트 분할 → 흑백 판서 PDF.
 CLI, FastAPI 비동기 작업 API, GitHub Pages용 정적 프론트엔드를 포함한다. OCR·음성 전사·LLM·학습·대체 모델은 사용하지 않는다.
 
+V2 지정 영역 OCR/수식 인식의 로컬 구현과 실제 CPU 실험을 추가했다.
+[설치·CLI·JSON 계약](docs/v2.md), [실제 결과와 미완료 범위](docs/v2_results.md)를 참고한다.
+기존 영상→PDF 기본 경로는 유지하며, 자동 텍스트·수식 영역 분류는 아직 검토 단계다.
+
 연구 코드 분석과 변경 근거는 [UPSTREAM_ANALYSIS](docs/UPSTREAM_ANALYSIS.md), 실제 검증 범위는 [VALIDATION](docs/VALIDATION.md), 배포/Jetson 안내는 [DEPLOYMENT](docs/DEPLOYMENT.md)를 참고한다.
 V1 작업 기록과 실제 1080p 데이터의 해상도별 품질 비교는 [고해상도 품질 검증 작업 기록](docs/WORK_LOG_HD_QUALITY.md)에 정리했다.
 후속 작업자는 [인수인계 문서](docs/HANDOFF.md)에서 현재 상태, 실행 순서, 다음 작업과 알려진 한계를 먼저 확인한다.

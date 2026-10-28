@@ -40,6 +40,9 @@ def process_video(video, workdir, settings, progress=lambda *args: None):
         if not times:
             raise ValueError("No frames could be sampled")
         keyframes, stats = summarize((times, indices, compressed), settings, workdir / "temporal", progress)
+        if settings.export_v2_inputs:
+            from .v2.export import export_keyframes
+            export_keyframes(keyframes, meta, workdir / "v2_inputs")
         progress("pdf", 96)
         count = generate_pdf(keyframes, workdir / "result.pdf", settings.timestamps, workdir / "pages" if settings.keep_intermediates else None, style=settings.pdf_style)
     digest = hashlib.sha256()

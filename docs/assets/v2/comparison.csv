@@ -1,0 +1,28 @@
+image,variant,region_id,type,reference,prediction,status,edit_distance,cer,normalized_edit_distance,exact_match,seconds,cache_hit
+lecture_01_10423,rgb,text,text,Algebraic Interpretation.,Algebraic Interpretation,ok,1,0.04,,False,0.5832742390011845,False
+lecture_01_10423,rgb,formula,formula,3x=1,3x=1,ok,0,,0.0,True,1.0321909720005351,False
+lecture_01_10423,rgb,formula_system,formula,\left.\begin{aligned}3x&=1\\x+2y&=3\end{aligned}\right\},3+2y=33,ok,50,,0.8928571428571429,False,0.5106425449994276,False
+lecture_01_10423,b0,text,text,Algebraic Interpretation.,Algebraic Inteupretation.,ok,1,0.04,,False,0.44320040399907157,False
+lecture_01_10423,b0,formula,formula,3x=1,3x=1,ok,0,,0.0,True,0.5397892000000866,False
+lecture_01_10423,b0,formula_system,formula,\left.\begin{aligned}3x&=1\\x+2y&=3\end{aligned}\right\},3left+x=1\right\,ok,42,,0.75,False,1.1959148749992892,False
+lecture_01_10423,b3,text,text,Algebraic Interpretation.,Algebraic Inteupretation.,ok,1,0.04,,False,0.4548854210006539,False
+lecture_01_10423,b3,formula,formula,3x=1,3x=1,ok,0,,0.0,True,0.6325089189995197,False
+lecture_01_10423,b3,formula_system,formula,\left.\begin{aligned}3x&=1\\x+2y&=3\end{aligned}\right\},3left+x=1\right\,ok,42,,0.75,False,0.8913424889979069,False
+lecture_02_44601,rgb,text,text,Multiplication by a,Multidication,ok,7,0.3684210526315789,,False,0.8708779699991283,False
+lecture_02_44601,rgb,formula,formula,x+3y=4,x+3y=4,ok,0,,0.0,True,1.1811176849987532,False
+lecture_02_44601,rgb,formula_fraction,formula,y=\frac{27}{19},y=\frac{27}{19},ok,0,,0.0,True,0.5154418439997244,False
+lecture_02_44601,b0,text,text,Multiplication by a,Multidication by a,ok,2,0.10526315789473684,,False,1.486650032999023,False
+lecture_02_44601,b0,formula,formula,x+3y=4,x+3y=4,ok,0,,0.0,True,0.7374599450013193,False
+lecture_02_44601,b0,formula_fraction,formula,y=\frac{27}{19},y=\frac{27}{19},ok,0,,0.0,True,0.9183639949987992,False
+lecture_02_44601,b3,text,text,Multiplication by a,Multidication by a,ok,2,0.10526315789473684,,False,0.6670164729985117,False
+lecture_02_44601,b3,formula,formula,x+3y=4,x+3y=4,ok,0,,0.0,True,0.7635053199992399,False
+lecture_02_44601,b3,formula_fraction,formula,y=\frac{27}{19},y=\frac{27}{19},ok,0,,0.0,True,0.7167357279977296,False
+nm_lecture_01_19899,rgb,text,text,System of Linear Equations.,System of Linear Equations.,ok,0,0.0,,True,0.36882019599943305,False
+nm_lecture_01_19899,rgb,formula,formula,3x-y+z=7,3x-y+z=7,ok,0,,0.0,True,1.20275269099875,False
+nm_lecture_01_19899,rgb,formula_fraction,formula,y=\frac{3-x}{2}=\frac{3-\frac{1}{3}}{2}=\frac{8}{6},y=\frac{3-x}{2}=\frac{3-\frac{1}{3}}{2}=\frac{8}{6}=\frac{8}{6},ok,12,,0.23529411764705882,False,0.9067550069994468,False
+nm_lecture_01_19899,b0,text,text,System of Linear Equations.,System of Linear Equations.,ok,0,0.0,,True,0.7593241239992494,False
+nm_lecture_01_19899,b0,formula,formula,3x-y+z=7,3x-y+z=7,ok,0,,0.0,True,0.4855604409967782,False
+nm_lecture_01_19899,b0,formula_fraction,formula,y=\frac{3-x}{2}=\frac{3-\frac{1}{3}}{2}=\frac{8}{6},y=\frac{3-x}{2}=\frac{3-\frac{1}{3}}{2}=\frac{8}{6},ok,0,,0.0,True,0.8047426880002604,False
+nm_lecture_01_19899,b3,text,text,System of Linear Equations.,System of Linear Equations.,ok,0,0.0,,True,0.7275350529998832,False
+nm_lecture_01_19899,b3,formula,formula,3x-y+z=7,3x-y+z=7,ok,0,,0.0,True,0.5136306640015391,False
+nm_lecture_01_19899,b3,formula_fraction,formula,y=\frac{3-x}{2}=\frac{3-\frac{1}{3}}{2}=\frac{8}{6},y=\frac{3-x}{2}=\frac{3-\frac{1}{3}}{2}=\frac{8}{6},ok,0,,0.0,True,0.7752625129978696,False

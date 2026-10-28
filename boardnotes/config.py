@@ -20,6 +20,7 @@ class Settings:
     jobs_dir: Path = field(default_factory=lambda: Path(os.getenv("BOARD_JOBS_DIR", str(ROOT / "jobs"))))
     retention_seconds: int = field(default_factory=lambda: int(os.getenv("BOARD_RETENTION_SECONDS", "86400")))
     keep_intermediates: bool = False
+    export_v2_inputs: bool = False
     timestamps: bool = True
     pdf_style: str = field(default_factory=lambda: os.getenv("BOARD_PDF_STYLE", "smooth"))
     config_path: Path = field(default_factory=lambda: Path(os.getenv("BOARD_RESEARCH_CONFIG", str(RELEASE / "configs/FCN_LectureNet.conf"))))

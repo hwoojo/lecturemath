@@ -2,6 +2,33 @@
 
 기준일: 2026-10-28 (Asia/Seoul)
 
+## V2 지정 영역 구현 및 실제 검증 (후속 작업)
+
+V2 Phase A 구현과 실제 CPU 비교를 추가했다. 먼저 [v2.md](v2.md)와
+[v2_results.md](v2_results.md)를 읽는다. 기존 V1 기본 경로는 그대로다.
+
+- `boardnotes/v2/cli.py`: recognize/detect/render. JSON bbox는 원본 입력 half-open 좌표,
+  timestamp는 초. text/formula/other/unknown을 구분한다.
+- 모델은 별도 `/workspace/lecturemath-v2-env`에서 PP-OCRv5 Mobile/PP-FormulaNet-S를 순차 실행한다.
+  `requirements/v2-ocr.txt` 및 실제 전체 lock을 보존했다. V1 Torch/OpenCV는 변경하지 않았다.
+- 사용자 확인 후 인쇄체 중심 S로 손글씨의 한계를 먼저 평가했다. 더 큰 모델로 대체하지 않았다.
+- 실제 3프레임의 제목 3개/수식 6영역 × RGB/B0/B3, 총27개 예측을 실행했다.
+  CER은 13.61/4.84/4.84%, 수식 LaTeX 엄격 일치는 4/6·5/6·5/6이다.
+  이는 작은 탐색 표본으로 일반 성능이 아니다. 연립방정식이 틀렸으며 모든 수식에 사람 검토가 필요하다.
+- 자동 검출은 실제 후보15개를 unknown/needs_review JSON으로 내보낸 수준이다.
+  text/formula 자동 분류 완료로 보지 않는다. 수정 JSON을 지정 영역 명령에 다시 넣을 수 있다.
+- 원본 전체 이미지 + 검색/복사 가능한 Unicode/LaTeX 결과 페이지 PDF, JSON-only 재생성,
+  crop/model/config/버전/가중치 fingerprint 캐시를 지원한다.
+- 전체52테스트 통과. fixture 테스트와 실제 Paddle 결과는 문서에서 분리했다.
+- `--export-v2-inputs`는 기본False이며 기존 V1 출력은 바꾸지 않는다. ST3D 합성 키프레임의
+  untrimmed 이미지/시간/좌표 manifest를 내보낸다. 단일 RGB와 정렬된다고 가정하지 않는다.
+- `docs/assets/v2`에 재배치 가능한 JSON/원본/crop, 비교PNG/CSV/JSON, 대표PDF를 보존했다.
+  실제 모델 가중치/실행 캐시는 `models/v2`, `benchmark-output/v2`에만 있다.
+
+다음에는 자동 수식 영역 분류, 복잡한 손글씨 모델/분할 전략, 한국어+글꼴,
+수식 시각 렌더링과 실제 연속 영상 연계를 별도로 결정·검증해야 한다.
+문서의 literal LaTeX 검색과 수식이 시각적으로 정확하게 조판된다는 주장을 구분한다.
+
 ## V1.5 실험 완료 및 V2 시작 기준 (2026-10-28)
 
 이후 V1.5 실험을 추가했다. V2에서는 **B0(V34 기준선)와 B3(선택적 refinement 후보)**를

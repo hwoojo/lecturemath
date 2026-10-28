@@ -10,9 +10,10 @@ requires-python = ">=3.10"
 
 [project.scripts]
 boardnotes = "boardnotes.cli:main"
+boardnotes-v2 = "boardnotes.v2.cli:main"
 
 [tool.setuptools]
-packages = ["boardnotes"]
+packages = ["boardnotes", "boardnotes.v2"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests", "experiments/v1_5/tests"]

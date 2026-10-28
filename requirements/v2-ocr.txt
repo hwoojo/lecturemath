@@ -1,0 +1,16 @@
+# Install only in a separate CPU environment; never over the V1 Torch environment.
+paddlepaddle==3.2.2
+paddleocr==3.3.2
+paddlex==3.3.11
+numpy==1.26.4
+opencv-contrib-python==4.10.0.84
+pillow==10.4.0
+pandas==2.2.3
+pydantic==2.10.4
+protobuf==3.20.2
+huggingface-hub==0.36.0
+modelscope==1.31.0
+# Formula decoder dependency; no extra neural checkpoint.
+tokenizers==0.21.4
+ftfy==6.3.1
+regex==2024.11.6

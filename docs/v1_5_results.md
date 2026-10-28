@@ -181,3 +181,8 @@ PYTHONPATH=/tmp/lecturemath-merge-testdeps /workspace/lecturemath-env/bin/python
 
 [같은 원본 좌표에서 1080p/720p 비교](assets/v1_5_real/lecture_01_10423_resolutions.png):
 720p 결과만 nearest로 원본 크기에 투영한 후 동일 crop을 사용했다. 별도 선명화나 대비 보정은 없다.
+
+[기술명으로 표기한 비교 PDF](assets/v1_5_real/comparison_named.pdf): FCN-LectureNet V34,
+Otsu, Sauvola, LectureNet-guided Sauvola 및 CLAHE/임계값 조건을 실명으로 표시한다.
+실제 프레임별 동일 영역 비교 3페이지와 전체 프레임 27페이지이며 새 추론 없이 기존 PNG를 사용했다.
+재생성: `python -m experiments.v1_5.named_comparison_pdf` (ReportLab 필요).
