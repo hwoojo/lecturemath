@@ -20,3 +20,4 @@ models/*
 *.wmv
 *.native.so
 benchmark-output/
+*.py[cod]

@@ -1,0 +1,385 @@
+{
+  "recorded_at_utc": "2026-10-28T06:45:27.822620+00:00",
+  "settings": {
+    "input": "experiments/v1_5/artifacts/synthetic/inputs_light",
+    "output": "experiments/v1_5/artifacts/synthetic/results_light",
+    "methods": [
+      "B0",
+      "B1",
+      "B2",
+      "B3",
+      "B4"
+    ],
+    "baseline_dir": "experiments/v1_5/artifacts/synthetic/fixture_baseline",
+    "baseline_polarity": "dark",
+    "probability_dir": null,
+    "gt_dir": "experiments/v1_5/artifacts/synthetic/gt",
+    "gt_polarity": "dark",
+    "polarity": "light",
+    "limit": 5,
+    "resolution": "native",
+    "roi": null,
+    "crop": [
+      80,
+      100,
+      480,
+      200
+    ],
+    "zoom": 2,
+    "windows": [
+      25,
+      51
+    ],
+    "ks": [
+      0.2,
+      0.35
+    ],
+    "blur": [
+      0,
+      3
+    ],
+    "clahe": "off",
+    "radius": 2,
+    "thresholds": [
+      0.35,
+      0.5,
+      0.65
+    ],
+    "config": null,
+    "checkpoint": null,
+    "cache_dir": null,
+    "threads": 2
+  },
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+    "packages": {
+      "numpy": "1.26.4",
+      "opencv-python-headless": "4.10.0.84",
+      "torch": "2.5.1+cpu",
+      "torchvision": "0.20.1+cpu",
+      "Pillow": "10.4.0"
+    }
+  },
+  "sources": [
+    {
+      "input": "/workspace/lecturemath/experiments/v1_5/artifacts/synthetic/inputs_light/chalk_1080.png",
+      "sha256": "2d17f876cb3035c899120a1e63f455f06fba29b2a4e208b0de9b05157ea80f68",
+      "shape": [
+        1080,
+        1920
+      ],
+      "baseline": {
+        "path": "/workspace/lecturemath/experiments/v1_5/artifacts/synthetic/fixture_baseline/chalk_1080.png",
+        "sha256": "1621d93c2d40b714a18f2ff5517090f2dd30b3e74ce65498a15815ffc4784fff"
+      },
+      "probability": null,
+      "ground_truth_sha256": "b0b5e2803af28c8739d2258364c361a46dd16572c787ed33ca9ed7408f42ce48",
+      "total_image_seconds": 1.0004194360000156,
+      "process_peak_rss_mib_so_far": 141.2578125
+    }
+  ],
+  "skipped": [
+    {
+      "image": "chalk_1080",
+      "method": "B4",
+      "reason": "no continuous probability or V34 checkpoint"
+    }
+  ],
+  "metrics": [
+    {
+      "image": "chalk_1080",
+      "method": "B0",
+      "parameters": {
+        "source": {
+          "path": "/workspace/lecturemath/experiments/v1_5/artifacts/synthetic/fixture_baseline/chalk_1080.png",
+          "sha256": "1621d93c2d40b714a18f2ff5517090f2dd30b3e74ce65498a15815ffc4784fff"
+        }
+      },
+      "postprocess_seconds": 0.0,
+      "foreground_ratio": 0.005262345679012345,
+      "components": 127,
+      "component_area_quantiles": [
+        1.0,
+        29.5,
+        60.0,
+        99.5,
+        336.0
+      ],
+      "tp": 10912,
+      "fp": 0,
+      "fn": 946,
+      "precision": 1.0,
+      "recall": 0.9202226345083488,
+      "f1": 0.9584541062801932,
+      "iou": 0.9202226345083488
+    },
+    {
+      "image": "chalk_1080",
+      "method": "B1_blur0",
+      "parameters": {
+        "blur": 0
+      },
+      "postprocess_seconds": 0.0026103150000267306,
+      "foreground_ratio": 0.13002459490740742,
+      "components": 29,
+      "component_area_quantiles": [
+        243.0,
+        358.0,
+        467.0,
+        478.0,
+        216216.0
+      ],
+      "tp": 11858,
+      "fp": 257761,
+      "fn": 0,
+      "precision": 0.04398058000363476,
+      "recall": 1.0,
+      "f1": 0.0842555519633931,
+      "iou": 0.04398058000363476
+    },
+    {
+      "image": "chalk_1080",
+      "method": "B1_blur3",
+      "parameters": {
+        "blur": 3
+      },
+      "postprocess_seconds": 0.00601220400000102,
+      "foreground_ratio": 0.1303052662037037,
+      "components": 29,
+      "component_area_quantiles": [
+        243.0,
+        363.0,
+        502.0,
+        583.0,
+        216214.0
+      ],
+      "tp": 11858,
+      "fp": 258343,
+      "fn": 0,
+      "precision": 0.043885847942827745,
+      "recall": 1.0,
+      "f1": 0.08408169921895774,
+      "iou": 0.043885847942827745
+    },
+    {
+      "image": "chalk_1080",
+      "method": "B2_w25_k0.2_c0",
+      "parameters": {
+        "window": 25,
+        "k": 0.2,
+        "clahe": false
+      },
+      "postprocess_seconds": 0.050604077999992114,
+      "foreground_ratio": 0.019296875,
+      "components": 29,
+      "component_area_quantiles": [
+        243.0,
+        358.0,
+        467.0,
+        478.0,
+        20256.0
+      ],
+      "tp": 11858,
+      "fp": 28156,
+      "fn": 0,
+      "precision": 0.29634627880241915,
+      "recall": 1.0,
+      "f1": 0.4572023442319556,
+      "iou": 0.29634627880241915
+    },
+    {
+      "image": "chalk_1080",
+      "method": "B2_w25_k0.35_c0",
+      "parameters": {
+        "window": 25,
+        "k": 0.35,
+        "clahe": false
+      },
+      "postprocess_seconds": 0.05604849999997441,
+      "foreground_ratio": 0.01806616512345679,
+      "components": 29,
+      "component_area_quantiles": [
+        243.0,
+        358.0,
+        467.0,
+        478.0,
+        18592.0
+      ],
+      "tp": 11858,
+      "fp": 25604,
+      "fn": 0,
+      "precision": 0.3165340878757141,
+      "recall": 1.0,
+      "f1": 0.48085969180859695,
+      "iou": 0.3165340878757141
+    },
+    {
+      "image": "chalk_1080",
+      "method": "B2_w51_k0.2_c0",
+      "parameters": {
+        "window": 51,
+        "k": 0.2,
+        "clahe": false
+      },
+      "postprocess_seconds": 0.06394174799999064,
+      "foreground_ratio": 0.03234326774691358,
+      "components": 29,
+      "component_area_quantiles": [
+        243.0,
+        358.0,
+        467.0,
+        478.0,
+        39938.0
+      ],
+      "tp": 11858,
+      "fp": 55209,
+      "fn": 0,
+      "precision": 0.17680826636050517,
+      "recall": 1.0,
+      "f1": 0.30048780487804877,
+      "iou": 0.17680826636050517
+    },
+    {
+      "image": "chalk_1080",
+      "method": "B2_w51_k0.35_c0",
+      "parameters": {
+        "window": 51,
+        "k": 0.35,
+        "clahe": false
+      },
+      "postprocess_seconds": 0.05760300299999699,
+      "foreground_ratio": 0.03056905864197531,
+      "components": 29,
+      "component_area_quantiles": [
+        243.0,
+        358.0,
+        467.0,
+        478.0,
+        38324.0
+      ],
+      "tp": 11858,
+      "fp": 51530,
+      "fn": 0,
+      "precision": 0.18707010790685935,
+      "recall": 1.0,
+      "f1": 0.31517954442761076,
+      "iou": 0.18707010790685935
+    },
+    {
+      "image": "chalk_1080",
+      "method": "B3_w25_k0.2_c0",
+      "parameters": {
+        "window": 25,
+        "k": 0.2,
+        "clahe": false,
+        "radius": 2
+      },
+      "postprocess_seconds": 0.06338082899998199,
+      "foreground_ratio": 0.0057185570987654324,
+      "components": 27,
+      "component_area_quantiles": [
+        243.0,
+        356.5,
+        466.0,
+        474.0,
+        686.0
+      ],
+      "tp": 11858,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "iou": 1.0
+    },
+    {
+      "image": "chalk_1080",
+      "method": "B3_w25_k0.35_c0",
+      "parameters": {
+        "window": 25,
+        "k": 0.35,
+        "clahe": false,
+        "radius": 2
+      },
+      "postprocess_seconds": 0.060672775000000456,
+      "foreground_ratio": 0.0057185570987654324,
+      "components": 27,
+      "component_area_quantiles": [
+        243.0,
+        356.5,
+        466.0,
+        474.0,
+        686.0
+      ],
+      "tp": 11858,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "iou": 1.0
+    },
+    {
+      "image": "chalk_1080",
+      "method": "B3_w51_k0.2_c0",
+      "parameters": {
+        "window": 51,
+        "k": 0.2,
+        "clahe": false,
+        "radius": 2
+      },
+      "postprocess_seconds": 0.08720714599996882,
+      "foreground_ratio": 0.0057185570987654324,
+      "components": 27,
+      "component_area_quantiles": [
+        243.0,
+        356.5,
+        466.0,
+        474.0,
+        686.0
+      ],
+      "tp": 11858,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "iou": 1.0
+    },
+    {
+      "image": "chalk_1080",
+      "method": "B3_w51_k0.35_c0",
+      "parameters": {
+        "window": 51,
+        "k": 0.35,
+        "clahe": false,
+        "radius": 2
+      },
+      "postprocess_seconds": 0.07036034700001892,
+      "foreground_ratio": 0.0057185570987654324,
+      "components": 27,
+      "component_area_quantiles": [
+        243.0,
+        356.5,
+        466.0,
+        474.0,
+        686.0
+      ],
+      "tp": 11858,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "iou": 1.0
+    }
+  ],
+  "notes": [
+    "No GT means no precision/recall/F1/IoU.",
+    "B0 copy has zero postprocess time; inference timing is separate.",
+    "Peak RSS is process-lifetime high water mark; not per-method memory.",
+    "External masks/probabilities require user-verified provenance and alignment."
+  ],
+  "fixture_warning": "B0 is damaged synthetic GT, NOT V34; all quality metrics are synthetic only."
+}

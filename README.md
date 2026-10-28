@@ -165,3 +165,9 @@ The files in "[DLHAU2020_release](https://github.com/kdavila/lecturemath/tree/ma
 The latest release of our video annotation tool can be found [here](https://github.com/adaniefei/vid_annotation_tool)
 
 
+
+## V1.5 CPU binarization experiments
+
+Independent, training-free comparisons preserving the original release:
+[commands and implementation](docs/v1_5.md), [results and limitations](docs/v1_5_results.md),
+[module README](experiments/v1_5/README.md).

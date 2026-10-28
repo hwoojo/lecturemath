@@ -15,5 +15,5 @@ boardnotes = "boardnotes.cli:main"
 packages = ["boardnotes"]
 
 [tool.pytest.ini_options]
-testpaths = ["tests"]
+testpaths = ["tests", "experiments/v1_5/tests"]
 pythonpath = ["."]
