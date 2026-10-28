@@ -1,0 +1,107 @@
+{
+  "dataset": "AccessMath2015",
+  "lecture": "lecture_01",
+  "keyframe": "10423.png",
+  "source_repository": "https://github.com/bhargavaurala/accessmath-icfhr2018",
+  "source_commit": "b0278437b977679cf57001d7765227ef9e99038f",
+  "source_frame_url": "https://raw.githubusercontent.com/bhargavaurala/accessmath-icfhr2018/b0278437b977679cf57001d7765227ef9e99038f/output/annotations/AccessMath2015_lecture_01/keyframes/10423.png",
+  "source_gt_url": "https://raw.githubusercontent.com/bhargavaurala/accessmath-icfhr2018/b0278437b977679cf57001d7765227ef9e99038f/output/annotations/AccessMath2015_lecture_01/binary/10423.png",
+  "scope": "One real annotated keyframe, not a continuous video test. No temporal integration performed.",
+  "network_limit": "YouTube and buffalo.box.com returned proxy CONNECT HTTP 403. Raw GitHub was accessible.",
+  "train_test_caveat": "V34 training provenance for this AccessMath2015 frame is not verified; do not interpret this as held-out generalization accuracy.",
+  "comparison_crop": [
+    290,
+    420,
+    810,
+    690
+  ],
+  "results": {
+    "1920": {
+      "test_type": "single real keyframe; no temporal integration or video decoding",
+      "input_sha256": "06a4e2cef47d293b56d0d74616b1c033fc93652e7481ecd31c935612693b8c9a",
+      "checkpoint_sha256": "d3721339db6cc2d2de2a29816bfcaca38f2d4c4bc8a1eb75a7402a194604b144",
+      "device": "cpu",
+      "threads": 2,
+      "source_dimensions": [
+        1920,
+        1080
+      ],
+      "inference_dimensions": [
+        1920,
+        1080
+      ],
+      "model_load_seconds": 1.821,
+      "inference_seconds": 11.169,
+      "process_peak_rss_mib": 3058.38,
+      "pdf_style": "smooth",
+      "pages": 1,
+      "exact_pixel_metrics": {
+        "tp": 58396,
+        "fp": 4779,
+        "fn": 7095,
+        "precision": 0.9243529877324891,
+        "recall": 0.8916645035195676,
+        "f1": 0.9077145477437707,
+        "note": "Strict pixel overlap at source resolution; predictions resized with nearest neighbor for evaluation only. Not OCR accuracy or dataset-wide generalization."
+      }
+    },
+    "1280": {
+      "test_type": "single real keyframe; no temporal integration or video decoding",
+      "input_sha256": "06a4e2cef47d293b56d0d74616b1c033fc93652e7481ecd31c935612693b8c9a",
+      "checkpoint_sha256": "d3721339db6cc2d2de2a29816bfcaca38f2d4c4bc8a1eb75a7402a194604b144",
+      "device": "cpu",
+      "threads": 2,
+      "source_dimensions": [
+        1920,
+        1080
+      ],
+      "inference_dimensions": [
+        1280,
+        720
+      ],
+      "model_load_seconds": 1.763,
+      "inference_seconds": 4.958,
+      "process_peak_rss_mib": 1580.33,
+      "pdf_style": "smooth",
+      "pages": 1,
+      "exact_pixel_metrics": {
+        "tp": 57723,
+        "fp": 17204,
+        "fn": 7768,
+        "precision": 0.7703898461168871,
+        "recall": 0.8813882823594081,
+        "f1": 0.8221595521941631,
+        "note": "Strict pixel overlap at source resolution; predictions resized with nearest neighbor for evaluation only. Not OCR accuracy or dataset-wide generalization."
+      }
+    },
+    "448": {
+      "test_type": "single real keyframe; no temporal integration or video decoding",
+      "input_sha256": "06a4e2cef47d293b56d0d74616b1c033fc93652e7481ecd31c935612693b8c9a",
+      "checkpoint_sha256": "d3721339db6cc2d2de2a29816bfcaca38f2d4c4bc8a1eb75a7402a194604b144",
+      "device": "cpu",
+      "threads": 2,
+      "source_dimensions": [
+        1920,
+        1080
+      ],
+      "inference_dimensions": [
+        448,
+        252
+      ],
+      "model_load_seconds": 1.745,
+      "inference_seconds": 0.595,
+      "process_peak_rss_mib": 526.25,
+      "pdf_style": "smooth",
+      "pages": 1,
+      "exact_pixel_metrics": {
+        "tp": 46099,
+        "fp": 113886,
+        "fn": 19392,
+        "precision": 0.2881457636653436,
+        "recall": 0.7038982455604587,
+        "f1": 0.40890383011939185,
+        "note": "Strict pixel overlap at source resolution; predictions resized with nearest neighbor for evaluation only. Not OCR accuracy or dataset-wide generalization."
+      }
+    }
+  }
+}

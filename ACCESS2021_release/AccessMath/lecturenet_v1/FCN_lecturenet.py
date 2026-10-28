@@ -214,7 +214,7 @@ class FCN_LectureNet(nn.Module):
         using_cuda = next(self.parameters()).is_cuda
 
         if using_cuda:
-            batch_img = batch_img.cuda(0)
+            batch_img = batch_img.to(next(self.parameters()).device)
 
         with torch.no_grad():
             x_conv1 = self.conv_block_pool_1(self.conv_down_block_1(batch_img))
@@ -239,7 +239,7 @@ class FCN_LectureNet(nn.Module):
         using_cuda = next(self.parameters()).is_cuda
 
         if using_cuda:
-            batch_img = batch_img.cuda(0)
+            batch_img = batch_img.to(next(self.parameters()).device)
 
         with torch.no_grad():
             x_conv1 = self.conv_block_pool_1(self.conv_down_block_1(batch_img))
@@ -326,7 +326,7 @@ class FCN_LectureNet(nn.Module):
         using_cuda = next(self.parameters()).is_cuda
 
         if using_cuda:
-            batch_img = batch_img.cuda(0)
+            batch_img = batch_img.to(next(self.parameters()).device)
 
         with torch.no_grad():
             x_up1 = self.encode_decode(batch_img)
@@ -442,7 +442,7 @@ class FCN_LectureNet(nn.Module):
         using_cuda = next(self.parameters()).is_cuda
 
         if using_cuda:
-            batch_img = batch_img.cuda(0)
+            batch_img = batch_img.to(next(self.parameters()).device)
 
         with torch.no_grad():
             # res, text_mask = self.forward(batch_img)
@@ -588,7 +588,7 @@ class FCN_LectureNet(nn.Module):
         using_cuda = next(self.parameters()).is_cuda
 
         if using_cuda:
-            batch_img = batch_img.cuda(0)
+            batch_img = batch_img.to(next(self.parameters()).device)
 
         with torch.no_grad():
             res = self.forward(batch_img)

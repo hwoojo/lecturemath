@@ -19,7 +19,7 @@ from AccessMath.preprocessing.tools.adaptive_equalizer import AdaptiveEqualizer
 
 class Binarizer:
     DEBUG_COUNT = 0
-    accessmath_lib = ctypes.CDLL(os.path.abspath('./accessmath_lib.so'))
+    accessmath_lib = ctypes.CDLL(os.environ.get('ACCESSMATH_LIB', os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../accessmath_lib.native.so'))))
 
     MethodEdgeBased = 1
     MethodBackgroundSubstraction = 2

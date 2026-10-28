@@ -70,7 +70,7 @@ class KeyframeExtractor:
                 if verbose:
                     print("... Conflict group # " + str(conflict_idx + 1))
 
-                incompatible_matrix = np.zeros((len(group), len(group)), dtype=np.bool)
+                incompatible_matrix = np.zeros((len(group), len(group)), dtype=np.bool_)
                 sorted_by_age = []
                 for overlap_idx,offset in enumerate(group):
                     group_cc = group_CCs_list[offset]
@@ -154,7 +154,7 @@ class KeyframeExtractor:
             local_sum = np.zeros((height, width), dtype=np.float32)
             local_age = np.zeros((height, width), dtype=np.float32)
             local_last = np.zeros((height, width), dtype=np.float32)
-            current_mask = np.zeros((height, width), dtype=np.bool)
+            current_mask = np.zeros((height, width), dtype=np.bool_)
             local_max_content = None
             local_max_count = None
             if verbose:

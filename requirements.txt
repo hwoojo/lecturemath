@@ -1,0 +1,10 @@
+# Install torch/torchvision separately for your CPU, CUDA or Jetson platform.
+numpy==1.26.4
+scipy==1.12.0
+scikit-learn==1.4.2
+matplotlib==3.8.4
+pillow==10.4.0
+opencv-python-headless==4.10.0.84
+fastapi==0.115.6
+uvicorn==0.34.0
+reportlab==4.2.5

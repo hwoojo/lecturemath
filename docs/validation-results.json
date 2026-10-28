@@ -1,0 +1,142 @@
+{
+  "cli_6s": {
+    "model": "FCN-LectureNet (user-provided V34 state_dict)",
+    "checkpoint_sha256": "d3721339db6cc2d2de2a29816bfcaca38f2d4c4bc8a1eb75a7402a194604b144",
+    "device": "cpu",
+    "metadata": {
+      "fps": 10.0,
+      "frame_count": 60,
+      "width": 448,
+      "height": 256,
+      "duration": 6.0,
+      "estimated_samples": 6
+    },
+    "sampling_fps": 1.0,
+    "max_width": 1280,
+    "pages": 2,
+    "sample_count": 6,
+    "raw_components": 72,
+    "unique_components": 18,
+    "groups": 15,
+    "segments": [
+      [
+        0,
+        2
+      ],
+      [
+        3,
+        5
+      ]
+    ],
+    "deletion_intervals": [
+      [
+        0,
+        5
+      ]
+    ],
+    "conflict_preservation_splits": 1,
+    "segmentation": "upstream deletion events (method 3), plus disjoint CC conflict preservation",
+    "elapsed_seconds": 7.503,
+    "process_peak_rss_mb": 514.3
+  },
+  "cli_24s": {
+    "model": "FCN-LectureNet (user-provided V34 state_dict)",
+    "checkpoint_sha256": "d3721339db6cc2d2de2a29816bfcaca38f2d4c4bc8a1eb75a7402a194604b144",
+    "device": "cpu",
+    "metadata": {
+      "fps": 10.0,
+      "frame_count": 240,
+      "width": 448,
+      "height": 256,
+      "duration": 24.0,
+      "estimated_samples": 24
+    },
+    "sampling_fps": 1.0,
+    "max_width": 1280,
+    "pages": 2,
+    "sample_count": 24,
+    "raw_components": 306,
+    "unique_components": 18,
+    "groups": 16,
+    "segments": [
+      [
+        0,
+        10
+      ],
+      [
+        12,
+        23
+      ]
+    ],
+    "deletion_intervals": [
+      [
+        0,
+        10
+      ],
+      [
+        12,
+        23
+      ]
+    ],
+    "conflict_preservation_splits": 0,
+    "segmentation": "upstream deletion events (method 3), plus disjoint CC conflict preservation",
+    "elapsed_seconds": 15.962,
+    "process_peak_rss_mb": 509.95
+  },
+  "cli_48s": {
+    "model": "FCN-LectureNet (user-provided V34 state_dict)",
+    "checkpoint_sha256": "d3721339db6cc2d2de2a29816bfcaca38f2d4c4bc8a1eb75a7402a194604b144",
+    "device": "cpu",
+    "metadata": {
+      "fps": 10.0,
+      "frame_count": 480,
+      "width": 448,
+      "height": 256,
+      "duration": 48.0,
+      "estimated_samples": 48
+    },
+    "sampling_fps": 1.0,
+    "max_width": 1280,
+    "pages": 2,
+    "sample_count": 48,
+    "raw_components": 618,
+    "unique_components": 18,
+    "groups": 16,
+    "segments": [
+      [
+        0,
+        22
+      ],
+      [
+        24,
+        47
+      ]
+    ],
+    "deletion_intervals": [
+      [
+        0,
+        22
+      ],
+      [
+        24,
+        47
+      ]
+    ],
+    "conflict_preservation_splits": 0,
+    "segmentation": "upstream deletion events (method 3), plus disjoint CC conflict preservation",
+    "elapsed_seconds": 32.594,
+    "process_peak_rss_mb": 547.94
+  },
+  "browser": {
+    "desktop": "pass",
+    "mobile_no_horizontal_overflow": "pass",
+    "upload_poll_download_real_v34": "pass",
+    "javascript_errors": []
+  },
+  "tests": {
+    "passed": 13,
+    "warnings": 59,
+    "seconds": 2.95,
+    "model_in_unit_tests": false
+  }
+}

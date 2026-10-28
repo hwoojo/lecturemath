@@ -22,7 +22,7 @@ import numpy as np
 import ctypes
 
 class AdaptiveEqualizer:
-    accessmath_lib = ctypes.CDLL(os.path.abspath('./accessmath_lib.so'))
+    accessmath_lib = ctypes.CDLL(os.environ.get('ACCESSMATH_LIB', os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../accessmath_lib.native.so'))))
 
     #======================================================
     # Compute the histogram of intensities for a given

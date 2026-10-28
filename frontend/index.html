@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>강의 판서 노트</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="config.js" defer></script><script src="app.js" defer></script>
+</head>
+<body>
+<main>
+  <div class="eyebrow">LECTURE → NOTES</div>
+  <h1>영상 속 판서를,<br>한 권의 노트로.</h1>
+  <p class="intro">강의 중 쓰고 지운 판서를 시간순으로 모아, 읽기 편한 PDF로 정리합니다.</p>
+  <section class="card" aria-label="강의 영상 업로드">
+    <form id="upload-form">
+      <label class="file-area" for="video"><span class="file-icon" aria-hidden="true">↑</span><strong>강의 영상 선택</strong><span>MP4 · MOV · MKV · AVI · WebM</span></label>
+      <input id="video" type="file" accept="video/*,.mkv,.avi" required>
+      <p id="filename">선택한 파일이 없습니다.</p>
+      <div class="options"><label>초당 분석 프레임 <input id="fps" type="number" min="0.1" max="30" step="0.1" value="1" required></label><label class="checkbox"><input id="timestamps" type="checkbox" checked> 영상 시간 표시</label></div>
+      <p class="hint" id="limits">서버 연결을 확인하고 있습니다.</p>
+      <button id="submit" type="submit" disabled>판서 PDF 만들기 <span aria-hidden="true">→</span></button>
+    </form>
+    <div id="status" class="status" role="status" aria-live="polite" hidden>
+      <div class="status-heading"><strong id="stage"></strong><span id="percent"></span></div>
+      <progress id="progress" max="100" value="0"></progress>
+      <p id="detail"></p>
+      <a id="download" class="download" hidden>PDF 다운로드 ↓</a>
+    </div>
+    <p id="error" role="alert" hidden></p>
+  </section>
+  <div class="steps"><p><b>01</b> 영상 업로드</p><p><b>02</b> 판서 추출 · 통합</p><p><b>03</b> PDF 다운로드</p></div>
+  <footer>고정된 칠판·화이트보드 강의에 적합합니다. 가려졌던 판서는 다른 시점에 보이는 내용을 활용하며, 계속 가려진 내용은 복원할 수 없습니다. 처리 결과는 서버 보관 기간 후 삭제됩니다.</footer>
+</main>
+</body>
+</html>

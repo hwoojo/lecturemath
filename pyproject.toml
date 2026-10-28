@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "boardnotes"
+version = "0.1.0"
+description = "FCN-LectureNet and ST3D lecture board PDF adapter"
+requires-python = ">=3.10"
+
+[project.scripts]
+boardnotes = "boardnotes.cli:main"
+
+[tool.setuptools]
+packages = ["boardnotes"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

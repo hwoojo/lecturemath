@@ -1,0 +1,22 @@
+__pycache__/
+.pytest_cache/
+.venv/
+*.egg-info/
+.env
+jobs/
+models/*
+!models/.gitkeep
+*.dat
+# Keep the user-provided pretrained V34 checkpoint in this repository.
+!models/LectureNet_model_BIN_V34_final.dat
+*.pt
+*.pth
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+*.m4v
+*.wmv
+*.native.so
+benchmark-output/

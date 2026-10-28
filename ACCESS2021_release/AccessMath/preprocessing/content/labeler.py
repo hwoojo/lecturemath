@@ -21,7 +21,7 @@ from AM_CommonTools.data.connected_component import ConnectedComponent
 class Labeler:
     MIN_CC_PIXELS = 20
 
-    accessmath_lib = ctypes.CDLL(os.path.abspath('./accessmath_lib.so'))
+    accessmath_lib = ctypes.CDLL(os.environ.get('ACCESSMATH_LIB', os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../accessmath_lib.native.so'))))
 
     #========================================================================
     # Label and extract connected components from a binary image
