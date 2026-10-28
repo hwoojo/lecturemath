@@ -2,6 +2,39 @@
 
 기준일: 2026-10-28 (Asia/Seoul)
 
+## V1.5 실험 완료 및 V2 시작 기준 (2026-10-28)
+
+이후 V1.5 실험을 추가했다. V2에서는 **B0(V34 기준선)와 B3(선택적 refinement 후보)**를
+유지하고 원본 RGB도 함께 보존한다는 방향으로 사용자와 합의했다.
+기존 V1 영상→PDF의 기본 동작은 바꾸지 않았으며 B3를 자동 적용하지 않았다.
+
+- 구현/명령: [v1_5.md](v1_5.md), 독립 모듈 `experiments/v1_5/`.
+- 실제 결과/한계: [v1_5_results.md](v1_5_results.md).
+- 후속 평가 지시문 검토: [v1_5_evaluation_review.md](v1_5_evaluation_review.md).
+- 최초 합성 결과는 [v1_5_synthetic_results.md](v1_5_synthetic_results.md)에 보존.
+- 실제 AccessMath2015 3프레임, native1080p/derived720p, 기존 후보와 소수 CLAHE 조건 실행.
+  96개 결과, 영어 제목 Tesseract 48회, 비교 PNG/CSV/JSON 및 18페이지 PDF를 보존했다.
+- 기존 V1 14개 + V1.5 7개 테스트 통과. 실제 V34에서 B0와 기존 V1의 픽셀 동일성도 확인했다.
+
+V2 연결 시 주의할 계약:
+
+1. 원본 RGB, V1.5 출력(검정 판서/흰 배경), 원본 좌표/해상도/ROI/파라미터를 함께 보존한다.
+   `boardnotes.model.LectureNet.extract()` 출력은 ST3D용 흰 판서/검정 배경이므로 극성을 구분한다.
+2. B3는 `B0 OR (dilate(B0) AND Sauvola)`이며 기존 전경을 제거하지 않는다.
+   완전히 놓친 독립 영역을 복원하지 못하고 획을 두껍게 하거나 오검출을 늘릴 수 있다.
+   기본 window25/k.2/radius2/CLAHE off는 기준 후보이고, CLAHE on은 탐색 조건이다.
+3. 1080p 평균 픽셀 F1은 B0 88.91%, 기본 B3 88.93%, B3+CLAHE 89.27%였다.
+   작은 픽셀 개선이 영어 OCR 개선으로 이어지지 않았다. B3가 OCR에 더 좋다고 확정하지 않는다.
+4. Tesseract 영문 제목 3영역은 수식 인식 검증이 아니다. 수식 OCR/LaTeX 구조화는 V2의 작업이다.
+   인식 engine과 전사 정답을 고정해 RGB/B0/B3를 같은 crop에서 비교한다.
+5. 실제 독립 프레임은 3장뿐이며 학습 포함 여부는 미확인이다.
+   12~20장 확대 평가, 검은 칠판/교수자 가림/모션 블러/연속 영상의 시간적 안정성은 미완료다.
+   파라미터 선택용과 평가용 자료를 강의 단위로 분리한다.
+
+재현용 원본/GT URL과 해시는 `docs/assets/v1_5_real/metrics.json`에 보존했다.
+대용량 PNG/확률 캐시는 `benchmark-output/v1_5-real/`에만 있으며 clone에 포함되지 않는다.
+아래의 기존 V1 상태/검증 기록도 함께 참고한다.
+
 ## 현재 상태
 
 FCN-LectureNet V34와 원본 ST3D를 사용하는 V1 구현이 완료되어 있다.

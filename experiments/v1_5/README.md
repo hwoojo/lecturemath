@@ -20,3 +20,15 @@ python -m experiments.v1_5.synthetic_demo
 
 상세 설명: [구현·명령](../../docs/v1_5.md), [결과·한계](../../docs/v1_5_results.md).
 저장된 `artifacts/synthetic/`는 합성 기능 예제이며 **B0가 실제 LectureNet 결과가 아니다**.
+
+## 실제 프레임 평가와 V2 인수인계
+
+```sh
+python -m experiments.v1_5.real_benchmark
+python -m experiments.v1_5.real_report --ocr --pdf
+```
+
+첫 명령은 공개 출처의 실제 프레임/GT 3쌍만 내려받고 1080p/720p를 비교한다.
+두 번째 명령의 선택 옵션은 기존 tesseract(eng)/reportlab이 준비된 환경에서 사용한다.
+원본 RGB와 B0/B3를 V2의 비교 입력으로 보존한다. B3를 OCR 개선으로 확정한 것은 아니다.
+자세한 상태와 미완료 항목은 [HANDOFF](../../docs/HANDOFF.md)를 참고한다.
