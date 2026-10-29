@@ -38,7 +38,7 @@ def main():
         'summary':summary,'runs':runs,'predictions':rows},ensure_ascii=False,indent=2)+'\n')
     with (root/'comparison.csv').open('w',newline='') as f:
         fields=['stage','model','id','variant','reference','latex','exact_match','edit_distance']
-        writer=csv.DictWriter(f,fieldnames=fields,extrasaction='ignore');writer.writeheader();writer.writerows(rows)
+        writer=csv.DictWriter(f,fieldnames=fields,extrasaction='ignore',lineterminator='\n');writer.writeheader();writer.writerows(rows)
     from reportlab.pdfgen import canvas
     from reportlab.lib.utils import ImageReader
     from PIL import Image
