@@ -1,0 +1,349 @@
+{
+  "source_repository": "https://github.com/bhargavaurala/accessmath-icfhr2018",
+  "source_commit": "b0278437b977679cf57001d7765227ef9e99038f",
+  "split": "evaluation-unseen-lectures",
+  "split_note": "Lectures 06/07/08 were not used in the existing V2 implementation examples (01/02/nm_01). Model pretraining overlap is unknown; this is not a verified model-held-out benchmark.",
+  "annotation_protocol": "Native RGB manually inspected; fixed crops and transcriptions selected before reading or running recognition predictions. Strict whitespace-normalized LaTeX strings are not mathematical-equivalence ground truth.",
+  "annotation_status": "fixed_before_recognition_inference",
+  "not_present_in_selected_frames": [
+    "integral",
+    "sigma",
+    "fraction",
+    "root",
+    "blackboard_chalk",
+    "instructor_occlusion"
+  ],
+  "samples": [
+    {
+      "id": "lecture_06_47799",
+      "source_path": "benchmark-output/v25/source/lecture_06_47799.png",
+      "source_url": "https://raw.githubusercontent.com/bhargavaurala/accessmath-icfhr2018/b0278437b977679cf57001d7765227ef9e99038f/output/annotations/AccessMath2015_lecture_06/keyframes/47799.png",
+      "sha256": "ade6734379600062e8f136c2bc3c3dba0f8057639b99ac0bce2a89103f1b2cd1",
+      "width": 1920,
+      "height": 1080,
+      "conditions": "Red and black handwriting; faded red strokes and unequal whiteboard illumination; no instructor occlusion visible.",
+      "regions": [
+        {
+          "id": "echelon_label",
+          "type": "text",
+          "bbox": [
+            645,
+            340,
+            820,
+            405
+          ],
+          "reference": "echelon",
+          "category": "single_word",
+          "annotation_note": "Manually transcribed from the native RGB crop before model inference."
+        },
+        {
+          "id": "free_variables",
+          "type": "text",
+          "bbox": [
+            565,
+            460,
+            945,
+            520
+          ],
+          "reference": "hence no free variables",
+          "category": "sentence_fragment",
+          "annotation_note": "Manually transcribed from the native RGB crop before model inference."
+        },
+        {
+          "id": "consistent_statement",
+          "type": "text",
+          "bbox": [
+            1390,
+            630,
+            1815,
+            750
+          ],
+          "reference": "This system is always consistent.",
+          "category": "multiline_sentence",
+          "annotation_note": "Manually transcribed from the native RGB crop before model inference."
+        },
+        {
+          "id": "augmented_matrix",
+          "type": "formula",
+          "bbox": [
+            170,
+            205,
+            415,
+            350
+          ],
+          "reference": "\\left[\\begin{array}{cc|c}1&-3&0\\\\2&4&0\\end{array}\\right]",
+          "category": "augmented_matrix",
+          "annotation_note": "The visible internal vertical separator is retained by cc|c; equivalent LaTeX forms may fail strict string matching."
+        },
+        {
+          "id": "real_space",
+          "type": "formula",
+          "bbox": [
+            1040,
+            135,
+            1155,
+            245
+          ],
+          "reference": "\\mathbb{R}^{2}",
+          "category": "superscript_real_space",
+          "annotation_note": "Manually transcribed from the native RGB crop before model inference."
+        },
+        {
+          "id": "vector_set",
+          "type": "formula",
+          "bbox": [
+            1200,
+            105,
+            1635,
+            285
+          ],
+          "reference": "S=\\left\\{\\begin{bmatrix}1\\\\2\\end{bmatrix},\\begin{bmatrix}-3\\\\4\\end{bmatrix}\\right\\}",
+          "category": "set_of_column_vectors",
+          "annotation_note": "Manually transcribed from the native RGB crop before model inference."
+        },
+        {
+          "id": "linear_combination",
+          "type": "formula",
+          "bbox": [
+            1100,
+            375,
+            1600,
+            520
+          ],
+          "reference": "c_1\\begin{bmatrix}1\\\\2\\end{bmatrix}+c_2\\begin{bmatrix}-3\\\\4\\end{bmatrix}=\\begin{bmatrix}0\\\\0\\end{bmatrix}",
+          "category": "subscript_vector_equation",
+          "annotation_note": "Manually transcribed from the native RGB crop before model inference."
+        }
+      ],
+      "excluded_notes": [
+        "No inference-based annotation correction. Other surrounding board content is not part of these oracle ROIs; complete original image remains available."
+      ]
+    },
+    {
+      "id": "lecture_07_67415",
+      "source_path": "benchmark-output/v25/source/lecture_07_67415.png",
+      "source_url": "https://raw.githubusercontent.com/bhargavaurala/accessmath-icfhr2018/b0278437b977679cf57001d7765227ef9e99038f/output/annotations/AccessMath2015_lecture_07/keyframes/67415.png",
+      "sha256": "b4fce0d320c0c04f337ab5e56d612eab5ade48c5e3d16418f054d1e0ef80f870",
+      "width": 1920,
+      "height": 1080,
+      "conditions": "Blue marker handwriting, faint board smudges and unequal illumination; no instructor occlusion visible.",
+      "regions": [
+        {
+          "id": "matrix_heading",
+          "type": "text",
+          "bbox": [
+            170,
+            205,
+            550,
+            290
+          ],
+          "reference": "Matrix Multiplication.",
+          "category": "heading",
+          "annotation_note": "Manually transcribed from the native RGB crop before model inference."
+        },
+        {
+          "id": "not_commutative",
+          "type": "text",
+          "bbox": [
+            1430,
+            225,
+            1810,
+            365
+          ],
+          "reference": "Matrix mult. is not COMMUTATIVE.",
+          "category": "multiline_sentence",
+          "annotation_note": "Manually transcribed from the native RGB crop before model inference."
+        },
+        {
+          "id": "in_general",
+          "type": "text",
+          "bbox": [
+            1420,
+            370,
+            1640,
+            435
+          ],
+          "reference": "In general,",
+          "category": "sentence_fragment",
+          "annotation_note": "Manually transcribed from the native RGB crop before model inference."
+        },
+        {
+          "id": "rectangular_matrix",
+          "type": "formula",
+          "bbox": [
+            985,
+            230,
+            1145,
+            365
+          ],
+          "reference": "\\begin{bmatrix}1&2&3\\\\-1&4&0\\end{bmatrix}",
+          "category": "matrix_2x3",
+          "annotation_note": "Manually transcribed from the native RGB crop before model inference."
+        },
+        {
+          "id": "symbolic_vector",
+          "type": "formula",
+          "bbox": [
+            1300,
+            200,
+            1395,
+            350
+          ],
+          "reference": "\\begin{bmatrix}p\\\\q\\\\r\\end{bmatrix}",
+          "category": "column_vector",
+          "annotation_note": "Manually transcribed from the native RGB crop before model inference."
+        },
+        {
+          "id": "product_vector",
+          "type": "formula",
+          "bbox": [
+            1015,
+            505,
+            1265,
+            659
+          ],
+          "reference": "\\begin{bmatrix}p+2q+3r\\\\-p+4q+0\\cdot r\\end{bmatrix}",
+          "category": "matrix_product_polynomials",
+          "annotation_note": "The dot between zero and r is transcribed as a multiplication dot; dimensional annotation outside the matrix is excluded."
+        },
+        {
+          "id": "noncommuting_product",
+          "type": "formula",
+          "bbox": [
+            1435,
+            445,
+            1710,
+            520
+          ],
+          "reference": "AB\\ne BA.",
+          "category": "not_equal_symbol",
+          "annotation_note": "A terminal handwritten period is preserved as visible punctuation, not treated as a multiplication operator."
+        }
+      ],
+      "excluded_notes": [
+        "No inference-based annotation correction. Other surrounding board content is not part of these oracle ROIs; complete original image remains available."
+      ]
+    },
+    {
+      "id": "lecture_08_53016",
+      "source_path": "benchmark-output/v25/source/lecture_08_53016.png",
+      "source_url": "https://raw.githubusercontent.com/bhargavaurala/accessmath-icfhr2018/b0278437b977679cf57001d7765227ef9e99038f/output/annotations/AccessMath2015_lecture_08/keyframes/53016.png",
+      "sha256": "473c80e220ef362039a0df1436adc5d9c02b3859888d0af18d1a32493d34fb41",
+      "width": 1920,
+      "height": 1080,
+      "conditions": "Dark marker with strong contrast and unequal illumination; residual erased marks; no instructor occlusion visible.",
+      "regions": [
+        {
+          "id": "permutation_heading",
+          "type": "text",
+          "bbox": [
+            305,
+            190,
+            810,
+            280
+          ],
+          "reference": "Permutation Matrix:",
+          "category": "heading",
+          "annotation_note": "Manually transcribed from the native RGB crop before model inference."
+        },
+        {
+          "id": "definition_line1",
+          "type": "text",
+          "bbox": [
+            335,
+            275,
+            1110,
+            365
+          ],
+          "reference": "matrix formed by permuting the",
+          "category": "sentence_fragment",
+          "annotation_note": "Manually transcribed from the native RGB crop before model inference."
+        },
+        {
+          "id": "definition_line2",
+          "type": "text",
+          "bbox": [
+            340,
+            360,
+            1040,
+            445
+          ],
+          "reference": "rows of the identity matrix.",
+          "category": "sentence_fragment",
+          "annotation_note": "Manually transcribed from the native RGB crop before model inference."
+        },
+        {
+          "id": "row_swap_note",
+          "type": "text",
+          "bbox": [
+            925,
+            475,
+            1325,
+            580
+          ],
+          "reference": "(helpful for row swaps)",
+          "category": "parenthesized_note",
+          "annotation_note": "Manually transcribed from the native RGB crop before model inference."
+        },
+        {
+          "id": "permutation_matrix",
+          "type": "formula",
+          "bbox": [
+            380,
+            465,
+            582,
+            663
+          ],
+          "reference": "\\begin{bmatrix}0&0&1\\\\1&0&0\\\\0&1&0\\end{bmatrix}",
+          "category": "matrix_3x3",
+          "annotation_note": "Manually transcribed from the native RGB crop before model inference."
+        },
+        {
+          "id": "input_vector",
+          "type": "formula",
+          "bbox": [
+            588,
+            465,
+            700,
+            670
+          ],
+          "reference": "\\begin{bmatrix}x\\\\y\\\\z\\end{bmatrix}",
+          "category": "column_vector",
+          "annotation_note": "Only the input column vector is cropped. The surrounding product/equality is deliberately outside this expression ROI."
+        },
+        {
+          "id": "set_builder",
+          "type": "formula",
+          "bbox": [
+            390,
+            670,
+            1055,
+            845
+          ],
+          "reference": "S_3=\\left\\{A_{3\\times3}\\mid A\\text{ is a permutation matrix}\\right\\}",
+          "category": "set_builder_with_text",
+          "annotation_note": "The visible size annotation below A is transcribed as A_{3\\times3}; this is a spatial transcription, not an assertion that the annotation is a variable subscript."
+        },
+        {
+          "id": "cardinality_factorial",
+          "type": "formula",
+          "bbox": [
+            1065,
+            765,
+            1310,
+            875
+          ],
+          "reference": "|S_3|=3!=6",
+          "category": "subscript_factorial_cardinality",
+          "annotation_note": "Manually transcribed from the native RGB crop before model inference."
+        }
+      ],
+      "excluded_notes": [
+        "No inference-based annotation correction. Other surrounding board content is not part of these oracle ROIs; complete original image remains available."
+      ]
+    }
+  ],
+  "annotation_method": "Assistant visual inspection of original RGB and every extracted crop; no OCR/formula recognizer predictions were used. Not independently human-adjudicated.",
+  "detection_evaluation_scope": "Partial oracle recognition ROIs, not exhaustive page region ground truth. Unannotated detections must not automatically count as false positives.",
+  "annotation_freeze_date": "2026-10-28 Asia/Seoul"
+}

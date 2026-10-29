@@ -1,0 +1,155 @@
+{
+  "items": [
+    {
+      "id": "page",
+      "status": "ok",
+      "error": null,
+      "seconds": 2.320104062999974,
+      "content": "A x =]5\nP ,nunnorS ${3 +}}}$\nr abuahon",
+      "latex": null,
+      "confidence": 0.6421978125969569,
+      "line_texts": [
+        "A",
+        "x =]5",
+        "P",
+        ",nunnorS",
+        "${3 +}}}$",
+        "r abuahon"
+      ],
+      "line_scores": [
+        0.9866077899932861,
+        0.738810122013092,
+        0.40569788217544556,
+        0.5216771960258484,
+        0.47736236453056335,
+        0.7230315208435059
+      ],
+      "line_boxes": [
+        [
+          234.0,
+          9.0,
+          279.0,
+          40.0
+        ],
+        [
+          278.0,
+          10.0,
+          388.0,
+          43.0
+        ],
+        [
+          0.0,
+          112.0,
+          29.0,
+          145.0
+        ],
+        [
+          6.0,
+          52.0,
+          175.0,
+          88.0
+        ],
+        [
+          202.0,
+          37.0,
+          427.0,
+          146.0
+        ],
+        [
+          243.0,
+          126.0,
+          418.0,
+          170.0
+        ]
+      ],
+      "raw_engine_lines": {
+        "texts": [
+          "A",
+          "x =]5",
+          "${3 +}}}$",
+          ",nunnorS",
+          "P",
+          "r abuahon",
+          ""
+        ],
+        "scores": [
+          0.9866077899932861,
+          0.738810122013092,
+          0.47736236453056335,
+          0.5216771960258484,
+          0.40569788217544556,
+          0.7230315208435059,
+          0.0
+        ],
+        "boxes": [
+          [
+            234.0,
+            9.0,
+            279.0,
+            40.0
+          ],
+          [
+            278.0,
+            10.0,
+            388.0,
+            43.0
+          ],
+          [
+            202.0,
+            37.0,
+            427.0,
+            146.0
+          ],
+          [
+            6.0,
+            52.0,
+            175.0,
+            88.0
+          ],
+          [
+            0.0,
+            112.0,
+            29.0,
+            145.0
+          ],
+          [
+            243.0,
+            126.0,
+            418.0,
+            170.0
+          ],
+          [
+            261.0,
+            145.0,
+            277.0,
+            153.0
+          ]
+        ]
+      },
+      "reading_order": "vertical overlap >= 0.5; rows top-to-bottom, boxes left-to-right; heuristic",
+      "confidence_definition": "arithmetic mean of nonempty engine line recognition scores; not calibrated document confidence"
+    }
+  ],
+  "model_load_seconds": 3.7196793470000102,
+  "model_load_error": null,
+  "process_seconds": 6.039787538999974,
+  "process_peak_rss_mib": 483.296875,
+  "versions": {
+    "paddlepaddle": "3.2.2",
+    "paddleocr": "3.3.2",
+    "paddlex": "3.3.11",
+    "numpy": "1.26.4",
+    "opencv-contrib-python": "4.10.0.84"
+  },
+  "kind": "detect",
+  "config": {
+    "formula_model": "PP-FormulaNet-S",
+    "threads": 2,
+    "language": "en",
+    "max_rss_mib": 6000,
+    "det_dir": "/workspace/lecturemath/models/v2/PP-OCRv5_mobile_det_infer",
+    "rec_dir": "/workspace/lecturemath/models/v2/en_PP-OCRv5_mobile_rec_infer",
+    "formula_dir": "/workspace/lecturemath/models/v2/PP-FormulaNet-S_infer",
+    "layout_dir": "/workspace/lecturemath/models/v2/PP-DocLayout-S_infer"
+  }
+}

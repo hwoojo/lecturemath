@@ -1,0 +1,15 @@
+{
+  "status": "rendered",
+  "engine": "pdflatex+pdftoppm",
+  "engine_version": "pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian)",
+  "path": "/workspace/lecturemath/docs/assets/v25/rendered/UniMERNet/lecture_08_53016__rgb__cardinality_factorial.png",
+  "error": null,
+  "cache_hit": false,
+  "key": "41f1b1ff08f79c9e42adbaf15b256cdcfab91504eae4642555ab92c32f9da4cd",
+  "png_sha256": "a053b4844a392080e2d67e8264ab2735b0515ed80650b8974113d3e61dc9f048",
+  "width": 159,
+  "height": 45,
+  "dpi": 180,
+  "semantic_correctness": "not evaluated",
+  "validation": "math command allowlist, balanced braces/environments, successful pdflatex compilation"
+}

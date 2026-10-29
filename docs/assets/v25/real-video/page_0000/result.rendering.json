@@ -1,0 +1,30 @@
+{
+  "format": "boardnotes-v25-rendering-1",
+  "notice": "Recognition errors and rendering errors are separate; rendering success is not mathematical correctness.",
+  "regions": [
+    {
+      "region_id": "region_0002",
+      "bbox": [
+        278,
+        10,
+        388,
+        43
+      ],
+      "recognition_status": "ok",
+      "latex": "x=j",
+      "status": "rendered",
+      "engine": "pdflatex+pdftoppm",
+      "engine_version": "pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian)",
+      "path": "result_rendered/formula_0002.png",
+      "error": null,
+      "cache_hit": false,
+      "key": "091682f31ebd12d1e477f7fe4bd8c3202df4d1d651fbb35540e3559e44647bdb",
+      "png_sha256": "6c31f0f659b01727e1b8a95eee55d0dfe4b372b1538498c18828f5ae503f8789",
+      "width": 80,
+      "height": 42,
+      "dpi": 180,
+      "semantic_correctness": "not evaluated",
+      "validation": "math command allowlist, balanced braces/environments, successful pdflatex compilation"
+    }
+  ]
+}

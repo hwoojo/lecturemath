@@ -80,9 +80,17 @@ def load_model(kind, config):
         return PaddleOCR(**kwargs)
     if kind=='formula':
         from paddleocr import FormulaRecognition
-        kwargs={'model_name':'PP-FormulaNet-S',**common}
+        name=config.get('formula_model','PP-FormulaNet-S')
+        if name not in {'PP-FormulaNet-S','PP-FormulaNet_plus-S','PP-FormulaNet-L','UniMERNet'}:
+            raise ValueError('unsupported formula model')
+        kwargs={'model_name':name,**common}
         if config.get('formula_dir'): kwargs['model_dir']=config['formula_dir']
         return FormulaRecognition(**kwargs)
+    if kind=='layout':
+        from paddleocr import LayoutDetection
+        kwargs={'model_name':'PP-DocLayout-S',**common}
+        if config.get('layout_dir'): kwargs['model_dir']=config['layout_dir']
+        return LayoutDetection(**kwargs)
     raise ValueError('unknown worker kind')
 
 
@@ -103,10 +111,16 @@ def run(request):
                 results=list(model.predict(input=job['image'],batch_size=1))
                 values=[str(as_dict(r).get('rec_formula','')) for r in results]
                 value={'content':None,'latex':'\n'.join(values),'confidence':None}
+            elif kind=='layout':
+                results=list(model.predict(input=job['image'],batch_size=1))
+                boxes=[box for result in results for box in as_dict(result).get('boxes',[])]
+                value={'content':None,'latex':None,'confidence':None,'layout_boxes':boxes}
             else:
                 results=list(model.predict(input=job['image']))
                 value=text_result(results)
             nonempty=value.get('latex') if kind=='formula' else value.get('content')
+            if kind=='layout': nonempty='layout' if value['layout_boxes'] else ''
+            print(f"Completed {kind} {job['id']} in {time.perf_counter()-start:.3f}s",flush=True)
             items.append({'id':job['id'],'status':'ok' if nonempty and nonempty.strip() else 'empty',
                           'error':None,'seconds':time.perf_counter()-start,**value})
         except Exception as error:

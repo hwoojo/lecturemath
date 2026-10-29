@@ -1,0 +1,15 @@
+{
+  "status": "rendered",
+  "engine": "pdflatex+pdftoppm",
+  "engine_version": "pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian)",
+  "path": "/workspace/lecturemath/docs/assets/v25/rendered/PP-FormulaNet-S/lecture_07_67415__b0__noncommuting_product.png",
+  "error": null,
+  "cache_hit": false,
+  "key": "b988f7a9cdc88eb65bc0e1c433bdd08729b0d5b2fc05e23275f1fead95a2c5d5",
+  "png_sha256": "0907309bca53982807bf121b80846a3d88564ab9512b3ef4a4c15e291c0d9326",
+  "width": 133,
+  "height": 43,
+  "dpi": 180,
+  "semantic_correctness": "not evaluated",
+  "validation": "math command allowlist, balanced braces/environments, successful pdflatex compilation"
+}

@@ -1,0 +1,128 @@
+{
+  "source_video": "/workspace/lecturemath/benchmark-output/v25/real-video/clip.mp4",
+  "source_video_sha256": "e69c104fb1f16cfdaa87f0069f38a0fad9d46f77dcccbf5d1ee82998bb194336",
+  "v1": {
+    "model": "FCN-LectureNet (user-provided V34 state_dict)",
+    "checkpoint_sha256": "d3721339db6cc2d2de2a29816bfcaca38f2d4c4bc8a1eb75a7402a194604b144",
+    "device": "cpu",
+    "metadata": {
+      "fps": 29.97002997002997,
+      "frame_count": 359,
+      "width": 480,
+      "height": 360,
+      "duration": 11.978633333333333,
+      "estimated_samples": 12
+    },
+    "sampling_fps": 1.0,
+    "max_width": 480,
+    "pdf_style": "smooth",
+    "pages": 2,
+    "sample_count": 12,
+    "raw_components": 726,
+    "unique_components": 371,
+    "groups": 61,
+    "segments": [
+      [
+        0,
+        6
+      ],
+      [
+        8,
+        11
+      ]
+    ],
+    "deletion_intervals": [
+      [
+        0,
+        6
+      ],
+      [
+        8,
+        11
+      ]
+    ],
+    "conflict_preservation_splits": 0,
+    "segmentation": "upstream deletion events (method 3), plus disjoint CC conflict preservation",
+    "elapsed_seconds": 25.89,
+    "process_peak_rss_mb": 635.32
+  },
+  "v25_pages": [
+    {
+      "input": "/workspace/lecturemath/benchmark-output/v25/real-video/end-to-end-final/v1/v2_inputs/keyframe_0000.png",
+      "b0": {
+        "mode": "provided B0",
+        "source": "/workspace/lecturemath/benchmark-output/v25/real-video/end-to-end-final/v1/v2_inputs/keyframe_0000.png",
+        "source_sha256": "0057742bfd45c1da4ad0d0f5c4b736a5bf03caba90d8bc7525528769be1f27d8"
+      },
+      "source_variant": "b0",
+      "pages": 3,
+      "region_count": 7,
+      "recognition_count": 7,
+      "type_counts": {
+        "text": 0,
+        "formula": 1,
+        "other": 0,
+        "unknown": 6
+      },
+      "failed_recognitions": 0,
+      "elapsed_seconds": 21.441572838000013,
+      "rendering": {
+        "format": "boardnotes-v25-rendering-1",
+        "notice": "Recognition errors and rendering errors are separate; rendering success is not mathematical correctness.",
+        "regions": [
+          {
+            "region_id": "region_0002",
+            "bbox": [
+              278,
+              10,
+              388,
+              43
+            ],
+            "recognition_status": "ok",
+            "latex": "x=j",
+            "status": "rendered",
+            "engine": "pdflatex+pdftoppm",
+            "engine_version": "pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian)",
+            "path": "/workspace/lecturemath/benchmark-output/v25/real-video/end-to-end-final/v25/page_0000/result_rendered/formula_0002.png",
+            "error": null,
+            "cache_hit": false,
+            "key": "091682f31ebd12d1e477f7fe4bd8c3202df4d1d651fbb35540e3559e44647bdb",
+            "png_sha256": "6c31f0f659b01727e1b8a95eee55d0dfe4b372b1538498c18828f5ae503f8789",
+            "width": 80,
+            "height": 42,
+            "dpi": 180,
+            "semantic_correctness": "not evaluated",
+            "validation": "math command allowlist, balanced braces/environments, successful pdflatex compilation"
+          }
+        ]
+      }
+    },
+    {
+      "input": "/workspace/lecturemath/benchmark-output/v25/real-video/end-to-end-final/v1/v2_inputs/keyframe_0001.png",
+      "b0": {
+        "mode": "provided B0",
+        "source": "/workspace/lecturemath/benchmark-output/v25/real-video/end-to-end-final/v1/v2_inputs/keyframe_0001.png",
+        "source_sha256": "9817e51aedc075522ae8359d049a312e48660b8817b99601119a8cfca5d41a1c"
+      },
+      "source_variant": "b0",
+      "pages": 2,
+      "region_count": 2,
+      "recognition_count": 2,
+      "type_counts": {
+        "text": 1,
+        "formula": 0,
+        "other": 0,
+        "unknown": 1
+      },
+      "failed_recognitions": 0,
+      "elapsed_seconds": 8.98837391699999,
+      "rendering": {
+        "format": "boardnotes-v25-rendering-1",
+        "notice": "Recognition errors and rendering errors are separate; rendering success is not mathematical correctness.",
+        "regions": []
+      }
+    }
+  ],
+  "elapsed_seconds": 57.736895677999996,
+  "notice": "Real or synthetic status depends on input provenance; this function never invents source timestamps/RGB correspondence."
+}

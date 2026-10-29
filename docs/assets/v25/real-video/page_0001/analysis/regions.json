@@ -1,0 +1,634 @@
+{
+  "version": "2.0",
+  "source_image": "/workspace/lecturemath/benchmark-output/v25/real-video/end-to-end-final/v1/v2_inputs/keyframe_0001.png",
+  "width": 480,
+  "height": 360,
+  "timestamp": null,
+  "regions": [
+    {
+      "type": "text",
+      "bbox": [
+        0,
+        1,
+        477,
+        196
+      ],
+      "status": "needs_review",
+      "content": null,
+      "latex": null,
+      "confidence": null,
+      "error": null,
+      "review_required": true,
+      "suggested_type": "text",
+      "subtype": "doc_title",
+      "detection_confidence": 0.5433371663093567,
+      "provenance": [
+        {
+          "source_kind": "layout",
+          "detector": "PP-DocLayout-S",
+          "source_id": "layout_0",
+          "bbox": [
+            0,
+            1,
+            477,
+            196
+          ],
+          "raw_bbox": [
+            0.42742919921875,
+            1.0168590545654297,
+            476.93255615234375,
+            195.69174194335938
+          ],
+          "label": "doc_title",
+          "predicted_type": "text",
+          "score": 0.5433371663093567,
+          "cls_id": 11
+        },
+        {
+          "source_kind": "ocr",
+          "detector": "PP-OCRv5_mobile_det + recognition",
+          "source_id": "candidate_0000",
+          "bbox": [
+            222,
+            0,
+            396,
+            50
+          ],
+          "raw_bbox": [
+            222.0,
+            0.0,
+            396.0,
+            50.0
+          ],
+          "label": "ocr_text_candidate",
+          "predicted_type": "unknown",
+          "score": 0.6154159903526306,
+          "candidate_text": "AX="
+        },
+        {
+          "source_kind": "ocr",
+          "detector": "PP-OCRv5_mobile_det + recognition",
+          "source_id": "candidate_0003",
+          "bbox": [
+            201,
+            34,
+            429,
+            148
+          ],
+          "raw_bbox": [
+            201.0,
+            34.0,
+            429.0,
+            148.0
+          ],
+          "label": "ocr_text_candidate",
+          "predicted_type": "unknown",
+          "score": 0.47816911339759827,
+          "candidate_text": "${31+{}}$"
+        },
+        {
+          "source_kind": "ocr",
+          "detector": "PP-OCRv5_mobile_det + recognition",
+          "source_id": "candidate_0002",
+          "bbox": [
+            3,
+            50,
+            63,
+            90
+          ],
+          "raw_bbox": [
+            3.0,
+            50.0,
+            63.0,
+            90.0
+          ],
+          "label": "ocr_text_candidate",
+          "predicted_type": "unknown",
+          "score": 0.6352931261062622,
+          "candidate_text": "15,m"
+        },
+        {
+          "source_kind": "ocr",
+          "detector": "PP-OCRv5_mobile_det + recognition",
+          "source_id": "candidate_0005",
+          "bbox": [
+            372,
+            61,
+            408,
+            86
+          ],
+          "raw_bbox": [
+            372.0,
+            61.0,
+            408.0,
+            86.0
+          ],
+          "label": "ocr_text_candidate",
+          "predicted_type": "unknown",
+          "score": 0.27669668197631836,
+          "candidate_text": "o"
+        },
+        {
+          "source_kind": "ocr",
+          "detector": "PP-OCRv5_mobile_det + recognition",
+          "source_id": "candidate_0001",
+          "bbox": [
+            0,
+            112,
+            28,
+            144
+          ],
+          "raw_bbox": [
+            0.0,
+            112.0,
+            28.0,
+            144.0
+          ],
+          "label": "ocr_text_candidate",
+          "predicted_type": "unknown",
+          "score": 0.34084856510162354,
+          "candidate_text": "P"
+        },
+        {
+          "source_kind": "ocr",
+          "detector": "PP-OCRv5_mobile_det + recognition",
+          "source_id": "candidate_0004",
+          "bbox": [
+            249,
+            137,
+            267,
+            158
+          ],
+          "raw_bbox": [
+            249.0,
+            137.0,
+            267.0,
+            158.0
+          ],
+          "label": "ocr_text_candidate",
+          "predicted_type": "unknown",
+          "score": 0.10620000958442688,
+          "candidate_text": "©"
+        },
+        {
+          "source_kind": "ocr",
+          "detector": "PP-OCRv5_mobile_det + recognition",
+          "source_id": "candidate_0006",
+          "bbox": [
+            290,
+            126,
+            420,
+            171
+          ],
+          "raw_bbox": [
+            290.0,
+            126.0,
+            420.0,
+            171.0
+          ],
+          "label": "ocr_text_candidate",
+          "predicted_type": "unknown",
+          "score": 0.574510395526886,
+          "candidate_text": "abunacton"
+        }
+      ],
+      "conflicts": [],
+      "embedded_ocr_candidates": [
+        {
+          "source_kind": "ocr",
+          "detector": "PP-OCRv5_mobile_det + recognition",
+          "source_id": "candidate_0000",
+          "bbox": [
+            222,
+            0,
+            396,
+            50
+          ],
+          "raw_bbox": [
+            222.0,
+            0.0,
+            396.0,
+            50.0
+          ],
+          "label": "ocr_text_candidate",
+          "predicted_type": "unknown",
+          "score": 0.6154159903526306,
+          "candidate_text": "AX="
+        },
+        {
+          "source_kind": "ocr",
+          "detector": "PP-OCRv5_mobile_det + recognition",
+          "source_id": "candidate_0003",
+          "bbox": [
+            201,
+            34,
+            429,
+            148
+          ],
+          "raw_bbox": [
+            201.0,
+            34.0,
+            429.0,
+            148.0
+          ],
+          "label": "ocr_text_candidate",
+          "predicted_type": "unknown",
+          "score": 0.47816911339759827,
+          "candidate_text": "${31+{}}$"
+        },
+        {
+          "source_kind": "ocr",
+          "detector": "PP-OCRv5_mobile_det + recognition",
+          "source_id": "candidate_0002",
+          "bbox": [
+            3,
+            50,
+            63,
+            90
+          ],
+          "raw_bbox": [
+            3.0,
+            50.0,
+            63.0,
+            90.0
+          ],
+          "label": "ocr_text_candidate",
+          "predicted_type": "unknown",
+          "score": 0.6352931261062622,
+          "candidate_text": "15,m"
+        },
+        {
+          "source_kind": "ocr",
+          "detector": "PP-OCRv5_mobile_det + recognition",
+          "source_id": "candidate_0005",
+          "bbox": [
+            372,
+            61,
+            408,
+            86
+          ],
+          "raw_bbox": [
+            372.0,
+            61.0,
+            408.0,
+            86.0
+          ],
+          "label": "ocr_text_candidate",
+          "predicted_type": "unknown",
+          "score": 0.27669668197631836,
+          "candidate_text": "o"
+        },
+        {
+          "source_kind": "ocr",
+          "detector": "PP-OCRv5_mobile_det + recognition",
+          "source_id": "candidate_0001",
+          "bbox": [
+            0,
+            112,
+            28,
+            144
+          ],
+          "raw_bbox": [
+            0.0,
+            112.0,
+            28.0,
+            144.0
+          ],
+          "label": "ocr_text_candidate",
+          "predicted_type": "unknown",
+          "score": 0.34084856510162354,
+          "candidate_text": "P"
+        },
+        {
+          "source_kind": "ocr",
+          "detector": "PP-OCRv5_mobile_det + recognition",
+          "source_id": "candidate_0004",
+          "bbox": [
+            249,
+            137,
+            267,
+            158
+          ],
+          "raw_bbox": [
+            249.0,
+            137.0,
+            267.0,
+            158.0
+          ],
+          "label": "ocr_text_candidate",
+          "predicted_type": "unknown",
+          "score": 0.10620000958442688,
+          "candidate_text": "©"
+        },
+        {
+          "source_kind": "ocr",
+          "detector": "PP-OCRv5_mobile_det + recognition",
+          "source_id": "candidate_0006",
+          "bbox": [
+            290,
+            126,
+            420,
+            171
+          ],
+          "raw_bbox": [
+            290.0,
+            126.0,
+            420.0,
+            171.0
+          ],
+          "label": "ocr_text_candidate",
+          "predicted_type": "unknown",
+          "score": 0.574510395526886,
+          "candidate_text": "abunacton"
+        }
+      ],
+      "reading_order_method": "y band then x; not semantic mathematical order",
+      "id": "region_0000",
+      "model": "PP-DocLayout-S + PP-OCRv5_mobile_det + recognition"
+    },
+    {
+      "type": "unknown",
+      "bbox": [
+        290,
+        157,
+        369,
+        205
+      ],
+      "status": "needs_review",
+      "content": null,
+      "latex": null,
+      "confidence": null,
+      "error": null,
+      "review_required": true,
+      "suggested_type": "text",
+      "subtype": "ocr_only_candidate",
+      "detection_confidence": 0.8556223511695862,
+      "provenance": [
+        {
+          "source_kind": "ocr",
+          "detector": "PP-OCRv5_mobile_det + recognition",
+          "source_id": "candidate_0007",
+          "bbox": [
+            290,
+            157,
+            369,
+            205
+          ],
+          "raw_bbox": [
+            290.0,
+            157.0,
+            369.0,
+            205.0
+          ],
+          "label": "ocr_text_candidate",
+          "predicted_type": "unknown",
+          "score": 0.8556223511695862,
+          "candidate_text": "uns"
+        }
+      ],
+      "conflicts": [],
+      "embedded_ocr_candidates": [],
+      "reading_order_method": "y band then x; not semantic mathematical order",
+      "candidate_text": "uns",
+      "id": "region_0001",
+      "model": "PP-OCRv5_mobile_det + recognition"
+    }
+  ],
+  "metadata": {
+    "detection_input": "FCN-LectureNet V34 B0",
+    "layout_report": {
+      "items": [
+        {
+          "id": "page",
+          "status": "ok",
+          "error": null,
+          "seconds": 0.5707198960000142,
+          "content": null,
+          "latex": null,
+          "confidence": null,
+          "layout_boxes": [
+            {
+              "cls_id": 11,
+              "label": "doc_title",
+              "score": 0.5433371663093567,
+              "coordinate": [
+                0.42742919921875,
+                1.0168590545654297,
+                476.93255615234375,
+                195.69174194335938
+              ]
+            }
+          ]
+        }
+      ],
+      "model_load_seconds": 2.2906502889999842,
+      "model_load_error": null,
+      "process_seconds": 2.8613753359999805,
+      "process_peak_rss_mib": 473.99609375,
+      "versions": {
+        "paddlepaddle": "3.2.2",
+        "paddleocr": "3.3.2",
+        "paddlex": "3.3.11",
+        "numpy": "1.26.4",
+        "opencv-contrib-python": "4.10.0.84"
+      },
+      "kind": "layout",
+      "config": {
+        "formula_model": "PP-FormulaNet-S",
+        "threads": 2,
+        "language": "en",
+        "max_rss_mib": 6000,
+        "det_dir": "/workspace/lecturemath/models/v2/PP-OCRv5_mobile_det_infer",
+        "rec_dir": "/workspace/lecturemath/models/v2/en_PP-OCRv5_mobile_rec_infer",
+        "formula_dir": "/workspace/lecturemath/models/v2/PP-FormulaNet-S_infer",
+        "layout_dir": "/workspace/lecturemath/models/v2/PP-DocLayout-S_infer"
+      },
+      "subprocess_wall_seconds": 3.5204626780000012,
+      "supervisor_peak_rss_mib": 458.5703125
+    },
+    "ocr_report": {
+      "items": [
+        {
+          "id": "page",
+          "status": "ok",
+          "error": null,
+          "seconds": 1.8511670689999846,
+          "content": "AX=\nP 15,m ${31+{}}$ © o\nabunacton\nuns",
+          "latex": null,
+          "confidence": 0.4853445291519165,
+          "line_texts": [
+            "AX=",
+            "P",
+            "15,m",
+            "${31+{}}$",
+            "©",
+            "o",
+            "abunacton",
+            "uns"
+          ],
+          "line_scores": [
+            0.6154159903526306,
+            0.34084856510162354,
+            0.6352931261062622,
+            0.47816911339759827,
+            0.10620000958442688,
+            0.27669668197631836,
+            0.574510395526886,
+            0.8556223511695862
+          ],
+          "line_boxes": [
+            [
+              222.0,
+              0.0,
+              396.0,
+              50.0
+            ],
+            [
+              0.0,
+              112.0,
+              28.0,
+              144.0
+            ],
+            [
+              3.0,
+              50.0,
+              63.0,
+              90.0
+            ],
+            [
+              201.0,
+              34.0,
+              429.0,
+              148.0
+            ],
+            [
+              249.0,
+              137.0,
+              267.0,
+              158.0
+            ],
+            [
+              372.0,
+              61.0,
+              408.0,
+              86.0
+            ],
+            [
+              290.0,
+              126.0,
+              420.0,
+              171.0
+            ],
+            [
+              290.0,
+              157.0,
+              369.0,
+              205.0
+            ]
+          ],
+          "raw_engine_lines": {
+            "texts": [
+              "AX=",
+              "${31+{}}$",
+              "15,m",
+              "o",
+              "P",
+              "abunacton",
+              "©",
+              "uns"
+            ],
+            "scores": [
+              0.6154159903526306,
+              0.47816911339759827,
+              0.6352931261062622,
+              0.27669668197631836,
+              0.34084856510162354,
+              0.574510395526886,
+              0.10620000958442688,
+              0.8556223511695862
+            ],
+            "boxes": [
+              [
+                222.0,
+                0.0,
+                396.0,
+                50.0
+              ],
+              [
+                201.0,
+                34.0,
+                429.0,
+                148.0
+              ],
+              [
+                3.0,
+                50.0,
+                63.0,
+                90.0
+              ],
+              [
+                372.0,
+                61.0,
+                408.0,
+                86.0
+              ],
+              [
+                0.0,
+                112.0,
+                28.0,
+                144.0
+              ],
+              [
+                290.0,
+                126.0,
+                420.0,
+                171.0
+              ],
+              [
+                249.0,
+                137.0,
+                267.0,
+                158.0
+              ],
+              [
+                290.0,
+                157.0,
+                369.0,
+                205.0
+              ]
+            ]
+          },
+          "reading_order": "vertical overlap >= 0.5; rows top-to-bottom, boxes left-to-right; heuristic",
+          "confidence_definition": "arithmetic mean of nonempty engine line recognition scores; not calibrated document confidence"
+        }
+      ],
+      "model_load_seconds": 2.446287799000004,
+      "model_load_error": null,
+      "process_seconds": 4.2974593010000035,
+      "process_peak_rss_mib": 482.20703125,
+      "versions": {
+        "paddlepaddle": "3.2.2",
+        "paddleocr": "3.3.2",
+        "paddlex": "3.3.11",
+        "numpy": "1.26.4",
+        "opencv-contrib-python": "4.10.0.84"
+      },
+      "kind": "detect",
+      "config": {
+        "formula_model": "PP-FormulaNet-S",
+        "threads": 2,
+        "language": "en",
+        "max_rss_mib": 6000,
+        "det_dir": "/workspace/lecturemath/models/v2/PP-OCRv5_mobile_det_infer",
+        "rec_dir": "/workspace/lecturemath/models/v2/en_PP-OCRv5_mobile_rec_infer",
+        "formula_dir": "/workspace/lecturemath/models/v2/PP-FormulaNet-S_infer",
+        "layout_dir": "/workspace/lecturemath/models/v2/PP-DocLayout-S_infer"
+      },
+      "subprocess_wall_seconds": 4.933099772999981,
+      "supervisor_peak_rss_mib": 482.4296875
+    },
+    "fusion": "conservative provenance-preserving fusion",
+    "routing": "symbol/prose heuristic; no GT access",
+    "classification_accuracy": "unverified; all predicted types require review"
+  }
+}

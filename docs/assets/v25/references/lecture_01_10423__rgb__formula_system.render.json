@@ -1,0 +1,15 @@
+{
+  "status": "rendered",
+  "engine": "pdflatex+pdftoppm",
+  "engine_version": "pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian)",
+  "path": "/workspace/lecturemath/docs/assets/v25/references/lecture_01_10423__rgb__formula_system.png",
+  "error": null,
+  "cache_hit": false,
+  "key": "d3721ac9e3d1fd2c99536f5bc7659526a5059926f662307088cf442f4b101bb4",
+  "png_sha256": "fb51a6e9154780becb2a4249cf92d0c972d905b928314b71076c359ccd8a69da",
+  "width": 159,
+  "height": 95,
+  "dpi": 180,
+  "semantic_correctness": "not evaluated",
+  "validation": "math command allowlist, balanced braces/environments, successful pdflatex compilation"
+}

@@ -1,0 +1,48 @@
+{
+  "items": [
+    {
+      "id": "page",
+      "status": "ok",
+      "error": null,
+      "seconds": 0.5707198960000142,
+      "content": null,
+      "latex": null,
+      "confidence": null,
+      "layout_boxes": [
+        {
+          "cls_id": 11,
+          "label": "doc_title",
+          "score": 0.5433371663093567,
+          "coordinate": [
+            0.42742919921875,
+            1.0168590545654297,
+            476.93255615234375,
+            195.69174194335938
+          ]
+        }
+      ]
+    }
+  ],
+  "model_load_seconds": 2.2906502889999842,
+  "model_load_error": null,
+  "process_seconds": 2.8613753359999805,
+  "process_peak_rss_mib": 473.99609375,
+  "versions": {
+    "paddlepaddle": "3.2.2",
+    "paddleocr": "3.3.2",
+    "paddlex": "3.3.11",
+    "numpy": "1.26.4",
+    "opencv-contrib-python": "4.10.0.84"
+  },
+  "kind": "layout",
+  "config": {
+    "formula_model": "PP-FormulaNet-S",
+    "threads": 2,
+    "language": "en",
+    "max_rss_mib": 6000,
+    "det_dir": "/workspace/lecturemath/models/v2/PP-OCRv5_mobile_det_infer",
+    "rec_dir": "/workspace/lecturemath/models/v2/en_PP-OCRv5_mobile_rec_infer",
+    "formula_dir": "/workspace/lecturemath/models/v2/PP-FormulaNet-S_infer",
+    "layout_dir": "/workspace/lecturemath/models/v2/PP-DocLayout-S_infer"
+  }
+}

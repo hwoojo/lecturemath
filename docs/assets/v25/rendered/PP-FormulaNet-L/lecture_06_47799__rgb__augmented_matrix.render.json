@@ -1,0 +1,15 @@
+{
+  "status": "rendered",
+  "engine": "pdflatex+pdftoppm",
+  "engine_version": "pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian)",
+  "path": "/workspace/lecturemath/docs/assets/v25/rendered/PP-FormulaNet-L/lecture_06_47799__rgb__augmented_matrix.png",
+  "error": null,
+  "cache_hit": false,
+  "key": "c4323287285042c66cc937c05b349c864a07378c6c7e92e184ce59332134dd2c",
+  "png_sha256": "e85eb46e8d7e3c3662f86d954c31a9bb26cf99ae3ca99ff56992559df047d9e1",
+  "width": 109,
+  "height": 45,
+  "dpi": 180,
+  "semantic_correctness": "not evaluated",
+  "validation": "math command allowlist, balanced braces/environments, successful pdflatex compilation"
+}

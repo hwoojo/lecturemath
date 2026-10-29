@@ -1,0 +1,15 @@
+{
+  "status": "rendered",
+  "engine": "pdflatex+pdftoppm",
+  "engine_version": "pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian)",
+  "path": "/workspace/lecturemath/docs/assets/v25/rendered/PP-FormulaNet_plus-S/lecture_08_53016__b0__permutation_matrix.png",
+  "error": null,
+  "cache_hit": false,
+  "key": "39708dd22928e8b2607a207ebd81e3035a69b9885974e69eb42c9f80b366e001",
+  "png_sha256": "84b808088f8588b2299e9c4dab8efe159a2ccbe475ec5341e709fdef2190f60c",
+  "width": 103,
+  "height": 110,
+  "dpi": 180,
+  "semantic_correctness": "not evaluated",
+  "validation": "math command allowlist, balanced braces/environments, successful pdflatex compilation"
+}

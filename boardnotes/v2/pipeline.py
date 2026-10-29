@@ -38,14 +38,19 @@ def worker_call(python,kind,jobs,config,folder,timeout=300,probe=False):
     env.setdefault('PADDLE_PDX_CACHE_HOME',str(runtime_cache/'paddlex'))
     env.setdefault('PADDLE_HOME',str(runtime_cache/'paddle'))
     env.setdefault('XDG_CACHE_HOME',str(runtime_cache))
-    if (kind=='formula' and config.get('formula_dir')) or (kind in {'text','detect'} and config.get('det_dir') and config.get('rec_dir')):
+    if (kind=='layout' and config.get('layout_dir')) or (kind=='formula' and config.get('formula_dir')) or (kind in {'text','detect'} and config.get('det_dir') and config.get('rec_dir')):
         env['PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK']='True'
     # Local model directories are mandatory in documented offline/reproducible runs.
     started=time.perf_counter()
     try:
         with log.open('w') as stream:
-            result=subprocess.run(command,stdout=stream,stderr=subprocess.STDOUT,env=env,
-                                  cwd=Path(__file__).resolve().parents[2],timeout=timeout,check=False)
+            if config.get('max_rss_mib'):
+                from ..v25.resources import run_bounded
+                result=run_bounded(command,stdout=stream,stderr=subprocess.STDOUT,env=env,
+                                   cwd=Path(__file__).resolve().parents[2],timeout=timeout,max_rss_mib=config['max_rss_mib'])
+            else:
+                result=subprocess.run(command,stdout=stream,stderr=subprocess.STDOUT,env=env,
+                                      cwd=Path(__file__).resolve().parents[2],timeout=timeout,check=False)
         if result.returncode:
             raise RuntimeError(f'OCR subprocess exit {result.returncode}; see {log.resolve()}')
         if not response.exists():
@@ -57,6 +62,7 @@ def worker_call(python,kind,jobs,config,folder,timeout=300,probe=False):
             if len(observed)!=len(expected) or set(observed)!=expected:
                 raise ValueError('OCR worker returned missing/duplicate/unexpected job ids')
         response_data['subprocess_wall_seconds']=time.perf_counter()-started
+        if hasattr(result,'supervisor_peak_rss_mib'): response_data['supervisor_peak_rss_mib']=result.supervisor_peak_rss_mib
         return response_data
     except (OSError,subprocess.TimeoutExpired,ValueError,RuntimeError) as error:
         return {'versions':{},'error':f'{type(error).__name__}: {error}',
@@ -126,7 +132,7 @@ def recognize(source_image,regions,output,ocr_python,config=None,variants=None,t
                 cached[job_id]=result;item['cache_hit']=True
             else:
                 jobs[kind].append({'id':job_id,'image':str(crop_path.resolve())});item['cache_hit']=False
-            item['model']=('PP-OCRv5_mobile_det + korean_PP-OCRv5_mobile_rec' if kind=='text' and config.get('language')=='ko' else MODEL_NAMES[kind])
+            item['model']=(config.get('formula_model','PP-FormulaNet-S') if kind=='formula' else 'PP-OCRv5_mobile_det + korean_PP-OCRv5_mobile_rec' if config.get('language')=='ko' else MODEL_NAMES[kind])
         documents[variant]=doc
     stage_reports={};results=list(cached.values())
     for kind in ['text','formula']:

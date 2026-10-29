@@ -1,0 +1,204 @@
+{
+  "version": "2.0",
+  "source_image": "source.png",
+  "width": 480,
+  "height": 360,
+  "timestamp": 6.006,
+  "regions": [
+    {
+      "id": "region_0000",
+      "type": "unknown",
+      "bbox": [
+        1,
+        0,
+        477,
+        163
+      ],
+      "status": "needs_review",
+      "content": null,
+      "latex": null,
+      "confidence": null,
+      "model": null,
+      "error": null,
+      "crop_image": "crops/b0/region_0000.png"
+    },
+    {
+      "id": "region_0001",
+      "type": "unknown",
+      "bbox": [
+        234,
+        9,
+        279,
+        40
+      ],
+      "status": "needs_review",
+      "content": null,
+      "latex": null,
+      "confidence": null,
+      "model": null,
+      "error": null,
+      "crop_image": "crops/b0/region_0001.png"
+    },
+    {
+      "id": "region_0002",
+      "type": "formula",
+      "bbox": [
+        278,
+        10,
+        388,
+        43
+      ],
+      "status": "ok",
+      "content": null,
+      "latex": "x=j",
+      "confidence": null,
+      "model": "PP-FormulaNet-S",
+      "error": null,
+      "crop_image": "crops/b0/region_0002.png",
+      "cache_hit": false,
+      "seconds": 0.9083692100000462,
+      "review_required": true
+    },
+    {
+      "id": "region_0003",
+      "type": "unknown",
+      "bbox": [
+        202,
+        37,
+        427,
+        146
+      ],
+      "status": "needs_review",
+      "content": null,
+      "latex": null,
+      "confidence": null,
+      "model": null,
+      "error": null,
+      "crop_image": "crops/b0/region_0003.png"
+    },
+    {
+      "id": "region_0004",
+      "type": "unknown",
+      "bbox": [
+        6,
+        52,
+        175,
+        88
+      ],
+      "status": "needs_review",
+      "content": null,
+      "latex": null,
+      "confidence": null,
+      "model": null,
+      "error": null,
+      "crop_image": "crops/b0/region_0004.png"
+    },
+    {
+      "id": "region_0005",
+      "type": "unknown",
+      "bbox": [
+        0,
+        112,
+        29,
+        145
+      ],
+      "status": "needs_review",
+      "content": null,
+      "latex": null,
+      "confidence": null,
+      "model": null,
+      "error": null,
+      "crop_image": "crops/b0/region_0005.png"
+    },
+    {
+      "id": "region_0006",
+      "type": "unknown",
+      "bbox": [
+        243,
+        126,
+        418,
+        170
+      ],
+      "status": "needs_review",
+      "content": null,
+      "latex": null,
+      "confidence": null,
+      "model": null,
+      "error": null,
+      "crop_image": "crops/b0/region_0006.png"
+    }
+  ],
+  "metadata": {
+    "source_original": "/workspace/lecturemath/benchmark-output/v25/real-video/end-to-end-final/v1/v2_inputs/keyframe_0000.png",
+    "source_sha256": "0057742bfd45c1da4ad0d0f5c4b736a5bf03caba90d8bc7525528769be1f27d8",
+    "input_variant": "b0",
+    "recognition_image_sha256": "0057742bfd45c1da4ad0d0f5c4b736a5bf03caba90d8bc7525528769be1f27d8",
+    "preprocessing": "none; half-open bbox crop only",
+    "config": {
+      "formula_model": "PP-FormulaNet-S",
+      "threads": 2,
+      "language": "en",
+      "max_rss_mib": 6000,
+      "det_dir": "/workspace/lecturemath/models/v2/PP-OCRv5_mobile_det_infer",
+      "rec_dir": "/workspace/lecturemath/models/v2/en_PP-OCRv5_mobile_rec_infer",
+      "formula_dir": "/workspace/lecturemath/models/v2/PP-FormulaNet-S_infer",
+      "layout_dir": "/workspace/lecturemath/models/v2/PP-DocLayout-S_infer"
+    },
+    "worker_fingerprint": {
+      "versions": {
+        "paddlepaddle": "3.2.2",
+        "paddleocr": "3.3.2",
+        "paddlex": "3.3.11",
+        "numpy": "1.26.4",
+        "opencv-contrib-python": "4.10.0.84"
+      },
+      "protocol": 1,
+      "worker_sha256": "9ee6bda27107e3de170f28b2385c6c5ee587a37395ea4a1744ccfc9e2f340e4e",
+      "det_dir": {
+        "inference.json": "05feef1acb00aa4cd7362b15f7f501fc4f99d7b1fa73c1c871e0c7b1504b0f5c",
+        "inference.pdiparams": "afa1820cb16c1fd0dad589d0f8b389139061c1ef6d68019685fd07be997dda5b",
+        "inference.yml": "98069072e1b6b37d727fd9d9f11725faa46d6ea0de012f2ed26caea011c37699"
+      },
+      "rec_dir": {
+        "inference.json": "fd1b6ec722ea841a72d3ba43e527df1d1066d5d7808e0503ee3eec7265188753",
+        "inference.pdiparams": "3ec8a97ed6cefe8568d3e2ee90bb193299b566a7661aa4fd52d224b96b59f66b",
+        "inference.yml": "27e91d0582f40168aa218303c76e184bc78fa7a5d105aad0cfbad8458b441067"
+      },
+      "formula_dir": {
+        "inference.json": "2c8fc31a94d461a7325fe06e8cbaa5db6c5658c490f74d3d6116defe8c859d6f",
+        "inference.pdiparams": "b6392296d16e2a9f414c0a751d7ccbd1bd9d8272b68aab72df1d3875f35a7489",
+        "inference.yml": "08b21c2d255041008266b8fb947758e9731eafff191568af21da5a4b9c9dd5a0"
+      }
+    },
+    "probe_error": null,
+    "reading_order": "manual JSON array order; no semantic order inference",
+    "stages": {
+      "formula": {
+        "model_load_seconds": 8.257907175000014,
+        "model_load_error": null,
+        "process_seconds": 9.166279993000046,
+        "process_peak_rss_mib": 749.55078125,
+        "versions": {
+          "paddlepaddle": "3.2.2",
+          "paddleocr": "3.3.2",
+          "paddlex": "3.3.11",
+          "numpy": "1.26.4",
+          "opencv-contrib-python": "4.10.0.84"
+        },
+        "kind": "formula",
+        "config": {
+          "formula_model": "PP-FormulaNet-S",
+          "threads": 2,
+          "language": "en",
+          "max_rss_mib": 6000,
+          "det_dir": "/workspace/lecturemath/models/v2/PP-OCRv5_mobile_det_infer",
+          "rec_dir": "/workspace/lecturemath/models/v2/en_PP-OCRv5_mobile_rec_infer",
+          "formula_dir": "/workspace/lecturemath/models/v2/PP-FormulaNet-S_infer",
+          "layout_dir": "/workspace/lecturemath/models/v2/PP-DocLayout-S_infer"
+        },
+        "subprocess_wall_seconds": 9.950658481000005,
+        "supervisor_peak_rss_mib": 744.75
+      }
+    }
+  }
+}

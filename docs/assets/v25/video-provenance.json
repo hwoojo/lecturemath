@@ -1,0 +1,21 @@
+{
+  "source_page": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-1-the-geometry-of-linear-equations/",
+  "source_video_url": "https://archive.org/download/MIT18.06S05_MP4/01.mp4",
+  "original_video_bytes": 92409278,
+  "original_width": 480,
+  "original_height": 360,
+  "requested_clip_seconds": [
+    600,
+    612
+  ],
+  "clip_timebase": "timestamps are clip-relative; requested lecture offset recorded separately",
+  "clip_codec": "H.264 lossless qp=0; decoded pixels match the FFV1 extract on all frames; audio omitted; PTS reset to clip zero",
+  "clip_bytes": 10265676,
+  "clip_sha256": "e69c104fb1f16cfdaa87f0069f38a0fad9d46f77dcccbf5d1ee82998bb194336",
+  "download_scope": "remote ffmpeg HTTP byte ranges; no complete lecture/dataset archive saved",
+  "license_note": "OCW page CC BY-NC-SA 4.0; Archive metadata CC BY-NC-SA 3.0 US; attribution to MIT OCW and Gilbert Strang, Spring 2005 source",
+  "clip_frames": 359,
+  "clip_duration_seconds": 11.978633333333333,
+  "clip_fps": 29.97002997002997,
+  "sampled_frames": 12
+}

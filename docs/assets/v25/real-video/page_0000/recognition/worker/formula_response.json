@@ -1,0 +1,35 @@
+{
+  "items": [
+    {
+      "id": "v0-r2",
+      "status": "ok",
+      "error": null,
+      "seconds": 0.9083692100000462,
+      "content": null,
+      "latex": "x=j",
+      "confidence": null
+    }
+  ],
+  "model_load_seconds": 8.257907175000014,
+  "model_load_error": null,
+  "process_seconds": 9.166279993000046,
+  "process_peak_rss_mib": 749.55078125,
+  "versions": {
+    "paddlepaddle": "3.2.2",
+    "paddleocr": "3.3.2",
+    "paddlex": "3.3.11",
+    "numpy": "1.26.4",
+    "opencv-contrib-python": "4.10.0.84"
+  },
+  "kind": "formula",
+  "config": {
+    "formula_model": "PP-FormulaNet-S",
+    "threads": 2,
+    "language": "en",
+    "max_rss_mib": 6000,
+    "det_dir": "/workspace/lecturemath/models/v2/PP-OCRv5_mobile_det_infer",
+    "rec_dir": "/workspace/lecturemath/models/v2/en_PP-OCRv5_mobile_rec_infer",
+    "formula_dir": "/workspace/lecturemath/models/v2/PP-FormulaNet-S_infer",
+    "layout_dir": "/workspace/lecturemath/models/v2/PP-DocLayout-S_infer"
+  }
+}

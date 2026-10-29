@@ -1,0 +1,19 @@
+{
+  "kind": "formula",
+  "config": {
+    "formula_model": "PP-FormulaNet-S",
+    "threads": 2,
+    "language": "en",
+    "max_rss_mib": 6000,
+    "det_dir": "/workspace/lecturemath/models/v2/PP-OCRv5_mobile_det_infer",
+    "rec_dir": "/workspace/lecturemath/models/v2/en_PP-OCRv5_mobile_rec_infer",
+    "formula_dir": "/workspace/lecturemath/models/v2/PP-FormulaNet-S_infer",
+    "layout_dir": "/workspace/lecturemath/models/v2/PP-DocLayout-S_infer"
+  },
+  "jobs": [
+    {
+      "id": "v0-r2",
+      "image": "../crops/b0/region_0002.png"
+    }
+  ]
+}

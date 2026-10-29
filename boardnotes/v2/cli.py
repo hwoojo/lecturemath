@@ -21,6 +21,7 @@ def region(value):
 def model_options(parser):
     parser.add_argument('--ocr-python',type=Path,default=Path(os.getenv('BOARD_OCR_PYTHON',sys.executable)))
     parser.add_argument('--model-root',type=Path,default=ROOT/'models/v2')
+    parser.add_argument('--formula-model',choices=['PP-FormulaNet-S','PP-FormulaNet_plus-S','PP-FormulaNet-L','UniMERNet'],default='PP-FormulaNet-S')
     parser.add_argument('--language',choices=['en','ko'],default='en')
     parser.add_argument('--threads',type=int,default=2)
     parser.add_argument('--timeout',type=float,default=300)
@@ -30,10 +31,10 @@ def model_options(parser):
 def config(args):
     if args.threads<1 or args.timeout<=0:
         raise ValueError('threads and timeout must be positive')
-    return {'threads':args.threads,'language':args.language,
+    return {'threads':args.threads,'language':args.language,'formula_model':args.formula_model,
             'det_dir':str((args.model_root/'PP-OCRv5_mobile_det_infer').resolve()),
             'rec_dir':str((args.model_root/('en_PP-OCRv5_mobile_rec_infer' if args.language=='en' else 'korean_PP-OCRv5_mobile_rec_infer')).resolve()),
-            'formula_dir':str((args.model_root/'PP-FormulaNet-S_infer').resolve())}
+            'formula_dir':str((args.model_root/(args.formula_model+'_infer')).resolve())}
 
 
 def main():

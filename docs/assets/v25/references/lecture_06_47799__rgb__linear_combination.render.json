@@ -1,0 +1,15 @@
+{
+  "status": "rendered",
+  "engine": "pdflatex+pdftoppm",
+  "engine_version": "pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian)",
+  "path": "/workspace/lecturemath/docs/assets/v25/references/lecture_06_47799__rgb__linear_combination.png",
+  "error": null,
+  "cache_hit": false,
+  "key": "c41991316dc3a4a2d5bc6385ce23afe6b0d7b7e1958ebd8fdce1ace31d02927c",
+  "png_sha256": "c9a81eb56d1fd190db4aef6eae54cf184be30ba75e66b6059e0745f9d4f95d72",
+  "width": 272,
+  "height": 80,
+  "dpi": 180,
+  "semantic_correctness": "not evaluated",
+  "validation": "math command allowlist, balanced braces/environments, successful pdflatex compilation"
+}

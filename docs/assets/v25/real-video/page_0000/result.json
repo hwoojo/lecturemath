@@ -1,0 +1,945 @@
+{
+  "version": "2.0",
+  "source_image": "recognition/source.png",
+  "width": 480,
+  "height": 360,
+  "timestamp": 6.006,
+  "regions": [
+    {
+      "id": "region_0000",
+      "type": "unknown",
+      "bbox": [
+        1,
+        0,
+        477,
+        163
+      ],
+      "status": "needs_review",
+      "content": null,
+      "latex": null,
+      "confidence": null,
+      "model": null,
+      "error": null,
+      "crop_image": "recognition/crops/b0/region_0000.png",
+      "detection": {
+        "type": "unknown",
+        "bbox": [
+          1,
+          0,
+          477,
+          163
+        ],
+        "status": "needs_review",
+        "confidence": null,
+        "review_required": true,
+        "suggested_type": "unknown",
+        "subtype": "layout_text_ocr_math_conflict",
+        "detection_confidence": 0.6162163019180298,
+        "provenance": [
+          {
+            "source_kind": "layout",
+            "detector": "PP-DocLayout-S",
+            "source_id": "layout_0",
+            "bbox": [
+              1,
+              0,
+              477,
+              163
+            ],
+            "raw_bbox": [
+              1.360992431640625,
+              0.6983528137207031,
+              476.9603576660156,
+              162.14588928222656
+            ],
+            "label": "doc_title",
+            "predicted_type": "text",
+            "score": 0.6162163019180298,
+            "cls_id": 11
+          },
+          {
+            "source_kind": "ocr",
+            "detector": "PP-OCRv5_mobile_det + recognition",
+            "source_id": "candidate_0000",
+            "bbox": [
+              234,
+              9,
+              279,
+              40
+            ],
+            "raw_bbox": [
+              234.0,
+              9.0,
+              279.0,
+              40.0
+            ],
+            "label": "ocr_text_candidate",
+            "predicted_type": "unknown",
+            "score": 0.9866077899932861,
+            "candidate_text": "A"
+          },
+          {
+            "source_kind": "ocr",
+            "detector": "PP-OCRv5_mobile_det + recognition",
+            "source_id": "candidate_0001",
+            "bbox": [
+              278,
+              10,
+              388,
+              43
+            ],
+            "raw_bbox": [
+              278.0,
+              10.0,
+              388.0,
+              43.0
+            ],
+            "label": "ocr_text_candidate",
+            "predicted_type": "unknown",
+            "score": 0.738810122013092,
+            "candidate_text": "x =]5"
+          },
+          {
+            "source_kind": "ocr",
+            "detector": "PP-OCRv5_mobile_det + recognition",
+            "source_id": "candidate_0004",
+            "bbox": [
+              202,
+              37,
+              427,
+              146
+            ],
+            "raw_bbox": [
+              202.0,
+              37.0,
+              427.0,
+              146.0
+            ],
+            "label": "ocr_text_candidate",
+            "predicted_type": "unknown",
+            "score": 0.47736236453056335,
+            "candidate_text": "${3 +}}}$"
+          },
+          {
+            "source_kind": "ocr",
+            "detector": "PP-OCRv5_mobile_det + recognition",
+            "source_id": "candidate_0003",
+            "bbox": [
+              6,
+              52,
+              175,
+              88
+            ],
+            "raw_bbox": [
+              6.0,
+              52.0,
+              175.0,
+              88.0
+            ],
+            "label": "ocr_text_candidate",
+            "predicted_type": "unknown",
+            "score": 0.5216771960258484,
+            "candidate_text": ",nunnorS"
+          },
+          {
+            "source_kind": "ocr",
+            "detector": "PP-OCRv5_mobile_det + recognition",
+            "source_id": "candidate_0002",
+            "bbox": [
+              0,
+              112,
+              29,
+              145
+            ],
+            "raw_bbox": [
+              0.0,
+              112.0,
+              29.0,
+              145.0
+            ],
+            "label": "ocr_text_candidate",
+            "predicted_type": "unknown",
+            "score": 0.40569788217544556,
+            "candidate_text": "P"
+          }
+        ],
+        "conflicts": [
+          {
+            "kind": "layout_label_vs_ocr_math_evidence",
+            "evidence": [
+              {
+                "bbox": [
+                  278,
+                  10,
+                  388,
+                  43
+                ],
+                "candidate_text": "x =]5",
+                "markers": [
+                  "="
+                ],
+                "contains_digit": true,
+                "single_letter_tokens": [
+                  "x"
+                ],
+                "basis": "explicit symbolic OCR evidence only; not semantic or calibrated classification"
+              }
+            ],
+            "notice": "Native text/title and symbolic OCR evidence disagree; parent and children need review. No formula class is asserted."
+          }
+        ],
+        "embedded_ocr_candidates": [
+          {
+            "source_kind": "ocr",
+            "detector": "PP-OCRv5_mobile_det + recognition",
+            "source_id": "candidate_0000",
+            "bbox": [
+              234,
+              9,
+              279,
+              40
+            ],
+            "raw_bbox": [
+              234.0,
+              9.0,
+              279.0,
+              40.0
+            ],
+            "label": "ocr_text_candidate",
+            "predicted_type": "unknown",
+            "score": 0.9866077899932861,
+            "candidate_text": "A"
+          },
+          {
+            "source_kind": "ocr",
+            "detector": "PP-OCRv5_mobile_det + recognition",
+            "source_id": "candidate_0001",
+            "bbox": [
+              278,
+              10,
+              388,
+              43
+            ],
+            "raw_bbox": [
+              278.0,
+              10.0,
+              388.0,
+              43.0
+            ],
+            "label": "ocr_text_candidate",
+            "predicted_type": "unknown",
+            "score": 0.738810122013092,
+            "candidate_text": "x =]5"
+          },
+          {
+            "source_kind": "ocr",
+            "detector": "PP-OCRv5_mobile_det + recognition",
+            "source_id": "candidate_0004",
+            "bbox": [
+              202,
+              37,
+              427,
+              146
+            ],
+            "raw_bbox": [
+              202.0,
+              37.0,
+              427.0,
+              146.0
+            ],
+            "label": "ocr_text_candidate",
+            "predicted_type": "unknown",
+            "score": 0.47736236453056335,
+            "candidate_text": "${3 +}}}$"
+          },
+          {
+            "source_kind": "ocr",
+            "detector": "PP-OCRv5_mobile_det + recognition",
+            "source_id": "candidate_0003",
+            "bbox": [
+              6,
+              52,
+              175,
+              88
+            ],
+            "raw_bbox": [
+              6.0,
+              52.0,
+              175.0,
+              88.0
+            ],
+            "label": "ocr_text_candidate",
+            "predicted_type": "unknown",
+            "score": 0.5216771960258484,
+            "candidate_text": ",nunnorS"
+          },
+          {
+            "source_kind": "ocr",
+            "detector": "PP-OCRv5_mobile_det + recognition",
+            "source_id": "candidate_0002",
+            "bbox": [
+              0,
+              112,
+              29,
+              145
+            ],
+            "raw_bbox": [
+              0.0,
+              112.0,
+              29.0,
+              145.0
+            ],
+            "label": "ocr_text_candidate",
+            "predicted_type": "unknown",
+            "score": 0.40569788217544556,
+            "candidate_text": "P"
+          }
+        ],
+        "reading_order_method": "y band then x; not semantic mathematical order",
+        "ambiguous_ocr_container": true,
+        "ocr_math_evidence": [
+          {
+            "bbox": [
+              278,
+              10,
+              388,
+              43
+            ],
+            "candidate_text": "x =]5",
+            "markers": [
+              "="
+            ],
+            "contains_digit": true,
+            "single_letter_tokens": [
+              "x"
+            ],
+            "basis": "explicit symbolic OCR evidence only; not semantic or calibrated classification"
+          }
+        ],
+        "id": "region_0000",
+        "model": "PP-DocLayout-S + PP-OCRv5_mobile_det + recognition"
+      },
+      "review_required": true
+    },
+    {
+      "id": "region_0001",
+      "type": "unknown",
+      "bbox": [
+        234,
+        9,
+        279,
+        40
+      ],
+      "status": "needs_review",
+      "content": null,
+      "latex": null,
+      "confidence": null,
+      "model": null,
+      "error": null,
+      "crop_image": "recognition/crops/b0/region_0001.png",
+      "detection": {
+        "type": "unknown",
+        "bbox": [
+          234,
+          9,
+          279,
+          40
+        ],
+        "status": "needs_review",
+        "confidence": null,
+        "review_required": true,
+        "suggested_type": "text",
+        "subtype": "ocr_only_candidate",
+        "detection_confidence": 0.9866077899932861,
+        "provenance": [
+          {
+            "source_kind": "ocr",
+            "detector": "PP-OCRv5_mobile_det + recognition",
+            "source_id": "candidate_0000",
+            "bbox": [
+              234,
+              9,
+              279,
+              40
+            ],
+            "raw_bbox": [
+              234.0,
+              9.0,
+              279.0,
+              40.0
+            ],
+            "label": "ocr_text_candidate",
+            "predicted_type": "unknown",
+            "score": 0.9866077899932861,
+            "candidate_text": "A"
+          }
+        ],
+        "conflicts": [
+          {
+            "kind": "ambiguous_layout_container_parent",
+            "parent_boxes": [
+              [
+                1,
+                0,
+                477,
+                163
+              ]
+            ],
+            "parent_conflict_kinds": [
+              "layout_label_vs_ocr_math_evidence"
+            ],
+            "notice": "Candidate preserved independently because layout/OCR evidence makes its container ambiguous on boards."
+          }
+        ],
+        "embedded_ocr_candidates": [],
+        "reading_order_method": "y band then x; not semantic mathematical order",
+        "candidate_text": "A",
+        "id": "region_0001",
+        "model": "PP-OCRv5_mobile_det + recognition"
+      },
+      "review_required": true
+    },
+    {
+      "id": "region_0002",
+      "type": "formula",
+      "bbox": [
+        278,
+        10,
+        388,
+        43
+      ],
+      "status": "ok",
+      "content": null,
+      "latex": "x=j",
+      "confidence": null,
+      "model": "PP-FormulaNet-S",
+      "error": null,
+      "crop_image": "recognition/crops/b0/region_0002.png",
+      "cache_hit": false,
+      "seconds": 0.9083692100000462,
+      "review_required": true,
+      "detection": {
+        "type": "formula",
+        "bbox": [
+          278,
+          10,
+          388,
+          43
+        ],
+        "status": "needs_review",
+        "confidence": null,
+        "review_required": true,
+        "suggested_type": "formula",
+        "subtype": "ocr_only_candidate",
+        "detection_confidence": 0.738810122013092,
+        "provenance": [
+          {
+            "source_kind": "ocr",
+            "detector": "PP-OCRv5_mobile_det + recognition",
+            "source_id": "candidate_0001",
+            "bbox": [
+              278,
+              10,
+              388,
+              43
+            ],
+            "raw_bbox": [
+              278.0,
+              10.0,
+              388.0,
+              43.0
+            ],
+            "label": "ocr_text_candidate",
+            "predicted_type": "unknown",
+            "score": 0.738810122013092,
+            "candidate_text": "x =]5"
+          }
+        ],
+        "conflicts": [
+          {
+            "kind": "ambiguous_layout_container_parent",
+            "parent_boxes": [
+              [
+                1,
+                0,
+                477,
+                163
+              ]
+            ],
+            "parent_conflict_kinds": [
+              "layout_label_vs_ocr_math_evidence"
+            ],
+            "notice": "Candidate preserved independently because layout/OCR evidence makes its container ambiguous on boards."
+          }
+        ],
+        "embedded_ocr_candidates": [],
+        "reading_order_method": "y band then x; not semantic mathematical order",
+        "candidate_text": "x =]5",
+        "id": "region_0002",
+        "model": "PP-OCRv5_mobile_det + recognition",
+        "routing": {
+          "method": "ocr_symbol_prose_heuristic",
+          "evidence_text": "x =]5",
+          "reason": "explicit equation/comparison/math operator with little prose",
+          "calibrated_confidence": null,
+          "notice": "Routing proposal only; mathematical meaning/correctness unverified."
+        }
+      }
+    },
+    {
+      "id": "region_0003",
+      "type": "unknown",
+      "bbox": [
+        202,
+        37,
+        427,
+        146
+      ],
+      "status": "needs_review",
+      "content": null,
+      "latex": null,
+      "confidence": null,
+      "model": null,
+      "error": null,
+      "crop_image": "recognition/crops/b0/region_0003.png",
+      "detection": {
+        "type": "unknown",
+        "bbox": [
+          202,
+          37,
+          427,
+          146
+        ],
+        "status": "needs_review",
+        "confidence": null,
+        "review_required": true,
+        "suggested_type": "text",
+        "subtype": "ocr_only_candidate",
+        "detection_confidence": 0.47736236453056335,
+        "provenance": [
+          {
+            "source_kind": "ocr",
+            "detector": "PP-OCRv5_mobile_det + recognition",
+            "source_id": "candidate_0004",
+            "bbox": [
+              202,
+              37,
+              427,
+              146
+            ],
+            "raw_bbox": [
+              202.0,
+              37.0,
+              427.0,
+              146.0
+            ],
+            "label": "ocr_text_candidate",
+            "predicted_type": "unknown",
+            "score": 0.47736236453056335,
+            "candidate_text": "${3 +}}}$"
+          }
+        ],
+        "conflicts": [
+          {
+            "kind": "ambiguous_layout_container_parent",
+            "parent_boxes": [
+              [
+                1,
+                0,
+                477,
+                163
+              ]
+            ],
+            "parent_conflict_kinds": [
+              "layout_label_vs_ocr_math_evidence"
+            ],
+            "notice": "Candidate preserved independently because layout/OCR evidence makes its container ambiguous on boards."
+          }
+        ],
+        "embedded_ocr_candidates": [],
+        "reading_order_method": "y band then x; not semantic mathematical order",
+        "candidate_text": "${3 +}}}$",
+        "id": "region_0003",
+        "model": "PP-OCRv5_mobile_det + recognition"
+      },
+      "review_required": true
+    },
+    {
+      "id": "region_0004",
+      "type": "unknown",
+      "bbox": [
+        6,
+        52,
+        175,
+        88
+      ],
+      "status": "needs_review",
+      "content": null,
+      "latex": null,
+      "confidence": null,
+      "model": null,
+      "error": null,
+      "crop_image": "recognition/crops/b0/region_0004.png",
+      "detection": {
+        "type": "unknown",
+        "bbox": [
+          6,
+          52,
+          175,
+          88
+        ],
+        "status": "needs_review",
+        "confidence": null,
+        "review_required": true,
+        "suggested_type": "text",
+        "subtype": "ocr_only_candidate",
+        "detection_confidence": 0.5216771960258484,
+        "provenance": [
+          {
+            "source_kind": "ocr",
+            "detector": "PP-OCRv5_mobile_det + recognition",
+            "source_id": "candidate_0003",
+            "bbox": [
+              6,
+              52,
+              175,
+              88
+            ],
+            "raw_bbox": [
+              6.0,
+              52.0,
+              175.0,
+              88.0
+            ],
+            "label": "ocr_text_candidate",
+            "predicted_type": "unknown",
+            "score": 0.5216771960258484,
+            "candidate_text": ",nunnorS"
+          }
+        ],
+        "conflicts": [
+          {
+            "kind": "ambiguous_layout_container_parent",
+            "parent_boxes": [
+              [
+                1,
+                0,
+                477,
+                163
+              ]
+            ],
+            "parent_conflict_kinds": [
+              "layout_label_vs_ocr_math_evidence"
+            ],
+            "notice": "Candidate preserved independently because layout/OCR evidence makes its container ambiguous on boards."
+          }
+        ],
+        "embedded_ocr_candidates": [],
+        "reading_order_method": "y band then x; not semantic mathematical order",
+        "candidate_text": ",nunnorS",
+        "id": "region_0004",
+        "model": "PP-OCRv5_mobile_det + recognition"
+      },
+      "review_required": true
+    },
+    {
+      "id": "region_0005",
+      "type": "unknown",
+      "bbox": [
+        0,
+        112,
+        29,
+        145
+      ],
+      "status": "needs_review",
+      "content": null,
+      "latex": null,
+      "confidence": null,
+      "model": null,
+      "error": null,
+      "crop_image": "recognition/crops/b0/region_0005.png",
+      "detection": {
+        "type": "unknown",
+        "bbox": [
+          0,
+          112,
+          29,
+          145
+        ],
+        "status": "needs_review",
+        "confidence": null,
+        "review_required": true,
+        "suggested_type": "text",
+        "subtype": "ocr_only_candidate",
+        "detection_confidence": 0.40569788217544556,
+        "provenance": [
+          {
+            "source_kind": "ocr",
+            "detector": "PP-OCRv5_mobile_det + recognition",
+            "source_id": "candidate_0002",
+            "bbox": [
+              0,
+              112,
+              29,
+              145
+            ],
+            "raw_bbox": [
+              0.0,
+              112.0,
+              29.0,
+              145.0
+            ],
+            "label": "ocr_text_candidate",
+            "predicted_type": "unknown",
+            "score": 0.40569788217544556,
+            "candidate_text": "P"
+          }
+        ],
+        "conflicts": [
+          {
+            "kind": "ambiguous_layout_container_parent",
+            "parent_boxes": [
+              [
+                1,
+                0,
+                477,
+                163
+              ]
+            ],
+            "parent_conflict_kinds": [
+              "layout_label_vs_ocr_math_evidence"
+            ],
+            "notice": "Candidate preserved independently because layout/OCR evidence makes its container ambiguous on boards."
+          }
+        ],
+        "embedded_ocr_candidates": [],
+        "reading_order_method": "y band then x; not semantic mathematical order",
+        "candidate_text": "P",
+        "id": "region_0005",
+        "model": "PP-OCRv5_mobile_det + recognition"
+      },
+      "review_required": true
+    },
+    {
+      "id": "region_0006",
+      "type": "unknown",
+      "bbox": [
+        243,
+        126,
+        418,
+        170
+      ],
+      "status": "needs_review",
+      "content": null,
+      "latex": null,
+      "confidence": null,
+      "model": null,
+      "error": null,
+      "crop_image": "recognition/crops/b0/region_0006.png",
+      "detection": {
+        "type": "unknown",
+        "bbox": [
+          243,
+          126,
+          418,
+          170
+        ],
+        "status": "needs_review",
+        "confidence": null,
+        "review_required": true,
+        "suggested_type": "text",
+        "subtype": "ocr_only_candidate",
+        "detection_confidence": 0.7230315208435059,
+        "provenance": [
+          {
+            "source_kind": "ocr",
+            "detector": "PP-OCRv5_mobile_det + recognition",
+            "source_id": "candidate_0005",
+            "bbox": [
+              243,
+              126,
+              418,
+              170
+            ],
+            "raw_bbox": [
+              243.0,
+              126.0,
+              418.0,
+              170.0
+            ],
+            "label": "ocr_text_candidate",
+            "predicted_type": "unknown",
+            "score": 0.7230315208435059,
+            "candidate_text": "r abuahon"
+          }
+        ],
+        "conflicts": [],
+        "embedded_ocr_candidates": [],
+        "reading_order_method": "y band then x; not semantic mathematical order",
+        "candidate_text": "r abuahon",
+        "id": "region_0006",
+        "model": "PP-OCRv5_mobile_det + recognition"
+      },
+      "review_required": true
+    }
+  ],
+  "metadata": {
+    "source_original": "/workspace/lecturemath/benchmark-output/v25/real-video/end-to-end-final/v1/v2_inputs/keyframe_0000.png",
+    "source_sha256": "0057742bfd45c1da4ad0d0f5c4b736a5bf03caba90d8bc7525528769be1f27d8",
+    "input_variant": "b0",
+    "recognition_image_sha256": "0057742bfd45c1da4ad0d0f5c4b736a5bf03caba90d8bc7525528769be1f27d8",
+    "preprocessing": "none; half-open bbox crop only",
+    "config": {
+      "formula_model": "PP-FormulaNet-S",
+      "threads": 2,
+      "language": "en",
+      "max_rss_mib": 6000,
+      "det_dir": "/workspace/lecturemath/models/v2/PP-OCRv5_mobile_det_infer",
+      "rec_dir": "/workspace/lecturemath/models/v2/en_PP-OCRv5_mobile_rec_infer",
+      "formula_dir": "/workspace/lecturemath/models/v2/PP-FormulaNet-S_infer",
+      "layout_dir": "/workspace/lecturemath/models/v2/PP-DocLayout-S_infer"
+    },
+    "worker_fingerprint": {
+      "versions": {
+        "paddlepaddle": "3.2.2",
+        "paddleocr": "3.3.2",
+        "paddlex": "3.3.11",
+        "numpy": "1.26.4",
+        "opencv-contrib-python": "4.10.0.84"
+      },
+      "protocol": 1,
+      "worker_sha256": "9ee6bda27107e3de170f28b2385c6c5ee587a37395ea4a1744ccfc9e2f340e4e",
+      "det_dir": {
+        "inference.json": "05feef1acb00aa4cd7362b15f7f501fc4f99d7b1fa73c1c871e0c7b1504b0f5c",
+        "inference.pdiparams": "afa1820cb16c1fd0dad589d0f8b389139061c1ef6d68019685fd07be997dda5b",
+        "inference.yml": "98069072e1b6b37d727fd9d9f11725faa46d6ea0de012f2ed26caea011c37699"
+      },
+      "rec_dir": {
+        "inference.json": "fd1b6ec722ea841a72d3ba43e527df1d1066d5d7808e0503ee3eec7265188753",
+        "inference.pdiparams": "3ec8a97ed6cefe8568d3e2ee90bb193299b566a7661aa4fd52d224b96b59f66b",
+        "inference.yml": "27e91d0582f40168aa218303c76e184bc78fa7a5d105aad0cfbad8458b441067"
+      },
+      "formula_dir": {
+        "inference.json": "2c8fc31a94d461a7325fe06e8cbaa5db6c5658c490f74d3d6116defe8c859d6f",
+        "inference.pdiparams": "b6392296d16e2a9f414c0a751d7ccbd1bd9d8272b68aab72df1d3875f35a7489",
+        "inference.yml": "08b21c2d255041008266b8fb947758e9731eafff191568af21da5a4b9c9dd5a0"
+      }
+    },
+    "probe_error": null,
+    "reading_order": "manual JSON array order; no semantic order inference",
+    "stages": {
+      "formula": {
+        "model_load_seconds": 8.257907175000014,
+        "model_load_error": null,
+        "process_seconds": 9.166279993000046,
+        "process_peak_rss_mib": 749.55078125,
+        "versions": {
+          "paddlepaddle": "3.2.2",
+          "paddleocr": "3.3.2",
+          "paddlex": "3.3.11",
+          "numpy": "1.26.4",
+          "opencv-contrib-python": "4.10.0.84"
+        },
+        "kind": "formula",
+        "config": {
+          "formula_model": "PP-FormulaNet-S",
+          "threads": 2,
+          "language": "en",
+          "max_rss_mib": 6000,
+          "det_dir": "/workspace/lecturemath/models/v2/PP-OCRv5_mobile_det_infer",
+          "rec_dir": "/workspace/lecturemath/models/v2/en_PP-OCRv5_mobile_rec_infer",
+          "formula_dir": "/workspace/lecturemath/models/v2/PP-FormulaNet-S_infer",
+          "layout_dir": "/workspace/lecturemath/models/v2/PP-DocLayout-S_infer"
+        },
+        "subprocess_wall_seconds": 9.950658481000005,
+        "supervisor_peak_rss_mib": 744.75
+      }
+    },
+    "version": "2.5",
+    "b0": {
+      "mode": "provided B0",
+      "source": "/workspace/lecturemath/benchmark-output/v25/real-video/end-to-end-final/v1/v2_inputs/keyframe_0000.png",
+      "source_sha256": "0057742bfd45c1da4ad0d0f5c4b736a5bf03caba90d8bc7525528769be1f27d8"
+    },
+    "source_variant": "b0",
+    "region_origin": {
+      "mode": "automatic",
+      "regions_json": "analysis/regions.json"
+    },
+    "formula_model_selection": "explicit CLI configuration; never ground truth or nonempty-output routing",
+    "split_proposals": {
+      "region_0002": {
+        "status": "not_split",
+        "reason": "No sufficiently separated row bands",
+        "rows": [],
+        "assembly_allowed": false,
+        "diagnostics": {
+          "threshold": "binary black-writing foreground",
+          "crop_shape": [
+            33,
+            110
+          ],
+          "source_bbox": [
+            278,
+            10,
+            388,
+            43
+          ],
+          "structure_hint": null,
+          "original_preserved": true,
+          "excluded_analysis_components": [],
+          "warnings": [
+            "Geometry cannot establish mathematical layout or correctness."
+          ],
+          "component_count": 7,
+          "median_component_height": 10.5,
+          "projection_bands": [
+            [
+              0,
+              33
+            ]
+          ],
+          "merged_bands": [
+            [
+              0,
+              33
+            ]
+          ],
+          "maximum_merged_gap": 3
+        }
+      }
+    },
+    "row_assemblies": {
+      "region_0002": {
+        "status": "needs_review",
+        "latex": null,
+        "error": "No explicit structure hint or split is unsafe",
+        "rows": []
+      }
+    },
+    "image_process_seconds": 20.889670676000037,
+    "v1_handoff": {
+      "id": 0,
+      "image": "/workspace/lecturemath/benchmark-output/v25/real-video/end-to-end-final/v1/v2_inputs/keyframe_0000.png",
+      "variant": "b0",
+      "width": 480,
+      "height": 360,
+      "timestamp": 6.006,
+      "interval_seconds": [
+        0.0,
+        6.006
+      ],
+      "coordinate_system": "uncropped_st3d_composite_pixels",
+      "original_rgb": null,
+      "source_video_dimensions": [
+        480,
+        360
+      ],
+      "scale_to_video": [
+        1.0,
+        1.0
+      ]
+    },
+    "review_policy_note": "Post-run propagation of detector review flags; predictions, model statuses, pixels and measured runtimes unchanged."
+  }
+}

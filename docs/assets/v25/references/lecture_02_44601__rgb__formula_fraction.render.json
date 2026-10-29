@@ -1,0 +1,15 @@
+{
+  "status": "rendered",
+  "engine": "pdflatex+pdftoppm",
+  "engine_version": "pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian)",
+  "path": "/workspace/lecturemath/docs/assets/v25/references/lecture_02_44601__rgb__formula_fraction.png",
+  "error": null,
+  "cache_hit": false,
+  "key": "5fc0ae8d312ae5325ddac24b26e810a19729b7a5e6a6699f50306d2501a23bdd",
+  "png_sha256": "b9e1ae419f41f5fc9debc4a3f9e153db62ace87ad9edf00bb268f67b66720227",
+  "width": 98,
+  "height": 70,
+  "dpi": 180,
+  "semantic_correctness": "not evaluated",
+  "validation": "math command allowlist, balanced braces/environments, successful pdflatex compilation"
+}

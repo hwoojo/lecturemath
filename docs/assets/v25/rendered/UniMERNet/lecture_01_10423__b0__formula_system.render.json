@@ -1,0 +1,15 @@
+{
+  "status": "rendered",
+  "engine": "pdflatex+pdftoppm",
+  "engine_version": "pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian)",
+  "path": "/workspace/lecturemath/docs/assets/v25/rendered/UniMERNet/lecture_01_10423__b0__formula_system.png",
+  "error": null,
+  "cache_hit": false,
+  "key": "906bdab6d33a19f4148536d27aab53b735fac60ff646847abdb8c35c6d3c8053",
+  "png_sha256": "e6d76e8e3209623d3ec35b26b742cf46f6a67ceeeec2f35cfcd868a71a541135",
+  "width": 136,
+  "height": 41,
+  "dpi": 180,
+  "semantic_correctness": "not evaluated",
+  "validation": "math command allowlist, balanced braces/environments, successful pdflatex compilation"
+}

@@ -1,0 +1,15 @@
+{
+  "status": "rendered",
+  "engine": "pdflatex+pdftoppm",
+  "engine_version": "pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian)",
+  "path": "/workspace/lecturemath/docs/assets/v25/rendered/PP-FormulaNet-L/lecture_06_47799__b0__real_space.png",
+  "error": null,
+  "cache_hit": false,
+  "key": "a15d421f0f948a95facbb516c855e5efcc40ecc9a733b22a8f1ac3f4f57fccc3",
+  "png_sha256": "750ece91fd0c5c1318077ec81b58b41aaaedb56a21c265b8fdacc2cd1836fa86",
+  "width": 51,
+  "height": 42,
+  "dpi": 180,
+  "semantic_correctness": "not evaluated",
+  "validation": "math command allowlist, balanced braces/environments, successful pdflatex compilation"
+}

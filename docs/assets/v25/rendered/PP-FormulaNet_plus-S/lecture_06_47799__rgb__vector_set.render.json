@@ -1,0 +1,15 @@
+{
+  "status": "rendered",
+  "engine": "pdflatex+pdftoppm",
+  "engine_version": "pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian)",
+  "path": "/workspace/lecturemath/docs/assets/v25/rendered/PP-FormulaNet_plus-S/lecture_06_47799__rgb__vector_set.png",
+  "error": null,
+  "cache_hit": false,
+  "key": "69e07fc4042f76aaccde753cca90fbbdfacd6c023abb33b6d18a22a111429d62",
+  "png_sha256": "2cf0d0659abac46d01402ade85824b8a76c591e9fd1a2e251ab8226e0c4c17ce",
+  "width": 159,
+  "height": 45,
+  "dpi": 180,
+  "semantic_correctness": "not evaluated",
+  "validation": "math command allowlist, balanced braces/environments, successful pdflatex compilation"
+}

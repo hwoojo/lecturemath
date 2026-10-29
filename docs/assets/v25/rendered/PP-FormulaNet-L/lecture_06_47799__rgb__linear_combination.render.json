@@ -1,0 +1,15 @@
+{
+  "status": "rendered",
+  "engine": "pdflatex+pdftoppm",
+  "engine_version": "pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian)",
+  "path": "/workspace/lecturemath/docs/assets/v25/rendered/PP-FormulaNet-L/lecture_06_47799__rgb__linear_combination.png",
+  "error": null,
+  "cache_hit": false,
+  "key": "af4d3fdf4cdb7dd17924d28c9d027452343f9362889e2a8399274cb0e401412c",
+  "png_sha256": "2e9483df2dc0541db16afb3c431495feade550947dab87f1e73fce5f79a784a6",
+  "width": 207,
+  "height": 45,
+  "dpi": 180,
+  "semantic_correctness": "not evaluated",
+  "validation": "math command allowlist, balanced braces/environments, successful pdflatex compilation"
+}

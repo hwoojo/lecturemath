@@ -1,0 +1,15 @@
+{
+  "status": "rendered",
+  "engine": "pdflatex+pdftoppm",
+  "engine_version": "pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian)",
+  "path": "/workspace/lecturemath/docs/assets/v25/rendered/PP-FormulaNet-L/lecture_08_53016__b0__set_builder.png",
+  "error": null,
+  "cache_hit": false,
+  "key": "42a40ab35424a570bdc361836230a1d79b08f28d11b471bb8b52916f8d116bed",
+  "png_sha256": "08db0e8f900dcf6d0f756d87e975e166411c5841279517f59dc0c3be3a1b1ddc",
+  "width": 368,
+  "height": 46,
+  "dpi": 180,
+  "semantic_correctness": "not evaluated",
+  "validation": "math command allowlist, balanced braces/environments, successful pdflatex compilation"
+}

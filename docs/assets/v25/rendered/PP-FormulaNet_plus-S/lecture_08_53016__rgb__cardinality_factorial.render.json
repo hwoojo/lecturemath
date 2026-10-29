@@ -1,0 +1,15 @@
+{
+  "status": "rendered",
+  "engine": "pdflatex+pdftoppm",
+  "engine_version": "pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian)",
+  "path": "/workspace/lecturemath/docs/assets/v25/rendered/PP-FormulaNet_plus-S/lecture_08_53016__rgb__cardinality_factorial.png",
+  "error": null,
+  "cache_hit": false,
+  "key": "0e54b91e00c786cfe84e4c83b33cdd25ad23f79fe1502ef1ef425174f09ea734",
+  "png_sha256": "4daf1d085d3090471232430b1ef34e90ef6a865d210569ffe41ca862254e01a7",
+  "width": 210,
+  "height": 45,
+  "dpi": 180,
+  "semantic_correctness": "not evaluated",
+  "validation": "math command allowlist, balanced braces/environments, successful pdflatex compilation"
+}

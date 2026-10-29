@@ -1,0 +1,15 @@
+{
+  "status": "rendered",
+  "engine": "pdflatex+pdftoppm",
+  "engine_version": "pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian)",
+  "path": "/workspace/lecturemath/docs/assets/v25/rendered/PP-FormulaNet_plus-S/lecture_07_67415__rgb__symbolic_vector.png",
+  "error": null,
+  "cache_hit": false,
+  "key": "87ddabe0bb6cc2e03ef8b9a3ee6df02bcc0ac71e58a260edf6c07549a405da81",
+  "png_sha256": "0d8ee75dce8f1847eb22515bfa1e438617b8d39ca8cc35a1f77a8d5c1b6d7bcf",
+  "width": 28,
+  "height": 38,
+  "dpi": 180,
+  "semantic_correctness": "not evaluated",
+  "validation": "math command allowlist, balanced braces/environments, successful pdflatex compilation"
+}

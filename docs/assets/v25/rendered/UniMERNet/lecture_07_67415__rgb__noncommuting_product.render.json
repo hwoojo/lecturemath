@@ -1,0 +1,15 @@
+{
+  "status": "rendered",
+  "engine": "pdflatex+pdftoppm",
+  "engine_version": "pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian)",
+  "path": "/workspace/lecturemath/docs/assets/v25/rendered/UniMERNet/lecture_07_67415__rgb__noncommuting_product.png",
+  "error": null,
+  "cache_hit": false,
+  "key": "f79fbdbdafcbe890795175d4a19ce180f5bdb9dfa4666aae32008addbd66698a",
+  "png_sha256": "b6e50f77b504dc6c28c43493807df341e505fed7e7c45e8c6f8c8583072281f2",
+  "width": 131,
+  "height": 43,
+  "dpi": 180,
+  "semantic_correctness": "not evaluated",
+  "validation": "math command allowlist, balanced braces/environments, successful pdflatex compilation"
+}

@@ -1,0 +1,15 @@
+{
+  "status": "rendered",
+  "engine": "pdflatex+pdftoppm",
+  "engine_version": "pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian)",
+  "path": "/workspace/lecturemath/docs/assets/v25/rendered/PP-FormulaNet-S/lecture_07_67415__rgb__rectangular_matrix.png",
+  "error": null,
+  "cache_hit": false,
+  "key": "98f6a6701e52da4b3f42a42303919e375f7a747431dbe30421c076955a61d4bf",
+  "png_sha256": "a5bb1b7c0f49fd7a4dde032a03456b972142eb4ceb0801f23f7e7289c6df187e",
+  "width": 79,
+  "height": 45,
+  "dpi": 180,
+  "semantic_correctness": "not evaluated",
+  "validation": "math command allowlist, balanced braces/environments, successful pdflatex compilation"
+}

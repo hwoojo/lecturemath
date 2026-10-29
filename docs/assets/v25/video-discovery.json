@@ -1,0 +1,88 @@
+{
+  "survey_date": "2026-10-28",
+  "scope": "Find an accessible real lecture video for a small end-to-end clip; no full video/dataset downloaded.",
+  "preferred_candidate": {
+    "name": "MIT OpenCourseWare 18.06 lecture 1, Prof. Gilbert Strang",
+    "official_page": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-1-the-geometry-of-linear-equations/",
+    "official_page_download_link": "http://www.archive.org/download/MIT18.06S05_MP4/01.mp4",
+    "verified_https_download": "https://archive.org/download/MIT18.06S05_MP4/01.mp4",
+    "metadata_url": "https://archive.org/metadata/MIT18.06S05_MP4",
+    "metadata_title": "MIT 18.06 Linear Algebra, Spring 2005",
+    "metadata_creator": "MIT OpenCourseWare",
+    "metadata_speaker": "Prof. Gilbert Strang",
+    "course_date_note": "OCW page is within a Spring 2010 course, while linked Archive item metadata says Spring 2005. Do not silently equate the dates.",
+    "semantic_status": "Official course lecture video candidate. Actual decoded clip still requires visual confirmation of chalkboard, human writing, motion and resolution by parent.",
+    "format": "MP4; first bytes identify isom container",
+    "full_video_bytes": 92409278,
+    "head_probe": {
+      "http_status": 200,
+      "content_type": "video/mp4",
+      "accept_ranges": "bytes",
+      "content_length": 92409278,
+      "redirected_url": "https://dn800301.us.archive.org/0/items/MIT18.06S05_MP4/01.mp4"
+    },
+    "range_probe": {
+      "request_header": "Range: bytes=0-1023",
+      "http_status": 206,
+      "content_range": "bytes 0-1023/92409278",
+      "content_length": 1024,
+      "redirected_url": "https://dn721506.ca.archive.org/0/items/MIT18.06S05_MP4/01.mp4",
+      "read_bytes": 16,
+      "first_16_bytes_hex": "000000206674797069736f6d00000200"
+    },
+    "download_recommendation": "Do not download all 92MB. Use normal supported HTTP range seeking through ffmpeg to extract a short 8-12 second interval, with a transfer/time budget and source start time recorded. Parent chooses/validates the clip.",
+    "license_on_ocw_page": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "license_in_archive_metadata": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "license_note": "Both sources state CC BY-NC-SA; preserve MIT OCW attribution and record the version discrepancy. Do not represent as unrestricted public domain.",
+    "no_bypass_note": "Used the official OCW download resource and its ordinary HTTPS redirects. No blocked YouTube/Box destination was bypassed."
+  },
+  "other_checks": [
+    {
+      "url": "https://www.cs.rit.edu/~rlaz/LectureMath/",
+      "status": "HTTP404",
+      "observed_by": "this survey"
+    },
+    {
+      "url": "https://www.cs.rit.edu/~rlaz/accessmath.html",
+      "status": "HTTP404",
+      "observed_by": "this survey"
+    },
+    {
+      "url": "https://archive.org/metadata/MIT18.06S10",
+      "status": "No item metadata/files",
+      "observed_by": "this survey"
+    },
+    {
+      "url": "https://huggingface.co/api/datasets?search=lecture%20video&limit=10",
+      "status": "Empty list",
+      "observed_by": "this survey"
+    },
+    {
+      "url": "https://huggingface.co/api/datasets?search=whiteboard&limit=10",
+      "status": "Robotics whiteboard-writing/wiping and text/image datasets; not real human lecture videos. Excluded.",
+      "observed_by": "this survey"
+    },
+    {
+      "url": "https://github.com/bhargavaurala/accessmath-icfhr2018",
+      "status": "Known source of annotated still keyframes; not a continuous-video replacement.",
+      "observed_by": "existing project evidence"
+    },
+    {
+      "url": "https://buffalo.box.com/s/usa30o2o0oojcslfrkxfyogvbqdedktj",
+      "status": "HTTP404 reported by parent; not re-probed",
+      "observed_by": "parent"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=6arlCAT3Hb4",
+      "status": "Proxy CONNECT403 reported by parent; not re-probed and not bypassed",
+      "observed_by": "parent"
+    }
+  ],
+  "downloaded_video_files": [],
+  "next_validation": [
+    "Parent ffprobe duration/fps/resolution",
+    "Parent extract short time-bounded source clip using supported ranges",
+    "Visually confirm actual chalkboard lecture and scene continuity",
+    "Run E2E as functionality test; no GT means no accuracy score"
+  ]
+}

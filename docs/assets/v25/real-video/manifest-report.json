@@ -1,0 +1,81 @@
+{
+  "scope": "V1 temporal-composite handoff; single RGB correspondence not assumed",
+  "pages": [
+    {
+      "input": "/workspace/lecturemath/benchmark-output/v25/real-video/end-to-end-final/v1/v2_inputs/keyframe_0000.png",
+      "b0": {
+        "mode": "provided B0",
+        "source": "/workspace/lecturemath/benchmark-output/v25/real-video/end-to-end-final/v1/v2_inputs/keyframe_0000.png",
+        "source_sha256": "0057742bfd45c1da4ad0d0f5c4b736a5bf03caba90d8bc7525528769be1f27d8"
+      },
+      "source_variant": "b0",
+      "pages": 3,
+      "region_count": 7,
+      "recognition_count": 7,
+      "type_counts": {
+        "text": 0,
+        "formula": 1,
+        "other": 0,
+        "unknown": 6
+      },
+      "failed_recognitions": 0,
+      "elapsed_seconds": 21.441572838000013,
+      "rendering": {
+        "format": "boardnotes-v25-rendering-1",
+        "notice": "Recognition errors and rendering errors are separate; rendering success is not mathematical correctness.",
+        "regions": [
+          {
+            "region_id": "region_0002",
+            "bbox": [
+              278,
+              10,
+              388,
+              43
+            ],
+            "recognition_status": "ok",
+            "latex": "x=j",
+            "status": "rendered",
+            "engine": "pdflatex+pdftoppm",
+            "engine_version": "pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian)",
+            "path": "page_0000/result_rendered/formula_0002.png",
+            "error": null,
+            "cache_hit": false,
+            "key": "091682f31ebd12d1e477f7fe4bd8c3202df4d1d651fbb35540e3559e44647bdb",
+            "png_sha256": "6c31f0f659b01727e1b8a95eee55d0dfe4b372b1538498c18828f5ae503f8789",
+            "width": 80,
+            "height": 42,
+            "dpi": 180,
+            "semantic_correctness": "not evaluated",
+            "validation": "math command allowlist, balanced braces/environments, successful pdflatex compilation"
+          }
+        ]
+      }
+    },
+    {
+      "input": "/workspace/lecturemath/benchmark-output/v25/real-video/end-to-end-final/v1/v2_inputs/keyframe_0001.png",
+      "b0": {
+        "mode": "provided B0",
+        "source": "/workspace/lecturemath/benchmark-output/v25/real-video/end-to-end-final/v1/v2_inputs/keyframe_0001.png",
+        "source_sha256": "9817e51aedc075522ae8359d049a312e48660b8817b99601119a8cfca5d41a1c"
+      },
+      "source_variant": "b0",
+      "pages": 2,
+      "region_count": 2,
+      "recognition_count": 2,
+      "type_counts": {
+        "text": 1,
+        "formula": 0,
+        "other": 0,
+        "unknown": 1
+      },
+      "failed_recognitions": 0,
+      "elapsed_seconds": 8.98837391699999,
+      "rendering": {
+        "format": "boardnotes-v25-rendering-1",
+        "notice": "Recognition errors and rendering errors are separate; rendering success is not mathematical correctness.",
+        "regions": []
+      }
+    }
+  ],
+  "combined_pdf": "result.pdf"
+}

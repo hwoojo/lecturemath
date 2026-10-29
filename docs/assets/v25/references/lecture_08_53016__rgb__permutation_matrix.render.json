@@ -1,0 +1,15 @@
+{
+  "status": "rendered",
+  "engine": "pdflatex+pdftoppm",
+  "engine_version": "pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian)",
+  "path": "/workspace/lecturemath/docs/assets/v25/references/lecture_08_53016__rgb__permutation_matrix.png",
+  "error": null,
+  "cache_hit": false,
+  "key": "1a8214611f85ba30233ca19c664de77dcc3ded6b4e186eb2767cbbcee51afa25",
+  "png_sha256": "c17164b0112733183d296771bcca17d62d03a32a779c0b4b9b4d9f34e28909a4",
+  "width": 141,
+  "height": 110,
+  "dpi": 180,
+  "semantic_correctness": "not evaluated",
+  "validation": "math command allowlist, balanced braces/environments, successful pdflatex compilation"
+}

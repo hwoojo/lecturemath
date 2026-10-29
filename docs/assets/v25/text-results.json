@@ -1,0 +1,1337 @@
+{
+  "scope": "oracle text ROI; case/punctuation preserved; whitespace collapsed",
+  "summary": {
+    "rgb": {
+      "count": 10,
+      "macro_cer": 0.03660633797933569
+    },
+    "b0": {
+      "count": 10,
+      "macro_cer": 0.10083687479568486
+    }
+  },
+  "run": {
+    "model_load_seconds": 2.709632144000011,
+    "model_load_error": null,
+    "process_seconds": 9.936675142000013,
+    "process_peak_rss_mib": 473.58984375,
+    "versions": {
+      "paddlepaddle": "3.2.2",
+      "paddleocr": "3.3.2",
+      "paddlex": "3.3.11",
+      "numpy": "1.26.4",
+      "opencv-contrib-python": "4.10.0.84"
+    },
+    "kind": "text",
+    "config": {
+      "formula_model": "PP-FormulaNet-S",
+      "threads": 2,
+      "language": "en",
+      "max_rss_mib": 6000,
+      "det_dir": "/workspace/lecturemath/models/v2/PP-OCRv5_mobile_det_infer",
+      "rec_dir": "/workspace/lecturemath/models/v2/en_PP-OCRv5_mobile_rec_infer",
+      "formula_dir": "/workspace/lecturemath/models/v2/PP-FormulaNet-S_infer",
+      "layout_dir": "/workspace/lecturemath/models/v2/PP-DocLayout-S_infer"
+    },
+    "subprocess_wall_seconds": 10.66974141999998,
+    "supervisor_peak_rss_mib": 472.28125
+  },
+  "predictions": [
+    {
+      "id": "lecture_06_47799__rgb__echelon_label",
+      "type": "text",
+      "bbox": [
+        645,
+        340,
+        820,
+        405
+      ],
+      "reference": "echelon",
+      "category": "single_word",
+      "annotation_note": "Manually transcribed from the native RGB crop before model inference.",
+      "variant": "rgb",
+      "sample": "lecture_06_47799",
+      "status": "ok",
+      "error": null,
+      "seconds": 0.2238766250000026,
+      "content": "echelon",
+      "latex": null,
+      "confidence": 0.9886425733566284,
+      "line_texts": [
+        "echelon"
+      ],
+      "line_scores": [
+        0.9886425733566284
+      ],
+      "line_boxes": [
+        [
+          17.0,
+          7.0,
+          149.0,
+          53.0
+        ]
+      ],
+      "raw_engine_lines": {
+        "texts": [
+          "echelon"
+        ],
+        "scores": [
+          0.9886425733566284
+        ],
+        "boxes": [
+          [
+            17.0,
+            7.0,
+            149.0,
+            53.0
+          ]
+        ]
+      },
+      "reading_order": "vertical overlap >= 0.5; rows top-to-bottom, boxes left-to-right; heuristic",
+      "confidence_definition": "arithmetic mean of nonempty engine line recognition scores; not calibrated document confidence",
+      "character_errors": 0,
+      "reference_characters": 7,
+      "cer": 0.0
+    },
+    {
+      "id": "lecture_06_47799__rgb__free_variables",
+      "type": "text",
+      "bbox": [
+        565,
+        460,
+        945,
+        520
+      ],
+      "reference": "hence no free variables",
+      "category": "sentence_fragment",
+      "annotation_note": "Manually transcribed from the native RGB crop before model inference.",
+      "variant": "rgb",
+      "sample": "lecture_06_47799",
+      "status": "ok",
+      "error": null,
+      "seconds": 0.1509982220000552,
+      "content": "hence no free varlables",
+      "latex": null,
+      "confidence": 0.9574441313743591,
+      "line_texts": [
+        "hence no free varlables"
+      ],
+      "line_scores": [
+        0.9574441313743591
+      ],
+      "line_boxes": [
+        [
+          7.0,
+          1.0,
+          356.0,
+          59.0
+        ]
+      ],
+      "raw_engine_lines": {
+        "texts": [
+          "hence no free varlables"
+        ],
+        "scores": [
+          0.9574441313743591
+        ],
+        "boxes": [
+          [
+            7.0,
+            1.0,
+            356.0,
+            59.0
+          ]
+        ]
+      },
+      "reading_order": "vertical overlap >= 0.5; rows top-to-bottom, boxes left-to-right; heuristic",
+      "confidence_definition": "arithmetic mean of nonempty engine line recognition scores; not calibrated document confidence",
+      "character_errors": 1,
+      "reference_characters": 23,
+      "cer": 0.043478260869565216
+    },
+    {
+      "id": "lecture_06_47799__rgb__consistent_statement",
+      "type": "text",
+      "bbox": [
+        1390,
+        630,
+        1815,
+        750
+      ],
+      "reference": "This system is always consistent.",
+      "category": "multiline_sentence",
+      "annotation_note": "Manually transcribed from the native RGB crop before model inference.",
+      "variant": "rgb",
+      "sample": "lecture_06_47799",
+      "status": "ok",
+      "error": null,
+      "seconds": 0.40925547100005133,
+      "content": "This system is always\nConsistent.",
+      "latex": null,
+      "confidence": 0.9399517774581909,
+      "line_texts": [
+        "This system is always",
+        "Consistent."
+      ],
+      "line_scores": [
+        0.9636597633361816,
+        0.9162437915802002
+      ],
+      "line_boxes": [
+        [
+          21.0,
+          0.0,
+          401.0,
+          69.0
+        ],
+        [
+          45.0,
+          68.0,
+          223.0,
+          113.0
+        ]
+      ],
+      "raw_engine_lines": {
+        "texts": [
+          "This system is always",
+          "Consistent."
+        ],
+        "scores": [
+          0.9636597633361816,
+          0.9162437915802002
+        ],
+        "boxes": [
+          [
+            21.0,
+            0.0,
+            401.0,
+            69.0
+          ],
+          [
+            45.0,
+            68.0,
+            223.0,
+            113.0
+          ]
+        ]
+      },
+      "reading_order": "vertical overlap >= 0.5; rows top-to-bottom, boxes left-to-right; heuristic",
+      "confidence_definition": "arithmetic mean of nonempty engine line recognition scores; not calibrated document confidence",
+      "character_errors": 1,
+      "reference_characters": 33,
+      "cer": 0.030303030303030304
+    },
+    {
+      "id": "lecture_06_47799__b0__echelon_label",
+      "type": "text",
+      "bbox": [
+        645,
+        340,
+        820,
+        405
+      ],
+      "reference": "echelon",
+      "category": "single_word",
+      "annotation_note": "Manually transcribed from the native RGB crop before model inference.",
+      "variant": "b0",
+      "sample": "lecture_06_47799",
+      "status": "ok",
+      "error": null,
+      "seconds": 0.13215779800003702,
+      "content": "echelm",
+      "latex": null,
+      "confidence": 0.9658191800117493,
+      "line_texts": [
+        "echelm"
+      ],
+      "line_scores": [
+        0.9658191800117493
+      ],
+      "line_boxes": [
+        [
+          19.0,
+          4.0,
+          148.0,
+          53.0
+        ]
+      ],
+      "raw_engine_lines": {
+        "texts": [
+          "echelm"
+        ],
+        "scores": [
+          0.9658191800117493
+        ],
+        "boxes": [
+          [
+            19.0,
+            4.0,
+            148.0,
+            53.0
+          ]
+        ]
+      },
+      "reading_order": "vertical overlap >= 0.5; rows top-to-bottom, boxes left-to-right; heuristic",
+      "confidence_definition": "arithmetic mean of nonempty engine line recognition scores; not calibrated document confidence",
+      "character_errors": 2,
+      "reference_characters": 7,
+      "cer": 0.2857142857142857
+    },
+    {
+      "id": "lecture_06_47799__b0__free_variables",
+      "type": "text",
+      "bbox": [
+        565,
+        460,
+        945,
+        520
+      ],
+      "reference": "hence no free variables",
+      "category": "sentence_fragment",
+      "annotation_note": "Manually transcribed from the native RGB crop before model inference.",
+      "variant": "b0",
+      "sample": "lecture_06_47799",
+      "status": "ok",
+      "error": null,
+      "seconds": 0.15757827999999563,
+      "content": "heme no free varlales",
+      "latex": null,
+      "confidence": 0.8675282001495361,
+      "line_texts": [
+        "heme no free varlales"
+      ],
+      "line_scores": [
+        0.8675282001495361
+      ],
+      "line_boxes": [
+        [
+          10.0,
+          4.0,
+          353.0,
+          57.0
+        ]
+      ],
+      "raw_engine_lines": {
+        "texts": [
+          "heme no free varlales"
+        ],
+        "scores": [
+          0.8675282001495361
+        ],
+        "boxes": [
+          [
+            10.0,
+            4.0,
+            353.0,
+            57.0
+          ]
+        ]
+      },
+      "reading_order": "vertical overlap >= 0.5; rows top-to-bottom, boxes left-to-right; heuristic",
+      "confidence_definition": "arithmetic mean of nonempty engine line recognition scores; not calibrated document confidence",
+      "character_errors": 4,
+      "reference_characters": 23,
+      "cer": 0.17391304347826086
+    },
+    {
+      "id": "lecture_06_47799__b0__consistent_statement",
+      "type": "text",
+      "bbox": [
+        1390,
+        630,
+        1815,
+        750
+      ],
+      "reference": "This system is always consistent.",
+      "category": "multiline_sentence",
+      "annotation_note": "Manually transcribed from the native RGB crop before model inference.",
+      "variant": "b0",
+      "sample": "lecture_06_47799",
+      "status": "ok",
+      "error": null,
+      "seconds": 0.39421047399997633,
+      "content": "This systom is always\nConsistent.",
+      "latex": null,
+      "confidence": 0.9485651850700378,
+      "line_texts": [
+        "This systom is always",
+        "Consistent."
+      ],
+      "line_scores": [
+        0.9474383592605591,
+        0.9496920108795166
+      ],
+      "line_boxes": [
+        [
+          22.0,
+          0.0,
+          398.0,
+          67.0
+        ],
+        [
+          47.0,
+          69.0,
+          224.0,
+          112.0
+        ]
+      ],
+      "raw_engine_lines": {
+        "texts": [
+          "This systom is always",
+          "Consistent."
+        ],
+        "scores": [
+          0.9474383592605591,
+          0.9496920108795166
+        ],
+        "boxes": [
+          [
+            22.0,
+            0.0,
+            398.0,
+            67.0
+          ],
+          [
+            47.0,
+            69.0,
+            224.0,
+            112.0
+          ]
+        ]
+      },
+      "reading_order": "vertical overlap >= 0.5; rows top-to-bottom, boxes left-to-right; heuristic",
+      "confidence_definition": "arithmetic mean of nonempty engine line recognition scores; not calibrated document confidence",
+      "character_errors": 2,
+      "reference_characters": 33,
+      "cer": 0.06060606060606061
+    },
+    {
+      "id": "lecture_07_67415__rgb__matrix_heading",
+      "type": "text",
+      "bbox": [
+        170,
+        205,
+        550,
+        290
+      ],
+      "reference": "Matrix Multiplication.",
+      "category": "heading",
+      "annotation_note": "Manually transcribed from the native RGB crop before model inference.",
+      "variant": "rgb",
+      "sample": "lecture_07_67415",
+      "status": "ok",
+      "error": null,
+      "seconds": 0.16736610499998505,
+      "content": "Matix Multiplication",
+      "latex": null,
+      "confidence": 0.9650494456291199,
+      "line_texts": [
+        "Matix Multiplication"
+      ],
+      "line_scores": [
+        0.9650494456291199
+      ],
+      "line_boxes": [
+        [
+          5.0,
+          5.0,
+          361.0,
+          78.0
+        ]
+      ],
+      "raw_engine_lines": {
+        "texts": [
+          "Matix Multiplication"
+        ],
+        "scores": [
+          0.9650494456291199
+        ],
+        "boxes": [
+          [
+            5.0,
+            5.0,
+            361.0,
+            78.0
+          ]
+        ]
+      },
+      "reading_order": "vertical overlap >= 0.5; rows top-to-bottom, boxes left-to-right; heuristic",
+      "confidence_definition": "arithmetic mean of nonempty engine line recognition scores; not calibrated document confidence",
+      "character_errors": 2,
+      "reference_characters": 22,
+      "cer": 0.09090909090909091
+    },
+    {
+      "id": "lecture_07_67415__rgb__not_commutative",
+      "type": "text",
+      "bbox": [
+        1430,
+        225,
+        1810,
+        365
+      ],
+      "reference": "Matrix mult. is not COMMUTATIVE.",
+      "category": "multiline_sentence",
+      "annotation_note": "Manually transcribed from the native RGB crop before model inference.",
+      "variant": "rgb",
+      "sample": "lecture_07_67415",
+      "status": "ok",
+      "error": null,
+      "seconds": 0.4055946710000171,
+      "content": "Matrix mult. is\nnot COMMUTATIVE.",
+      "latex": null,
+      "confidence": 0.9547176659107208,
+      "line_texts": [
+        "Matrix mult. is",
+        "not COMMUTATIVE."
+      ],
+      "line_scores": [
+        0.9243261218070984,
+        0.9851092100143433
+      ],
+      "line_boxes": [
+        [
+          35.0,
+          7.0,
+          300.0,
+          64.0
+        ],
+        [
+          2.0,
+          65.0,
+          349.0,
+          136.0
+        ]
+      ],
+      "raw_engine_lines": {
+        "texts": [
+          "Matrix mult. is",
+          "not COMMUTATIVE."
+        ],
+        "scores": [
+          0.9243261218070984,
+          0.9851092100143433
+        ],
+        "boxes": [
+          [
+            35.0,
+            7.0,
+            300.0,
+            64.0
+          ],
+          [
+            2.0,
+            65.0,
+            349.0,
+            136.0
+          ]
+        ]
+      },
+      "reading_order": "vertical overlap >= 0.5; rows top-to-bottom, boxes left-to-right; heuristic",
+      "confidence_definition": "arithmetic mean of nonempty engine line recognition scores; not calibrated document confidence",
+      "character_errors": 0,
+      "reference_characters": 32,
+      "cer": 0.0
+    },
+    {
+      "id": "lecture_07_67415__rgb__in_general",
+      "type": "text",
+      "bbox": [
+        1420,
+        370,
+        1640,
+        435
+      ],
+      "reference": "In general,",
+      "category": "sentence_fragment",
+      "annotation_note": "Manually transcribed from the native RGB crop before model inference.",
+      "variant": "rgb",
+      "sample": "lecture_07_67415",
+      "status": "ok",
+      "error": null,
+      "seconds": 0.13448968500000547,
+      "content": "In general,",
+      "latex": null,
+      "confidence": 0.8530523180961609,
+      "line_texts": [
+        "In general,"
+      ],
+      "line_scores": [
+        0.8530523180961609
+      ],
+      "line_boxes": [
+        [
+          5.0,
+          0.0,
+          159.0,
+          59.0
+        ]
+      ],
+      "raw_engine_lines": {
+        "texts": [
+          "In general,"
+        ],
+        "scores": [
+          0.8530523180961609
+        ],
+        "boxes": [
+          [
+            5.0,
+            0.0,
+            159.0,
+            59.0
+          ]
+        ]
+      },
+      "reading_order": "vertical overlap >= 0.5; rows top-to-bottom, boxes left-to-right; heuristic",
+      "confidence_definition": "arithmetic mean of nonempty engine line recognition scores; not calibrated document confidence",
+      "character_errors": 0,
+      "reference_characters": 11,
+      "cer": 0.0
+    },
+    {
+      "id": "lecture_07_67415__b0__matrix_heading",
+      "type": "text",
+      "bbox": [
+        170,
+        205,
+        550,
+        290
+      ],
+      "reference": "Matrix Multiplication.",
+      "category": "heading",
+      "annotation_note": "Manually transcribed from the native RGB crop before model inference.",
+      "variant": "b0",
+      "sample": "lecture_07_67415",
+      "status": "ok",
+      "error": null,
+      "seconds": 0.15527599700004657,
+      "content": "Matix Multiplication:",
+      "latex": null,
+      "confidence": 0.8760514855384827,
+      "line_texts": [
+        "Matix Multiplication:"
+      ],
+      "line_scores": [
+        0.8760514855384827
+      ],
+      "line_boxes": [
+        [
+          7.0,
+          8.0,
+          374.0,
+          76.0
+        ]
+      ],
+      "raw_engine_lines": {
+        "texts": [
+          "Matix Multiplication:"
+        ],
+        "scores": [
+          0.8760514855384827
+        ],
+        "boxes": [
+          [
+            7.0,
+            8.0,
+            374.0,
+            76.0
+          ]
+        ]
+      },
+      "reading_order": "vertical overlap >= 0.5; rows top-to-bottom, boxes left-to-right; heuristic",
+      "confidence_definition": "arithmetic mean of nonempty engine line recognition scores; not calibrated document confidence",
+      "character_errors": 2,
+      "reference_characters": 22,
+      "cer": 0.09090909090909091
+    },
+    {
+      "id": "lecture_07_67415__b0__not_commutative",
+      "type": "text",
+      "bbox": [
+        1430,
+        225,
+        1810,
+        365
+      ],
+      "reference": "Matrix mult. is not COMMUTATIVE.",
+      "category": "multiline_sentence",
+      "annotation_note": "Manually transcribed from the native RGB crop before model inference.",
+      "variant": "b0",
+      "sample": "lecture_07_67415",
+      "status": "ok",
+      "error": null,
+      "seconds": 0.3987605080000094,
+      "content": "Matrix mult. is\nnot COMMUTATIVE.",
+      "latex": null,
+      "confidence": 0.9544965326786041,
+      "line_texts": [
+        "Matrix mult. is",
+        "not COMMUTATIVE."
+      ],
+      "line_scores": [
+        0.9140753149986267,
+        0.9949177503585815
+      ],
+      "line_boxes": [
+        [
+          36.0,
+          10.0,
+          298.0,
+          62.0
+        ],
+        [
+          4.0,
+          67.0,
+          357.0,
+          133.0
+        ]
+      ],
+      "raw_engine_lines": {
+        "texts": [
+          "Matrix mult. is",
+          "not COMMUTATIVE."
+        ],
+        "scores": [
+          0.9140753149986267,
+          0.9949177503585815
+        ],
+        "boxes": [
+          [
+            36.0,
+            10.0,
+            298.0,
+            62.0
+          ],
+          [
+            4.0,
+            67.0,
+            357.0,
+            133.0
+          ]
+        ]
+      },
+      "reading_order": "vertical overlap >= 0.5; rows top-to-bottom, boxes left-to-right; heuristic",
+      "confidence_definition": "arithmetic mean of nonempty engine line recognition scores; not calibrated document confidence",
+      "character_errors": 0,
+      "reference_characters": 32,
+      "cer": 0.0
+    },
+    {
+      "id": "lecture_07_67415__b0__in_general",
+      "type": "text",
+      "bbox": [
+        1420,
+        370,
+        1640,
+        435
+      ],
+      "reference": "In general,",
+      "category": "sentence_fragment",
+      "annotation_note": "Manually transcribed from the native RGB crop before model inference.",
+      "variant": "b0",
+      "sample": "lecture_07_67415",
+      "status": "ok",
+      "error": null,
+      "seconds": 0.13019094999998515,
+      "content": "In gemera,",
+      "latex": null,
+      "confidence": 0.8127120733261108,
+      "line_texts": [
+        "In gemera,"
+      ],
+      "line_scores": [
+        0.8127120733261108
+      ],
+      "line_boxes": [
+        [
+          3.0,
+          0.0,
+          161.0,
+          65.0
+        ]
+      ],
+      "raw_engine_lines": {
+        "texts": [
+          "In gemera,"
+        ],
+        "scores": [
+          0.8127120733261108
+        ],
+        "boxes": [
+          [
+            3.0,
+            0.0,
+            161.0,
+            65.0
+          ]
+        ]
+      },
+      "reading_order": "vertical overlap >= 0.5; rows top-to-bottom, boxes left-to-right; heuristic",
+      "confidence_definition": "arithmetic mean of nonempty engine line recognition scores; not calibrated document confidence",
+      "character_errors": 2,
+      "reference_characters": 11,
+      "cer": 0.18181818181818182
+    },
+    {
+      "id": "lecture_08_53016__rgb__permutation_heading",
+      "type": "text",
+      "bbox": [
+        305,
+        190,
+        810,
+        280
+      ],
+      "reference": "Permutation Matrix:",
+      "category": "heading",
+      "annotation_note": "Manually transcribed from the native RGB crop before model inference.",
+      "variant": "rgb",
+      "sample": "lecture_08_53016",
+      "status": "ok",
+      "error": null,
+      "seconds": 0.17645758599996952,
+      "content": "Permutalion Malix:",
+      "latex": null,
+      "confidence": 0.9407383799552917,
+      "line_texts": [
+        "Permutalion Malix:"
+      ],
+      "line_scores": [
+        0.9407383799552917
+      ],
+      "line_boxes": [
+        [
+          5.0,
+          2.0,
+          488.0,
+          89.0
+        ]
+      ],
+      "raw_engine_lines": {
+        "texts": [
+          "Permutalion Malix:"
+        ],
+        "scores": [
+          0.9407383799552917
+        ],
+        "boxes": [
+          [
+            5.0,
+            2.0,
+            488.0,
+            89.0
+          ]
+        ]
+      },
+      "reading_order": "vertical overlap >= 0.5; rows top-to-bottom, boxes left-to-right; heuristic",
+      "confidence_definition": "arithmetic mean of nonempty engine line recognition scores; not calibrated document confidence",
+      "character_errors": 3,
+      "reference_characters": 19,
+      "cer": 0.15789473684210525
+    },
+    {
+      "id": "lecture_08_53016__rgb__definition_line1",
+      "type": "text",
+      "bbox": [
+        335,
+        275,
+        1110,
+        365
+      ],
+      "reference": "matrix formed by permuting the",
+      "category": "sentence_fragment",
+      "annotation_note": "Manually transcribed from the native RGB crop before model inference.",
+      "variant": "rgb",
+      "sample": "lecture_08_53016",
+      "status": "ok",
+      "error": null,
+      "seconds": 0.6714581659999794,
+      "content": "matrix formed by permuting the",
+      "latex": null,
+      "confidence": 0.9792696237564087,
+      "line_texts": [
+        "matrix",
+        "formed by permuting",
+        "the"
+      ],
+      "line_scores": [
+        0.9838013648986816,
+        0.9637618660926819,
+        0.9902456402778625
+      ],
+      "line_boxes": [
+        [
+          3.0,
+          12.0,
+          146.0,
+          73.0
+        ],
+        [
+          183.0,
+          1.0,
+          683.0,
+          82.0
+        ],
+        [
+          702.0,
+          0.0,
+          768.0,
+          50.0
+        ]
+      ],
+      "raw_engine_lines": {
+        "texts": [
+          "formed by permuting",
+          "the",
+          "matrix"
+        ],
+        "scores": [
+          0.9637618660926819,
+          0.9902456402778625,
+          0.9838013648986816
+        ],
+        "boxes": [
+          [
+            183.0,
+            1.0,
+            683.0,
+            82.0
+          ],
+          [
+            702.0,
+            0.0,
+            768.0,
+            50.0
+          ],
+          [
+            3.0,
+            12.0,
+            146.0,
+            73.0
+          ]
+        ]
+      },
+      "reading_order": "vertical overlap >= 0.5; rows top-to-bottom, boxes left-to-right; heuristic",
+      "confidence_definition": "arithmetic mean of nonempty engine line recognition scores; not calibrated document confidence",
+      "character_errors": 0,
+      "reference_characters": 30,
+      "cer": 0.0
+    },
+    {
+      "id": "lecture_08_53016__rgb__definition_line2",
+      "type": "text",
+      "bbox": [
+        340,
+        360,
+        1040,
+        445
+      ],
+      "reference": "rows of the identity matrix.",
+      "category": "sentence_fragment",
+      "annotation_note": "Manually transcribed from the native RGB crop before model inference.",
+      "variant": "rgb",
+      "sample": "lecture_08_53016",
+      "status": "ok",
+      "error": null,
+      "seconds": 0.8244972420000067,
+      "content": "rows of the identity matrix.",
+      "latex": null,
+      "confidence": 0.9619207978248596,
+      "line_texts": [
+        "rows of the identity",
+        "matrix."
+      ],
+      "line_scores": [
+        0.9844385981559753,
+        0.9394029974937439
+      ],
+      "line_boxes": [
+        [
+          2.0,
+          5.0,
+          500.0,
+          75.0
+        ],
+        [
+          513.0,
+          0.0,
+          679.0,
+          62.0
+        ]
+      ],
+      "raw_engine_lines": {
+        "texts": [
+          "rows of the identity",
+          "matrix.",
+          "",
+          ""
+        ],
+        "scores": [
+          0.9844385981559753,
+          0.9394029974937439,
+          0.0,
+          0.0
+        ],
+        "boxes": [
+          [
+            2.0,
+            5.0,
+            500.0,
+            75.0
+          ],
+          [
+            513.0,
+            0.0,
+            679.0,
+            62.0
+          ],
+          [
+            176.0,
+            29.0,
+            192.0,
+            35.0
+          ],
+          [
+            520.0,
+            35.0,
+            525.0,
+            39.0
+          ]
+        ]
+      },
+      "reading_order": "vertical overlap >= 0.5; rows top-to-bottom, boxes left-to-right; heuristic",
+      "confidence_definition": "arithmetic mean of nonempty engine line recognition scores; not calibrated document confidence",
+      "character_errors": 0,
+      "reference_characters": 28,
+      "cer": 0.0
+    },
+    {
+      "id": "lecture_08_53016__rgb__row_swap_note",
+      "type": "text",
+      "bbox": [
+        925,
+        475,
+        1325,
+        580
+      ],
+      "reference": "(helpful for row swaps)",
+      "category": "parenthesized_note",
+      "annotation_note": "Manually transcribed from the native RGB crop before model inference.",
+      "variant": "rgb",
+      "sample": "lecture_08_53016",
+      "status": "ok",
+      "error": null,
+      "seconds": 0.18312228100000993,
+      "content": "helpful for row swaps)",
+      "latex": null,
+      "confidence": 0.921309232711792,
+      "line_texts": [
+        "helpful for row swaps)"
+      ],
+      "line_scores": [
+        0.921309232711792
+      ],
+      "line_boxes": [
+        [
+          9.0,
+          7.0,
+          386.0,
+          90.0
+        ]
+      ],
+      "raw_engine_lines": {
+        "texts": [
+          "helpful for row swaps)"
+        ],
+        "scores": [
+          0.921309232711792
+        ],
+        "boxes": [
+          [
+            9.0,
+            7.0,
+            386.0,
+            90.0
+          ]
+        ]
+      },
+      "reading_order": "vertical overlap >= 0.5; rows top-to-bottom, boxes left-to-right; heuristic",
+      "confidence_definition": "arithmetic mean of nonempty engine line recognition scores; not calibrated document confidence",
+      "character_errors": 1,
+      "reference_characters": 23,
+      "cer": 0.043478260869565216
+    },
+    {
+      "id": "lecture_08_53016__b0__permutation_heading",
+      "type": "text",
+      "bbox": [
+        305,
+        190,
+        810,
+        280
+      ],
+      "reference": "Permutation Matrix:",
+      "category": "heading",
+      "annotation_note": "Manually transcribed from the native RGB crop before model inference.",
+      "variant": "b0",
+      "sample": "lecture_08_53016",
+      "status": "ok",
+      "error": null,
+      "seconds": 0.19388288900000816,
+      "content": "Permutalion Matix:",
+      "latex": null,
+      "confidence": 0.8590705394744873,
+      "line_texts": [
+        "Permutalion Matix:"
+      ],
+      "line_scores": [
+        0.8590705394744873
+      ],
+      "line_boxes": [
+        [
+          6.0,
+          0.0,
+          505.0,
+          90.0
+        ]
+      ],
+      "raw_engine_lines": {
+        "texts": [
+          "Permutalion Matix:"
+        ],
+        "scores": [
+          0.8590705394744873
+        ],
+        "boxes": [
+          [
+            6.0,
+            0.0,
+            505.0,
+            90.0
+          ]
+        ]
+      },
+      "reading_order": "vertical overlap >= 0.5; rows top-to-bottom, boxes left-to-right; heuristic",
+      "confidence_definition": "arithmetic mean of nonempty engine line recognition scores; not calibrated document confidence",
+      "character_errors": 2,
+      "reference_characters": 19,
+      "cer": 0.10526315789473684
+    },
+    {
+      "id": "lecture_08_53016__b0__definition_line1",
+      "type": "text",
+      "bbox": [
+        335,
+        275,
+        1110,
+        365
+      ],
+      "reference": "matrix formed by permuting the",
+      "category": "sentence_fragment",
+      "annotation_note": "Manually transcribed from the native RGB crop before model inference.",
+      "variant": "b0",
+      "sample": "lecture_08_53016",
+      "status": "ok",
+      "error": null,
+      "seconds": 1.2911626690000162,
+      "content": "malix formed by permuting the",
+      "latex": null,
+      "confidence": 0.8986027240753174,
+      "line_texts": [
+        "malix",
+        "formed by permuting",
+        "the"
+      ],
+      "line_scores": [
+        0.9037052392959595,
+        0.9792004823684692,
+        0.8129024505615234
+      ],
+      "line_boxes": [
+        [
+          2.0,
+          10.0,
+          147.0,
+          75.0
+        ],
+        [
+          179.0,
+          0.0,
+          682.0,
+          85.0
+        ],
+        [
+          700.0,
+          0.0,
+          764.0,
+          52.0
+        ]
+      ],
+      "raw_engine_lines": {
+        "texts": [
+          "formed by permuting",
+          "the",
+          "malix"
+        ],
+        "scores": [
+          0.9792004823684692,
+          0.8129024505615234,
+          0.9037052392959595
+        ],
+        "boxes": [
+          [
+            179.0,
+            0.0,
+            682.0,
+            85.0
+          ],
+          [
+            700.0,
+            0.0,
+            764.0,
+            52.0
+          ],
+          [
+            2.0,
+            10.0,
+            147.0,
+            75.0
+          ]
+        ]
+      },
+      "reading_order": "vertical overlap >= 0.5; rows top-to-bottom, boxes left-to-right; heuristic",
+      "confidence_definition": "arithmetic mean of nonempty engine line recognition scores; not calibrated document confidence",
+      "character_errors": 2,
+      "reference_characters": 30,
+      "cer": 0.06666666666666667
+    },
+    {
+      "id": "lecture_08_53016__b0__definition_line2",
+      "type": "text",
+      "bbox": [
+        340,
+        360,
+        1040,
+        445
+      ],
+      "reference": "rows of the identity matrix.",
+      "category": "sentence_fragment",
+      "annotation_note": "Manually transcribed from the native RGB crop before model inference.",
+      "variant": "b0",
+      "sample": "lecture_08_53016",
+      "status": "ok",
+      "error": null,
+      "seconds": 0.8153563959999701,
+      "content": "rows of the identity matrix.",
+      "latex": null,
+      "confidence": 0.9738789498806,
+      "line_texts": [
+        "rows of the identity",
+        "matrix."
+      ],
+      "line_scores": [
+        0.9550006985664368,
+        0.9927572011947632
+      ],
+      "line_boxes": [
+        [
+          0.0,
+          4.0,
+          499.0,
+          80.0
+        ],
+        [
+          517.0,
+          0.0,
+          683.0,
+          59.0
+        ]
+      ],
+      "raw_engine_lines": {
+        "texts": [
+          "rows of the identity",
+          "matrix."
+        ],
+        "scores": [
+          0.9550006985664368,
+          0.9927572011947632
+        ],
+        "boxes": [
+          [
+            0.0,
+            4.0,
+            499.0,
+            80.0
+          ],
+          [
+            517.0,
+            0.0,
+            683.0,
+            59.0
+          ]
+        ]
+      },
+      "reading_order": "vertical overlap >= 0.5; rows top-to-bottom, boxes left-to-right; heuristic",
+      "confidence_definition": "arithmetic mean of nonempty engine line recognition scores; not calibrated document confidence",
+      "character_errors": 0,
+      "reference_characters": 28,
+      "cer": 0.0
+    },
+    {
+      "id": "lecture_08_53016__b0__row_swap_note",
+      "type": "text",
+      "bbox": [
+        925,
+        475,
+        1325,
+        580
+      ],
+      "reference": "(helpful for row swaps)",
+      "category": "parenthesized_note",
+      "annotation_note": "Manually transcribed from the native RGB crop before model inference.",
+      "variant": "b0",
+      "sample": "lecture_08_53016",
+      "status": "ok",
+      "error": null,
+      "seconds": 0.21129557199998317,
+      "content": "(helpful for rowswaps)",
+      "latex": null,
+      "confidence": 0.843701958656311,
+      "line_texts": [
+        "(helpful for rowswaps)"
+      ],
+      "line_scores": [
+        0.843701958656311
+      ],
+      "line_boxes": [
+        [
+          9.0,
+          6.0,
+          387.0,
+          93.0
+        ]
+      ],
+      "raw_engine_lines": {
+        "texts": [
+          "(helpful for rowswaps)"
+        ],
+        "scores": [
+          0.843701958656311
+        ],
+        "boxes": [
+          [
+            9.0,
+            6.0,
+            387.0,
+            93.0
+          ]
+        ]
+      },
+      "reading_order": "vertical overlap >= 0.5; rows top-to-bottom, boxes left-to-right; heuristic",
+      "confidence_definition": "arithmetic mean of nonempty engine line recognition scores; not calibrated document confidence",
+      "character_errors": 1,
+      "reference_characters": 23,
+      "cer": 0.043478260869565216
+    }
+  ]
+}

@@ -13,11 +13,17 @@ def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--output',type=Path,default=Path('models/v2'))
     p.add_argument('--formula',action='store_true',help='include PP-FormulaNet-S (~224MiB); printed-formula model')
+    p.add_argument('--formula-model',action='append',choices=['PP-FormulaNet-S','PP-FormulaNet_plus-S','PP-FormulaNet-L','UniMERNet'],default=[])
+    p.add_argument('--layout',action='store_true',help='include PP-DocLayout-S (~5MiB)')
     p.add_argument('--language',choices=['en','ko'],default='en')
     args=p.parse_args();args.output.mkdir(parents=True,exist_ok=True)
     names=['PP-OCRv5_mobile_det','en_PP-OCRv5_mobile_rec' if args.language=='en' else 'korean_PP-OCRv5_mobile_rec']
     if args.formula: names.append('PP-FormulaNet-S')
-    manifest={}
+    names+=args.formula_model
+    if args.layout: names.append('PP-DocLayout-S')
+    names=list(dict.fromkeys(names))
+    manifest_path=args.output/'models.json'
+    manifest=json.loads(manifest_path.read_text()) if manifest_path.exists() else {}
     for name in names:
         archive=args.output/(name+'_infer.tar');url=BASE+archive.name
         if not archive.exists():
@@ -46,6 +52,7 @@ def main():
         model_dir=candidates[0].resolve()
         manifest[name]={'url':url,'archive_bytes':archive.stat().st_size,'archive_sha256':digest.hexdigest(),'directory':str(model_dir),
                         'files':{f.name:hashlib.sha256(f.read_bytes()).hexdigest() for f in model_dir.iterdir() if f.is_file()}}
+        manifest_path.write_text(json.dumps(manifest,indent=2)+'\n')
         print('Prepared',model_dir,flush=True)
     (args.output/'models.json').write_text(json.dumps(manifest,indent=2)+'\n')
 

@@ -1,0 +1,79 @@
+{
+  "PP-OCRv5_mobile_det": {
+    "url": "https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/PP-OCRv5_mobile_det_infer.tar",
+    "archive_bytes": 4935680,
+    "archive_sha256": "50446e5d01ac2a73d5319c89513281f6578414c888c602f9af13f93feefffc58",
+    "directory": "/workspace/lecturemath/models/v2/PP-OCRv5_mobile_det_infer",
+    "files": {
+      "inference.yml": "98069072e1b6b37d727fd9d9f11725faa46d6ea0de012f2ed26caea011c37699",
+      "inference.json": "05feef1acb00aa4cd7362b15f7f501fc4f99d7b1fa73c1c871e0c7b1504b0f5c",
+      "inference.pdiparams": "afa1820cb16c1fd0dad589d0f8b389139061c1ef6d68019685fd07be997dda5b"
+    }
+  },
+  "en_PP-OCRv5_mobile_rec": {
+    "url": "https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/en_PP-OCRv5_mobile_rec_infer.tar",
+    "archive_bytes": 8007680,
+    "archive_sha256": "e595b4cf2ffad19fbb5a61ba345d63939577a3ab8717b6e5995642590c9101b4",
+    "directory": "/workspace/lecturemath/models/v2/en_PP-OCRv5_mobile_rec_infer",
+    "files": {
+      "inference.yml": "27e91d0582f40168aa218303c76e184bc78fa7a5d105aad0cfbad8458b441067",
+      "inference.json": "fd1b6ec722ea841a72d3ba43e527df1d1066d5d7808e0503ee3eec7265188753",
+      "inference.pdiparams": "3ec8a97ed6cefe8568d3e2ee90bb193299b566a7661aa4fd52d224b96b59f66b"
+    }
+  },
+  "PP-FormulaNet-S": {
+    "url": "https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/PP-FormulaNet-S_infer.tar",
+    "archive_bytes": 234434560,
+    "archive_sha256": "a3ea2c005abdbe525d9e46c1e2e96021d900b0dd45535a112260d46dd437612e",
+    "directory": "/workspace/lecturemath/models/v2/PP-FormulaNet-S_infer",
+    "files": {
+      "inference.yml": "08b21c2d255041008266b8fb947758e9731eafff191568af21da5a4b9c9dd5a0",
+      "inference.json": "2c8fc31a94d461a7325fe06e8cbaa5db6c5658c490f74d3d6116defe8c859d6f",
+      "inference.pdiparams": "b6392296d16e2a9f414c0a751d7ccbd1bd9d8272b68aab72df1d3875f35a7489"
+    }
+  },
+  "PP-FormulaNet_plus-S": {
+    "url": "https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/PP-FormulaNet_plus-S_infer.tar",
+    "archive_bytes": 259604480,
+    "archive_sha256": "31e8659fd5bdbefcc1339ab531e359c58fae6c0971097ca4cc897073e3fd28a6",
+    "directory": "/workspace/lecturemath/models/v2/PP-FormulaNet_plus-S_infer",
+    "files": {
+      "inference.yml": "96062655d94c21d39274328dbc82c1a487e66addb8425f5a7fd5b7dfb2421ec3",
+      "inference.json": "01238434e33df83588e2627f350559b576e34551d2b2ffea148345032de56c00",
+      "inference.pdiparams": "e464f94412feaa98f8791eacc84684f887b3569e30e80c52b8112e9cf7d4069b"
+    }
+  },
+  "PP-DocLayout-S": {
+    "url": "https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/PP-DocLayout-S_infer.tar",
+    "archive_bytes": 5150720,
+    "archive_sha256": "3f589aa473a5305a626705d94762fcb4ab3e43e6e48983c9b34b011a6c9d0394",
+    "directory": "/workspace/lecturemath/models/v2/PP-DocLayout-S_infer",
+    "files": {
+      "inference.yml": "6f690098c438214c67822239a568f0bc2bbe97a8f02fba93e492d4f2c47523c3",
+      "inference.json": "ac09e931895d4c442e5379ab3b7e9b583baf288e816ab7675ca519da9eb2a9d7",
+      "inference.pdiparams": "491c3382d84ca04d2033afbee0c105942ed82fea392bb4a19170646adebe088a"
+    }
+  },
+  "PP-FormulaNet-L": {
+    "url": "https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/PP-FormulaNet-L_infer.tar",
+    "archive_bytes": 728360960,
+    "archive_sha256": "a949f70ae723640edccab8541581315c8656737d5dc22aeda841729f7fe8f2ea",
+    "directory": "/workspace/lecturemath/models/v2/PP-FormulaNet-L_infer",
+    "files": {
+      "inference.yml": "39bcdd283d08c4328ae853a62da1c6d2a4966360dae0ff0524670ae65ae91af9",
+      "inference.json": "67d356d53daa3df256acc3ac47c34b72399fe3df7debd6990be5129e3fd4b8f3",
+      "inference.pdiparams": "039b320b0d1b64361a053f7496b05db9f53fabd22d27c80ccfab4c59d3881318"
+    }
+  },
+  "UniMERNet": {
+    "url": "https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/UniMERNet_infer.tar",
+    "archive_bytes": 1639956480,
+    "archive_sha256": "a84fe248c05363935740c688f8c53597d11dd0b9bc2a8946efecc916a7344033",
+    "directory": "/workspace/lecturemath/models/v2/UniMERNet_infer",
+    "files": {
+      "inference.yml": "b09b361aafce06cbb3b3aa83f5a3e3c51dd54ad01bfa7702a86a0300a57a6941",
+      "inference.json": "fab8cc402d086098f8f154069d80a2c07f43a36891b2468274d86c6e2bb5a6f4",
+      "inference.pdiparams": "3e27e304d2d986df7e82792555d2b0f2706211f79cb8084989b9696304130e9f"
+    }
+  }
+}

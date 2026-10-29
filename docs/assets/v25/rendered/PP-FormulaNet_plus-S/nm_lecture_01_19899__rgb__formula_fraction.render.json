@@ -1,0 +1,15 @@
+{
+  "status": "rendered",
+  "engine": "pdflatex+pdftoppm",
+  "engine_version": "pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian)",
+  "path": "/workspace/lecturemath/docs/assets/v25/rendered/PP-FormulaNet_plus-S/nm_lecture_01_19899__rgb__formula_fraction.png",
+  "error": null,
+  "cache_hit": false,
+  "key": "8fab3bcb7ae757a045fb4b0a43173f40f15b1773e19c124707ed9c6d4952b89d",
+  "png_sha256": "a85170b4235d09829a84b06f51256b725c5553cd630e76a62813d6b2b43652bc",
+  "width": 279,
+  "height": 77,
+  "dpi": 180,
+  "semantic_correctness": "not evaluated",
+  "validation": "math command allowlist, balanced braces/environments, successful pdflatex compilation"
+}

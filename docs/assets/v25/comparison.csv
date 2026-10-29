@@ -1,0 +1,157 @@
+stage,model,id,variant,reference,latex,exact_match,edit_distance
+stage01,PP-FormulaNet-S,lecture_01_10423__rgb__formula,rgb,3x=1,3x=1,True,0
+stage01,PP-FormulaNet-S,lecture_01_10423__rgb__formula_system,rgb,\left.\begin{aligned}3x&=1\\x+2y&=3\end{aligned}\right\},3+2y=33,False,50
+stage01,PP-FormulaNet-S,lecture_01_10423__b0__formula,b0,3x=1,3x=1,True,0
+stage01,PP-FormulaNet-S,lecture_01_10423__b0__formula_system,b0,\left.\begin{aligned}3x&=1\\x+2y&=3\end{aligned}\right\},3left+x=1\right\,False,42
+stage01,PP-FormulaNet-S,lecture_01_10423__b0__formula_system__row0,b0,,3x=1,,
+stage01,PP-FormulaNet-S,lecture_01_10423__b0__formula_system__row1,b0,,x+2y=3,,
+stage01,PP-FormulaNet-S,lecture_02_44601__rgb__formula,rgb,x+3y=4,x+3y=4,True,0
+stage01,PP-FormulaNet-S,lecture_02_44601__rgb__formula_fraction,rgb,y=\frac{27}{19},y=\frac{27}{19},True,0
+stage01,PP-FormulaNet-S,lecture_02_44601__b0__formula,b0,x+3y=4,x+3y=4,True,0
+stage01,PP-FormulaNet-S,lecture_02_44601__b0__formula_fraction,b0,y=\frac{27}{19},y=\frac{27}{19},True,0
+stage01,PP-FormulaNet-S,nm_lecture_01_19899__rgb__formula,rgb,3x-y+z=7,3x-y+z=7,True,0
+stage01,PP-FormulaNet-S,nm_lecture_01_19899__rgb__formula_fraction,rgb,y=\frac{3-x}{2}=\frac{3-\frac{1}{3}}{2}=\frac{8}{6},y=\frac{3-x}{2}=\frac{3-\frac{1}{3}}{2}=\frac{8}{6}=\frac{8}{6},False,12
+stage01,PP-FormulaNet-S,nm_lecture_01_19899__b0__formula,b0,3x-y+z=7,3x-y+z=7,True,0
+stage01,PP-FormulaNet-S,nm_lecture_01_19899__b0__formula_fraction,b0,y=\frac{3-x}{2}=\frac{3-\frac{1}{3}}{2}=\frac{8}{6},y=\frac{3-x}{2}=\frac{3-\frac{1}{3}}{2}=\frac{8}{6},True,0
+stage01,PP-FormulaNet-S,lecture_01_10423__b0__formula_system__assembled,,,\begin{aligned}3x=1\\x+2y=3\end{aligned},,
+stage01,PP-FormulaNet_plus-S,lecture_01_10423__rgb__formula,rgb,3x=1,3x=1,True,0
+stage01,PP-FormulaNet_plus-S,lecture_01_10423__rgb__formula_system,rgb,\left.\begin{aligned}3x&=1\\x+2y&=3\end{aligned}\right\},3x=13,False,51
+stage01,PP-FormulaNet_plus-S,lecture_01_10423__b0__formula,b0,3x=1,3x=1,True,0
+stage01,PP-FormulaNet_plus-S,lecture_01_10423__b0__formula_system,b0,\left.\begin{aligned}3x&=1\\x+2y&=3\end{aligned}\right\},3x=3 ,False,52
+stage01,PP-FormulaNet_plus-S,lecture_01_10423__b0__formula_system__row0,b0,,3x=1,,
+stage01,PP-FormulaNet_plus-S,lecture_01_10423__b0__formula_system__row1,b0,,x+2y=3,,
+stage01,PP-FormulaNet_plus-S,lecture_02_44601__rgb__formula,rgb,x+3y=4,x+3y=4,True,0
+stage01,PP-FormulaNet_plus-S,lecture_02_44601__rgb__formula_fraction,rgb,y=\frac{27}{19},y=\frac{27}{19},True,0
+stage01,PP-FormulaNet_plus-S,lecture_02_44601__b0__formula,b0,x+3y=4,x+3y=4,True,0
+stage01,PP-FormulaNet_plus-S,lecture_02_44601__b0__formula_fraction,b0,y=\frac{27}{19},y=\frac{2pi}{sqrt{g}},False,9
+stage01,PP-FormulaNet_plus-S,nm_lecture_01_19899__rgb__formula,rgb,3x-y+z=7,3x-y+z=7,True,0
+stage01,PP-FormulaNet_plus-S,nm_lecture_01_19899__rgb__formula_fraction,rgb,y=\frac{3-x}{2}=\frac{3-\frac{1}{3}}{2}=\frac{8}{6},y=\frac{3-x}{2}=\frac{3-\frac{1}{3}}{2}=\frac{8}{6},True,0
+stage01,PP-FormulaNet_plus-S,nm_lecture_01_19899__b0__formula,b0,3x-y+z=7,3x-y+x=7,False,1
+stage01,PP-FormulaNet_plus-S,nm_lecture_01_19899__b0__formula_fraction,b0,y=\frac{3-x}{2}=\frac{3-\frac{1}{3}}{2}=\frac{8}{6},y=\frac{3-x}{2}=\frac{3-\frac{1}{3}}{2}=\frac{3}{6},False,1
+stage01,PP-FormulaNet_plus-S,lecture_01_10423__b0__formula_system__assembled,,,\begin{aligned}3x=1\\x+2y=3\end{aligned},,
+stage2,PP-FormulaNet-L,lecture_01_10423__rgb__formula,rgb,3x=1,3x=1,True,0
+stage2,PP-FormulaNet-L,lecture_01_10423__rgb__formula_system,rgb,\left.\begin{aligned}3x&=1\\x+2y&=3\end{aligned}\right\},3x=13,False,51
+stage2,PP-FormulaNet-L,lecture_01_10423__b0__formula,b0,3x=1,3x=1,True,0
+stage2,PP-FormulaNet-L,lecture_01_10423__b0__formula_system,b0,\left.\begin{aligned}3x&=1\\x+2y&=3\end{aligned}\right\},\{3x=1\}\{x+2y=3\},False,42
+stage2,PP-FormulaNet-L,lecture_01_10423__b0__formula_system__row0,b0,,3x=1,,
+stage2,PP-FormulaNet-L,lecture_01_10423__b0__formula_system__row1,b0,,x+2y=3,,
+stage2,PP-FormulaNet-L,lecture_02_44601__rgb__formula,rgb,x+3y=4,x+3y=4,True,0
+stage2,PP-FormulaNet-L,lecture_02_44601__rgb__formula_fraction,rgb,y=\frac{27}{19},y=\frac{27}{19},True,0
+stage2,PP-FormulaNet-L,lecture_02_44601__b0__formula,b0,x+3y=4,x+3y=4,True,0
+stage2,PP-FormulaNet-L,lecture_02_44601__b0__formula_fraction,b0,y=\frac{27}{19},y=\frac{27}{19},True,0
+stage2,PP-FormulaNet-L,nm_lecture_01_19899__rgb__formula,rgb,3x-y+z=7,3x-y+z=7,True,0
+stage2,PP-FormulaNet-L,nm_lecture_01_19899__rgb__formula_fraction,rgb,y=\frac{3-x}{2}=\frac{3-\frac{1}{3}}{2}=\frac{8}{6},y=\frac{3-x}{2}=\frac{3-\frac{1}{3}}{2}=\frac{8}{6},True,0
+stage2,PP-FormulaNet-L,nm_lecture_01_19899__b0__formula,b0,3x-y+z=7,3x-y+z=7,True,0
+stage2,PP-FormulaNet-L,nm_lecture_01_19899__b0__formula_fraction,b0,y=\frac{3-x}{2}=\frac{3-\frac{1}{3}}{2}=\frac{8}{6},y=\frac{3-x}{2}=\frac{3-\frac{1}{3}}{2}=\frac{8}{6}=4_{3.},False,7
+stage2,PP-FormulaNet-L,lecture_01_10423__b0__formula_system__assembled,,,\begin{aligned}3x=1\\x+2y=3\end{aligned},,
+stage3,UniMERNet,lecture_01_10423__rgb__formula,rgb,3x=1,3x=1,True,0
+stage3,UniMERNet,lecture_01_10423__rgb__formula_system,rgb,\left.\begin{aligned}3x&=1\\x+2y&=3\end{aligned}\right\},x+2y=3,False,50
+stage3,UniMERNet,lecture_01_10423__b0__formula,b0,3x=1,3x=1,True,0
+stage3,UniMERNet,lecture_01_10423__b0__formula_system,b0,\left.\begin{aligned}3x&=1\\x+2y&=3\end{aligned}\right\},x+2y=3,False,50
+stage3,UniMERNet,lecture_01_10423__b0__formula_system__row0,b0,,3x=1,,
+stage3,UniMERNet,lecture_01_10423__b0__formula_system__row1,b0,,x+2y=3,,
+stage3,UniMERNet,lecture_02_44601__rgb__formula,rgb,x+3y=4,x+3y=4,True,0
+stage3,UniMERNet,lecture_02_44601__rgb__formula_fraction,rgb,y=\frac{27}{19},y=\frac{27}{19},True,0
+stage3,UniMERNet,lecture_02_44601__b0__formula,b0,x+3y=4,x+3y=4,True,0
+stage3,UniMERNet,lecture_02_44601__b0__formula_fraction,b0,y=\frac{27}{19},y=\frac{27}{19},True,0
+stage3,UniMERNet,nm_lecture_01_19899__rgb__formula,rgb,3x-y+z=7,3x-y+z=7,True,0
+stage3,UniMERNet,nm_lecture_01_19899__rgb__formula_fraction,rgb,y=\frac{3-x}{2}=\frac{3-\frac{1}{3}}{2}=\frac{8}{6},y=\frac{3-x}{2}=\frac{3-\frac{1}{3}}{2}=\frac{8}{6},True,0
+stage3,UniMERNet,nm_lecture_01_19899__b0__formula,b0,3x-y+z=7,3x-y+z=7,True,0
+stage3,UniMERNet,nm_lecture_01_19899__b0__formula_fraction,b0,y=\frac{3-x}{2}=\frac{3-\frac{1}{3}}{2}=\frac{8}{6},y=\frac{3-x}{2}=\frac{3-\frac{1}{3}}{2}=\frac{8}{6},True,0
+stage3,UniMERNet,lecture_01_10423__b0__formula_system__assembled,,,\begin{aligned}3x=1\\x+2y=3\end{aligned},,
+heldout-formulas,PP-FormulaNet-S,lecture_06_47799__rgb__augmented_matrix,rgb,\left[\begin{array}{cc|c}1&-3&0\\2&4&0\end{array}\right],[2-310],False,51
+heldout-formulas,PP-FormulaNet-S,lecture_06_47799__rgb__real_space,rgb,\mathbb{R}^{2},R{}^{2},False,8
+heldout-formulas,PP-FormulaNet-S,lecture_06_47799__rgb__vector_set,rgb,"S=\left\{\begin{bmatrix}1\\2\end{bmatrix},\begin{bmatrix}-3\\4\end{bmatrix}\right\}","S=\{[2],[3]\}",False,74
+heldout-formulas,PP-FormulaNet-S,lecture_06_47799__rgb__linear_combination,rgb,c_1\begin{bmatrix}1\\2\end{bmatrix}+c_2\begin{bmatrix}-3\\4\end{bmatrix}=\begin{bmatrix}0\\0\end{bmatrix},c_{1}[2]+c_{2}[-3]=[0],False,92
+heldout-formulas,PP-FormulaNet-S,lecture_06_47799__b0__augmented_matrix,b0,\left[\begin{array}{cc|c}1&-3&0\\2&4&0\end{array}\right],"[2,310]]",False,52
+heldout-formulas,PP-FormulaNet-S,lecture_06_47799__b0__real_space,b0,\mathbb{R}^{2},R^{z},False,10
+heldout-formulas,PP-FormulaNet-S,lecture_06_47799__b0__vector_set,b0,"S=\left\{\begin{bmatrix}1\\2\end{bmatrix},\begin{bmatrix}-3\\4\end{bmatrix}\right\}",S=\int\[\frac{1}{\sum2}]_{j}^{-1}]_delta{j}^{-}}\\\\ endend ,False,64
+heldout-formulas,PP-FormulaNet-S,lecture_06_47799__b0__linear_combination,b0,c_1\begin{bmatrix}1\\2\end{bmatrix}+c_2\begin{bmatrix}-3\\4\end{bmatrix}=\begin{bmatrix}0\\0\end{bmatrix},c_{1}[\frac{1}{2}]+c_{2}[\frac{-1}{2}]=\sum0limits_{0}^{1},False,85
+heldout-formulas,PP-FormulaNet-S,lecture_07_67415__rgb__rectangular_matrix,rgb,\begin{bmatrix}1&2&3\\-1&4&0\end{bmatrix},[122]],False,39
+heldout-formulas,PP-FormulaNet-S,lecture_07_67415__rgb__symbolic_vector,rgb,\begin{bmatrix}p\\q\\r\end{bmatrix},\left[\begin{matrix}{9}\\ {9}\\ \end{matrix}\right],False,22
+heldout-formulas,PP-FormulaNet-S,lecture_07_67415__rgb__product_vector,rgb,\begin{bmatrix}p+2q+3r\\-p+4q+0\cdot r\end{bmatrix},[P+2q+37]{-p49}+4q+0.7,False,41
+heldout-formulas,PP-FormulaNet-S,lecture_07_67415__rgb__noncommuting_product,rgb,AB\ne BA.,A B\ B A\cdot,False,7
+heldout-formulas,PP-FormulaNet-S,lecture_07_67415__b0__rectangular_matrix,b0,\begin{bmatrix}1&2&3\\-1&4&0\end{bmatrix},[123],False,38
+heldout-formulas,PP-FormulaNet-S,lecture_07_67415__b0__symbolic_vector,b0,\begin{bmatrix}p\\q\\r\end{bmatrix},\int\limits_{i}^{p},False,28
+heldout-formulas,PP-FormulaNet-S,lecture_07_67415__b0__product_vector,b0,\begin{bmatrix}p+2q+3r\\-p+4q+0\cdot r\end{bmatrix},\int\limits_{p+2q+3r}^{\ p+4q+0.r}^{\  ,False,33
+heldout-formulas,PP-FormulaNet-S,lecture_07_67415__b0__noncommuting_product,b0,AB\ne BA.,A B\neq\beta A.,False,6
+heldout-formulas,PP-FormulaNet-S,lecture_08_53016__rgb__permutation_matrix,rgb,\begin{bmatrix}0&0&1\\1&0&0\\0&1&0\end{bmatrix},\begin{array}{l}{000}\\ {000}\\ {000}\\ \end{array},False,26
+heldout-formulas,PP-FormulaNet-S,lecture_08_53016__rgb__input_vector,rgb,\begin{bmatrix}x\\y\\z\end{bmatrix},\left[\begin{matrix}{x}\\ {y}\\ {z2}\\ \end{matrix}\right],False,24
+heldout-formulas,PP-FormulaNet-S,lecture_08_53016__rgb__set_builder,rgb,S_3=\left\{A_{3\times3}\mid A\text{ is a permutation matrix}\right\},S_{3}=\{A_{3\times3}\vert A\sin{p n}4\ {\leftrightarrow}a{\ \ }{\ \\ \}}^{2},False,45
+heldout-formulas,PP-FormulaNet-S,lecture_08_53016__rgb__cardinality_factorial,rgb,|S_3|=3!=6,\vert8_{3}\vert=31=6,False,14
+heldout-formulas,PP-FormulaNet-S,lecture_08_53016__b0__permutation_matrix,b0,\begin{bmatrix}0&0&1\\1&0&0\\0&1&0\end{bmatrix},\left.\begin{matrix}{0.01}\\ {0.00}\\ {0.0}\\ {0.0}\\ {end0}right\right,False,38
+heldout-formulas,PP-FormulaNet-S,lecture_08_53016__b0__input_vector,b0,\begin{bmatrix}x\\y\\z\end{bmatrix},\left[\^{x}\right]_{z},False,28
+heldout-formulas,PP-FormulaNet-S,lecture_08_53016__b0__set_builder,b0,S_3=\left\{A_{3\times3}\mid A\text{ is a permutation matrix}\right\},S_{3}=\{\lim\limits_{A3\rightarrow A\rightarrow B\sin\ \ {!!}}\ \ !\ !!\ !;!;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;,False,681
+heldout-formulas,PP-FormulaNet-S,lecture_08_53016__b0__cardinality_factorial,b0,|S_3|=3!=6,|vert__{3}\vert=3_{1}=6,False,16
+heldout-formulas,PP-FormulaNet_plus-S,lecture_06_47799__rgb__augmented_matrix,rgb,\left[\begin{array}{cc|c}1&-3&0\\2&4&0\end{array}\right],[2-3]07,False,52
+heldout-formulas,PP-FormulaNet_plus-S,lecture_06_47799__rgb__real_space,rgb,\mathbb{R}^{2},R^{2},False,9
+heldout-formulas,PP-FormulaNet_plus-S,lecture_06_47799__rgb__vector_set,rgb,"S=\left\{\begin{bmatrix}1\\2\end{bmatrix},\begin{bmatrix}-3\\4\end{bmatrix}\right\}","S=\{[2],[3]\}",False,74
+heldout-formulas,PP-FormulaNet_plus-S,lecture_06_47799__rgb__linear_combination,rgb,c_1\begin{bmatrix}1\\2\end{bmatrix}+c_2\begin{bmatrix}-3\\4\end{bmatrix}=\begin{bmatrix}0\\0\end{bmatrix},c_{1}[\frac{1}{2}]+c_{2}[\frac{-3}{4}]=[0],False,88
+heldout-formulas,PP-FormulaNet_plus-S,lecture_06_47799__b0__augmented_matrix,b0,\left[\begin{array}{cc|c}1&-3&0\\2&4&0\end{array}\right],"[2,\ frac-3]0o]",False,48
+heldout-formulas,PP-FormulaNet_plus-S,lecture_06_47799__b0__real_space,b0,\mathbb{R}^{2},P^{z},False,11
+heldout-formulas,PP-FormulaNet_plus-S,lecture_06_47799__b0__vector_set,b0,"S=\left\{\begin{bmatrix}1\\2\end{bmatrix},\begin{bmatrix}-3\\4\end{bmatrix}\right\}",s to int limits{{}}}_{{d}}sim{{},False,70
+heldout-formulas,PP-FormulaNet_plus-S,lecture_06_47799__b0__linear_combination,b0,c_1\begin{bmatrix}1\\2\end{bmatrix}+c_2\begin{bmatrix}-3\\4\end{bmatrix}=\begin{bmatrix}0\\0\end{bmatrix},a_{1}[i\ frac{1}{z2}]+a_{2}[\frac{3}{z}]^{-3}[\]{2}[\frac{1}{z}],False,87
+heldout-formulas,PP-FormulaNet_plus-S,lecture_07_67415__rgb__rectangular_matrix,rgb,\begin{bmatrix}1&2&3\\-1&4&0\end{bmatrix},[[2]3],False,39
+heldout-formulas,PP-FormulaNet_plus-S,lecture_07_67415__rgb__symbolic_vector,rgb,\begin{bmatrix}p\\q\\r\end{bmatrix},l ,False,35
+heldout-formulas,PP-FormulaNet_plus-S,lecture_07_67415__rgb__product_vector,rgb,\begin{bmatrix}p+2q+3r\\-p+4q+0\cdot r\end{bmatrix},[left[P+2q+3.7\right],False,40
+heldout-formulas,PP-FormulaNet_plus-S,lecture_07_67415__rgb__noncommuting_product,rgb,AB\ne BA.,A B\because B A,False,7
+heldout-formulas,PP-FormulaNet_plus-S,lecture_07_67415__b0__rectangular_matrix,b0,\begin{bmatrix}1&2&3\\-1&4&0\end{bmatrix},[int\limits_{[1Object{]}}^{[]2}]^{T}}\\ {\ 1\ 4H}\\ \end{aligned},False,44
+heldout-formulas,PP-FormulaNet_plus-S,lecture_07_67415__b0__symbolic_vector,b0,\begin{bmatrix}p\\q\\r\end{bmatrix},\int\limits_{}^{g}int frac{{g}}{{\frac{g}{z}}},False,38
+heldout-formulas,PP-FormulaNet_plus-S,lecture_07_67415__b0__product_vector,b0,\begin{bmatrix}p+2q+3r\\-p+4q+0\cdot r\end{bmatrix},[sqrt r geq2q+3\pi]^{-}]}{(-p+4q+0.r)}_{0}^{-1},False,41
+heldout-formulas,PP-FormulaNet_plus-S,lecture_07_67415__b0__noncommuting_product,b0,AB\ne BA.,A B\neq B A.,False,1
+heldout-formulas,PP-FormulaNet_plus-S,lecture_08_53016__rgb__permutation_matrix,rgb,\begin{bmatrix}0&0&1\\1&0&0\\0&1&0\end{bmatrix},[left0001\right],False,39
+heldout-formulas,PP-FormulaNet_plus-S,lecture_08_53016__rgb__input_vector,rgb,\begin{bmatrix}x\\y\\z\end{bmatrix},\left[\begin{matrix}{x}\\ {y}\\ {z}\\ \end{matrix}\right],False,23
+heldout-formulas,PP-FormulaNet_plus-S,lecture_08_53016__rgb__set_builder,rgb,S_3=\left\{A_{3\times3}\mid A\text{ is a permutation matrix}\right\},S_{3}=\{A_{3\times3}\}A i s a\rho a m u u+\alpha n a\ +a a\\,False,38
+heldout-formulas,PP-FormulaNet_plus-S,lecture_08_53016__rgb__cardinality_factorial,rgb,|S_3|=3!=6,\vert S_{3}\vert=31vert=6,False,17
+heldout-formulas,PP-FormulaNet_plus-S,lecture_08_53016__b0__permutation_matrix,b0,\begin{bmatrix}0&0&1\\1&0&0\\0&1&0\end{bmatrix},\left[\begin{matrix}{0}&{1}\\ {0}&{0}\\ {0}&{0}\\ \end{matrix}\right],False,32
+heldout-formulas,PP-FormulaNet_plus-S,lecture_08_53016__b0__input_vector,b0,\begin{bmatrix}x\\y\\z\end{bmatrix},\left[\begin{matrix}{x}\\ {y}\\ {z}\\ \end{matrix}\right],False,23
+heldout-formulas,PP-FormulaNet_plus-S,lecture_08_53016__b0__set_builder,b0,S_3=\left\{A_{3\times3}\mid A\text{ is a permutation matrix}\right\},\int\limits_{a}^{b}\int A_{a\times b}\ \ i s\\alpha p p a\ alpha+alpha i\alpha m a\ i alpha x\  ,False,57
+heldout-formulas,PP-FormulaNet_plus-S,lecture_08_53016__b0__cardinality_factorial,b0,|S_3|=3!=6,|S_{3}|=31=G,False,4
+heldout-formulas,PP-FormulaNet-L,lecture_06_47799__rgb__augmented_matrix,rgb,\left[\begin{array}{cc|c}1&-3&0\\2&4&0\end{array}\right],[1-3\vert0],False,48
+heldout-formulas,PP-FormulaNet-L,lecture_06_47799__rgb__real_space,rgb,\mathbb{R}^{2},R^{2},False,9
+heldout-formulas,PP-FormulaNet-L,lecture_06_47799__rgb__vector_set,rgb,"S=\left\{\begin{bmatrix}1\\2\end{bmatrix},\begin{bmatrix}-3\\4\end{bmatrix}\right\}","S=\{[1\frac{1}{2}],[\frac{-3}{4}]\}",False,68
+heldout-formulas,PP-FormulaNet-L,lecture_06_47799__rgb__linear_combination,rgb,c_1\begin{bmatrix}1\\2\end{bmatrix}+c_2\begin{bmatrix}-3\\4\end{bmatrix}=\begin{bmatrix}0\\0\end{bmatrix},c_{1}[2]+c_{2}[4]=[0],False,92
+heldout-formulas,PP-FormulaNet-L,lecture_06_47799__b0__augmented_matrix,b0,\left[\begin{array}{cc|c}1&-3&0\\2&4&0\end{array}\right],[1-310],False,50
+heldout-formulas,PP-FormulaNet-L,lecture_06_47799__b0__real_space,b0,\mathbb{R}^{2},R^{2},False,9
+heldout-formulas,PP-FormulaNet-L,lecture_06_47799__b0__vector_set,b0,"S=\left\{\begin{bmatrix}1\\2\end{bmatrix},\begin{bmatrix}-3\\4\end{bmatrix}\right\}","S=\{[1\atop2],[4]\}",False,71
+heldout-formulas,PP-FormulaNet-L,lecture_06_47799__b0__linear_combination,b0,c_1\begin{bmatrix}1\\2\end{bmatrix}+c_2\begin{bmatrix}-3\\4\end{bmatrix}=\begin{bmatrix}0\\0\end{bmatrix},c_{1}[2]+c_{2}[4]=[0],False,92
+heldout-formulas,PP-FormulaNet-L,lecture_07_67415__rgb__rectangular_matrix,rgb,\begin{bmatrix}1&2&3\\-1&4&0\end{bmatrix},[123],False,38
+heldout-formulas,PP-FormulaNet-L,lecture_07_67415__rgb__symbolic_vector,rgb,\begin{bmatrix}p\\q\\r\end{bmatrix},[\frac{9}{9}],False,32
+heldout-formulas,PP-FormulaNet-L,lecture_07_67415__rgb__product_vector,rgb,\begin{bmatrix}p+2q+3r\\-p+4q+0\cdot r\end{bmatrix},[19+2q+3r],False,44
+heldout-formulas,PP-FormulaNet-L,lecture_07_67415__rgb__noncommuting_product,rgb,AB\ne BA.,A B\neq B A.,False,1
+heldout-formulas,PP-FormulaNet-L,lecture_07_67415__b0__rectangular_matrix,b0,\begin{bmatrix}1&2&3\\-1&4&0\end{bmatrix},[123],False,38
+heldout-formulas,PP-FormulaNet-L,lecture_07_67415__b0__symbolic_vector,b0,\begin{bmatrix}p\\q\\r\end{bmatrix},[\frac{p}{q}],False,32
+heldout-formulas,PP-FormulaNet-L,lecture_07_67415__b0__product_vector,b0,\begin{bmatrix}p+2q+3r\\-p+4q+0\cdot r\end{bmatrix},[\frac{p+2q+3r}{-p+4q+0.r}],False,34
+heldout-formulas,PP-FormulaNet-L,lecture_07_67415__b0__noncommuting_product,b0,AB\ne BA.,A B\neq B A.,False,1
+heldout-formulas,PP-FormulaNet-L,lecture_08_53016__rgb__permutation_matrix,rgb,\begin{bmatrix}0&0&1\\1&0&0\\0&1&0\end{bmatrix},[\begin{matrix}{0001}\\ {1000}\\ {010}\\ \end{matrix}],False,18
+heldout-formulas,PP-FormulaNet-L,lecture_08_53016__rgb__input_vector,rgb,\begin{bmatrix}x\\y\\z\end{bmatrix},\left[\begin{matrix}{x}\\ {y}\\ {z}\\ \end{matrix}\right],False,23
+heldout-formulas,PP-FormulaNet-L,lecture_08_53016__rgb__set_builder,rgb,S_3=\left\{A_{3\times3}\mid A\text{ is a permutation matrix}\right\},S_{3}=\{A_{3\times3}\vert A i s a p t m u t a t i o n\max\},False,28
+heldout-formulas,PP-FormulaNet-L,lecture_08_53016__rgb__cardinality_factorial,rgb,|S_3|=3!=6,\vert S_{3}\vert=31=6,False,13
+heldout-formulas,PP-FormulaNet-L,lecture_08_53016__b0__permutation_matrix,b0,\begin{bmatrix}0&0&1\\1&0&0\\0&1&0\end{bmatrix},[\begin{matrix}{001}\\ {1000}\\ {010}\\ \end{matrix}],False,18
+heldout-formulas,PP-FormulaNet-L,lecture_08_53016__b0__input_vector,b0,\begin{bmatrix}x\\y\\z\end{bmatrix},\left[\begin{array}{l}{x}\\ {y}\\ {z}\end{array}\right],False,29
+heldout-formulas,PP-FormulaNet-L,lecture_08_53016__b0__set_builder,b0,S_3=\left\{A_{3\times3}\mid A\text{ is a permutation matrix}\right\},S_{2}=\{A_{2x}|A_{i s a p a m u t e t i n m a t e t e x}\},False,37
+heldout-formulas,PP-FormulaNet-L,lecture_08_53016__b0__cardinality_factorial,b0,|S_3|=3!=6,|S_{3}|=31=6,False,3
+heldout-formulas,UniMERNet,lecture_06_47799__rgb__augmented_matrix,rgb,\left[\begin{array}{cc|c}1&-3&0\\2&4&0\end{array}\right],"[1,-3,0]",False,50
+heldout-formulas,UniMERNet,lecture_06_47799__rgb__real_space,rgb,\mathbb{R}^{2},R^{2},False,9
+heldout-formulas,UniMERNet,lecture_06_47799__rgb__vector_set,rgb,"S=\left\{\begin{bmatrix}1\\2\end{bmatrix},\begin{bmatrix}-3\\4\end{bmatrix}\right\}","S=\{[\frac{1}{2}],[\frac{-3}{4}]\}",False,68
+heldout-formulas,UniMERNet,lecture_06_47799__rgb__linear_combination,rgb,c_1\begin{bmatrix}1\\2\end{bmatrix}+c_2\begin{bmatrix}-3\\4\end{bmatrix}=\begin{bmatrix}0\\0\end{bmatrix},c_{1}[1]+c_{2}[3]=[0],False,93
+heldout-formulas,UniMERNet,lecture_06_47799__b0__augmented_matrix,b0,\left[\begin{array}{cc|c}1&-3&0\\2&4&0\end{array}\right],[\begin{array}{l l l}{1}&{-3\vert}&{0}\\ {2}&{4}&{0}\end{array}],False,32
+heldout-formulas,UniMERNet,lecture_06_47799__b0__real_space,b0,\mathbb{R}^{2},R^{2},False,9
+heldout-formulas,UniMERNet,lecture_06_47799__b0__vector_set,b0,"S=\left\{\begin{bmatrix}1\\2\end{bmatrix},\begin{bmatrix}-3\\4\end{bmatrix}\right\}","S=\{[\frac{1}{2}],[\frac{-3}{4}]\}",False,68
+heldout-formulas,UniMERNet,lecture_06_47799__b0__linear_combination,b0,c_1\begin{bmatrix}1\\2\end{bmatrix}+c_2\begin{bmatrix}-3\\4\end{bmatrix}=\begin{bmatrix}0\\0\end{bmatrix},c_{1}[2]+c_{2}[3]=[0],False,92
+heldout-formulas,UniMERNet,lecture_07_67415__rgb__rectangular_matrix,rgb,\begin{bmatrix}1&2&3\\-1&4&0\end{bmatrix},[-140],False,37
+heldout-formulas,UniMERNet,lecture_07_67415__rgb__symbolic_vector,rgb,\begin{bmatrix}p\\q\\r\end{bmatrix},[\begin{array}{l}{P}\\ {q}\\ {r}\end{array}],False,21
+heldout-formulas,UniMERNet,lecture_07_67415__rgb__product_vector,rgb,\begin{bmatrix}p+2q+3r\\-p+4q+0\cdot r\end{bmatrix},[P+2q+3r],False,44
+heldout-formulas,UniMERNet,lecture_07_67415__rgb__noncommuting_product,rgb,AB\ne BA.,A B\neq B A,False,2
+heldout-formulas,UniMERNet,lecture_07_67415__b0__rectangular_matrix,b0,\begin{bmatrix}1&2&3\\-1&4&0\end{bmatrix},[-140],False,37
+heldout-formulas,UniMERNet,lecture_07_67415__b0__symbolic_vector,b0,\begin{bmatrix}p\\q\\r\end{bmatrix},[\frac{p}{r}],False,31
+heldout-formulas,UniMERNet,lecture_07_67415__b0__product_vector,b0,\begin{bmatrix}p+2q+3r\\-p+4q+0\cdot r\end{bmatrix},[P+2q+3r],False,44
+heldout-formulas,UniMERNet,lecture_07_67415__b0__noncommuting_product,b0,AB\ne BA.,A B\neq B A.,False,1
+heldout-formulas,UniMERNet,lecture_08_53016__rgb__permutation_matrix,rgb,\begin{bmatrix}0&0&1\\1&0&0\\0&1&0\end{bmatrix},[100],False,44
+heldout-formulas,UniMERNet,lecture_08_53016__rgb__input_vector,rgb,\begin{bmatrix}x\\y\\z\end{bmatrix},[\begin{array}{l}{x}\\ {y}\\ {z}\end{array}],False,20
+heldout-formulas,UniMERNet,lecture_08_53016__rgb__set_builder,rgb,S_3=\left\{A_{3\times3}\mid A\text{ is a permutation matrix}\right\},S_{3}=\{A_{3\times3}\vert A i s a p e m u l a d i o n m a t i o n\},False,27
+heldout-formulas,UniMERNet,lecture_08_53016__rgb__cardinality_factorial,rgb,|S_3|=3!=6,\vert S_{3}\vert=3\vert=6,False,17
+heldout-formulas,UniMERNet,lecture_08_53016__b0__permutation_matrix,b0,\begin{bmatrix}0&0&1\\1&0&0\\0&1&0\end{bmatrix},\left[\begin{array}{l l}{0}&{0}\\ {1}&{0}&{0}\\ {0}&{1}&{0}\end{array}\right],False,41
+heldout-formulas,UniMERNet,lecture_08_53016__b0__input_vector,b0,\begin{bmatrix}x\\y\\z\end{bmatrix},[\begin{array}{l}{x}\\ {y}\\ {z}\end{array}],False,20
+heldout-formulas,UniMERNet,lecture_08_53016__b0__set_builder,b0,S_3=\left\{A_{3\times3}\mid A\text{ is a permutation matrix}\right\},S_{3}=\{A_{33}\vert A i s a p i m u l a t i o n m a\},False,35
+heldout-formulas,UniMERNet,lecture_08_53016__b0__cardinality_factorial,b0,|S_3|=3!=6,\vert s_{3}\vert=3\vert=6,False,18
