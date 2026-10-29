@@ -1,0 +1,128 @@
+{
+  "notice": "Additional actual pipeline integration smoke, separate from the 372 fresh fixed diagnostic predictions. No automatic acceptance of context prediction.",
+  "model": "UniMERNet",
+  "formula_context_margin": 0.1,
+  "elapsed_seconds": 48.24641024899938,
+  "failed_recognitions": 0,
+  "metadata": {
+    "matrix": {
+      "candidate_id": "matrix__context",
+      "bbox": [
+        359,
+        445,
+        603,
+        683
+      ],
+      "margin_per_side": 0.1,
+      "notice": "Optional expanded-context candidate; may include neighboring writing. Whole prediction retained; no automatic selection."
+    }
+  },
+  "regions": [
+    {
+      "id": "matrix",
+      "type": "formula",
+      "bbox": [
+        380,
+        465,
+        582,
+        663
+      ],
+      "status": "ok",
+      "content": null,
+      "latex": "\\left[\\begin{array}{l l}{0}&{0}\\\\ {1}&{0}&{0}\\\\ {0}&{1}&{0}\\end{array}\\right]",
+      "confidence": null,
+      "model": "UniMERNet",
+      "error": null,
+      "crop_image": "docs/assets/v251/integration/region_0000.png",
+      "cache_hit": false,
+      "seconds": 18.538875649000147,
+      "review_required": true,
+      "detection": {
+        "id": "matrix",
+        "type": "formula",
+        "bbox": [
+          380,
+          465,
+          582,
+          663
+        ]
+      },
+      "crop_sha256": "11bfd13fcda74b8af1aecaebf56609ae7b8d21de393407daf40f01afdce3a443",
+      "matches_fixed_case": "real__lecture_08_53016__b0__permutation_matrix",
+      "prediction_matches_diagnostic_run": true
+    },
+    {
+      "id": "matrix__context",
+      "type": "formula",
+      "bbox": [
+        359,
+        445,
+        603,
+        683
+      ],
+      "status": "ok",
+      "content": null,
+      "latex": "\\left[\\begin{array}{l l l}{0}&{0}&{1}\\\\ {1}&{0}&{0}\\\\ {0}&{1}&{0}\\end{array}\\right]1",
+      "confidence": null,
+      "model": "UniMERNet",
+      "error": null,
+      "crop_image": "docs/assets/v251/integration/region_0001.png",
+      "cache_hit": false,
+      "seconds": 12.340832713000054,
+      "review_required": true,
+      "role": "expanded-context recognition candidate; whole-region prediction also retained",
+      "source_parent_id": "matrix",
+      "crop_sha256": "93040761c8e08306c580e3c6f0f9e70b6b436ad2fd48a333c08350bb5a8d8644",
+      "matches_fixed_case": "sensitivity__lecture_08_53016__b0__permutation_matrix__pad10",
+      "prediction_matches_diagnostic_run": true
+    }
+  ],
+  "rendering": {
+    "format": "boardnotes-v25-rendering-1",
+    "notice": "Recognition errors and rendering errors are separate; rendering success is not mathematical correctness.",
+    "regions": [
+      {
+        "region_id": "matrix",
+        "bbox": [
+          380,
+          465,
+          582,
+          663
+        ],
+        "recognition_status": "ok",
+        "latex": "\\left[\\begin{array}{l l}{0}&{0}\\\\ {1}&{0}&{0}\\\\ {0}&{1}&{0}\\end{array}\\right]",
+        "status": "failed",
+        "engine": "pdflatex+pdftoppm",
+        "path": null,
+        "error": "LaTeX compilation failed: For additional information on amsmath, use the `?' option.\n(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty\n(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))\n(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)\n(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))\n(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty\n(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))\n(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)\nNo file formula.aux.\n(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)\n(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)\n! Extra alignment tab has been changed to \\cr.\n<recently read> \\endtemplate \n                             \nl.4 ... \\left[\\begin{array}{l l}{0}&{0}\\\\ {1}&{0}&\n                                                  {0}\\\\ {0}&{1}&{0}\\end{arra...\n!  ==> Fatal error occurred, no output PDF file produced!\nTranscript written on formula.log.",
+        "cache_hit": false,
+        "semantic_correctness": "not evaluated",
+        "validation": "supported tokens; syntax rejected by pdflatex"
+      },
+      {
+        "region_id": "matrix__context",
+        "bbox": [
+          359,
+          445,
+          603,
+          683
+        ],
+        "recognition_status": "ok",
+        "latex": "\\left[\\begin{array}{l l l}{0}&{0}&{1}\\\\ {1}&{0}&{0}\\\\ {0}&{1}&{0}\\end{array}\\right]1",
+        "status": "rendered",
+        "engine": "pdflatex+pdftoppm",
+        "engine_version": "pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian)",
+        "path": "docs/assets/v251/integration/prediction_1.png",
+        "error": null,
+        "cache_hit": false,
+        "key": "a14d4c9e6423958ff09b357cabd352d91f7da8c12b2858a904febce2ad499972",
+        "png_sha256": "f9c9205fad6be7786b861aa4995efef5a781e9ec0fc55514fbff6781c04ab523",
+        "width": 182,
+        "height": 110,
+        "dpi": 180,
+        "semantic_correctness": "not evaluated",
+        "validation": "math command allowlist, balanced braces/environments, successful pdflatex compilation"
+      }
+    ]
+  }
+}

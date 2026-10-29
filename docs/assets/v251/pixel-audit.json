@@ -1,0 +1,541 @@
+{
+  "protocol": "Feature boxes fixed by visual inspection of source input before V2.51 prediction inspection. RGB thresholds are sensitivity diagnostics, not ground-truth masks.",
+  "features": [
+    {
+      "feature": "factorial_dot",
+      "bbox_relative_to_original_roi": [
+        153,
+        71,
+        172,
+        93
+      ],
+      "b0_black_pixels": 142,
+      "rgb_thresholds": {
+        "96": {
+          "rgb_dark_pixels": 92,
+          "shared_dark_pixels": 92,
+          "b0_over_rgb_dark_recall": 1.0
+        },
+        "128": {
+          "rgb_dark_pixels": 146,
+          "shared_dark_pixels": 137,
+          "b0_over_rgb_dark_recall": 0.9383561643835616
+        },
+        "150": {
+          "rgb_dark_pixels": 196,
+          "shared_dark_pixels": 142,
+          "b0_over_rgb_dark_recall": 0.7244897959183674
+        },
+        "192": {
+          "rgb_dark_pixels": 418,
+          "shared_dark_pixels": 142,
+          "b0_over_rgb_dark_recall": 0.3397129186602871
+        }
+      }
+    },
+    {
+      "feature": "factorial_stem",
+      "bbox_relative_to_original_roi": [
+        154,
+        18,
+        171,
+        71
+      ],
+      "b0_black_pixels": 221,
+      "rgb_thresholds": {
+        "96": {
+          "rgb_dark_pixels": 107,
+          "shared_dark_pixels": 107,
+          "b0_over_rgb_dark_recall": 1.0
+        },
+        "128": {
+          "rgb_dark_pixels": 221,
+          "shared_dark_pixels": 214,
+          "b0_over_rgb_dark_recall": 0.9683257918552036
+        },
+        "150": {
+          "rgb_dark_pixels": 336,
+          "shared_dark_pixels": 221,
+          "b0_over_rgb_dark_recall": 0.6577380952380952
+        },
+        "192": {
+          "rgb_dark_pixels": 901,
+          "shared_dark_pixels": 221,
+          "b0_over_rgb_dark_recall": 0.24528301886792453
+        }
+      }
+    }
+  ],
+  "boundary_contact": [
+    {
+      "id": "real__lecture_01_10423__b0__formula",
+      "bbox": [
+        340,
+        440,
+        515,
+        510
+      ],
+      "black_border_pixels": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "notice": "Boundary contact flags possible clipping only; absence does not establish complete equation context."
+    },
+    {
+      "id": "real__lecture_01_10423__b0__formula_system",
+      "bbox": [
+        290,
+        430,
+        600,
+        610
+      ],
+      "black_border_pixels": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "notice": "Boundary contact flags possible clipping only; absence does not establish complete equation context."
+    },
+    {
+      "id": "real__lecture_02_44601__b0__formula",
+      "bbox": [
+        405,
+        490,
+        710,
+        565
+      ],
+      "black_border_pixels": {
+        "top": 0,
+        "bottom": 5,
+        "left": 0,
+        "right": 0
+      },
+      "notice": "Boundary contact flags possible clipping only; absence does not establish complete equation context."
+    },
+    {
+      "id": "real__lecture_02_44601__b0__formula_fraction",
+      "bbox": [
+        990,
+        315,
+        1095,
+        385
+      ],
+      "black_border_pixels": {
+        "top": 81,
+        "bottom": 0,
+        "left": 0,
+        "right": 2
+      },
+      "notice": "Boundary contact flags possible clipping only; absence does not establish complete equation context."
+    },
+    {
+      "id": "real__nm_lecture_01_19899__b0__formula",
+      "bbox": [
+        180,
+        480,
+        410,
+        535
+      ],
+      "black_border_pixels": {
+        "top": 12,
+        "bottom": 18,
+        "left": 0,
+        "right": 0
+      },
+      "notice": "Boundary contact flags possible clipping only; absence does not establish complete equation context."
+    },
+    {
+      "id": "real__nm_lecture_01_19899__b0__formula_fraction",
+      "bbox": [
+        1470,
+        420,
+        1820,
+        555
+      ],
+      "black_border_pixels": {
+        "top": 8,
+        "bottom": 18,
+        "left": 0,
+        "right": 0
+      },
+      "notice": "Boundary contact flags possible clipping only; absence does not establish complete equation context."
+    },
+    {
+      "id": "real__lecture_06_47799__b0__augmented_matrix",
+      "bbox": [
+        170,
+        205,
+        415,
+        350
+      ],
+      "black_border_pixels": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "notice": "Boundary contact flags possible clipping only; absence does not establish complete equation context."
+    },
+    {
+      "id": "real__lecture_06_47799__b0__real_space",
+      "bbox": [
+        1040,
+        135,
+        1155,
+        245
+      ],
+      "black_border_pixels": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "notice": "Boundary contact flags possible clipping only; absence does not establish complete equation context."
+    },
+    {
+      "id": "real__lecture_06_47799__b0__vector_set",
+      "bbox": [
+        1200,
+        105,
+        1635,
+        285
+      ],
+      "black_border_pixels": {
+        "top": 0,
+        "bottom": 5,
+        "left": 0,
+        "right": 0
+      },
+      "notice": "Boundary contact flags possible clipping only; absence does not establish complete equation context."
+    },
+    {
+      "id": "real__lecture_06_47799__b0__linear_combination",
+      "bbox": [
+        1100,
+        375,
+        1600,
+        520
+      ],
+      "black_border_pixels": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "notice": "Boundary contact flags possible clipping only; absence does not establish complete equation context."
+    },
+    {
+      "id": "real__lecture_07_67415__b0__rectangular_matrix",
+      "bbox": [
+        985,
+        230,
+        1145,
+        365
+      ],
+      "black_border_pixels": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "notice": "Boundary contact flags possible clipping only; absence does not establish complete equation context."
+    },
+    {
+      "id": "real__lecture_07_67415__b0__symbolic_vector",
+      "bbox": [
+        1300,
+        200,
+        1395,
+        350
+      ],
+      "black_border_pixels": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "notice": "Boundary contact flags possible clipping only; absence does not establish complete equation context."
+    },
+    {
+      "id": "real__lecture_07_67415__b0__product_vector",
+      "bbox": [
+        1015,
+        505,
+        1265,
+        659
+      ],
+      "black_border_pixels": {
+        "top": 0,
+        "bottom": 2,
+        "left": 5,
+        "right": 1
+      },
+      "notice": "Boundary contact flags possible clipping only; absence does not establish complete equation context."
+    },
+    {
+      "id": "real__lecture_07_67415__b0__noncommuting_product",
+      "bbox": [
+        1435,
+        445,
+        1710,
+        520
+      ],
+      "black_border_pixels": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "notice": "Boundary contact flags possible clipping only; absence does not establish complete equation context."
+    },
+    {
+      "id": "real__lecture_08_53016__b0__permutation_matrix",
+      "bbox": [
+        380,
+        465,
+        582,
+        663
+      ],
+      "black_border_pixels": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "notice": "Boundary contact flags possible clipping only; absence does not establish complete equation context."
+    },
+    {
+      "id": "real__lecture_08_53016__b0__input_vector",
+      "bbox": [
+        588,
+        465,
+        700,
+        670
+      ],
+      "black_border_pixels": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "notice": "Boundary contact flags possible clipping only; absence does not establish complete equation context."
+    },
+    {
+      "id": "real__lecture_08_53016__b0__set_builder",
+      "bbox": [
+        390,
+        670,
+        1055,
+        845
+      ],
+      "black_border_pixels": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "notice": "Boundary contact flags possible clipping only; absence does not establish complete equation context."
+    },
+    {
+      "id": "real__lecture_08_53016__b0__cardinality_factorial",
+      "bbox": [
+        1065,
+        765,
+        1310,
+        875
+      ],
+      "black_border_pixels": {
+        "top": 0,
+        "bottom": 0,
+        "left": 0,
+        "right": 0
+      },
+      "notice": "Boundary contact flags possible clipping only; absence does not establish complete equation context."
+    }
+  ],
+  "expanded_context": [
+    {
+      "id": "sensitivity__lecture_01_10423__rgb__formula_system__pad10",
+      "added_dark_pixels_outside_original_bbox": {
+        "128": 217,
+        "150": 4323,
+        "200": 24552
+      },
+      "notice": "Added pixels may be neighboring writing, line extensions or background texture; not labeled noise."
+    },
+    {
+      "id": "sensitivity__lecture_01_10423__rgb__formula_system__pad20",
+      "added_dark_pixels_outside_original_bbox": {
+        "128": 1372,
+        "150": 14131,
+        "200": 53568
+      },
+      "notice": "Added pixels may be neighboring writing, line extensions or background texture; not labeled noise."
+    },
+    {
+      "id": "sensitivity__lecture_01_10423__b0__formula_system__pad10",
+      "added_dark_pixels_outside_original_bbox": {
+        "128": 492,
+        "150": 492,
+        "200": 492
+      },
+      "notice": "Added pixels may be neighboring writing, line extensions or background texture; not labeled noise."
+    },
+    {
+      "id": "sensitivity__lecture_01_10423__b0__formula_system__pad20",
+      "added_dark_pixels_outside_original_bbox": {
+        "128": 4124,
+        "150": 4124,
+        "200": 4124
+      },
+      "notice": "Added pixels may be neighboring writing, line extensions or background texture; not labeled noise."
+    },
+    {
+      "id": "sensitivity__lecture_06_47799__rgb__augmented_matrix__pad10",
+      "added_dark_pixels_outside_original_bbox": {
+        "128": 4839,
+        "150": 16086,
+        "200": 16100
+      },
+      "notice": "Added pixels may be neighboring writing, line extensions or background texture; not labeled noise."
+    },
+    {
+      "id": "sensitivity__lecture_06_47799__rgb__augmented_matrix__pad20",
+      "added_dark_pixels_outside_original_bbox": {
+        "128": 10204,
+        "150": 33812,
+        "200": 34104
+      },
+      "notice": "Added pixels may be neighboring writing, line extensions or background texture; not labeled noise."
+    },
+    {
+      "id": "sensitivity__lecture_06_47799__b0__augmented_matrix__pad10",
+      "added_dark_pixels_outside_original_bbox": {
+        "128": 78,
+        "150": 78,
+        "200": 78
+      },
+      "notice": "Added pixels may be neighboring writing, line extensions or background texture; not labeled noise."
+    },
+    {
+      "id": "sensitivity__lecture_06_47799__b0__augmented_matrix__pad20",
+      "added_dark_pixels_outside_original_bbox": {
+        "128": 220,
+        "150": 220,
+        "200": 220
+      },
+      "notice": "Added pixels may be neighboring writing, line extensions or background texture; not labeled noise."
+    },
+    {
+      "id": "sensitivity__lecture_07_67415__rgb__symbolic_vector__pad10",
+      "added_dark_pixels_outside_original_bbox": {
+        "128": 3,
+        "150": 6450,
+        "200": 6450
+      },
+      "notice": "Added pixels may be neighboring writing, line extensions or background texture; not labeled noise."
+    },
+    {
+      "id": "sensitivity__lecture_07_67415__rgb__symbolic_vector__pad20",
+      "added_dark_pixels_outside_original_bbox": {
+        "128": 776,
+        "150": 13665,
+        "200": 13680
+      },
+      "notice": "Added pixels may be neighboring writing, line extensions or background texture; not labeled noise."
+    },
+    {
+      "id": "sensitivity__lecture_07_67415__b0__symbolic_vector__pad10",
+      "added_dark_pixels_outside_original_bbox": {
+        "128": 0,
+        "150": 0,
+        "200": 0
+      },
+      "notice": "Added pixels may be neighboring writing, line extensions or background texture; not labeled noise."
+    },
+    {
+      "id": "sensitivity__lecture_07_67415__b0__symbolic_vector__pad20",
+      "added_dark_pixels_outside_original_bbox": {
+        "128": 728,
+        "150": 728,
+        "200": 728
+      },
+      "notice": "Added pixels may be neighboring writing, line extensions or background texture; not labeled noise."
+    },
+    {
+      "id": "sensitivity__lecture_08_53016__rgb__permutation_matrix__pad10",
+      "added_dark_pixels_outside_original_bbox": {
+        "128": 1062,
+        "150": 11922,
+        "200": 18076
+      },
+      "notice": "Added pixels may be neighboring writing, line extensions or background texture; not labeled noise."
+    },
+    {
+      "id": "sensitivity__lecture_08_53016__rgb__permutation_matrix__pad20",
+      "added_dark_pixels_outside_original_bbox": {
+        "128": 1779,
+        "150": 25391,
+        "200": 38956
+      },
+      "notice": "Added pixels may be neighboring writing, line extensions or background texture; not labeled noise."
+    },
+    {
+      "id": "sensitivity__lecture_08_53016__b0__permutation_matrix__pad10",
+      "added_dark_pixels_outside_original_bbox": {
+        "128": 840,
+        "150": 840,
+        "200": 840
+      },
+      "notice": "Added pixels may be neighboring writing, line extensions or background texture; not labeled noise."
+    },
+    {
+      "id": "sensitivity__lecture_08_53016__b0__permutation_matrix__pad20",
+      "added_dark_pixels_outside_original_bbox": {
+        "128": 1427,
+        "150": 1427,
+        "200": 1427
+      },
+      "notice": "Added pixels may be neighboring writing, line extensions or background texture; not labeled noise."
+    },
+    {
+      "id": "sensitivity__lecture_08_53016__rgb__cardinality_factorial__pad10",
+      "added_dark_pixels_outside_original_bbox": {
+        "128": 366,
+        "150": 581,
+        "200": 11990
+      },
+      "notice": "Added pixels may be neighboring writing, line extensions or background texture; not labeled noise."
+    },
+    {
+      "id": "sensitivity__lecture_08_53016__rgb__cardinality_factorial__pad20",
+      "added_dark_pixels_outside_original_bbox": {
+        "128": 1280,
+        "150": 2149,
+        "200": 25872
+      },
+      "notice": "Added pixels may be neighboring writing, line extensions or background texture; not labeled noise."
+    },
+    {
+      "id": "sensitivity__lecture_08_53016__b0__cardinality_factorial__pad10",
+      "added_dark_pixels_outside_original_bbox": {
+        "128": 375,
+        "150": 375,
+        "200": 375
+      },
+      "notice": "Added pixels may be neighboring writing, line extensions or background texture; not labeled noise."
+    },
+    {
+      "id": "sensitivity__lecture_08_53016__b0__cardinality_factorial__pad20",
+      "added_dark_pixels_outside_original_bbox": {
+        "128": 1292,
+        "150": 1292,
+        "200": 1292
+      },
+      "notice": "Added pixels may be neighboring writing, line extensions or background texture; not labeled noise."
+    }
+  ]
+}

@@ -15,6 +15,7 @@ from .routing import route_candidates
 from .splitting import propose_rows,assemble_rows
 from .pdf import render_pdf
 from .resources import run_bounded
+from .context import context_bbox
 
 ROOT=Path(__file__).resolve().parents[2]
 
@@ -64,7 +65,8 @@ def analyze_regions(source,b0,output,ocr_python,config,timeout=600):
 
 
 def process_image(source,output,ocr_python,config,b0=None,v1_python=sys.executable,regions=None,split_formulas=False,
-                  structure_hints=None,timestamp=None,source_variant='rgb',cache_dir=None,font=None,timeout=600):
+                  structure_hints=None,timestamp=None,source_variant='rgb',cache_dir=None,font=None,timeout=600,formula_context_margin=0.):
+    if not 0<=formula_context_margin<=.5:raise ValueError('formula context margin must be between 0 and 0.5 per side')
     source=Path(source);output=Path(output)
     if output.exists() and any(output.iterdir()):raise ValueError('output must be empty; retain prior predictions and use render/review for edits')
     image=cv2.imread(str(source))
@@ -78,7 +80,7 @@ def process_image(source,output,ocr_python,config,b0=None,v1_python=sys.executab
     else:
         validate_regions(regions,w,h);provenance={'mode':'explicit reviewed/oracle regions'}
     specs=[{'id':str(r['id']),'type':r['type'],'bbox':r['bbox']} for r in regions]
-    hints=structure_hints or {};proposals={};children={}
+    hints=structure_hints or {};proposals={};children={};contexts={};context_parents={}
     used_ids={spec['id'] for spec in specs}
     def unique_id(base):
         value=base;index=1
@@ -88,6 +90,14 @@ def process_image(source,output,ocr_python,config,b0=None,v1_python=sys.executab
     binary=cv2.imread(str(mask),0)
     for r in regions:
         if r['type']!='formula':continue
+        if formula_context_margin:
+            expanded=context_bbox(r['bbox'],w,h,formula_context_margin)
+            if expanded!=list(r['bbox']):
+                candidate_id=unique_id(str(r['id'])+'__context')
+                specs.append({'id':candidate_id,'type':'formula','bbox':expanded})
+                context_parents[candidate_id]=str(r['id'])
+                contexts[str(r['id'])]={'candidate_id':candidate_id,'bbox':expanded,'margin_per_side':formula_context_margin,
+                    'notice':'Optional expanded-context candidate; may include neighboring writing. Whole prediction retained; no automatic selection.'}
         hint=hints.get(str(r['id']),r.get('structure_hint'))
         proposal=propose_rows(binary,r['bbox'],hint);proposals[str(r['id'])]=proposal
         if split_formulas:
@@ -104,6 +114,9 @@ def process_image(source,output,ocr_python,config,b0=None,v1_python=sys.executab
             # A successful recognizer cannot resolve an uncertain region type.
             item['review_required']=bool(item.get('review_required') or proposal.get('review_required')
                                          or proposal.get('status')=='needs_review')
+        elif item['id'] in context_parents:
+            item['role']='expanded-context recognition candidate; whole-region prediction also retained'
+            item['source_parent_id']=context_parents[item['id']];item['review_required']=True
         else:item['role']='row recognition candidate; whole-region prediction also retained'
     assemblies={}
     for parent,ids in children.items():
@@ -118,7 +131,7 @@ def process_image(source,output,ocr_python,config,b0=None,v1_python=sys.executab
                 'crop_image':parent_region['crop_image'],'whole_region_id':parent,'row_ids':ids})
     document['metadata'].update(version='2.5',b0=b0_report,source_variant=source_variant,region_origin=provenance,
         formula_model_selection='explicit CLI configuration; never ground truth or nonempty-output routing',
-        split_proposals=proposals,row_assemblies=assemblies,image_process_seconds=time.perf_counter()-started)
+        split_proposals=proposals,row_assemblies=assemblies,context_candidates=contexts,image_process_seconds=time.perf_counter()-started)
     save_document(document,output/'result.json')
     pages=render_pdf(document,output/'result.pdf',font)
     rendering=json.loads((output/'result.rendering.json').read_text())

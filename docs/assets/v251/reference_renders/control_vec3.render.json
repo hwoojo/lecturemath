@@ -1,0 +1,15 @@
+{
+  "status": "rendered",
+  "engine": "pdflatex+pdftoppm",
+  "engine_version": "pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian)",
+  "path": "/workspace/lecturemath/docs/assets/v251/reference_renders/control_vec3.png",
+  "error": null,
+  "cache_hit": false,
+  "key": "e57dd6a82de1acbe0afc289439dd0a550a0bdfc8ad57a32bb9443ad97ebb4614",
+  "png_sha256": "77544891be003ff0a2e4b8f3c0865acd82f6950e62633563a3505f650d6b4f01",
+  "width": 66,
+  "height": 110,
+  "dpi": 180,
+  "semantic_correctness": "not evaluated",
+  "validation": "math command allowlist, balanced braces/environments, successful pdflatex compilation"
+}

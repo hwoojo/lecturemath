@@ -1,0 +1,15 @@
+{
+  "status": "rendered",
+  "engine": "pdflatex+pdftoppm",
+  "engine_version": "pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian)",
+  "path": "/workspace/lecturemath/docs/assets/v251/reference_renders/control_nested_frac.png",
+  "error": null,
+  "cache_hit": false,
+  "key": "47bfe8cecd8eda050752351c388c74e55037e4ad0a7f6ce975aabf3429596bc8",
+  "png_sha256": "debf9857860dd2ccd1814b0d8ea2830151c70fc866b752697e125a4650b6f355",
+  "width": 87,
+  "height": 80,
+  "dpi": 180,
+  "semantic_correctness": "not evaluated",
+  "validation": "math command allowlist, balanced braces/environments, successful pdflatex compilation"
+}

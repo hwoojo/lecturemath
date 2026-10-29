@@ -16,6 +16,7 @@ def options(p):
     p.add_argument('--threads',type=int,default=2);p.add_argument('--max-rss-mib',type=float,default=6000)
     p.add_argument('--timeout',type=float,default=1800)
     p.add_argument('--split-formulas',action='store_true')
+    p.add_argument('--formula-context-margin',type=float,default=0.,help='experimental additional formula crop; fraction per side in [0,0.5], original prediction retained')
     p.add_argument('--hints',type=Path,help='JSON mapping region ids to explicit aligned/cases/protected structure hints')
     p.add_argument('--cache-dir',type=Path,default=Path('benchmark-output/v25/recognition-cache'))
     p.add_argument('--font',type=Path)
@@ -37,10 +38,11 @@ def main():
         if args.command=='render':
             print(json.dumps({'pages':render_pdf(load_document(args.document),args.output,args.font)}));return
         if min(args.threads,args.max_rss_mib,args.timeout)<=0:raise ValueError('limits must be positive')
+        if not 0<=args.formula_context_margin<=.5:raise ValueError('formula context margin must be between 0 and 0.5 per side')
         config=configuration(args.model_root,args.formula_model,args.threads,args.max_rss_mib)
         hints=json.loads(args.hints.read_text()) if args.hints else None
         common={'v1_python':args.v1_python,'split_formulas':args.split_formulas,'structure_hints':hints,
-                'cache_dir':args.cache_dir,'font':args.font,'timeout':args.timeout}
+                'cache_dir':args.cache_dir,'font':args.font,'timeout':args.timeout,'formula_context_margin':args.formula_context_margin}
         if args.command=='video':
             reports=process_video(args.input,args.output,args.ocr_python,config,max_width=args.max_width,fps=args.fps,**common)
             print(json.dumps({'output':str(args.output),'pages_processed':len(reports['v25_pages'])}))

@@ -1,0 +1,15 @@
+{
+  "status": "rendered",
+  "engine": "pdflatex+pdftoppm",
+  "engine_version": "pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian)",
+  "path": "/workspace/lecturemath/docs/assets/v251/reference_renders/lecture_07_67415__b0__rectangular_matrix.png",
+  "error": null,
+  "cache_hit": false,
+  "key": "2cb8bbb4584c690f2dc405f3860331d9e41735db83405ed86c6e0f439c82f002",
+  "png_sha256": "912dbe4cfec6c1b3f4ce1e81b63878c19634c73e03a6307688f1ee519717c8d4",
+  "width": 153,
+  "height": 80,
+  "dpi": 180,
+  "semantic_correctness": "not evaluated",
+  "validation": "math command allowlist, balanced braces/environments, successful pdflatex compilation"
+}

@@ -1,0 +1,15 @@
+{
+  "status": "rendered",
+  "engine": "pdflatex+pdftoppm",
+  "engine_version": "pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian)",
+  "path": "/workspace/lecturemath/docs/assets/v251/reference_renders/control_matrix33.png",
+  "error": null,
+  "cache_hit": false,
+  "key": "af10771d2ac5a442a1b8aaf30f4333ebc4af81352e895ebaf888a86db5d6a98d",
+  "png_sha256": "3888da319e984f3716c660e95993c7a5c59e3c4175242b855b018e666d747fef",
+  "width": 141,
+  "height": 110,
+  "dpi": 180,
+  "semantic_correctness": "not evaluated",
+  "validation": "math command allowlist, balanced braces/environments, successful pdflatex compilation"
+}

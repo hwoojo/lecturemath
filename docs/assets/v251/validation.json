@@ -1,0 +1,16 @@
+{
+  "manifest_sha256": "420902f81a5e38632e6546a871458bd733fb9721f88fea9efb14563f6051e95d",
+  "inputs_verified": 129,
+  "fresh_predictions": 372,
+  "reused_v25_predictions": 144,
+  "evaluation_records": 516,
+  "additional_integration_predictions": 2,
+  "review_records": 92,
+  "pdf_pages": {
+    "comparison.pdf": 18,
+    "controls.pdf": 24,
+    "all-conditions.pdf": 129
+  },
+  "existing_and_new_tests_passed": 138,
+  "scope": "Artifact integrity and software regression, separate from recognition quality."
+}

@@ -1,0 +1,15 @@
+{
+  "status": "rendered",
+  "engine": "pdflatex+pdftoppm",
+  "engine_version": "pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian)",
+  "path": "/workspace/lecturemath/docs/assets/v251/reference_renders/control_factorial.png",
+  "error": null,
+  "cache_hit": false,
+  "key": "44830760871fbbe3797b28fe460467a16a7d5b7ae5168758f29d463819283070",
+  "png_sha256": "47e867587b35b814447b4e0d44678bb52b5e3a0171feea4b15a036889b42e76a",
+  "width": 85,
+  "height": 38,
+  "dpi": 180,
+  "semantic_correctness": "not evaluated",
+  "validation": "math command allowlist, balanced braces/environments, successful pdflatex compilation"
+}

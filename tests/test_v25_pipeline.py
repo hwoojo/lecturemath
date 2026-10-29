@@ -65,6 +65,30 @@ def two_rows(monkeypatch,allow=False):
     monkeypatch.setattr(pipeline,'propose_rows',propose)
 
 
+def test_context_option_keeps_whole_prediction_and_source_with_unique_ids(monkeypatch,tmp_path):
+    source,b0,_,_=images(tmp_path);calls=mocked_models(monkeypatch,b0);two_rows(monkeypatch)
+    before=source.read_bytes()
+    specs=[{'id':'eq','type':'formula','bbox':[6,5,26,25]},
+           {'id':'eq__context','type':'unknown','bbox':[35,20,50,35]}]
+    default,_=pipeline.process_image(source,tmp_path/'default','fixture',{'formula_model':'PP-FormulaNet-S'},b0=b0,regions=specs)
+    assert len(default['regions'])==2 and default['metadata']['context_candidates']=={}
+    doc,_=pipeline.process_image(source,tmp_path/'context','fixture',{'formula_model':'PP-FormulaNet-S'},b0=b0,regions=specs,formula_context_margin=.2)
+    context=next(r for r in doc['regions'] if r['id']=='eq__context_1')
+    assert context['bbox']==[2,1,30,29] and context['source_parent_id']=='eq'
+    assert context['review_required'] is True and 'expanded-context' in context['role']
+    assert doc['regions'][0]['bbox']==specs[0]['bbox'] and doc['regions'][0]['latex']=='whole_fixture'
+    assert doc['metadata']['context_candidates']['eq']['candidate_id']=='eq__context_1'
+    assert source.read_bytes()==before
+
+
+def test_context_option_rejects_invalid_values_before_writing(tmp_path):
+    source,b0,_,_=images(tmp_path)
+    for margin in [-.1,.51,float('nan'),float('inf')]:
+        with pytest.raises(ValueError,match='context margin'):
+            pipeline.process_image(source,tmp_path/'invalid','fixture',{},b0=b0,formula_context_margin=margin)
+    assert not (tmp_path/'invalid').exists()
+
+
 def test_b0_is_recognition_default_and_rgb_is_untouched(monkeypatch,tmp_path):
     source,b0,rgb,mask=images(tmp_path);calls=mocked_models(monkeypatch,b0)
     before=source.read_bytes()

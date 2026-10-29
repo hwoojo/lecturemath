@@ -11,6 +11,10 @@ V2.5는 자동 영역 제안, 네 수식 모델 교체, 여러 줄 분할, LaTeX
 실제 MIT 강의 영상 E2E를 추가했다. [실행 방법](docs/v2_5.md),
 [실제 결과·한계](docs/v2_5_results.md), [모델 비교 PDF](docs/assets/v25/comparison.pdf)를 참고한다.
 
+V2.51은 기존 네 모델의 실패 조건을 인쇄/판서, 구조, crop·스케일, 행 분할로 나누어 진단한다.
+[실험 설계](docs/v2_51.md), [원인 분석](docs/v2_51_results.md),
+[판서·인쇄 비교 PDF](docs/assets/v251/comparison.pdf)를 참고한다. 기본 파이프라인은 유지한다.
+
 연구 코드 분석과 변경 근거는 [UPSTREAM_ANALYSIS](docs/UPSTREAM_ANALYSIS.md), 실제 검증 범위는 [VALIDATION](docs/VALIDATION.md), 배포/Jetson 안내는 [DEPLOYMENT](docs/DEPLOYMENT.md)를 참고한다.
 V1 작업 기록과 실제 1080p 데이터의 해상도별 품질 비교는 [고해상도 품질 검증 작업 기록](docs/WORK_LOG_HD_QUALITY.md)에 정리했다.
 후속 작업자는 [인수인계 문서](docs/HANDOFF.md)에서 현재 상태, 실행 순서, 다음 작업과 알려진 한계를 먼저 확인한다.

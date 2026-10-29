@@ -1,0 +1,77 @@
+{
+  "notice": "Current local files verified against the V2.5 official download manifest; no models added.",
+  "files": [
+    {
+      "model": "PP-FormulaNet-S",
+      "file": "inference.yml",
+      "bytes": 2244559,
+      "sha256": "08b21c2d255041008266b8fb947758e9731eafff191568af21da5a4b9c9dd5a0"
+    },
+    {
+      "model": "PP-FormulaNet-S",
+      "file": "inference.json",
+      "bytes": 504505,
+      "sha256": "2c8fc31a94d461a7325fe06e8cbaa5db6c5658c490f74d3d6116defe8c859d6f"
+    },
+    {
+      "model": "PP-FormulaNet-S",
+      "file": "inference.pdiparams",
+      "bytes": 231675001,
+      "sha256": "b6392296d16e2a9f414c0a751d7ccbd1bd9d8272b68aab72df1d3875f35a7489"
+    },
+    {
+      "model": "PP-FormulaNet_plus-S",
+      "file": "inference.yml",
+      "bytes": 2244564,
+      "sha256": "96062655d94c21d39274328dbc82c1a487e66addb8425f5a7fd5b7dfb2421ec3"
+    },
+    {
+      "model": "PP-FormulaNet_plus-S",
+      "file": "inference.json",
+      "bytes": 506956,
+      "sha256": "01238434e33df83588e2627f350559b576e34551d2b2ffea148345032de56c00"
+    },
+    {
+      "model": "PP-FormulaNet_plus-S",
+      "file": "inference.pdiparams",
+      "bytes": 256845006,
+      "sha256": "e464f94412feaa98f8791eacc84684f887b3569e30e80c52b8112e9cf7d4069b"
+    },
+    {
+      "model": "PP-FormulaNet-L",
+      "file": "inference.yml",
+      "bytes": 2244559,
+      "sha256": "39bcdd283d08c4328ae853a62da1c6d2a4966360dae0ff0524670ae65ae91af9"
+    },
+    {
+      "model": "PP-FormulaNet-L",
+      "file": "inference.json",
+      "bytes": 1650354,
+      "sha256": "67d356d53daa3df256acc3ac47c34b72399fe3df7debd6990be5129e3fd4b8f3"
+    },
+    {
+      "model": "PP-FormulaNet-L",
+      "file": "inference.pdiparams",
+      "bytes": 724452527,
+      "sha256": "039b320b0d1b64361a053f7496b05db9f53fabd22d27c80ccfab4c59d3881318"
+    },
+    {
+      "model": "UniMERNet",
+      "file": "inference.yml",
+      "bytes": 2244540,
+      "sha256": "b09b361aafce06cbb3b3aa83f5a3e3c51dd54ad01bfa7702a86a0300a57a6941"
+    },
+    {
+      "model": "UniMERNet",
+      "file": "inference.json",
+      "bytes": 2692449,
+      "sha256": "fab8cc402d086098f8f154069d80a2c07f43a36891b2468274d86c6e2bb5a6f4"
+    },
+    {
+      "model": "UniMERNet",
+      "file": "inference.pdiparams",
+      "bytes": 1635006530,
+      "sha256": "3e27e304d2d986df7e82792555d2b0f2706211f79cb8084989b9696304130e9f"
+    }
+  ]
+}

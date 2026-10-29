@@ -1,0 +1,15 @@
+{
+  "status": "rendered",
+  "engine": "pdflatex+pdftoppm",
+  "engine_version": "pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian)",
+  "path": "/workspace/lecturemath/docs/assets/v251/rendered/2323e902399150a54b3fe2f27ba644a3eb4f509494250a8e7deec89f364f3e9a.png",
+  "error": null,
+  "cache_hit": false,
+  "key": "5c550c70718ccae5fa742b22aad115a0823ce46db7cfdfafb3b67df34aeab551",
+  "png_sha256": "8053f2d3d540371e92d0dd81cf0229f93a7d8dfb08b9007f302e598c74ac9528",
+  "width": 231,
+  "height": 80,
+  "dpi": 180,
+  "semantic_correctness": "not evaluated",
+  "validation": "math command allowlist, balanced braces/environments, successful pdflatex compilation"
+}

@@ -1,0 +1,2988 @@
+{
+  "design_version": 1,
+  "notice": "Diagnostic convenience sample. Fixed conditions, no GT in model requests. Existing V2.5 real predictions reused unchanged; new predictions are fresh.",
+  "models": [
+    "PP-FormulaNet-S",
+    "PP-FormulaNet_plus-S",
+    "PP-FormulaNet-L",
+    "UniMERNet"
+  ],
+  "margin_definition": "10/20 percent of original width/height on EACH side; clipped to source bounds",
+  "matching_limit": "Same canvas and approximate aggregate ink footprint; font, stroke, local glyph size and line geometry are not perfectly matched.",
+  "cases": [
+    {
+      "id": "control__eq",
+      "input": "docs/assets/v251/inputs/control__eq.png",
+      "reference": "3=3",
+      "group": "control",
+      "width": 95,
+      "height": 52,
+      "ink_box": [
+        8,
+        13,
+        87,
+        38
+      ],
+      "sha256": "798d50ca545fd90d95fbb206f698b333c76766912194b173f0a6644c11257948",
+      "family": "factorial",
+      "level": 0,
+      "condition": "native_tex_180dpi"
+    },
+    {
+      "id": "control__factorial",
+      "input": "docs/assets/v251/inputs/control__factorial.png",
+      "reference": "3!=6",
+      "group": "control",
+      "width": 101,
+      "height": 54,
+      "ink_box": [
+        8,
+        14,
+        93,
+        40
+      ],
+      "sha256": "0b3d029629c75f912dbd1850b94c8a623b1bb652101f09a12ae950c2bda620f4",
+      "family": "factorial",
+      "level": 1,
+      "condition": "native_tex_180dpi"
+    },
+    {
+      "id": "control__indexed_factorial",
+      "input": "docs/assets/v251/inputs/control__indexed_factorial.png",
+      "reference": "|S_3|=3!=6",
+      "group": "control",
+      "width": 175,
+      "height": 61,
+      "ink_box": [
+        8,
+        16,
+        167,
+        45
+      ],
+      "sha256": "2d6cc206e223ace81fbcd6430917edb5b7b3d0b32d43d2ba86abb72b5080b46d",
+      "family": "factorial",
+      "level": 2,
+      "condition": "native_tex_180dpi"
+    },
+    {
+      "id": "control__general_factorial",
+      "input": "docs/assets/v251/inputs/control__general_factorial.png",
+      "reference": "|S_n|=n!",
+      "group": "control",
+      "width": 134,
+      "height": 61,
+      "ink_box": [
+        8,
+        15,
+        126,
+        46
+      ],
+      "sha256": "f3817fb437c38a5462c83a4223c52ee31041e02cfd2b9c71726564729be28311",
+      "family": "factorial",
+      "level": 3,
+      "condition": "native_tex_180dpi"
+    },
+    {
+      "id": "control__frac",
+      "input": "docs/assets/v251/inputs/control__frac.png",
+      "reference": "\\frac{a}{b}",
+      "group": "control",
+      "width": 56,
+      "height": 81,
+      "ink_box": [
+        19,
+        8,
+        37,
+        73
+      ],
+      "sha256": "35b9d2be654136e9bd6b6ec4e7ae23dd300f468c42e060c3a9ab330190ca23d4",
+      "family": "fraction",
+      "level": 0,
+      "condition": "native_tex_180dpi"
+    },
+    {
+      "id": "control__frac_sum",
+      "input": "docs/assets/v251/inputs/control__frac_sum.png",
+      "reference": "\\frac{a+b}{c-d}",
+      "group": "control",
+      "width": 97,
+      "height": 90,
+      "ink_box": [
+        11,
+        9,
+        86,
+        81
+      ],
+      "sha256": "bc6b2d0b1ba989313d6aadc90b599abb2e1f4a36f86cee3702419da77ae8ff7b",
+      "family": "fraction",
+      "level": 1,
+      "condition": "native_tex_180dpi"
+    },
+    {
+      "id": "control__nested_frac",
+      "input": "docs/assets/v251/inputs/control__nested_frac.png",
+      "reference": "\\frac{1}{1+\\frac{1}{x}}",
+      "group": "control",
+      "width": 103,
+      "height": 96,
+      "ink_box": [
+        11,
+        8,
+        91,
+        88
+      ],
+      "sha256": "7dc24ab089886c187345e7aa4d0dd40ff2a8c8a6a05e763ec685df1e7ac0b8be",
+      "family": "fraction",
+      "level": 2,
+      "condition": "native_tex_180dpi"
+    },
+    {
+      "id": "control__long_fraction",
+      "input": "docs/assets/v251/inputs/control__long_fraction.png",
+      "reference": "y=\\frac{3-x}{2}=\\frac{3-\\frac{1}{3}}{2}",
+      "group": "control",
+      "width": 244,
+      "height": 93,
+      "ink_box": [
+        8,
+        14,
+        236,
+        78
+      ],
+      "sha256": "58b4ce8aa3b72108887757116a4804c66942c501997f5168a0455330ecee5612",
+      "family": "fraction",
+      "level": 3,
+      "condition": "native_tex_180dpi"
+    },
+    {
+      "id": "control__vec2",
+      "input": "docs/assets/v251/inputs/control__vec2.png",
+      "reference": "\\begin{bmatrix}1\\\\2\\end{bmatrix}",
+      "group": "control",
+      "width": 75,
+      "height": 96,
+      "ink_box": [
+        19,
+        8,
+        55,
+        88
+      ],
+      "sha256": "81e77a736c8b450440e2f287086b57723777f4d466a9fbe5eb78829e8b77badb",
+      "family": "vector",
+      "level": 0,
+      "condition": "native_tex_180dpi"
+    },
+    {
+      "id": "control__vec3",
+      "input": "docs/assets/v251/inputs/control__vec3.png",
+      "reference": "\\begin{bmatrix}1\\\\2\\\\3\\end{bmatrix}",
+      "group": "control",
+      "width": 82,
+      "height": 126,
+      "ink_box": [
+        22,
+        8,
+        60,
+        118
+      ],
+      "sha256": "1f2f3fcf8e02ebde1638bd75c33cb1683a773a138b8b4a84c48defc9862f02ab",
+      "family": "vector",
+      "level": 1,
+      "condition": "native_tex_180dpi"
+    },
+    {
+      "id": "control__vec_symbolic",
+      "input": "docs/assets/v251/inputs/control__vec_symbolic.png",
+      "reference": "\\begin{bmatrix}p\\\\q\\\\r\\end{bmatrix}",
+      "group": "control",
+      "width": 82,
+      "height": 126,
+      "ink_box": [
+        22,
+        8,
+        60,
+        118
+      ],
+      "sha256": "3b575a8f94d4c86f304ffdcf6963d3d1f44cb3415f4d341d0d95bc2ca2bb8c84",
+      "family": "vector",
+      "level": 2,
+      "condition": "native_tex_180dpi"
+    },
+    {
+      "id": "control__matrix22",
+      "input": "docs/assets/v251/inputs/control__matrix22.png",
+      "reference": "\\begin{bmatrix}1&2\\\\3&4\\end{bmatrix}",
+      "group": "control",
+      "width": 113,
+      "height": 96,
+      "ink_box": [
+        14,
+        8,
+        99,
+        88
+      ],
+      "sha256": "81cc11cccf27ce56ac0a84e3c997504b96ca6f1adcaf828a2e2359a60fdbc842",
+      "family": "matrix",
+      "level": 0,
+      "condition": "native_tex_180dpi"
+    },
+    {
+      "id": "control__matrix23",
+      "input": "docs/assets/v251/inputs/control__matrix23.png",
+      "reference": "\\begin{bmatrix}1&2&3\\\\4&5&6\\end{bmatrix}",
+      "group": "control",
+      "width": 150,
+      "height": 96,
+      "ink_box": [
+        8,
+        8,
+        142,
+        87
+      ],
+      "sha256": "83d6eff06f3136653d2176bf2abd9036e535dd0e4b96cd52adc027c6e73db675",
+      "family": "matrix",
+      "level": 1,
+      "condition": "native_tex_180dpi"
+    },
+    {
+      "id": "control__matrix33",
+      "input": "docs/assets/v251/inputs/control__matrix33.png",
+      "reference": "\\begin{bmatrix}1&2&3\\\\4&5&6\\\\7&8&9\\end{bmatrix}",
+      "group": "control",
+      "width": 157,
+      "height": 126,
+      "ink_box": [
+        14,
+        8,
+        142,
+        118
+      ],
+      "sha256": "4eda6707e3a1976708219b859bb705256f508cfeecbb9a91c63d44b8c8662494",
+      "family": "matrix",
+      "level": 2,
+      "condition": "native_tex_180dpi"
+    },
+    {
+      "id": "control__augmented",
+      "input": "docs/assets/v251/inputs/control__augmented.png",
+      "reference": "\\left[\\begin{array}{cc|c}1&-3&0\\\\2&4&0\\end{array}\\right]",
+      "group": "control",
+      "width": 194,
+      "height": 96,
+      "ink_box": [
+        8,
+        11,
+        186,
+        85
+      ],
+      "sha256": "7c6ebc57784731a5f765c32fc2b096f18578a47813b49ed75906e2142bfc9775",
+      "family": "matrix",
+      "level": 3,
+      "condition": "native_tex_180dpi"
+    },
+    {
+      "id": "control__line1",
+      "input": "docs/assets/v251/inputs/control__line1.png",
+      "reference": "3x=1",
+      "group": "control",
+      "width": 109,
+      "height": 52,
+      "ink_box": [
+        8,
+        14,
+        101,
+        38
+      ],
+      "sha256": "3c5b14754958d0aa0bf00b571c098250ed2f0c38659a0733faac7c294f07b540",
+      "family": "multiline",
+      "level": 0,
+      "condition": "native_tex_180dpi"
+    },
+    {
+      "id": "control__lines2",
+      "input": "docs/assets/v251/inputs/control__lines2.png",
+      "reference": "\\begin{aligned}3x&=1\\\\x+2y&=3\\end{aligned}",
+      "group": "control",
+      "width": 152,
+      "height": 104,
+      "ink_box": [
+        8,
+        16,
+        144,
+        87
+      ],
+      "sha256": "b82f18ea60ded4d5bed5824781ed637972cfe71fc701e498230bc59aac1ee2ba",
+      "family": "multiline",
+      "level": 1,
+      "condition": "native_tex_180dpi"
+    },
+    {
+      "id": "control__lines3",
+      "input": "docs/assets/v251/inputs/control__lines3.png",
+      "reference": "\\begin{aligned}x+y&=2\\\\x-y&=0\\\\z&=3\\end{aligned}",
+      "group": "control",
+      "width": 140,
+      "height": 141,
+      "ink_box": [
+        8,
+        14,
+        132,
+        127
+      ],
+      "sha256": "fd55d71c8e335ca9f10bb2773a26fc3e7d82a2b6d6b2a299367cc81031f12c01",
+      "family": "multiline",
+      "level": 2,
+      "condition": "native_tex_180dpi"
+    },
+    {
+      "id": "control__sup",
+      "input": "docs/assets/v251/inputs/control__sup.png",
+      "reference": "x^2",
+      "group": "control",
+      "width": 62,
+      "height": 58,
+      "ink_box": [
+        10,
+        8,
+        52,
+        49
+      ],
+      "sha256": "51bba81b00d8a98f3d0a25ccd3352f4f3a8fa026e731ceac4d337b942926a6eb",
+      "family": "scripts",
+      "level": 0,
+      "condition": "native_tex_180dpi"
+    },
+    {
+      "id": "control__sub",
+      "input": "docs/assets/v251/inputs/control__sub.png",
+      "reference": "x_i",
+      "group": "control",
+      "width": 59,
+      "height": 51,
+      "ink_box": [
+        8,
+        9,
+        51,
+        41
+      ],
+      "sha256": "8e59510b51603d387d892adcb685dc16fe4404933e8f7d7c86764c300f513f23",
+      "family": "scripts",
+      "level": 1,
+      "condition": "native_tex_180dpi"
+    },
+    {
+      "id": "control__sub_sup",
+      "input": "docs/assets/v251/inputs/control__sub_sup.png",
+      "reference": "x_i^2+y_j^3",
+      "group": "control",
+      "width": 117,
+      "height": 67,
+      "ink_box": [
+        8,
+        13,
+        109,
+        54
+      ],
+      "sha256": "68acc6b8fac755621f5ca3ad5eb6a5d8794574d607568c46d867ae3f14bfd238",
+      "family": "scripts",
+      "level": 2,
+      "condition": "native_tex_180dpi"
+    },
+    {
+      "id": "control__complex_scripts",
+      "input": "docs/assets/v251/inputs/control__complex_scripts.png",
+      "reference": "x_{i+1}^{n-1}+a_{ij}^{(k)}",
+      "group": "control",
+      "width": 161,
+      "height": 73,
+      "ink_box": [
+        8,
+        15,
+        152,
+        58
+      ],
+      "sha256": "3d9d339a8c6f442723ecb2feadedf582676465297cdd6e2329dc8333c9316690",
+      "family": "scripts",
+      "level": 3,
+      "condition": "native_tex_180dpi"
+    },
+    {
+      "id": "control__set",
+      "input": "docs/assets/v251/inputs/control__set.png",
+      "reference": "S=\\{1,2,3\\}",
+      "group": "control",
+      "width": 171,
+      "height": 61,
+      "ink_box": [
+        8,
+        15,
+        163,
+        45
+      ],
+      "sha256": "aaa3d3e83e7aec2b7aaee72e739ab9f623ccc08ef55da41519987e28624f91da",
+      "family": "set_text",
+      "level": 0,
+      "condition": "native_tex_180dpi"
+    },
+    {
+      "id": "control__set_text",
+      "input": "docs/assets/v251/inputs/control__set_text.png",
+      "reference": "S_3=\\{A_{3\\times3}\\mid A\\text{ is a permutation matrix}\\}",
+      "group": "control",
+      "width": 485,
+      "height": 61,
+      "ink_box": [
+        8,
+        17,
+        477,
+        43
+      ],
+      "sha256": "32101278f60e3b6e7a9da4c329493b7bc5d81fbd0e717e59eb71b427229e0b14",
+      "family": "set_text",
+      "level": 1,
+      "condition": "native_tex_180dpi"
+    },
+    {
+      "id": "real__lecture_01_10423__rgb__formula",
+      "input": "docs/assets/v251/inputs/real__lecture_01_10423__rgb__formula.png",
+      "reference": "3x=1",
+      "group": "real_baseline",
+      "width": 175,
+      "height": 70,
+      "ink_box": [
+        0,
+        0,
+        175,
+        70
+      ],
+      "sha256": "6c2526dfd2a18bdcf9692cbdb17c97f9f6ba3211f936e494230501326d049b36",
+      "case": "lecture_01_10423__formula",
+      "variant": "rgb",
+      "condition": "base",
+      "source_id": "lecture_01_10423__rgb__formula",
+      "source_bbox": [
+        340,
+        440,
+        515,
+        510
+      ],
+      "reuse_v25": true
+    },
+    {
+      "id": "real__lecture_01_10423__rgb__formula_system",
+      "input": "docs/assets/v251/inputs/real__lecture_01_10423__rgb__formula_system.png",
+      "reference": "\\left.\\begin{aligned}3x&=1\\\\x+2y&=3\\end{aligned}\\right\\}",
+      "group": "real_baseline",
+      "width": 310,
+      "height": 180,
+      "ink_box": [
+        0,
+        0,
+        310,
+        180
+      ],
+      "sha256": "bc7d8e2ea6cadc469c80330a869e83f584bf807db7b57dfb2ffb079795798151",
+      "case": "lecture_01_10423__formula_system",
+      "variant": "rgb",
+      "condition": "base",
+      "source_id": "lecture_01_10423__rgb__formula_system",
+      "source_bbox": [
+        290,
+        430,
+        600,
+        610
+      ],
+      "reuse_v25": true
+    },
+    {
+      "id": "real__lecture_01_10423__b0__formula",
+      "input": "docs/assets/v251/inputs/real__lecture_01_10423__b0__formula.png",
+      "reference": "3x=1",
+      "group": "real_baseline",
+      "width": 175,
+      "height": 70,
+      "ink_box": [
+        21,
+        11,
+        156,
+        63
+      ],
+      "sha256": "1673cb31e101575550d06e131a383ff4781baa2344cf591e10cf67302b60f6c8",
+      "case": "lecture_01_10423__formula",
+      "variant": "b0",
+      "condition": "base",
+      "source_id": "lecture_01_10423__b0__formula",
+      "source_bbox": [
+        340,
+        440,
+        515,
+        510
+      ],
+      "reuse_v25": true
+    },
+    {
+      "id": "matched__lecture_01_10423__b0__formula",
+      "input": "docs/assets/v251/inputs/matched__lecture_01_10423__b0__formula.png",
+      "reference": "3x=1",
+      "group": "matched_print",
+      "width": 175,
+      "height": 70,
+      "ink_box": [
+        21,
+        19,
+        156,
+        54
+      ],
+      "sha256": "2c48bc07282511e68d497a94a2622f9a68046e62bb726c527a50746f331f926e",
+      "case": "lecture_01_10423__formula",
+      "condition": "matched_canvas_ink_bbox",
+      "matched_to": "real__lecture_01_10423__b0__formula",
+      "source_bbox": [
+        340,
+        440,
+        515,
+        510
+      ]
+    },
+    {
+      "id": "real__lecture_01_10423__b0__formula_system",
+      "input": "docs/assets/v251/inputs/real__lecture_01_10423__b0__formula_system.png",
+      "reference": "\\left.\\begin{aligned}3x&=1\\\\x+2y&=3\\end{aligned}\\right\\}",
+      "group": "real_baseline",
+      "width": 310,
+      "height": 180,
+      "ink_box": [
+        44,
+        8,
+        273,
+        165
+      ],
+      "sha256": "6856a4b19fd3e31bdd16a7ee323687223aa9d3bcbcb63921a44f10b77e92ead3",
+      "case": "lecture_01_10423__formula_system",
+      "variant": "b0",
+      "condition": "base",
+      "source_id": "lecture_01_10423__b0__formula_system",
+      "source_bbox": [
+        290,
+        430,
+        600,
+        610
+      ],
+      "reuse_v25": true
+    },
+    {
+      "id": "matched__lecture_01_10423__b0__formula_system",
+      "input": "docs/assets/v251/inputs/matched__lecture_01_10423__b0__formula_system.png",
+      "reference": "\\left.\\begin{aligned}3x&=1\\\\x+2y&=3\\end{aligned}\\right\\}",
+      "group": "matched_print",
+      "width": 310,
+      "height": 180,
+      "ink_box": [
+        44,
+        21,
+        273,
+        151
+      ],
+      "sha256": "e5981abb2b5ba5c2dd354db60a2bd93615bb019f8a872832877de0ca34889825",
+      "case": "lecture_01_10423__formula_system",
+      "condition": "matched_canvas_ink_bbox",
+      "matched_to": "real__lecture_01_10423__b0__formula_system",
+      "source_bbox": [
+        290,
+        430,
+        600,
+        610
+      ]
+    },
+    {
+      "id": "real__lecture_02_44601__rgb__formula",
+      "input": "docs/assets/v251/inputs/real__lecture_02_44601__rgb__formula.png",
+      "reference": "x+3y=4",
+      "group": "real_baseline",
+      "width": 305,
+      "height": 75,
+      "ink_box": [
+        0,
+        0,
+        305,
+        75
+      ],
+      "sha256": "8811c7b6433ad2614964c7ad9aba94a0214e85f67b4fc29b058b6d6cb010f433",
+      "case": "lecture_02_44601__formula",
+      "variant": "rgb",
+      "condition": "base",
+      "source_id": "lecture_02_44601__rgb__formula",
+      "source_bbox": [
+        405,
+        490,
+        710,
+        565
+      ],
+      "reuse_v25": true
+    },
+    {
+      "id": "real__lecture_02_44601__rgb__formula_fraction",
+      "input": "docs/assets/v251/inputs/real__lecture_02_44601__rgb__formula_fraction.png",
+      "reference": "y=\\frac{27}{19}",
+      "group": "real_baseline",
+      "width": 105,
+      "height": 70,
+      "ink_box": [
+        0,
+        0,
+        105,
+        70
+      ],
+      "sha256": "f9ec4ca5c07323db35d241fca328acdabefa5a378e4d9126a0415fdfb7ed5846",
+      "case": "lecture_02_44601__formula_fraction",
+      "variant": "rgb",
+      "condition": "base",
+      "source_id": "lecture_02_44601__rgb__formula_fraction",
+      "source_bbox": [
+        990,
+        315,
+        1095,
+        385
+      ],
+      "reuse_v25": true
+    },
+    {
+      "id": "real__lecture_02_44601__b0__formula",
+      "input": "docs/assets/v251/inputs/real__lecture_02_44601__b0__formula.png",
+      "reference": "x+3y=4",
+      "group": "real_baseline",
+      "width": 305,
+      "height": 75,
+      "ink_box": [
+        14,
+        10,
+        286,
+        75
+      ],
+      "sha256": "8fb4c59dc5464b020daab22110f4035c6aadd4bb42a15274b1cf105b4a3cfa7d",
+      "case": "lecture_02_44601__formula",
+      "variant": "b0",
+      "condition": "base",
+      "source_id": "lecture_02_44601__b0__formula",
+      "source_bbox": [
+        405,
+        490,
+        710,
+        565
+      ],
+      "reuse_v25": true
+    },
+    {
+      "id": "matched__lecture_02_44601__b0__formula",
+      "input": "docs/assets/v251/inputs/matched__lecture_02_44601__b0__formula.png",
+      "reference": "x+3y=4",
+      "group": "matched_print",
+      "width": 305,
+      "height": 75,
+      "ink_box": [
+        14,
+        16,
+        286,
+        68
+      ],
+      "sha256": "80968d9b4e3c61b739b9c33efe8fab43c36970b51a52f0f60c49f58de8b8b5c1",
+      "case": "lecture_02_44601__formula",
+      "condition": "matched_canvas_ink_bbox",
+      "matched_to": "real__lecture_02_44601__b0__formula",
+      "source_bbox": [
+        405,
+        490,
+        710,
+        565
+      ]
+    },
+    {
+      "id": "real__lecture_02_44601__b0__formula_fraction",
+      "input": "docs/assets/v251/inputs/real__lecture_02_44601__b0__formula_fraction.png",
+      "reference": "y=\\frac{27}{19}",
+      "group": "real_baseline",
+      "width": 105,
+      "height": 70,
+      "ink_box": [
+        16,
+        0,
+        105,
+        67
+      ],
+      "sha256": "ef1f2c6d7ee60e82cf044741e341fd7026df27073b9004f459d064edf09aa7e6",
+      "case": "lecture_02_44601__formula_fraction",
+      "variant": "b0",
+      "condition": "base",
+      "source_id": "lecture_02_44601__b0__formula_fraction",
+      "source_bbox": [
+        990,
+        315,
+        1095,
+        385
+      ],
+      "reuse_v25": true
+    },
+    {
+      "id": "matched__lecture_02_44601__b0__formula_fraction",
+      "input": "docs/assets/v251/inputs/matched__lecture_02_44601__b0__formula_fraction.png",
+      "reference": "y=\\frac{27}{19}",
+      "group": "matched_print",
+      "width": 105,
+      "height": 70,
+      "ink_box": [
+        16,
+        3,
+        105,
+        64
+      ],
+      "sha256": "5b7c1ddb88caea50b881731e27d57b977d76777e2073628099c5a22078cc9567",
+      "case": "lecture_02_44601__formula_fraction",
+      "condition": "matched_canvas_ink_bbox",
+      "matched_to": "real__lecture_02_44601__b0__formula_fraction",
+      "source_bbox": [
+        990,
+        315,
+        1095,
+        385
+      ]
+    },
+    {
+      "id": "real__nm_lecture_01_19899__rgb__formula",
+      "input": "docs/assets/v251/inputs/real__nm_lecture_01_19899__rgb__formula.png",
+      "reference": "3x-y+z=7",
+      "group": "real_baseline",
+      "width": 230,
+      "height": 55,
+      "ink_box": [
+        0,
+        0,
+        230,
+        55
+      ],
+      "sha256": "999cca640b5eee0a52892833b50e0cf9d166c22277fe86b5627454d2f86cd20d",
+      "case": "nm_lecture_01_19899__formula",
+      "variant": "rgb",
+      "condition": "base",
+      "source_id": "nm_lecture_01_19899__rgb__formula",
+      "source_bbox": [
+        180,
+        480,
+        410,
+        535
+      ],
+      "reuse_v25": true
+    },
+    {
+      "id": "real__nm_lecture_01_19899__rgb__formula_fraction",
+      "input": "docs/assets/v251/inputs/real__nm_lecture_01_19899__rgb__formula_fraction.png",
+      "reference": "y=\\frac{3-x}{2}=\\frac{3-\\frac{1}{3}}{2}=\\frac{8}{6}",
+      "group": "real_baseline",
+      "width": 350,
+      "height": 135,
+      "ink_box": [
+        0,
+        0,
+        350,
+        135
+      ],
+      "sha256": "a5ad8411b182a8118250edcd49916ddba2ce538daf6abf9da2a714458c7ffd5a",
+      "case": "nm_lecture_01_19899__formula_fraction",
+      "variant": "rgb",
+      "condition": "base",
+      "source_id": "nm_lecture_01_19899__rgb__formula_fraction",
+      "source_bbox": [
+        1470,
+        420,
+        1820,
+        555
+      ],
+      "reuse_v25": true
+    },
+    {
+      "id": "real__nm_lecture_01_19899__b0__formula",
+      "input": "docs/assets/v251/inputs/real__nm_lecture_01_19899__b0__formula.png",
+      "reference": "3x-y+z=7",
+      "group": "real_baseline",
+      "width": 230,
+      "height": 55,
+      "ink_box": [
+        5,
+        0,
+        207,
+        55
+      ],
+      "sha256": "c9ff450c936acb30b32ce79d09803dc23184118b4b9ed67f99590fe8ffc6cab4",
+      "case": "nm_lecture_01_19899__formula",
+      "variant": "b0",
+      "condition": "base",
+      "source_id": "nm_lecture_01_19899__b0__formula",
+      "source_bbox": [
+        180,
+        480,
+        410,
+        535
+      ],
+      "reuse_v25": true
+    },
+    {
+      "id": "matched__nm_lecture_01_19899__b0__formula",
+      "input": "docs/assets/v251/inputs/matched__nm_lecture_01_19899__b0__formula.png",
+      "reference": "3x-y+z=7",
+      "group": "matched_print",
+      "width": 230,
+      "height": 55,
+      "ink_box": [
+        5,
+        13,
+        207,
+        41
+      ],
+      "sha256": "84049c5a17c6eba8b1804a64b0280cc102914125b5a7ceea440adb5d791fc238",
+      "case": "nm_lecture_01_19899__formula",
+      "condition": "matched_canvas_ink_bbox",
+      "matched_to": "real__nm_lecture_01_19899__b0__formula",
+      "source_bbox": [
+        180,
+        480,
+        410,
+        535
+      ]
+    },
+    {
+      "id": "real__nm_lecture_01_19899__b0__formula_fraction",
+      "input": "docs/assets/v251/inputs/real__nm_lecture_01_19899__b0__formula_fraction.png",
+      "reference": "y=\\frac{3-x}{2}=\\frac{3-\\frac{1}{3}}{2}=\\frac{8}{6}",
+      "group": "real_baseline",
+      "width": 350,
+      "height": 135,
+      "ink_box": [
+        5,
+        0,
+        334,
+        135
+      ],
+      "sha256": "f265ecc893c95020f7aff81d5aa15bbe6cd4367894009b920a540223467fedc1",
+      "case": "nm_lecture_01_19899__formula_fraction",
+      "variant": "b0",
+      "condition": "base",
+      "source_id": "nm_lecture_01_19899__b0__formula_fraction",
+      "source_bbox": [
+        1470,
+        420,
+        1820,
+        555
+      ],
+      "reuse_v25": true
+    },
+    {
+      "id": "matched__nm_lecture_01_19899__b0__formula_fraction",
+      "input": "docs/assets/v251/inputs/matched__nm_lecture_01_19899__b0__formula_fraction.png",
+      "reference": "y=\\frac{3-x}{2}=\\frac{3-\\frac{1}{3}}{2}=\\frac{8}{6}",
+      "group": "matched_print",
+      "width": 350,
+      "height": 135,
+      "ink_box": [
+        5,
+        30,
+        334,
+        105
+      ],
+      "sha256": "d0e88d30202d9e8e32725d819e632f68c4388cbfeb0ecea6a451196a9a63f8a7",
+      "case": "nm_lecture_01_19899__formula_fraction",
+      "condition": "matched_canvas_ink_bbox",
+      "matched_to": "real__nm_lecture_01_19899__b0__formula_fraction",
+      "source_bbox": [
+        1470,
+        420,
+        1820,
+        555
+      ]
+    },
+    {
+      "id": "real__lecture_06_47799__rgb__augmented_matrix",
+      "input": "docs/assets/v251/inputs/real__lecture_06_47799__rgb__augmented_matrix.png",
+      "reference": "\\left[\\begin{array}{cc|c}1&-3&0\\\\2&4&0\\end{array}\\right]",
+      "group": "real_baseline",
+      "width": 245,
+      "height": 145,
+      "ink_box": [
+        0,
+        0,
+        245,
+        145
+      ],
+      "sha256": "ab03ba1a150182bca66d61c26bb6872f7cdc0fd9d0e1f8e5a610f3df5426ab0e",
+      "case": "lecture_06_47799__augmented_matrix",
+      "variant": "rgb",
+      "condition": "base",
+      "source_id": "lecture_06_47799__rgb__augmented_matrix",
+      "source_bbox": [
+        170,
+        205,
+        415,
+        350
+      ],
+      "reuse_v25": true
+    },
+    {
+      "id": "real__lecture_06_47799__rgb__real_space",
+      "input": "docs/assets/v251/inputs/real__lecture_06_47799__rgb__real_space.png",
+      "reference": "\\mathbb{R}^{2}",
+      "group": "real_baseline",
+      "width": 115,
+      "height": 110,
+      "ink_box": [
+        0,
+        0,
+        115,
+        110
+      ],
+      "sha256": "2b27dc3f40d0d568bb16197fe4caf62bae358ace8d39d2cf66e8a7072c50afeb",
+      "case": "lecture_06_47799__real_space",
+      "variant": "rgb",
+      "condition": "base",
+      "source_id": "lecture_06_47799__rgb__real_space",
+      "source_bbox": [
+        1040,
+        135,
+        1155,
+        245
+      ],
+      "reuse_v25": true
+    },
+    {
+      "id": "real__lecture_06_47799__rgb__vector_set",
+      "input": "docs/assets/v251/inputs/real__lecture_06_47799__rgb__vector_set.png",
+      "reference": "S=\\left\\{\\begin{bmatrix}1\\\\2\\end{bmatrix},\\begin{bmatrix}-3\\\\4\\end{bmatrix}\\right\\}",
+      "group": "real_baseline",
+      "width": 435,
+      "height": 180,
+      "ink_box": [
+        0,
+        0,
+        435,
+        180
+      ],
+      "sha256": "a8f6d85fb204fdb6d418b89fcaeb6e5ca15b5cd459df7aaa37f0244d11adc5d1",
+      "case": "lecture_06_47799__vector_set",
+      "variant": "rgb",
+      "condition": "base",
+      "source_id": "lecture_06_47799__rgb__vector_set",
+      "source_bbox": [
+        1200,
+        105,
+        1635,
+        285
+      ],
+      "reuse_v25": true
+    },
+    {
+      "id": "real__lecture_06_47799__rgb__linear_combination",
+      "input": "docs/assets/v251/inputs/real__lecture_06_47799__rgb__linear_combination.png",
+      "reference": "c_1\\begin{bmatrix}1\\\\2\\end{bmatrix}+c_2\\begin{bmatrix}-3\\\\4\\end{bmatrix}=\\begin{bmatrix}0\\\\0\\end{bmatrix}",
+      "group": "real_baseline",
+      "width": 500,
+      "height": 145,
+      "ink_box": [
+        0,
+        0,
+        500,
+        145
+      ],
+      "sha256": "561eefb0df2ef87071081a0fa2fa71dd908c5f99b42f6bce5401e37ad1001322",
+      "case": "lecture_06_47799__linear_combination",
+      "variant": "rgb",
+      "condition": "base",
+      "source_id": "lecture_06_47799__rgb__linear_combination",
+      "source_bbox": [
+        1100,
+        375,
+        1600,
+        520
+      ],
+      "reuse_v25": true
+    },
+    {
+      "id": "real__lecture_06_47799__b0__augmented_matrix",
+      "input": "docs/assets/v251/inputs/real__lecture_06_47799__b0__augmented_matrix.png",
+      "reference": "\\left[\\begin{array}{cc|c}1&-3&0\\\\2&4&0\\end{array}\\right]",
+      "group": "real_baseline",
+      "width": 245,
+      "height": 145,
+      "ink_box": [
+        18,
+        18,
+        231,
+        135
+      ],
+      "sha256": "7c66ab9f3b480f3e9664201e6a77a453b18a472bbf9abc98d12a214a0cb7bd77",
+      "case": "lecture_06_47799__augmented_matrix",
+      "variant": "b0",
+      "condition": "base",
+      "source_id": "lecture_06_47799__b0__augmented_matrix",
+      "source_bbox": [
+        170,
+        205,
+        415,
+        350
+      ],
+      "reuse_v25": true
+    },
+    {
+      "id": "matched__lecture_06_47799__b0__augmented_matrix",
+      "input": "docs/assets/v251/inputs/matched__lecture_06_47799__b0__augmented_matrix.png",
+      "reference": "\\left[\\begin{array}{cc|c}1&-3&0\\\\2&4&0\\end{array}\\right]",
+      "group": "matched_print",
+      "width": 245,
+      "height": 145,
+      "ink_box": [
+        18,
+        32,
+        231,
+        121
+      ],
+      "sha256": "326077d435aac2f5fb5cea9683883dabe5d7f33a65c30e0c7f9332d1caea38b2",
+      "case": "lecture_06_47799__augmented_matrix",
+      "condition": "matched_canvas_ink_bbox",
+      "matched_to": "real__lecture_06_47799__b0__augmented_matrix",
+      "source_bbox": [
+        170,
+        205,
+        415,
+        350
+      ]
+    },
+    {
+      "id": "real__lecture_06_47799__b0__real_space",
+      "input": "docs/assets/v251/inputs/real__lecture_06_47799__b0__real_space.png",
+      "reference": "\\mathbb{R}^{2}",
+      "group": "real_baseline",
+      "width": 115,
+      "height": 110,
+      "ink_box": [
+        24,
+        21,
+        98,
+        88
+      ],
+      "sha256": "9f21c094e94c39533df32d5fd7a6d2c9b7148eddc1df3601998861d7e9cb3c1f",
+      "case": "lecture_06_47799__real_space",
+      "variant": "b0",
+      "condition": "base",
+      "source_id": "lecture_06_47799__b0__real_space",
+      "source_bbox": [
+        1040,
+        135,
+        1155,
+        245
+      ],
+      "reuse_v25": true
+    },
+    {
+      "id": "matched__lecture_06_47799__b0__real_space",
+      "input": "docs/assets/v251/inputs/matched__lecture_06_47799__b0__real_space.png",
+      "reference": "\\mathbb{R}^{2}",
+      "group": "matched_print",
+      "width": 115,
+      "height": 110,
+      "ink_box": [
+        24,
+        24,
+        98,
+        84
+      ],
+      "sha256": "521ef3020168cf9237fda2a52b6311b77e5d895e6710def5e54b23826e886544",
+      "case": "lecture_06_47799__real_space",
+      "condition": "matched_canvas_ink_bbox",
+      "matched_to": "real__lecture_06_47799__b0__real_space",
+      "source_bbox": [
+        1040,
+        135,
+        1155,
+        245
+      ]
+    },
+    {
+      "id": "real__lecture_06_47799__b0__vector_set",
+      "input": "docs/assets/v251/inputs/real__lecture_06_47799__b0__vector_set.png",
+      "reference": "S=\\left\\{\\begin{bmatrix}1\\\\2\\end{bmatrix},\\begin{bmatrix}-3\\\\4\\end{bmatrix}\\right\\}",
+      "group": "real_baseline",
+      "width": 435,
+      "height": 180,
+      "ink_box": [
+        13,
+        9,
+        417,
+        180
+      ],
+      "sha256": "b5aabec0d7e40b7e7209f494cb125d067bc2d0839a9924f3e95a457c482948d1",
+      "case": "lecture_06_47799__vector_set",
+      "variant": "b0",
+      "condition": "base",
+      "source_id": "lecture_06_47799__b0__vector_set",
+      "source_bbox": [
+        1200,
+        105,
+        1635,
+        285
+      ],
+      "reuse_v25": true
+    },
+    {
+      "id": "matched__lecture_06_47799__b0__vector_set",
+      "input": "docs/assets/v251/inputs/matched__lecture_06_47799__b0__vector_set.png",
+      "reference": "S=\\left\\{\\begin{bmatrix}1\\\\2\\end{bmatrix},\\begin{bmatrix}-3\\\\4\\end{bmatrix}\\right\\}",
+      "group": "matched_print",
+      "width": 435,
+      "height": 180,
+      "ink_box": [
+        13,
+        32,
+        416,
+        156
+      ],
+      "sha256": "8a48548d0e5897a0d419119261b75e46b81740ac780964c2500a91b587e058c5",
+      "case": "lecture_06_47799__vector_set",
+      "condition": "matched_canvas_ink_bbox",
+      "matched_to": "real__lecture_06_47799__b0__vector_set",
+      "source_bbox": [
+        1200,
+        105,
+        1635,
+        285
+      ]
+    },
+    {
+      "id": "real__lecture_06_47799__b0__linear_combination",
+      "input": "docs/assets/v251/inputs/real__lecture_06_47799__b0__linear_combination.png",
+      "reference": "c_1\\begin{bmatrix}1\\\\2\\end{bmatrix}+c_2\\begin{bmatrix}-3\\\\4\\end{bmatrix}=\\begin{bmatrix}0\\\\0\\end{bmatrix}",
+      "group": "real_baseline",
+      "width": 500,
+      "height": 145,
+      "ink_box": [
+        26,
+        6,
+        494,
+        132
+      ],
+      "sha256": "23a056059401f172f0b041f012eef83ba10380de028346badea70e7f8ea5549d",
+      "case": "lecture_06_47799__linear_combination",
+      "variant": "b0",
+      "condition": "base",
+      "source_id": "lecture_06_47799__b0__linear_combination",
+      "source_bbox": [
+        1100,
+        375,
+        1600,
+        520
+      ],
+      "reuse_v25": true
+    },
+    {
+      "id": "matched__lecture_06_47799__b0__linear_combination",
+      "input": "docs/assets/v251/inputs/matched__lecture_06_47799__b0__linear_combination.png",
+      "reference": "c_1\\begin{bmatrix}1\\\\2\\end{bmatrix}+c_2\\begin{bmatrix}-3\\\\4\\end{bmatrix}=\\begin{bmatrix}0\\\\0\\end{bmatrix}",
+      "group": "matched_print",
+      "width": 500,
+      "height": 145,
+      "ink_box": [
+        26,
+        11,
+        494,
+        126
+      ],
+      "sha256": "f01c212ae1220d63b2f364f8d68ca4b750d0629ecdceae6eca3b3b88c0ed69d7",
+      "case": "lecture_06_47799__linear_combination",
+      "condition": "matched_canvas_ink_bbox",
+      "matched_to": "real__lecture_06_47799__b0__linear_combination",
+      "source_bbox": [
+        1100,
+        375,
+        1600,
+        520
+      ]
+    },
+    {
+      "id": "real__lecture_07_67415__rgb__rectangular_matrix",
+      "input": "docs/assets/v251/inputs/real__lecture_07_67415__rgb__rectangular_matrix.png",
+      "reference": "\\begin{bmatrix}1&2&3\\\\-1&4&0\\end{bmatrix}",
+      "group": "real_baseline",
+      "width": 160,
+      "height": 135,
+      "ink_box": [
+        0,
+        0,
+        160,
+        135
+      ],
+      "sha256": "988f97e84bfbca6e66efb7000fb8bf2323306fd39f7ef9864329d9cf59f959e3",
+      "case": "lecture_07_67415__rectangular_matrix",
+      "variant": "rgb",
+      "condition": "base",
+      "source_id": "lecture_07_67415__rgb__rectangular_matrix",
+      "source_bbox": [
+        985,
+        230,
+        1145,
+        365
+      ],
+      "reuse_v25": true
+    },
+    {
+      "id": "real__lecture_07_67415__rgb__symbolic_vector",
+      "input": "docs/assets/v251/inputs/real__lecture_07_67415__rgb__symbolic_vector.png",
+      "reference": "\\begin{bmatrix}p\\\\q\\\\r\\end{bmatrix}",
+      "group": "real_baseline",
+      "width": 95,
+      "height": 150,
+      "ink_box": [
+        0,
+        0,
+        95,
+        150
+      ],
+      "sha256": "0d58086e9d65731c297540cf871db182ede2130c63fd9a203654a50333cb0c42",
+      "case": "lecture_07_67415__symbolic_vector",
+      "variant": "rgb",
+      "condition": "base",
+      "source_id": "lecture_07_67415__rgb__symbolic_vector",
+      "source_bbox": [
+        1300,
+        200,
+        1395,
+        350
+      ],
+      "reuse_v25": true
+    },
+    {
+      "id": "real__lecture_07_67415__rgb__product_vector",
+      "input": "docs/assets/v251/inputs/real__lecture_07_67415__rgb__product_vector.png",
+      "reference": "\\begin{bmatrix}p+2q+3r\\\\-p+4q+0\\cdot r\\end{bmatrix}",
+      "group": "real_baseline",
+      "width": 250,
+      "height": 154,
+      "ink_box": [
+        0,
+        0,
+        250,
+        154
+      ],
+      "sha256": "b5cf900cb28fbd8abb86535c3d82d98b6ded19738cd6f8079183dd934abba63d",
+      "case": "lecture_07_67415__product_vector",
+      "variant": "rgb",
+      "condition": "base",
+      "source_id": "lecture_07_67415__rgb__product_vector",
+      "source_bbox": [
+        1015,
+        505,
+        1265,
+        659
+      ],
+      "reuse_v25": true
+    },
+    {
+      "id": "real__lecture_07_67415__rgb__noncommuting_product",
+      "input": "docs/assets/v251/inputs/real__lecture_07_67415__rgb__noncommuting_product.png",
+      "reference": "AB\\ne BA.",
+      "group": "real_baseline",
+      "width": 275,
+      "height": 75,
+      "ink_box": [
+        0,
+        0,
+        275,
+        75
+      ],
+      "sha256": "1bafaf7fcefc8bdf2d4d060f2f62b977ee4277fd199fdd13c06f48c26af699a8",
+      "case": "lecture_07_67415__noncommuting_product",
+      "variant": "rgb",
+      "condition": "base",
+      "source_id": "lecture_07_67415__rgb__noncommuting_product",
+      "source_bbox": [
+        1435,
+        445,
+        1710,
+        520
+      ],
+      "reuse_v25": true
+    },
+    {
+      "id": "real__lecture_07_67415__b0__rectangular_matrix",
+      "input": "docs/assets/v251/inputs/real__lecture_07_67415__b0__rectangular_matrix.png",
+      "reference": "\\begin{bmatrix}1&2&3\\\\-1&4&0\\end{bmatrix}",
+      "group": "real_baseline",
+      "width": 160,
+      "height": 135,
+      "ink_box": [
+        6,
+        12,
+        150,
+        124
+      ],
+      "sha256": "b2edb13bfe9346043ab379e84e2c2908e4b6b6ecbb53172c8f2eab9e86834e4e",
+      "case": "lecture_07_67415__rectangular_matrix",
+      "variant": "b0",
+      "condition": "base",
+      "source_id": "lecture_07_67415__b0__rectangular_matrix",
+      "source_bbox": [
+        985,
+        230,
+        1145,
+        365
+      ],
+      "reuse_v25": true
+    },
+    {
+      "id": "matched__lecture_07_67415__b0__rectangular_matrix",
+      "input": "docs/assets/v251/inputs/matched__lecture_07_67415__b0__rectangular_matrix.png",
+      "reference": "\\begin{bmatrix}1&2&3\\\\-1&4&0\\end{bmatrix}",
+      "group": "matched_print",
+      "width": 160,
+      "height": 135,
+      "ink_box": [
+        6,
+        32,
+        150,
+        103
+      ],
+      "sha256": "12b32410708bd4e5773cc652cab958b895065dc37771d5980e4ee62050e7ab20",
+      "case": "lecture_07_67415__rectangular_matrix",
+      "condition": "matched_canvas_ink_bbox",
+      "matched_to": "real__lecture_07_67415__b0__rectangular_matrix",
+      "source_bbox": [
+        985,
+        230,
+        1145,
+        365
+      ]
+    },
+    {
+      "id": "real__lecture_07_67415__b0__symbolic_vector",
+      "input": "docs/assets/v251/inputs/real__lecture_07_67415__b0__symbolic_vector.png",
+      "reference": "\\begin{bmatrix}p\\\\q\\\\r\\end{bmatrix}",
+      "group": "real_baseline",
+      "width": 95,
+      "height": 150,
+      "ink_box": [
+        14,
+        17,
+        81,
+        135
+      ],
+      "sha256": "de2678d387436f38cf18cee2195d080fccddd86cc8b3d909d4ec3378ff943e4b",
+      "case": "lecture_07_67415__symbolic_vector",
+      "variant": "b0",
+      "condition": "base",
+      "source_id": "lecture_07_67415__b0__symbolic_vector",
+      "source_bbox": [
+        1300,
+        200,
+        1395,
+        350
+      ],
+      "reuse_v25": true
+    },
+    {
+      "id": "matched__lecture_07_67415__b0__symbolic_vector",
+      "input": "docs/assets/v251/inputs/matched__lecture_07_67415__b0__symbolic_vector.png",
+      "reference": "\\begin{bmatrix}p\\\\q\\\\r\\end{bmatrix}",
+      "group": "matched_print",
+      "width": 95,
+      "height": 150,
+      "ink_box": [
+        27,
+        17,
+        68,
+        135
+      ],
+      "sha256": "c9ec1d338199b58a9891f01f6383ca2762e75c7a94028435b660f10b6d8fd01b",
+      "case": "lecture_07_67415__symbolic_vector",
+      "condition": "matched_canvas_ink_bbox",
+      "matched_to": "real__lecture_07_67415__b0__symbolic_vector",
+      "source_bbox": [
+        1300,
+        200,
+        1395,
+        350
+      ]
+    },
+    {
+      "id": "real__lecture_07_67415__b0__product_vector",
+      "input": "docs/assets/v251/inputs/real__lecture_07_67415__b0__product_vector.png",
+      "reference": "\\begin{bmatrix}p+2q+3r\\\\-p+4q+0\\cdot r\\end{bmatrix}",
+      "group": "real_baseline",
+      "width": 250,
+      "height": 154,
+      "ink_box": [
+        0,
+        14,
+        250,
+        154
+      ],
+      "sha256": "8bc196e41afbb8a677d2fb6b456d93c014438c98be4efea6361ef403ef09ff9c",
+      "case": "lecture_07_67415__product_vector",
+      "variant": "b0",
+      "condition": "base",
+      "source_id": "lecture_07_67415__b0__product_vector",
+      "source_bbox": [
+        1015,
+        505,
+        1265,
+        659
+      ],
+      "reuse_v25": true
+    },
+    {
+      "id": "matched__lecture_07_67415__b0__product_vector",
+      "input": "docs/assets/v251/inputs/matched__lecture_07_67415__b0__product_vector.png",
+      "reference": "\\begin{bmatrix}p+2q+3r\\\\-p+4q+0\\cdot r\\end{bmatrix}",
+      "group": "matched_print",
+      "width": 250,
+      "height": 154,
+      "ink_box": [
+        0,
+        41,
+        250,
+        127
+      ],
+      "sha256": "0aa6f236ede2961da0266c17c6e0f3783c77cb18a7f04ae2c044e167f09606ab",
+      "case": "lecture_07_67415__product_vector",
+      "condition": "matched_canvas_ink_bbox",
+      "matched_to": "real__lecture_07_67415__b0__product_vector",
+      "source_bbox": [
+        1015,
+        505,
+        1265,
+        659
+      ]
+    },
+    {
+      "id": "real__lecture_07_67415__b0__noncommuting_product",
+      "input": "docs/assets/v251/inputs/real__lecture_07_67415__b0__noncommuting_product.png",
+      "reference": "AB\\ne BA.",
+      "group": "real_baseline",
+      "width": 275,
+      "height": 75,
+      "ink_box": [
+        25,
+        2,
+        248,
+        66
+      ],
+      "sha256": "2bb76ed6c478209c42afafd45c32147103af92ae4b8af01696fecd687b96acab",
+      "case": "lecture_07_67415__noncommuting_product",
+      "variant": "b0",
+      "condition": "base",
+      "source_id": "lecture_07_67415__b0__noncommuting_product",
+      "source_bbox": [
+        1435,
+        445,
+        1710,
+        520
+      ],
+      "reuse_v25": true
+    },
+    {
+      "id": "matched__lecture_07_67415__b0__noncommuting_product",
+      "input": "docs/assets/v251/inputs/matched__lecture_07_67415__b0__noncommuting_product.png",
+      "reference": "AB\\ne BA.",
+      "group": "matched_print",
+      "width": 275,
+      "height": 75,
+      "ink_box": [
+        25,
+        11,
+        248,
+        56
+      ],
+      "sha256": "8166cea6c0ac13abdcf6581d71742c2196510c9c1357bfd7addd5d0e6db4f42b",
+      "case": "lecture_07_67415__noncommuting_product",
+      "condition": "matched_canvas_ink_bbox",
+      "matched_to": "real__lecture_07_67415__b0__noncommuting_product",
+      "source_bbox": [
+        1435,
+        445,
+        1710,
+        520
+      ]
+    },
+    {
+      "id": "real__lecture_08_53016__rgb__permutation_matrix",
+      "input": "docs/assets/v251/inputs/real__lecture_08_53016__rgb__permutation_matrix.png",
+      "reference": "\\begin{bmatrix}0&0&1\\\\1&0&0\\\\0&1&0\\end{bmatrix}",
+      "group": "real_baseline",
+      "width": 202,
+      "height": 198,
+      "ink_box": [
+        0,
+        0,
+        202,
+        198
+      ],
+      "sha256": "f104e2bd9a0c9c6f25410b10ce30d03dff5af1a32e818b61dca2e8f47ab3620b",
+      "case": "lecture_08_53016__permutation_matrix",
+      "variant": "rgb",
+      "condition": "base",
+      "source_id": "lecture_08_53016__rgb__permutation_matrix",
+      "source_bbox": [
+        380,
+        465,
+        582,
+        663
+      ],
+      "reuse_v25": true
+    },
+    {
+      "id": "real__lecture_08_53016__rgb__input_vector",
+      "input": "docs/assets/v251/inputs/real__lecture_08_53016__rgb__input_vector.png",
+      "reference": "\\begin{bmatrix}x\\\\y\\\\z\\end{bmatrix}",
+      "group": "real_baseline",
+      "width": 112,
+      "height": 205,
+      "ink_box": [
+        0,
+        0,
+        112,
+        205
+      ],
+      "sha256": "c7c9a42f6d3a9e3d8a19b6b495219944f9c1c02766f05c6d0da4476168a7d7ab",
+      "case": "lecture_08_53016__input_vector",
+      "variant": "rgb",
+      "condition": "base",
+      "source_id": "lecture_08_53016__rgb__input_vector",
+      "source_bbox": [
+        588,
+        465,
+        700,
+        670
+      ],
+      "reuse_v25": true
+    },
+    {
+      "id": "real__lecture_08_53016__rgb__set_builder",
+      "input": "docs/assets/v251/inputs/real__lecture_08_53016__rgb__set_builder.png",
+      "reference": "S_3=\\left\\{A_{3\\times3}\\mid A\\text{ is a permutation matrix}\\right\\}",
+      "group": "real_baseline",
+      "width": 665,
+      "height": 175,
+      "ink_box": [
+        0,
+        0,
+        665,
+        175
+      ],
+      "sha256": "53c721103bad1912d8aaead56146a09994d77944e330e03e945e7fc0ed56aef7",
+      "case": "lecture_08_53016__set_builder",
+      "variant": "rgb",
+      "condition": "base",
+      "source_id": "lecture_08_53016__rgb__set_builder",
+      "source_bbox": [
+        390,
+        670,
+        1055,
+        845
+      ],
+      "reuse_v25": true
+    },
+    {
+      "id": "real__lecture_08_53016__rgb__cardinality_factorial",
+      "input": "docs/assets/v251/inputs/real__lecture_08_53016__rgb__cardinality_factorial.png",
+      "reference": "|S_3|=3!=6",
+      "group": "real_baseline",
+      "width": 245,
+      "height": 110,
+      "ink_box": [
+        0,
+        0,
+        245,
+        110
+      ],
+      "sha256": "a47cd4095b67cf923ddb42458d7e45f456f91b07c4804e6186ecad330c2f5214",
+      "case": "lecture_08_53016__cardinality_factorial",
+      "variant": "rgb",
+      "condition": "base",
+      "source_id": "lecture_08_53016__rgb__cardinality_factorial",
+      "source_bbox": [
+        1065,
+        765,
+        1310,
+        875
+      ],
+      "reuse_v25": true
+    },
+    {
+      "id": "real__lecture_08_53016__b0__permutation_matrix",
+      "input": "docs/assets/v251/inputs/real__lecture_08_53016__b0__permutation_matrix.png",
+      "reference": "\\begin{bmatrix}0&0&1\\\\1&0&0\\\\0&1&0\\end{bmatrix}",
+      "group": "real_baseline",
+      "width": 202,
+      "height": 198,
+      "ink_box": [
+        9,
+        15,
+        190,
+        190
+      ],
+      "sha256": "11bfd13fcda74b8af1aecaebf56609ae7b8d21de393407daf40f01afdce3a443",
+      "case": "lecture_08_53016__permutation_matrix",
+      "variant": "b0",
+      "condition": "base",
+      "source_id": "lecture_08_53016__b0__permutation_matrix",
+      "source_bbox": [
+        380,
+        465,
+        582,
+        663
+      ],
+      "reuse_v25": true
+    },
+    {
+      "id": "matched__lecture_08_53016__b0__permutation_matrix",
+      "input": "docs/assets/v251/inputs/matched__lecture_08_53016__b0__permutation_matrix.png",
+      "reference": "\\begin{bmatrix}0&0&1\\\\1&0&0\\\\0&1&0\\end{bmatrix}",
+      "group": "matched_print",
+      "width": 202,
+      "height": 198,
+      "ink_box": [
+        9,
+        25,
+        190,
+        180
+      ],
+      "sha256": "90ffb016582cb8b953a7256dc40f5d615ce1161ef1d6bf750131eedf08abbc29",
+      "case": "lecture_08_53016__permutation_matrix",
+      "condition": "matched_canvas_ink_bbox",
+      "matched_to": "real__lecture_08_53016__b0__permutation_matrix",
+      "source_bbox": [
+        380,
+        465,
+        582,
+        663
+      ]
+    },
+    {
+      "id": "real__lecture_08_53016__b0__input_vector",
+      "input": "docs/assets/v251/inputs/real__lecture_08_53016__b0__input_vector.png",
+      "reference": "\\begin{bmatrix}x\\\\y\\\\z\\end{bmatrix}",
+      "group": "real_baseline",
+      "width": 112,
+      "height": 205,
+      "ink_box": [
+        7,
+        6,
+        107,
+        186
+      ],
+      "sha256": "68934a6ba631b5431a845de636b99cddaaaccebb671124dbd90260cef72f58fa",
+      "case": "lecture_08_53016__input_vector",
+      "variant": "b0",
+      "condition": "base",
+      "source_id": "lecture_08_53016__b0__input_vector",
+      "source_bbox": [
+        588,
+        465,
+        700,
+        670
+      ],
+      "reuse_v25": true
+    },
+    {
+      "id": "matched__lecture_08_53016__b0__input_vector",
+      "input": "docs/assets/v251/inputs/matched__lecture_08_53016__b0__input_vector.png",
+      "reference": "\\begin{bmatrix}x\\\\y\\\\z\\end{bmatrix}",
+      "group": "matched_print",
+      "width": 112,
+      "height": 205,
+      "ink_box": [
+        25,
+        6,
+        89,
+        186
+      ],
+      "sha256": "0eb6b9bb1e03d37da42253abb269c4be4f36ea62e12964ca43851a1a6d748992",
+      "case": "lecture_08_53016__input_vector",
+      "condition": "matched_canvas_ink_bbox",
+      "matched_to": "real__lecture_08_53016__b0__input_vector",
+      "source_bbox": [
+        588,
+        465,
+        700,
+        670
+      ]
+    },
+    {
+      "id": "real__lecture_08_53016__b0__set_builder",
+      "input": "docs/assets/v251/inputs/real__lecture_08_53016__b0__set_builder.png",
+      "reference": "S_3=\\left\\{A_{3\\times3}\\mid A\\text{ is a permutation matrix}\\right\\}",
+      "group": "real_baseline",
+      "width": 665,
+      "height": 175,
+      "ink_box": [
+        19,
+        6,
+        648,
+        169
+      ],
+      "sha256": "365f6098673a77b2d9180da745d9c48c01e7ffd15a77f7b6e6254ff0c8569aa9",
+      "case": "lecture_08_53016__set_builder",
+      "variant": "b0",
+      "condition": "base",
+      "source_id": "lecture_08_53016__b0__set_builder",
+      "source_bbox": [
+        390,
+        670,
+        1055,
+        845
+      ],
+      "reuse_v25": true
+    },
+    {
+      "id": "matched__lecture_08_53016__b0__set_builder",
+      "input": "docs/assets/v251/inputs/matched__lecture_08_53016__b0__set_builder.png",
+      "reference": "S_3=\\left\\{A_{3\\times3}\\mid A\\text{ is a permutation matrix}\\right\\}",
+      "group": "matched_print",
+      "width": 665,
+      "height": 175,
+      "ink_box": [
+        19,
+        70,
+        648,
+        105
+      ],
+      "sha256": "3b3b631ca101ea7f0b9710dccb9e39c7dd971551c285491885cb1c0675e2865d",
+      "case": "lecture_08_53016__set_builder",
+      "condition": "matched_canvas_ink_bbox",
+      "matched_to": "real__lecture_08_53016__b0__set_builder",
+      "source_bbox": [
+        390,
+        670,
+        1055,
+        845
+      ]
+    },
+    {
+      "id": "real__lecture_08_53016__b0__cardinality_factorial",
+      "input": "docs/assets/v251/inputs/real__lecture_08_53016__b0__cardinality_factorial.png",
+      "reference": "|S_3|=3!=6",
+      "group": "real_baseline",
+      "width": 245,
+      "height": 110,
+      "ink_box": [
+        11,
+        4,
+        221,
+        97
+      ],
+      "sha256": "c538fe6855dff29524e41ef3603ab15045158ead0ff7fcf7a051086bd4e32922",
+      "case": "lecture_08_53016__cardinality_factorial",
+      "variant": "b0",
+      "condition": "base",
+      "source_id": "lecture_08_53016__b0__cardinality_factorial",
+      "source_bbox": [
+        1065,
+        765,
+        1310,
+        875
+      ],
+      "reuse_v25": true
+    },
+    {
+      "id": "matched__lecture_08_53016__b0__cardinality_factorial",
+      "input": "docs/assets/v251/inputs/matched__lecture_08_53016__b0__cardinality_factorial.png",
+      "reference": "|S_3|=3!=6",
+      "group": "matched_print",
+      "width": 245,
+      "height": 110,
+      "ink_box": [
+        11,
+        31,
+        221,
+        70
+      ],
+      "sha256": "6c423a7efe8253ddb7836985d7f7f657be8bb843797f524c0855cd5fb1aa5ee8",
+      "case": "lecture_08_53016__cardinality_factorial",
+      "condition": "matched_canvas_ink_bbox",
+      "matched_to": "real__lecture_08_53016__b0__cardinality_factorial",
+      "source_bbox": [
+        1065,
+        765,
+        1310,
+        875
+      ]
+    },
+    {
+      "id": "sensitivity__lecture_01_10423__rgb__formula_system__pad10",
+      "input": "docs/assets/v251/inputs/sensitivity__lecture_01_10423__rgb__formula_system__pad10.png",
+      "reference": "\\left.\\begin{aligned}3x&=1\\\\x+2y&=3\\end{aligned}\\right\\}",
+      "group": "sensitivity",
+      "width": 372,
+      "height": 216,
+      "ink_box": [
+        0,
+        0,
+        372,
+        216
+      ],
+      "sha256": "653b72da1fe053fbdda01a7f7da46adbdf86b5e730a7f125b80a030a64723659",
+      "case": "lecture_01_10423__formula_system",
+      "variant": "rgb",
+      "condition": "pad10",
+      "source_bbox": [
+        259,
+        412,
+        631,
+        628
+      ],
+      "base_id": "real__lecture_01_10423__rgb__formula_system"
+    },
+    {
+      "id": "sensitivity__lecture_01_10423__rgb__formula_system__pad20",
+      "input": "docs/assets/v251/inputs/sensitivity__lecture_01_10423__rgb__formula_system__pad20.png",
+      "reference": "\\left.\\begin{aligned}3x&=1\\\\x+2y&=3\\end{aligned}\\right\\}",
+      "group": "sensitivity",
+      "width": 434,
+      "height": 252,
+      "ink_box": [
+        0,
+        0,
+        434,
+        252
+      ],
+      "sha256": "d51370336c8d93cc7fb62e1ef3b5b6839677181b54ff0cd3f7bea823048693b4",
+      "case": "lecture_01_10423__formula_system",
+      "variant": "rgb",
+      "condition": "pad20",
+      "source_bbox": [
+        228,
+        394,
+        662,
+        646
+      ],
+      "base_id": "real__lecture_01_10423__rgb__formula_system"
+    },
+    {
+      "id": "sensitivity__lecture_01_10423__rgb__formula_system__tight",
+      "input": "docs/assets/v251/inputs/sensitivity__lecture_01_10423__rgb__formula_system__tight.png",
+      "reference": "\\left.\\begin{aligned}3x&=1\\\\x+2y&=3\\end{aligned}\\right\\}",
+      "group": "sensitivity",
+      "width": 310,
+      "height": 180,
+      "ink_box": [
+        0,
+        0,
+        310,
+        180
+      ],
+      "sha256": "bc7d8e2ea6cadc469c80330a869e83f584bf807db7b57dfb2ffb079795798151",
+      "case": "lecture_01_10423__formula_system",
+      "variant": "rgb",
+      "condition": "tight",
+      "source_bbox": [
+        290,
+        430,
+        600,
+        610
+      ],
+      "base_id": "real__lecture_01_10423__rgb__formula_system"
+    },
+    {
+      "id": "sensitivity__lecture_01_10423__b0__formula_system__pad10",
+      "input": "docs/assets/v251/inputs/sensitivity__lecture_01_10423__b0__formula_system__pad10.png",
+      "reference": "\\left.\\begin{aligned}3x&=1\\\\x+2y&=3\\end{aligned}\\right\\}",
+      "group": "sensitivity",
+      "width": 372,
+      "height": 216,
+      "ink_box": [
+        75,
+        0,
+        368,
+        216
+      ],
+      "sha256": "2b2b16e70a0437ec3d34b577f39165ed69b3d9fed7fae216831dccec9cb851b0",
+      "case": "lecture_01_10423__formula_system",
+      "variant": "b0",
+      "condition": "pad10",
+      "source_bbox": [
+        259,
+        412,
+        631,
+        628
+      ],
+      "base_id": "real__lecture_01_10423__b0__formula_system"
+    },
+    {
+      "id": "sensitivity__lecture_01_10423__b0__formula_system__pad20",
+      "input": "docs/assets/v251/inputs/sensitivity__lecture_01_10423__b0__formula_system__pad20.png",
+      "reference": "\\left.\\begin{aligned}3x&=1\\\\x+2y&=3\\end{aligned}\\right\\}",
+      "group": "sensitivity",
+      "width": 434,
+      "height": 252,
+      "ink_box": [
+        39,
+        0,
+        434,
+        252
+      ],
+      "sha256": "7cc2dd93f7ef85cc5db2be392d9616e742a2ba4aa96678cbbad402cf240ba55b",
+      "case": "lecture_01_10423__formula_system",
+      "variant": "b0",
+      "condition": "pad20",
+      "source_bbox": [
+        228,
+        394,
+        662,
+        646
+      ],
+      "base_id": "real__lecture_01_10423__b0__formula_system"
+    },
+    {
+      "id": "sensitivity__lecture_01_10423__b0__formula_system__tight",
+      "input": "docs/assets/v251/inputs/sensitivity__lecture_01_10423__b0__formula_system__tight.png",
+      "reference": "\\left.\\begin{aligned}3x&=1\\\\x+2y&=3\\end{aligned}\\right\\}",
+      "group": "sensitivity",
+      "width": 229,
+      "height": 157,
+      "ink_box": [
+        0,
+        0,
+        229,
+        157
+      ],
+      "sha256": "001d717d48359e61c2dace2cb875e9c9283a5f03be1345510965e09d6d3f9749",
+      "case": "lecture_01_10423__formula_system",
+      "variant": "b0",
+      "condition": "tight",
+      "source_bbox": [
+        334,
+        438,
+        563,
+        595
+      ],
+      "base_id": "real__lecture_01_10423__b0__formula_system"
+    },
+    {
+      "id": "sensitivity__lecture_06_47799__rgb__augmented_matrix__pad10",
+      "input": "docs/assets/v251/inputs/sensitivity__lecture_06_47799__rgb__augmented_matrix__pad10.png",
+      "reference": "\\left[\\begin{array}{cc|c}1&-3&0\\\\2&4&0\\end{array}\\right]",
+      "group": "sensitivity",
+      "width": 295,
+      "height": 175,
+      "ink_box": [
+        0,
+        0,
+        295,
+        175
+      ],
+      "sha256": "4787b965b9f4f2ce6e1e7331d385897aae7a0a8ee3d6b6860d50213a94b406f2",
+      "case": "lecture_06_47799__augmented_matrix",
+      "variant": "rgb",
+      "condition": "pad10",
+      "source_bbox": [
+        145,
+        190,
+        440,
+        365
+      ],
+      "base_id": "real__lecture_06_47799__rgb__augmented_matrix"
+    },
+    {
+      "id": "sensitivity__lecture_06_47799__rgb__augmented_matrix__pad20",
+      "input": "docs/assets/v251/inputs/sensitivity__lecture_06_47799__rgb__augmented_matrix__pad20.png",
+      "reference": "\\left[\\begin{array}{cc|c}1&-3&0\\\\2&4&0\\end{array}\\right]",
+      "group": "sensitivity",
+      "width": 343,
+      "height": 203,
+      "ink_box": [
+        0,
+        0,
+        343,
+        203
+      ],
+      "sha256": "3979b919f402517a36f245d5bd08d6b667ca32491f95d72a83b76f72a90ba1d3",
+      "case": "lecture_06_47799__augmented_matrix",
+      "variant": "rgb",
+      "condition": "pad20",
+      "source_bbox": [
+        121,
+        176,
+        464,
+        379
+      ],
+      "base_id": "real__lecture_06_47799__rgb__augmented_matrix"
+    },
+    {
+      "id": "sensitivity__lecture_06_47799__rgb__augmented_matrix__tight",
+      "input": "docs/assets/v251/inputs/sensitivity__lecture_06_47799__rgb__augmented_matrix__tight.png",
+      "reference": "\\left[\\begin{array}{cc|c}1&-3&0\\\\2&4&0\\end{array}\\right]",
+      "group": "sensitivity",
+      "width": 245,
+      "height": 145,
+      "ink_box": [
+        0,
+        0,
+        245,
+        145
+      ],
+      "sha256": "ab03ba1a150182bca66d61c26bb6872f7cdc0fd9d0e1f8e5a610f3df5426ab0e",
+      "case": "lecture_06_47799__augmented_matrix",
+      "variant": "rgb",
+      "condition": "tight",
+      "source_bbox": [
+        170,
+        205,
+        415,
+        350
+      ],
+      "base_id": "real__lecture_06_47799__rgb__augmented_matrix"
+    },
+    {
+      "id": "sensitivity__lecture_06_47799__b0__augmented_matrix__pad10",
+      "input": "docs/assets/v251/inputs/sensitivity__lecture_06_47799__b0__augmented_matrix__pad10.png",
+      "reference": "\\left[\\begin{array}{cc|c}1&-3&0\\\\2&4&0\\end{array}\\right]",
+      "group": "sensitivity",
+      "width": 295,
+      "height": 175,
+      "ink_box": [
+        43,
+        33,
+        295,
+        150
+      ],
+      "sha256": "8ec11030265d809372069a8ef949bf9d11e437a3c8ecac430fdebfea7a433f22",
+      "case": "lecture_06_47799__augmented_matrix",
+      "variant": "b0",
+      "condition": "pad10",
+      "source_bbox": [
+        145,
+        190,
+        440,
+        365
+      ],
+      "base_id": "real__lecture_06_47799__b0__augmented_matrix"
+    },
+    {
+      "id": "sensitivity__lecture_06_47799__b0__augmented_matrix__pad20",
+      "input": "docs/assets/v251/inputs/sensitivity__lecture_06_47799__b0__augmented_matrix__pad20.png",
+      "reference": "\\left[\\begin{array}{cc|c}1&-3&0\\\\2&4&0\\end{array}\\right]",
+      "group": "sensitivity",
+      "width": 343,
+      "height": 203,
+      "ink_box": [
+        67,
+        47,
+        343,
+        164
+      ],
+      "sha256": "48b57d40f197a57470d38d9a8b06a5fae0c9bc09e15b8bf6309abeb19d4f272e",
+      "case": "lecture_06_47799__augmented_matrix",
+      "variant": "b0",
+      "condition": "pad20",
+      "source_bbox": [
+        121,
+        176,
+        464,
+        379
+      ],
+      "base_id": "real__lecture_06_47799__b0__augmented_matrix"
+    },
+    {
+      "id": "sensitivity__lecture_06_47799__b0__augmented_matrix__tight",
+      "input": "docs/assets/v251/inputs/sensitivity__lecture_06_47799__b0__augmented_matrix__tight.png",
+      "reference": "\\left[\\begin{array}{cc|c}1&-3&0\\\\2&4&0\\end{array}\\right]",
+      "group": "sensitivity",
+      "width": 213,
+      "height": 117,
+      "ink_box": [
+        0,
+        0,
+        213,
+        117
+      ],
+      "sha256": "f427c0fda5d5f00ba4097c7559051201ff2493f32ccd863fdd86d2eabe4f803d",
+      "case": "lecture_06_47799__augmented_matrix",
+      "variant": "b0",
+      "condition": "tight",
+      "source_bbox": [
+        188,
+        223,
+        401,
+        340
+      ],
+      "base_id": "real__lecture_06_47799__b0__augmented_matrix"
+    },
+    {
+      "id": "sensitivity__lecture_07_67415__rgb__symbolic_vector__pad10",
+      "input": "docs/assets/v251/inputs/sensitivity__lecture_07_67415__rgb__symbolic_vector__pad10.png",
+      "reference": "\\begin{bmatrix}p\\\\q\\\\r\\end{bmatrix}",
+      "group": "sensitivity",
+      "width": 115,
+      "height": 180,
+      "ink_box": [
+        0,
+        0,
+        115,
+        180
+      ],
+      "sha256": "496d1b7cc020fd67013a9bf2dd8ec596c8a4a75b4098cf7b7f450b039a6ac935",
+      "case": "lecture_07_67415__symbolic_vector",
+      "variant": "rgb",
+      "condition": "pad10",
+      "source_bbox": [
+        1290,
+        185,
+        1405,
+        365
+      ],
+      "base_id": "real__lecture_07_67415__rgb__symbolic_vector"
+    },
+    {
+      "id": "sensitivity__lecture_07_67415__rgb__symbolic_vector__pad20",
+      "input": "docs/assets/v251/inputs/sensitivity__lecture_07_67415__rgb__symbolic_vector__pad20.png",
+      "reference": "\\begin{bmatrix}p\\\\q\\\\r\\end{bmatrix}",
+      "group": "sensitivity",
+      "width": 133,
+      "height": 210,
+      "ink_box": [
+        0,
+        0,
+        133,
+        210
+      ],
+      "sha256": "691c3517d4604a063318be98c4ab8fb00bada44b2a6892322cb5b776ae17db0b",
+      "case": "lecture_07_67415__symbolic_vector",
+      "variant": "rgb",
+      "condition": "pad20",
+      "source_bbox": [
+        1281,
+        170,
+        1414,
+        380
+      ],
+      "base_id": "real__lecture_07_67415__rgb__symbolic_vector"
+    },
+    {
+      "id": "sensitivity__lecture_07_67415__rgb__symbolic_vector__tight",
+      "input": "docs/assets/v251/inputs/sensitivity__lecture_07_67415__rgb__symbolic_vector__tight.png",
+      "reference": "\\begin{bmatrix}p\\\\q\\\\r\\end{bmatrix}",
+      "group": "sensitivity",
+      "width": 95,
+      "height": 150,
+      "ink_box": [
+        0,
+        0,
+        95,
+        150
+      ],
+      "sha256": "0d58086e9d65731c297540cf871db182ede2130c63fd9a203654a50333cb0c42",
+      "case": "lecture_07_67415__symbolic_vector",
+      "variant": "rgb",
+      "condition": "tight",
+      "source_bbox": [
+        1300,
+        200,
+        1395,
+        350
+      ],
+      "base_id": "real__lecture_07_67415__rgb__symbolic_vector"
+    },
+    {
+      "id": "sensitivity__lecture_07_67415__rgb__symbolic_vector__scale2",
+      "input": "docs/assets/v251/inputs/sensitivity__lecture_07_67415__rgb__symbolic_vector__scale2.png",
+      "reference": "\\begin{bmatrix}p\\\\q\\\\r\\end{bmatrix}",
+      "group": "sensitivity",
+      "width": 190,
+      "height": 300,
+      "ink_box": [
+        0,
+        0,
+        190,
+        300
+      ],
+      "sha256": "c20c261f28fcab8b816e558f7f4de444e8a36309ece9397f1a57d0cb97eda662",
+      "case": "lecture_07_67415__symbolic_vector",
+      "variant": "rgb",
+      "condition": "scale2",
+      "source_bbox": [
+        1300,
+        200,
+        1395,
+        350
+      ],
+      "base_id": "real__lecture_07_67415__rgb__symbolic_vector"
+    },
+    {
+      "id": "sensitivity__lecture_07_67415__b0__symbolic_vector__pad10",
+      "input": "docs/assets/v251/inputs/sensitivity__lecture_07_67415__b0__symbolic_vector__pad10.png",
+      "reference": "\\begin{bmatrix}p\\\\q\\\\r\\end{bmatrix}",
+      "group": "sensitivity",
+      "width": 115,
+      "height": 180,
+      "ink_box": [
+        24,
+        32,
+        91,
+        150
+      ],
+      "sha256": "4ecdaea10cf19907cb025549bb07e619ce1595f7f9ba48ad54910846f168369a",
+      "case": "lecture_07_67415__symbolic_vector",
+      "variant": "b0",
+      "condition": "pad10",
+      "source_bbox": [
+        1290,
+        185,
+        1405,
+        365
+      ],
+      "base_id": "real__lecture_07_67415__b0__symbolic_vector"
+    },
+    {
+      "id": "sensitivity__lecture_07_67415__b0__symbolic_vector__pad20",
+      "input": "docs/assets/v251/inputs/sensitivity__lecture_07_67415__b0__symbolic_vector__pad20.png",
+      "reference": "\\begin{bmatrix}p\\\\q\\\\r\\end{bmatrix}",
+      "group": "sensitivity",
+      "width": 133,
+      "height": 210,
+      "ink_box": [
+        0,
+        42,
+        133,
+        210
+      ],
+      "sha256": "1d24c744b44430bf054b2222f6d9964ae626709a9f905772186c5e581e3cce4b",
+      "case": "lecture_07_67415__symbolic_vector",
+      "variant": "b0",
+      "condition": "pad20",
+      "source_bbox": [
+        1281,
+        170,
+        1414,
+        380
+      ],
+      "base_id": "real__lecture_07_67415__b0__symbolic_vector"
+    },
+    {
+      "id": "sensitivity__lecture_07_67415__b0__symbolic_vector__tight",
+      "input": "docs/assets/v251/inputs/sensitivity__lecture_07_67415__b0__symbolic_vector__tight.png",
+      "reference": "\\begin{bmatrix}p\\\\q\\\\r\\end{bmatrix}",
+      "group": "sensitivity",
+      "width": 67,
+      "height": 118,
+      "ink_box": [
+        0,
+        0,
+        67,
+        118
+      ],
+      "sha256": "f4945a8aae53e80b471908d6adb26425e5d56d340c463aed75e196874816f11c",
+      "case": "lecture_07_67415__symbolic_vector",
+      "variant": "b0",
+      "condition": "tight",
+      "source_bbox": [
+        1314,
+        217,
+        1381,
+        335
+      ],
+      "base_id": "real__lecture_07_67415__b0__symbolic_vector"
+    },
+    {
+      "id": "sensitivity__lecture_07_67415__b0__symbolic_vector__scale2",
+      "input": "docs/assets/v251/inputs/sensitivity__lecture_07_67415__b0__symbolic_vector__scale2.png",
+      "reference": "\\begin{bmatrix}p\\\\q\\\\r\\end{bmatrix}",
+      "group": "sensitivity",
+      "width": 190,
+      "height": 300,
+      "ink_box": [
+        28,
+        33,
+        163,
+        271
+      ],
+      "sha256": "cb061904686fded5bbe80ae3aa5f8553b048ca28785218e2606340a5d6152201",
+      "case": "lecture_07_67415__symbolic_vector",
+      "variant": "b0",
+      "condition": "scale2",
+      "source_bbox": [
+        1300,
+        200,
+        1395,
+        350
+      ],
+      "base_id": "real__lecture_07_67415__b0__symbolic_vector"
+    },
+    {
+      "id": "sensitivity__lecture_08_53016__rgb__permutation_matrix__pad10",
+      "input": "docs/assets/v251/inputs/sensitivity__lecture_08_53016__rgb__permutation_matrix__pad10.png",
+      "reference": "\\begin{bmatrix}0&0&1\\\\1&0&0\\\\0&1&0\\end{bmatrix}",
+      "group": "sensitivity",
+      "width": 244,
+      "height": 238,
+      "ink_box": [
+        0,
+        0,
+        244,
+        238
+      ],
+      "sha256": "2a356c591b7fca8833408f76965ccb8e9e5fed644b8a3ae170e1764b4f7129f4",
+      "case": "lecture_08_53016__permutation_matrix",
+      "variant": "rgb",
+      "condition": "pad10",
+      "source_bbox": [
+        359,
+        445,
+        603,
+        683
+      ],
+      "base_id": "real__lecture_08_53016__rgb__permutation_matrix"
+    },
+    {
+      "id": "sensitivity__lecture_08_53016__rgb__permutation_matrix__pad20",
+      "input": "docs/assets/v251/inputs/sensitivity__lecture_08_53016__rgb__permutation_matrix__pad20.png",
+      "reference": "\\begin{bmatrix}0&0&1\\\\1&0&0\\\\0&1&0\\end{bmatrix}",
+      "group": "sensitivity",
+      "width": 284,
+      "height": 278,
+      "ink_box": [
+        0,
+        0,
+        284,
+        278
+      ],
+      "sha256": "ef0f3dad4c258147feb8b37dd0e36b0b0c7c1b4f5947f778d54ad44202e6b157",
+      "case": "lecture_08_53016__permutation_matrix",
+      "variant": "rgb",
+      "condition": "pad20",
+      "source_bbox": [
+        339,
+        425,
+        623,
+        703
+      ],
+      "base_id": "real__lecture_08_53016__rgb__permutation_matrix"
+    },
+    {
+      "id": "sensitivity__lecture_08_53016__rgb__permutation_matrix__tight",
+      "input": "docs/assets/v251/inputs/sensitivity__lecture_08_53016__rgb__permutation_matrix__tight.png",
+      "reference": "\\begin{bmatrix}0&0&1\\\\1&0&0\\\\0&1&0\\end{bmatrix}",
+      "group": "sensitivity",
+      "width": 202,
+      "height": 198,
+      "ink_box": [
+        0,
+        0,
+        202,
+        198
+      ],
+      "sha256": "f104e2bd9a0c9c6f25410b10ce30d03dff5af1a32e818b61dca2e8f47ab3620b",
+      "case": "lecture_08_53016__permutation_matrix",
+      "variant": "rgb",
+      "condition": "tight",
+      "source_bbox": [
+        380,
+        465,
+        582,
+        663
+      ],
+      "base_id": "real__lecture_08_53016__rgb__permutation_matrix"
+    },
+    {
+      "id": "sensitivity__lecture_08_53016__b0__permutation_matrix__pad10",
+      "input": "docs/assets/v251/inputs/sensitivity__lecture_08_53016__b0__permutation_matrix__pad10.png",
+      "reference": "\\begin{bmatrix}0&0&1\\\\1&0&0\\\\0&1&0\\end{bmatrix}",
+      "group": "sensitivity",
+      "width": 244,
+      "height": 238,
+      "ink_box": [
+        30,
+        0,
+        244,
+        238
+      ],
+      "sha256": "93040761c8e08306c580e3c6f0f9e70b6b436ad2fd48a333c08350bb5a8d8644",
+      "case": "lecture_08_53016__permutation_matrix",
+      "variant": "b0",
+      "condition": "pad10",
+      "source_bbox": [
+        359,
+        445,
+        603,
+        683
+      ],
+      "base_id": "real__lecture_08_53016__b0__permutation_matrix"
+    },
+    {
+      "id": "sensitivity__lecture_08_53016__b0__permutation_matrix__pad20",
+      "input": "docs/assets/v251/inputs/sensitivity__lecture_08_53016__b0__permutation_matrix__pad20.png",
+      "reference": "\\begin{bmatrix}0&0&1\\\\1&0&0\\\\0&1&0\\end{bmatrix}",
+      "group": "sensitivity",
+      "width": 284,
+      "height": 278,
+      "ink_box": [
+        50,
+        0,
+        281,
+        278
+      ],
+      "sha256": "4a48e8e4756fa2df397283360e1433e5a61e0ab450e222818f9ec4a4fd0eac82",
+      "case": "lecture_08_53016__permutation_matrix",
+      "variant": "b0",
+      "condition": "pad20",
+      "source_bbox": [
+        339,
+        425,
+        623,
+        703
+      ],
+      "base_id": "real__lecture_08_53016__b0__permutation_matrix"
+    },
+    {
+      "id": "sensitivity__lecture_08_53016__b0__permutation_matrix__tight",
+      "input": "docs/assets/v251/inputs/sensitivity__lecture_08_53016__b0__permutation_matrix__tight.png",
+      "reference": "\\begin{bmatrix}0&0&1\\\\1&0&0\\\\0&1&0\\end{bmatrix}",
+      "group": "sensitivity",
+      "width": 181,
+      "height": 175,
+      "ink_box": [
+        0,
+        0,
+        181,
+        175
+      ],
+      "sha256": "5c8bfa7d2d99960b3832ec225f45bbc93a39c50d0125613f0860c4682646e3c6",
+      "case": "lecture_08_53016__permutation_matrix",
+      "variant": "b0",
+      "condition": "tight",
+      "source_bbox": [
+        389,
+        480,
+        570,
+        655
+      ],
+      "base_id": "real__lecture_08_53016__b0__permutation_matrix"
+    },
+    {
+      "id": "sensitivity__lecture_08_53016__rgb__cardinality_factorial__pad10",
+      "input": "docs/assets/v251/inputs/sensitivity__lecture_08_53016__rgb__cardinality_factorial__pad10.png",
+      "reference": "|S_3|=3!=6",
+      "group": "sensitivity",
+      "width": 295,
+      "height": 132,
+      "ink_box": [
+        0,
+        0,
+        295,
+        132
+      ],
+      "sha256": "d6d0dae6223349d21e4b31c834863e4fb7a81075cda6567b53a27bebb013b842",
+      "case": "lecture_08_53016__cardinality_factorial",
+      "variant": "rgb",
+      "condition": "pad10",
+      "source_bbox": [
+        1040,
+        754,
+        1335,
+        886
+      ],
+      "base_id": "real__lecture_08_53016__rgb__cardinality_factorial"
+    },
+    {
+      "id": "sensitivity__lecture_08_53016__rgb__cardinality_factorial__pad20",
+      "input": "docs/assets/v251/inputs/sensitivity__lecture_08_53016__rgb__cardinality_factorial__pad20.png",
+      "reference": "|S_3|=3!=6",
+      "group": "sensitivity",
+      "width": 343,
+      "height": 154,
+      "ink_box": [
+        0,
+        0,
+        343,
+        154
+      ],
+      "sha256": "b487ffbe583e1800a649a6c156bfef57d96f19de08f28739c664b59e7c861a18",
+      "case": "lecture_08_53016__cardinality_factorial",
+      "variant": "rgb",
+      "condition": "pad20",
+      "source_bbox": [
+        1016,
+        743,
+        1359,
+        897
+      ],
+      "base_id": "real__lecture_08_53016__rgb__cardinality_factorial"
+    },
+    {
+      "id": "sensitivity__lecture_08_53016__rgb__cardinality_factorial__tight",
+      "input": "docs/assets/v251/inputs/sensitivity__lecture_08_53016__rgb__cardinality_factorial__tight.png",
+      "reference": "|S_3|=3!=6",
+      "group": "sensitivity",
+      "width": 245,
+      "height": 110,
+      "ink_box": [
+        0,
+        0,
+        245,
+        110
+      ],
+      "sha256": "a47cd4095b67cf923ddb42458d7e45f456f91b07c4804e6186ecad330c2f5214",
+      "case": "lecture_08_53016__cardinality_factorial",
+      "variant": "rgb",
+      "condition": "tight",
+      "source_bbox": [
+        1065,
+        765,
+        1310,
+        875
+      ],
+      "base_id": "real__lecture_08_53016__rgb__cardinality_factorial"
+    },
+    {
+      "id": "sensitivity__lecture_08_53016__rgb__cardinality_factorial__scale2",
+      "input": "docs/assets/v251/inputs/sensitivity__lecture_08_53016__rgb__cardinality_factorial__scale2.png",
+      "reference": "|S_3|=3!=6",
+      "group": "sensitivity",
+      "width": 490,
+      "height": 220,
+      "ink_box": [
+        0,
+        0,
+        490,
+        220
+      ],
+      "sha256": "6a9df3224ba216e9cc675a57bd33e542afaf5c169d5eb4fb501c915fdf9f44cb",
+      "case": "lecture_08_53016__cardinality_factorial",
+      "variant": "rgb",
+      "condition": "scale2",
+      "source_bbox": [
+        1065,
+        765,
+        1310,
+        875
+      ],
+      "base_id": "real__lecture_08_53016__rgb__cardinality_factorial"
+    },
+    {
+      "id": "sensitivity__lecture_08_53016__b0__cardinality_factorial__pad10",
+      "input": "docs/assets/v251/inputs/sensitivity__lecture_08_53016__b0__cardinality_factorial__pad10.png",
+      "reference": "|S_3|=3!=6",
+      "group": "sensitivity",
+      "width": 295,
+      "height": 132,
+      "ink_box": [
+        36,
+        0,
+        246,
+        108
+      ],
+      "sha256": "9bd3c7901e1fa2b09cfff46c38f9091652bd7b8eb7124e4fa0bba1d69201cf57",
+      "case": "lecture_08_53016__cardinality_factorial",
+      "variant": "b0",
+      "condition": "pad10",
+      "source_bbox": [
+        1040,
+        754,
+        1335,
+        886
+      ],
+      "base_id": "real__lecture_08_53016__b0__cardinality_factorial"
+    },
+    {
+      "id": "sensitivity__lecture_08_53016__b0__cardinality_factorial__pad20",
+      "input": "docs/assets/v251/inputs/sensitivity__lecture_08_53016__b0__cardinality_factorial__pad20.png",
+      "reference": "|S_3|=3!=6",
+      "group": "sensitivity",
+      "width": 343,
+      "height": 154,
+      "ink_box": [
+        0,
+        0,
+        270,
+        119
+      ],
+      "sha256": "be5edcea8016b2e93af098725e0ac581627275a283ca13e8f5494da54d922d88",
+      "case": "lecture_08_53016__cardinality_factorial",
+      "variant": "b0",
+      "condition": "pad20",
+      "source_bbox": [
+        1016,
+        743,
+        1359,
+        897
+      ],
+      "base_id": "real__lecture_08_53016__b0__cardinality_factorial"
+    },
+    {
+      "id": "sensitivity__lecture_08_53016__b0__cardinality_factorial__tight",
+      "input": "docs/assets/v251/inputs/sensitivity__lecture_08_53016__b0__cardinality_factorial__tight.png",
+      "reference": "|S_3|=3!=6",
+      "group": "sensitivity",
+      "width": 210,
+      "height": 93,
+      "ink_box": [
+        0,
+        0,
+        210,
+        93
+      ],
+      "sha256": "e36b3b77670c6985e179ad149fd24ef2f2cf8b447bd515b8154c502654b58237",
+      "case": "lecture_08_53016__cardinality_factorial",
+      "variant": "b0",
+      "condition": "tight",
+      "source_bbox": [
+        1076,
+        769,
+        1286,
+        862
+      ],
+      "base_id": "real__lecture_08_53016__b0__cardinality_factorial"
+    },
+    {
+      "id": "sensitivity__lecture_08_53016__b0__cardinality_factorial__scale2",
+      "input": "docs/assets/v251/inputs/sensitivity__lecture_08_53016__b0__cardinality_factorial__scale2.png",
+      "reference": "|S_3|=3!=6",
+      "group": "sensitivity",
+      "width": 490,
+      "height": 220,
+      "ink_box": [
+        21,
+        7,
+        443,
+        195
+      ],
+      "sha256": "f149f0e91bbf2b7f4174b53ed787632f51c1ad3f7a1e8bfb93fb784ed8a223a0",
+      "case": "lecture_08_53016__cardinality_factorial",
+      "variant": "b0",
+      "condition": "scale2",
+      "source_bbox": [
+        1065,
+        765,
+        1310,
+        875
+      ],
+      "base_id": "real__lecture_08_53016__b0__cardinality_factorial"
+    },
+    {
+      "id": "format__vec3__wide_canvas",
+      "input": "docs/assets/v251/inputs/format__vec3__wide_canvas.png",
+      "reference": "\\begin{bmatrix}1\\\\2\\\\3\\end{bmatrix}",
+      "group": "print_format",
+      "width": 164,
+      "height": 252,
+      "ink_box": [
+        63,
+        71,
+        101,
+        181
+      ],
+      "sha256": "f87ccf4e89e3aa12e9ca1feeb01754d90057a58c77e93f8aee22dbf85a9de0a4",
+      "family": "vector",
+      "condition": "extra_blank_canvas",
+      "base_id": "control__vec3"
+    },
+    {
+      "id": "format__matrix33__wide_canvas",
+      "input": "docs/assets/v251/inputs/format__matrix33__wide_canvas.png",
+      "reference": "\\begin{bmatrix}1&2&3\\\\4&5&6\\\\7&8&9\\end{bmatrix}",
+      "group": "print_format",
+      "width": 314,
+      "height": 252,
+      "ink_box": [
+        92,
+        71,
+        220,
+        181
+      ],
+      "sha256": "6d7e6547e8ba825caed8925684a15b7895ba61634f09dbed762b5cd25cd8100f",
+      "family": "matrix",
+      "condition": "extra_blank_canvas",
+      "base_id": "control__matrix33"
+    },
+    {
+      "id": "format__matrix33__inverted",
+      "input": "docs/assets/v251/inputs/format__matrix33__inverted.png",
+      "reference": "\\begin{bmatrix}1&2&3\\\\4&5&6\\\\7&8&9\\end{bmatrix}",
+      "group": "print_format",
+      "width": 157,
+      "height": 126,
+      "ink_box": [
+        0,
+        0,
+        157,
+        126
+      ],
+      "sha256": "fa1ac59d57df249c5e06770783ba27205b320e3e2ee35fc0b10dfe76eae1e62d",
+      "family": "matrix",
+      "condition": "inverted",
+      "base_id": "control__matrix33"
+    },
+    {
+      "id": "format__factorial__wide_canvas",
+      "input": "docs/assets/v251/inputs/format__factorial__wide_canvas.png",
+      "reference": "3!=6",
+      "group": "print_format",
+      "width": 202,
+      "height": 108,
+      "ink_box": [
+        58,
+        41,
+        143,
+        67
+      ],
+      "sha256": "d30c664f6d6740adff01bd6b8d049bb0f5f569c102d6ffc45555d01c071917f5",
+      "family": "factorial",
+      "condition": "extra_blank_canvas",
+      "base_id": "control__factorial"
+    },
+    {
+      "id": "format__factorial__inverted",
+      "input": "docs/assets/v251/inputs/format__factorial__inverted.png",
+      "reference": "3!=6",
+      "group": "print_format",
+      "width": 101,
+      "height": 54,
+      "ink_box": [
+        0,
+        0,
+        101,
+        54
+      ],
+      "sha256": "9baefdd1b7d694380a5c9974fd00dc5c9b7c60f622b9798c208701791273397e",
+      "family": "factorial",
+      "condition": "inverted",
+      "base_id": "control__factorial"
+    },
+    {
+      "id": "format__indexed_factorial__wide_canvas",
+      "input": "docs/assets/v251/inputs/format__indexed_factorial__wide_canvas.png",
+      "reference": "|S_3|=3!=6",
+      "group": "print_format",
+      "width": 350,
+      "height": 122,
+      "ink_box": [
+        95,
+        46,
+        254,
+        75
+      ],
+      "sha256": "afb734da3d6d0861dc5e5b701af267387d198258c8c338a5635aa2e3d211ea75",
+      "family": "factorial",
+      "condition": "extra_blank_canvas",
+      "base_id": "control__indexed_factorial"
+    },
+    {
+      "id": "format__lines2__wide_canvas",
+      "input": "docs/assets/v251/inputs/format__lines2__wide_canvas.png",
+      "reference": "\\begin{aligned}3x&=1\\\\x+2y&=3\\end{aligned}",
+      "group": "print_format",
+      "width": 304,
+      "height": 208,
+      "ink_box": [
+        84,
+        68,
+        220,
+        139
+      ],
+      "sha256": "76df2530dc2a49ea513df8c7a95c42e0dab039cc919942e29e0570e39b2965f3",
+      "family": "multiline",
+      "condition": "extra_blank_canvas",
+      "base_id": "control__lines2"
+    },
+    {
+      "id": "format__set_text__wide_canvas",
+      "input": "docs/assets/v251/inputs/format__set_text__wide_canvas.png",
+      "reference": "S_3=\\{A_{3\\times3}\\mid A\\text{ is a permutation matrix}\\}",
+      "group": "print_format",
+      "width": 970,
+      "height": 122,
+      "ink_box": [
+        250,
+        47,
+        719,
+        73
+      ],
+      "sha256": "9696ad8c08037a2c74bdd64cb361b3a3ca1124173843c587a2310546896096ae",
+      "family": "set_text",
+      "condition": "extra_blank_canvas",
+      "base_id": "control__set_text"
+    },
+    {
+      "id": "split__lines2__row0",
+      "input": "docs/assets/v251/inputs/split__lines2__row0.png",
+      "reference": "3x=1",
+      "group": "split_row",
+      "width": 136,
+      "height": 36,
+      "ink_box": [
+        52,
+        0,
+        135,
+        21
+      ],
+      "sha256": "4bc6869febfe289eba0895081e0e27a0c527a1906b593c147701f6e6df7d9458",
+      "family": "multiline",
+      "parent_id": "control__lines2",
+      "row_index": 0,
+      "condition": "diagnostic_fixed_equal_row_crop",
+      "deployment_allowed": true
+    },
+    {
+      "id": "split__lines2__row1",
+      "input": "docs/assets/v251/inputs/split__lines2__row1.png",
+      "reference": "x+2y=3",
+      "group": "split_row",
+      "width": 136,
+      "height": 35,
+      "ink_box": [
+        0,
+        9,
+        136,
+        35
+      ],
+      "sha256": "6de471fe35a22588d1005de6988e2ec500374ac43d97a9125e9865eb8adf248e",
+      "family": "multiline",
+      "parent_id": "control__lines2",
+      "row_index": 1,
+      "condition": "diagnostic_fixed_equal_row_crop",
+      "deployment_allowed": true
+    },
+    {
+      "id": "split__lines3__row0",
+      "input": "docs/assets/v251/inputs/split__lines3__row0.png",
+      "reference": "x+y=2",
+      "group": "split_row",
+      "width": 124,
+      "height": 38,
+      "ink_box": [
+        0,
+        0,
+        124,
+        27
+      ],
+      "sha256": "6dad87c95de71c746c1d298d9e415294efd95ebcb7d79d3b16736b25118f7a63",
+      "family": "multiline",
+      "parent_id": "control__lines3",
+      "row_index": 0,
+      "condition": "diagnostic_fixed_equal_row_crop",
+      "deployment_allowed": true
+    },
+    {
+      "id": "split__lines3__row1",
+      "input": "docs/assets/v251/inputs/split__lines3__row1.png",
+      "reference": "x-y=0",
+      "group": "split_row",
+      "width": 124,
+      "height": 37,
+      "ink_box": [
+        0,
+        8,
+        124,
+        35
+      ],
+      "sha256": "2650ef6e908ec4b1b1aadac43b3dae180b40925b877a7d00bf06273c161c5276",
+      "family": "multiline",
+      "parent_id": "control__lines3",
+      "row_index": 1,
+      "condition": "diagnostic_fixed_equal_row_crop",
+      "deployment_allowed": true
+    },
+    {
+      "id": "split__lines3__row2",
+      "input": "docs/assets/v251/inputs/split__lines3__row2.png",
+      "reference": "z=3",
+      "group": "split_row",
+      "width": 124,
+      "height": 38,
+      "ink_box": [
+        56,
+        16,
+        124,
+        38
+      ],
+      "sha256": "bf15f09cb2605bfb9a1e2d9c963d38207dfed85fdf14630cce8c5d3cc00da896",
+      "family": "multiline",
+      "parent_id": "control__lines3",
+      "row_index": 2,
+      "condition": "diagnostic_fixed_equal_row_crop",
+      "deployment_allowed": true
+    },
+    {
+      "id": "split__matrix22__row0",
+      "input": "docs/assets/v251/inputs/split__matrix22__row0.png",
+      "reference": "1\\quad2",
+      "group": "split_row",
+      "width": 85,
+      "height": 40,
+      "ink_box": [
+        0,
+        0,
+        85,
+        40
+      ],
+      "sha256": "8f74c373a0f73d881150f5afe7d3297d32a8157ffc83e9e622513d9723227f91",
+      "family": "matrix",
+      "parent_id": "control__matrix22",
+      "row_index": 0,
+      "condition": "diagnostic_fixed_equal_row_crop",
+      "deployment_allowed": false
+    },
+    {
+      "id": "split__matrix22__row1",
+      "input": "docs/assets/v251/inputs/split__matrix22__row1.png",
+      "reference": "3\\quad4",
+      "group": "split_row",
+      "width": 85,
+      "height": 40,
+      "ink_box": [
+        0,
+        0,
+        85,
+        40
+      ],
+      "sha256": "5b83e5f75ee57bbe48625526bbed7a2dd81ccaefc8bea01fb6a87c2dc72bf19c",
+      "family": "matrix",
+      "parent_id": "control__matrix22",
+      "row_index": 1,
+      "condition": "diagnostic_fixed_equal_row_crop",
+      "deployment_allowed": false
+    },
+    {
+      "id": "split__hand_system__row0",
+      "input": "docs/assets/v251/inputs/split__hand_system__row0.png",
+      "reference": "3x=1",
+      "group": "split_row",
+      "width": 141,
+      "height": 58,
+      "ink_box": [
+        3,
+        3,
+        138,
+        55
+      ],
+      "sha256": "11ae2ea244d0c4dd35a895f485f9ec57eb2b5e56b39d97f27cd88a30311b9f53",
+      "family": "multiline",
+      "parent_id": "real__lecture_01_10423__b0__formula_system",
+      "row_index": 0,
+      "condition": "v25_geometric_split_retest",
+      "deployment_allowed": true
+    },
+    {
+      "id": "split__hand_system__row1",
+      "input": "docs/assets/v251/inputs/split__hand_system__row1.png",
+      "reference": "x+2y=3",
+      "group": "split_row",
+      "width": 187,
+      "height": 64,
+      "ink_box": [
+        3,
+        3,
+        184,
+        61
+      ],
+      "sha256": "0d620550953456b9936a5fb0bb30876cf5bd5352016e4400b2da252dc19ecd9d",
+      "family": "multiline",
+      "parent_id": "real__lecture_01_10423__b0__formula_system",
+      "row_index": 1,
+      "condition": "v25_geometric_split_retest",
+      "deployment_allowed": true
+    }
+  ]
+}

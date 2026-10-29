@@ -1,0 +1,2048 @@
+[
+  {
+    "id": "control__eq",
+    "without_hint": {
+      "status": "not_split",
+      "reason": "No sufficiently separated row bands",
+      "rows": [],
+      "assembly_allowed": false,
+      "diagnostics": {
+        "threshold": "Otsu dark-writing foreground; RGB polarity is not auto-detected",
+        "crop_shape": [
+          52,
+          95
+        ],
+        "source_bbox": [
+          0,
+          0,
+          95,
+          52
+        ],
+        "structure_hint": null,
+        "original_preserved": true,
+        "excluded_analysis_components": [],
+        "warnings": [
+          "Geometry cannot establish mathematical layout or correctness."
+        ],
+        "component_count": 4,
+        "median_component_height": 25.0,
+        "projection_bands": [
+          [
+            13,
+            38
+          ]
+        ],
+        "merged_bands": [
+          [
+            13,
+            38
+          ]
+        ],
+        "maximum_merged_gap": 8
+      }
+    },
+    "with_oracle_structure_hint": {
+      "status": "not_split",
+      "reason": "No sufficiently separated row bands",
+      "rows": [],
+      "assembly_allowed": false,
+      "diagnostics": {
+        "threshold": "Otsu dark-writing foreground; RGB polarity is not auto-detected",
+        "crop_shape": [
+          52,
+          95
+        ],
+        "source_bbox": [
+          0,
+          0,
+          95,
+          52
+        ],
+        "structure_hint": null,
+        "original_preserved": true,
+        "excluded_analysis_components": [],
+        "warnings": [
+          "Geometry cannot establish mathematical layout or correctness."
+        ],
+        "component_count": 4,
+        "median_component_height": 25.0,
+        "projection_bands": [
+          [
+            13,
+            38
+          ]
+        ],
+        "merged_bands": [
+          [
+            13,
+            38
+          ]
+        ],
+        "maximum_merged_gap": 8
+      }
+    },
+    "notice": "Hints are known diagnostic labels, not auto-detected mathematical structure."
+  },
+  {
+    "id": "control__factorial",
+    "without_hint": {
+      "status": "not_split",
+      "reason": "No sufficiently separated row bands",
+      "rows": [],
+      "assembly_allowed": false,
+      "diagnostics": {
+        "threshold": "Otsu dark-writing foreground; RGB polarity is not auto-detected",
+        "crop_shape": [
+          54,
+          101
+        ],
+        "source_bbox": [
+          0,
+          0,
+          101,
+          54
+        ],
+        "structure_hint": null,
+        "original_preserved": true,
+        "excluded_analysis_components": [],
+        "warnings": [
+          "Geometry cannot establish mathematical layout or correctness."
+        ],
+        "component_count": 6,
+        "median_component_height": 21.5,
+        "projection_bands": [
+          [
+            14,
+            40
+          ]
+        ],
+        "merged_bands": [
+          [
+            14,
+            40
+          ]
+        ],
+        "maximum_merged_gap": 6
+      }
+    },
+    "with_oracle_structure_hint": {
+      "status": "not_split",
+      "reason": "No sufficiently separated row bands",
+      "rows": [],
+      "assembly_allowed": false,
+      "diagnostics": {
+        "threshold": "Otsu dark-writing foreground; RGB polarity is not auto-detected",
+        "crop_shape": [
+          54,
+          101
+        ],
+        "source_bbox": [
+          0,
+          0,
+          101,
+          54
+        ],
+        "structure_hint": null,
+        "original_preserved": true,
+        "excluded_analysis_components": [],
+        "warnings": [
+          "Geometry cannot establish mathematical layout or correctness."
+        ],
+        "component_count": 6,
+        "median_component_height": 21.5,
+        "projection_bands": [
+          [
+            14,
+            40
+          ]
+        ],
+        "merged_bands": [
+          [
+            14,
+            40
+          ]
+        ],
+        "maximum_merged_gap": 6
+      }
+    },
+    "notice": "Hints are known diagnostic labels, not auto-detected mathematical structure."
+  },
+  {
+    "id": "control__indexed_factorial",
+    "without_hint": {
+      "status": "not_split",
+      "reason": "No sufficiently separated row bands",
+      "rows": [],
+      "assembly_allowed": false,
+      "diagnostics": {
+        "threshold": "Otsu dark-writing foreground; RGB polarity is not auto-detected",
+        "crop_shape": [
+          61,
+          175
+        ],
+        "source_bbox": [
+          0,
+          0,
+          175,
+          61
+        ],
+        "structure_hint": null,
+        "original_preserved": true,
+        "excluded_analysis_components": [
+          {
+            "label": 1,
+            "x": 9,
+            "y": 16,
+            "w": 1,
+            "h": 29,
+            "area": 29,
+            "side": "left",
+            "reason": "Tall narrow side component; may be brace/bracket, not classified"
+          }
+        ],
+        "warnings": [
+          "Geometry cannot establish mathematical layout or correctness."
+        ],
+        "component_count": 13,
+        "median_component_height": 18.0,
+        "projection_bands": [
+          [
+            16,
+            45
+          ]
+        ],
+        "merged_bands": [
+          [
+            16,
+            45
+          ]
+        ],
+        "maximum_merged_gap": 5
+      }
+    },
+    "with_oracle_structure_hint": {
+      "status": "not_split",
+      "reason": "No sufficiently separated row bands",
+      "rows": [],
+      "assembly_allowed": false,
+      "diagnostics": {
+        "threshold": "Otsu dark-writing foreground; RGB polarity is not auto-detected",
+        "crop_shape": [
+          61,
+          175
+        ],
+        "source_bbox": [
+          0,
+          0,
+          175,
+          61
+        ],
+        "structure_hint": null,
+        "original_preserved": true,
+        "excluded_analysis_components": [
+          {
+            "label": 1,
+            "x": 9,
+            "y": 16,
+            "w": 1,
+            "h": 29,
+            "area": 29,
+            "side": "left",
+            "reason": "Tall narrow side component; may be brace/bracket, not classified"
+          }
+        ],
+        "warnings": [
+          "Geometry cannot establish mathematical layout or correctness."
+        ],
+        "component_count": 13,
+        "median_component_height": 18.0,
+        "projection_bands": [
+          [
+            16,
+            45
+          ]
+        ],
+        "merged_bands": [
+          [
+            16,
+            45
+          ]
+        ],
+        "maximum_merged_gap": 5
+      }
+    },
+    "notice": "Hints are known diagnostic labels, not auto-detected mathematical structure."
+  },
+  {
+    "id": "control__general_factorial",
+    "without_hint": {
+      "status": "not_split",
+      "reason": "No sufficiently separated row bands",
+      "rows": [],
+      "assembly_allowed": false,
+      "diagnostics": {
+        "threshold": "Otsu dark-writing foreground; RGB polarity is not auto-detected",
+        "crop_shape": [
+          61,
+          134
+        ],
+        "source_bbox": [
+          0,
+          0,
+          134,
+          61
+        ],
+        "structure_hint": null,
+        "original_preserved": true,
+        "excluded_analysis_components": [
+          {
+            "label": 1,
+            "x": 9,
+            "y": 15,
+            "w": 2,
+            "h": 31,
+            "area": 61,
+            "side": "left",
+            "reason": "Tall narrow side component; may be brace/bracket, not classified"
+          }
+        ],
+        "warnings": [
+          "Geometry cannot establish mathematical layout or correctness."
+        ],
+        "component_count": 9,
+        "median_component_height": 15.0,
+        "projection_bands": [
+          [
+            16,
+            46
+          ]
+        ],
+        "merged_bands": [
+          [
+            16,
+            46
+          ]
+        ],
+        "maximum_merged_gap": 4
+      }
+    },
+    "with_oracle_structure_hint": {
+      "status": "not_split",
+      "reason": "No sufficiently separated row bands",
+      "rows": [],
+      "assembly_allowed": false,
+      "diagnostics": {
+        "threshold": "Otsu dark-writing foreground; RGB polarity is not auto-detected",
+        "crop_shape": [
+          61,
+          134
+        ],
+        "source_bbox": [
+          0,
+          0,
+          134,
+          61
+        ],
+        "structure_hint": null,
+        "original_preserved": true,
+        "excluded_analysis_components": [
+          {
+            "label": 1,
+            "x": 9,
+            "y": 15,
+            "w": 2,
+            "h": 31,
+            "area": 61,
+            "side": "left",
+            "reason": "Tall narrow side component; may be brace/bracket, not classified"
+          }
+        ],
+        "warnings": [
+          "Geometry cannot establish mathematical layout or correctness."
+        ],
+        "component_count": 9,
+        "median_component_height": 15.0,
+        "projection_bands": [
+          [
+            16,
+            46
+          ]
+        ],
+        "merged_bands": [
+          [
+            16,
+            46
+          ]
+        ],
+        "maximum_merged_gap": 4
+      }
+    },
+    "notice": "Hints are known diagnostic labels, not auto-detected mathematical structure."
+  },
+  {
+    "id": "control__frac",
+    "without_hint": {
+      "status": "needs_review",
+      "reason": "Horizontal separator with ink above/below may be a fraction; keep whole region",
+      "rows": [],
+      "assembly_allowed": false,
+      "diagnostics": {
+        "threshold": "Otsu dark-writing foreground; RGB polarity is not auto-detected",
+        "crop_shape": [
+          81,
+          56
+        ],
+        "source_bbox": [
+          0,
+          0,
+          56,
+          81
+        ],
+        "structure_hint": null,
+        "original_preserved": true,
+        "excluded_analysis_components": [],
+        "warnings": [
+          "Geometry cannot establish mathematical layout or correctness."
+        ],
+        "component_count": 3,
+        "median_component_height": 20.5,
+        "protected_horizontal_component": {
+          "label": 2,
+          "x": 19,
+          "y": 39,
+          "w": 18,
+          "h": 2,
+          "area": 36
+        }
+      }
+    },
+    "with_oracle_structure_hint": {
+      "status": "not_split",
+      "reason": "Explicit protected structure hint; keep the entire region",
+      "rows": [],
+      "assembly_allowed": false,
+      "diagnostics": {
+        "threshold": "Otsu dark-writing foreground; RGB polarity is not auto-detected",
+        "crop_shape": [
+          81,
+          56
+        ],
+        "source_bbox": [
+          0,
+          0,
+          56,
+          81
+        ],
+        "structure_hint": "fraction",
+        "original_preserved": true,
+        "excluded_analysis_components": [],
+        "warnings": [
+          "Geometry cannot establish mathematical layout or correctness."
+        ]
+      }
+    },
+    "notice": "Hints are known diagnostic labels, not auto-detected mathematical structure."
+  },
+  {
+    "id": "control__frac_sum",
+    "without_hint": {
+      "status": "needs_review",
+      "reason": "Horizontal separator with ink above/below may be a fraction; keep whole region",
+      "rows": [],
+      "assembly_allowed": false,
+      "diagnostics": {
+        "threshold": "Otsu dark-writing foreground; RGB polarity is not auto-detected",
+        "crop_shape": [
+          90,
+          97
+        ],
+        "source_bbox": [
+          0,
+          0,
+          97,
+          90
+        ],
+        "structure_hint": null,
+        "original_preserved": true,
+        "excluded_analysis_components": [],
+        "warnings": [
+          "Geometry cannot establish mathematical layout or correctness."
+        ],
+        "component_count": 8,
+        "median_component_height": 19.5,
+        "protected_horizontal_component": {
+          "label": 4,
+          "x": 11,
+          "y": 47,
+          "w": 75,
+          "h": 2,
+          "area": 150
+        }
+      }
+    },
+    "with_oracle_structure_hint": {
+      "status": "not_split",
+      "reason": "Explicit protected structure hint; keep the entire region",
+      "rows": [],
+      "assembly_allowed": false,
+      "diagnostics": {
+        "threshold": "Otsu dark-writing foreground; RGB polarity is not auto-detected",
+        "crop_shape": [
+          90,
+          97
+        ],
+        "source_bbox": [
+          0,
+          0,
+          97,
+          90
+        ],
+        "structure_hint": "fraction",
+        "original_preserved": true,
+        "excluded_analysis_components": [],
+        "warnings": [
+          "Geometry cannot establish mathematical layout or correctness."
+        ]
+      }
+    },
+    "notice": "Hints are known diagnostic labels, not auto-detected mathematical structure."
+  },
+  {
+    "id": "control__nested_frac",
+    "without_hint": {
+      "status": "needs_review",
+      "reason": "Horizontal separator with ink above/below may be a fraction; keep whole region",
+      "rows": [],
+      "assembly_allowed": false,
+      "diagnostics": {
+        "threshold": "Otsu dark-writing foreground; RGB polarity is not auto-detected",
+        "crop_shape": [
+          96,
+          103
+        ],
+        "source_bbox": [
+          0,
+          0,
+          103,
+          96
+        ],
+        "structure_hint": null,
+        "original_preserved": true,
+        "excluded_analysis_components": [],
+        "warnings": [
+          "Geometry cannot establish mathematical layout or correctness."
+        ],
+        "component_count": 7,
+        "median_component_height": 22.0,
+        "protected_horizontal_component": {
+          "label": 2,
+          "x": 11,
+          "y": 44,
+          "w": 80,
+          "h": 2,
+          "area": 160
+        }
+      }
+    },
+    "with_oracle_structure_hint": {
+      "status": "not_split",
+      "reason": "Explicit protected structure hint; keep the entire region",
+      "rows": [],
+      "assembly_allowed": false,
+      "diagnostics": {
+        "threshold": "Otsu dark-writing foreground; RGB polarity is not auto-detected",
+        "crop_shape": [
+          96,
+          103
+        ],
+        "source_bbox": [
+          0,
+          0,
+          103,
+          96
+        ],
+        "structure_hint": "fraction",
+        "original_preserved": true,
+        "excluded_analysis_components": [],
+        "warnings": [
+          "Geometry cannot establish mathematical layout or correctness."
+        ]
+      }
+    },
+    "notice": "Hints are known diagnostic labels, not auto-detected mathematical structure."
+  },
+  {
+    "id": "control__long_fraction",
+    "without_hint": {
+      "status": "not_split",
+      "reason": "No sufficiently separated row bands",
+      "rows": [],
+      "assembly_allowed": false,
+      "diagnostics": {
+        "threshold": "Otsu dark-writing foreground; RGB polarity is not auto-detected",
+        "crop_shape": [
+          93,
+          244
+        ],
+        "source_bbox": [
+          0,
+          0,
+          244,
+          93
+        ],
+        "structure_hint": null,
+        "original_preserved": true,
+        "excluded_analysis_components": [],
+        "warnings": [
+          "Geometry cannot establish mathematical layout or correctness."
+        ],
+        "component_count": 19,
+        "median_component_height": 16.5,
+        "projection_bands": [
+          [
+            14,
+            78
+          ]
+        ],
+        "merged_bands": [
+          [
+            14,
+            78
+          ]
+        ],
+        "maximum_merged_gap": 5
+      }
+    },
+    "with_oracle_structure_hint": {
+      "status": "not_split",
+      "reason": "Explicit protected structure hint; keep the entire region",
+      "rows": [],
+      "assembly_allowed": false,
+      "diagnostics": {
+        "threshold": "Otsu dark-writing foreground; RGB polarity is not auto-detected",
+        "crop_shape": [
+          93,
+          244
+        ],
+        "source_bbox": [
+          0,
+          0,
+          244,
+          93
+        ],
+        "structure_hint": "fraction",
+        "original_preserved": true,
+        "excluded_analysis_components": [],
+        "warnings": [
+          "Geometry cannot establish mathematical layout or correctness."
+        ]
+      }
+    },
+    "notice": "Hints are known diagnostic labels, not auto-detected mathematical structure."
+  },
+  {
+    "id": "control__vec2",
+    "without_hint": {
+      "status": "not_split",
+      "reason": "No sufficiently separated row bands",
+      "rows": [],
+      "assembly_allowed": false,
+      "diagnostics": {
+        "threshold": "Otsu dark-writing foreground; RGB polarity is not auto-detected",
+        "crop_shape": [
+          96,
+          75
+        ],
+        "source_bbox": [
+          0,
+          0,
+          75,
+          96
+        ],
+        "structure_hint": null,
+        "original_preserved": true,
+        "excluded_analysis_components": [],
+        "warnings": [
+          "Geometry cannot establish mathematical layout or correctness."
+        ],
+        "component_count": 4,
+        "median_component_height": 51.0,
+        "projection_bands": [
+          [
+            8,
+            88
+          ]
+        ],
+        "merged_bands": [
+          [
+            8,
+            88
+          ]
+        ],
+        "maximum_merged_gap": 15
+      }
+    },
+    "with_oracle_structure_hint": {
+      "status": "not_split",
+      "reason": "Explicit protected structure hint; keep the entire region",
+      "rows": [],
+      "assembly_allowed": false,
+      "diagnostics": {
+        "threshold": "Otsu dark-writing foreground; RGB polarity is not auto-detected",
+        "crop_shape": [
+          96,
+          75
+        ],
+        "source_bbox": [
+          0,
+          0,
+          75,
+          96
+        ],
+        "structure_hint": "matrix",
+        "original_preserved": true,
+        "excluded_analysis_components": [],
+        "warnings": [
+          "Geometry cannot establish mathematical layout or correctness."
+        ]
+      }
+    },
+    "notice": "Hints are known diagnostic labels, not auto-detected mathematical structure."
+  },
+  {
+    "id": "control__vec3",
+    "without_hint": {
+      "status": "not_split",
+      "reason": "No sufficiently separated row bands",
+      "rows": [],
+      "assembly_allowed": false,
+      "diagnostics": {
+        "threshold": "Otsu dark-writing foreground; RGB polarity is not auto-detected",
+        "crop_shape": [
+          126,
+          82
+        ],
+        "source_bbox": [
+          0,
+          0,
+          82,
+          126
+        ],
+        "structure_hint": null,
+        "original_preserved": true,
+        "excluded_analysis_components": [],
+        "warnings": [
+          "Geometry cannot establish mathematical layout or correctness."
+        ],
+        "component_count": 5,
+        "median_component_height": 22.0,
+        "projection_bands": [
+          [
+            8,
+            118
+          ]
+        ],
+        "merged_bands": [
+          [
+            8,
+            118
+          ]
+        ],
+        "maximum_merged_gap": 7
+      }
+    },
+    "with_oracle_structure_hint": {
+      "status": "not_split",
+      "reason": "Explicit protected structure hint; keep the entire region",
+      "rows": [],
+      "assembly_allowed": false,
+      "diagnostics": {
+        "threshold": "Otsu dark-writing foreground; RGB polarity is not auto-detected",
+        "crop_shape": [
+          126,
+          82
+        ],
+        "source_bbox": [
+          0,
+          0,
+          82,
+          126
+        ],
+        "structure_hint": "matrix",
+        "original_preserved": true,
+        "excluded_analysis_components": [],
+        "warnings": [
+          "Geometry cannot establish mathematical layout or correctness."
+        ]
+      }
+    },
+    "notice": "Hints are known diagnostic labels, not auto-detected mathematical structure."
+  },
+  {
+    "id": "control__vec_symbolic",
+    "without_hint": {
+      "status": "not_split",
+      "reason": "No sufficiently separated row bands",
+      "rows": [],
+      "assembly_allowed": false,
+      "diagnostics": {
+        "threshold": "Otsu dark-writing foreground; RGB polarity is not auto-detected",
+        "crop_shape": [
+          126,
+          82
+        ],
+        "source_bbox": [
+          0,
+          0,
+          82,
+          126
+        ],
+        "structure_hint": null,
+        "original_preserved": true,
+        "excluded_analysis_components": [],
+        "warnings": [
+          "Geometry cannot establish mathematical layout or correctness."
+        ],
+        "component_count": 5,
+        "median_component_height": 20.0,
+        "projection_bands": [
+          [
+            8,
+            118
+          ]
+        ],
+        "merged_bands": [
+          [
+            8,
+            118
+          ]
+        ],
+        "maximum_merged_gap": 6
+      }
+    },
+    "with_oracle_structure_hint": {
+      "status": "not_split",
+      "reason": "Explicit protected structure hint; keep the entire region",
+      "rows": [],
+      "assembly_allowed": false,
+      "diagnostics": {
+        "threshold": "Otsu dark-writing foreground; RGB polarity is not auto-detected",
+        "crop_shape": [
+          126,
+          82
+        ],
+        "source_bbox": [
+          0,
+          0,
+          82,
+          126
+        ],
+        "structure_hint": "matrix",
+        "original_preserved": true,
+        "excluded_analysis_components": [],
+        "warnings": [
+          "Geometry cannot establish mathematical layout or correctness."
+        ]
+      }
+    },
+    "notice": "Hints are known diagnostic labels, not auto-detected mathematical structure."
+  },
+  {
+    "id": "control__matrix22",
+    "without_hint": {
+      "status": "needs_review",
+      "reason": "Paired side structures may be a matrix; automatic row division withheld",
+      "rows": [],
+      "assembly_allowed": false,
+      "diagnostics": {
+        "threshold": "Otsu dark-writing foreground; RGB polarity is not auto-detected",
+        "crop_shape": [
+          96,
+          113
+        ],
+        "source_bbox": [
+          0,
+          0,
+          113,
+          96
+        ],
+        "structure_hint": null,
+        "original_preserved": true,
+        "excluded_analysis_components": [
+          {
+            "label": 1,
+            "x": 14,
+            "y": 8,
+            "w": 9,
+            "h": 80,
+            "area": 194,
+            "side": "left",
+            "reason": "Tall narrow side component; may be brace/bracket, not classified"
+          },
+          {
+            "label": 2,
+            "x": 90,
+            "y": 8,
+            "w": 9,
+            "h": 80,
+            "area": 193,
+            "side": "right",
+            "reason": "Tall narrow side component; may be brace/bracket, not classified"
+          }
+        ],
+        "warnings": [
+          "Geometry cannot establish mathematical layout or correctness."
+        ],
+        "component_count": 7
+      }
+    },
+    "with_oracle_structure_hint": {
+      "status": "not_split",
+      "reason": "Explicit protected structure hint; keep the entire region",
+      "rows": [],
+      "assembly_allowed": false,
+      "diagnostics": {
+        "threshold": "Otsu dark-writing foreground; RGB polarity is not auto-detected",
+        "crop_shape": [
+          96,
+          113
+        ],
+        "source_bbox": [
+          0,
+          0,
+          113,
+          96
+        ],
+        "structure_hint": "matrix",
+        "original_preserved": true,
+        "excluded_analysis_components": [],
+        "warnings": [
+          "Geometry cannot establish mathematical layout or correctness."
+        ]
+      }
+    },
+    "notice": "Hints are known diagnostic labels, not auto-detected mathematical structure."
+  },
+  {
+    "id": "control__matrix23",
+    "without_hint": {
+      "status": "needs_review",
+      "reason": "Paired side structures may be a matrix; automatic row division withheld",
+      "rows": [],
+      "assembly_allowed": false,
+      "diagnostics": {
+        "threshold": "Otsu dark-writing foreground; RGB polarity is not auto-detected",
+        "crop_shape": [
+          96,
+          150
+        ],
+        "source_bbox": [
+          0,
+          0,
+          150,
+          96
+        ],
+        "structure_hint": null,
+        "original_preserved": true,
+        "excluded_analysis_components": [
+          {
+            "label": 1,
+            "x": 8,
+            "y": 8,
+            "w": 9,
+            "h": 79,
+            "area": 189,
+            "side": "left",
+            "reason": "Tall narrow side component; may be brace/bracket, not classified"
+          },
+          {
+            "label": 2,
+            "x": 133,
+            "y": 8,
+            "w": 9,
+            "h": 79,
+            "area": 188,
+            "side": "right",
+            "reason": "Tall narrow side component; may be brace/bracket, not classified"
+          }
+        ],
+        "warnings": [
+          "Geometry cannot establish mathematical layout or correctness."
+        ],
+        "component_count": 10
+      }
+    },
+    "with_oracle_structure_hint": {
+      "status": "not_split",
+      "reason": "Explicit protected structure hint; keep the entire region",
+      "rows": [],
+      "assembly_allowed": false,
+      "diagnostics": {
+        "threshold": "Otsu dark-writing foreground; RGB polarity is not auto-detected",
+        "crop_shape": [
+          96,
+          150
+        ],
+        "source_bbox": [
+          0,
+          0,
+          150,
+          96
+        ],
+        "structure_hint": "matrix",
+        "original_preserved": true,
+        "excluded_analysis_components": [],
+        "warnings": [
+          "Geometry cannot establish mathematical layout or correctness."
+        ]
+      }
+    },
+    "notice": "Hints are known diagnostic labels, not auto-detected mathematical structure."
+  },
+  {
+    "id": "control__matrix33",
+    "without_hint": {
+      "status": "needs_review",
+      "reason": "Paired side structures may be a matrix; automatic row division withheld",
+      "rows": [],
+      "assembly_allowed": false,
+      "diagnostics": {
+        "threshold": "Otsu dark-writing foreground; RGB polarity is not auto-detected",
+        "crop_shape": [
+          126,
+          157
+        ],
+        "source_bbox": [
+          0,
+          0,
+          157,
+          126
+        ],
+        "structure_hint": null,
+        "original_preserved": true,
+        "excluded_analysis_components": [
+          {
+            "label": 1,
+            "x": 14,
+            "y": 8,
+            "w": 10,
+            "h": 110,
+            "area": 360,
+            "side": "left",
+            "reason": "Tall narrow side component; may be brace/bracket, not classified"
+          },
+          {
+            "label": 2,
+            "x": 131,
+            "y": 8,
+            "w": 11,
+            "h": 110,
+            "area": 369,
+            "side": "right",
+            "reason": "Tall narrow side component; may be brace/bracket, not classified"
+          }
+        ],
+        "warnings": [
+          "Geometry cannot establish mathematical layout or correctness."
+        ],
+        "component_count": 14
+      }
+    },
+    "with_oracle_structure_hint": {
+      "status": "not_split",
+      "reason": "Explicit protected structure hint; keep the entire region",
+      "rows": [],
+      "assembly_allowed": false,
+      "diagnostics": {
+        "threshold": "Otsu dark-writing foreground; RGB polarity is not auto-detected",
+        "crop_shape": [
+          126,
+          157
+        ],
+        "source_bbox": [
+          0,
+          0,
+          157,
+          126
+        ],
+        "structure_hint": "matrix",
+        "original_preserved": true,
+        "excluded_analysis_components": [],
+        "warnings": [
+          "Geometry cannot establish mathematical layout or correctness."
+        ]
+      }
+    },
+    "notice": "Hints are known diagnostic labels, not auto-detected mathematical structure."
+  },
+  {
+    "id": "control__augmented",
+    "without_hint": {
+      "status": "needs_review",
+      "reason": "Paired side structures may be a matrix; automatic row division withheld",
+      "rows": [],
+      "assembly_allowed": false,
+      "diagnostics": {
+        "threshold": "Otsu dark-writing foreground; RGB polarity is not auto-detected",
+        "crop_shape": [
+          96,
+          194
+        ],
+        "source_bbox": [
+          0,
+          0,
+          194,
+          96
+        ],
+        "structure_hint": null,
+        "original_preserved": true,
+        "excluded_analysis_components": [
+          {
+            "label": 1,
+            "x": 8,
+            "y": 11,
+            "w": 9,
+            "h": 73,
+            "area": 175,
+            "side": "left",
+            "reason": "Tall narrow side component; may be brace/bracket, not classified"
+          },
+          {
+            "label": 2,
+            "x": 178,
+            "y": 11,
+            "w": 8,
+            "h": 73,
+            "area": 174,
+            "side": "right",
+            "reason": "Tall narrow side component; may be brace/bracket, not classified"
+          }
+        ],
+        "warnings": [
+          "Geometry cannot establish mathematical layout or correctness."
+        ],
+        "component_count": 10
+      }
+    },
+    "with_oracle_structure_hint": {
+      "status": "not_split",
+      "reason": "Explicit protected structure hint; keep the entire region",
+      "rows": [],
+      "assembly_allowed": false,
+      "diagnostics": {
+        "threshold": "Otsu dark-writing foreground; RGB polarity is not auto-detected",
+        "crop_shape": [
+          96,
+          194
+        ],
+        "source_bbox": [
+          0,
+          0,
+          194,
+          96
+        ],
+        "structure_hint": "matrix",
+        "original_preserved": true,
+        "excluded_analysis_components": [],
+        "warnings": [
+          "Geometry cannot establish mathematical layout or correctness."
+        ]
+      }
+    },
+    "notice": "Hints are known diagnostic labels, not auto-detected mathematical structure."
+  },
+  {
+    "id": "control__line1",
+    "without_hint": {
+      "status": "not_split",
+      "reason": "No sufficiently separated row bands",
+      "rows": [],
+      "assembly_allowed": false,
+      "diagnostics": {
+        "threshold": "Otsu dark-writing foreground; RGB polarity is not auto-detected",
+        "crop_shape": [
+          52,
+          109
+        ],
+        "source_bbox": [
+          0,
+          0,
+          109,
+          52
+        ],
+        "structure_hint": null,
+        "original_preserved": true,
+        "excluded_analysis_components": [],
+        "warnings": [
+          "Geometry cannot establish mathematical layout or correctness."
+        ],
+        "component_count": 7,
+        "median_component_height": 15.0,
+        "projection_bands": [
+          [
+            14,
+            38
+          ]
+        ],
+        "merged_bands": [
+          [
+            14,
+            38
+          ]
+        ],
+        "maximum_merged_gap": 4
+      }
+    },
+    "with_oracle_structure_hint": {
+      "status": "not_split",
+      "reason": "No sufficiently separated row bands",
+      "rows": [],
+      "assembly_allowed": false,
+      "diagnostics": {
+        "threshold": "Otsu dark-writing foreground; RGB polarity is not auto-detected",
+        "crop_shape": [
+          52,
+          109
+        ],
+        "source_bbox": [
+          0,
+          0,
+          109,
+          52
+        ],
+        "structure_hint": "aligned",
+        "original_preserved": true,
+        "excluded_analysis_components": [],
+        "warnings": [
+          "Geometry cannot establish mathematical layout or correctness."
+        ],
+        "component_count": 7,
+        "median_component_height": 15.0,
+        "projection_bands": [
+          [
+            14,
+            38
+          ]
+        ],
+        "merged_bands": [
+          [
+            14,
+            38
+          ]
+        ],
+        "maximum_merged_gap": 4
+      }
+    },
+    "notice": "Hints are known diagnostic labels, not auto-detected mathematical structure."
+  },
+  {
+    "id": "control__lines2",
+    "without_hint": {
+      "status": "candidate",
+      "reason": "Separated similarly sized row bands; not a semantic classification",
+      "rows": [
+        {
+          "id": "row_00",
+          "bbox": [
+            58,
+            13,
+            146,
+            40
+          ],
+          "status": "needs_review",
+          "reading_order": 0
+        },
+        {
+          "id": "row_01",
+          "bbox": [
+            5,
+            58,
+            147,
+            90
+          ],
+          "status": "needs_review",
+          "reading_order": 1
+        }
+      ],
+      "assembly_allowed": false,
+      "diagnostics": {
+        "threshold": "Otsu dark-writing foreground; RGB polarity is not auto-detected",
+        "crop_shape": [
+          104,
+          152
+        ],
+        "source_bbox": [
+          0,
+          0,
+          152,
+          104
+        ],
+        "structure_hint": null,
+        "original_preserved": true,
+        "excluded_analysis_components": [],
+        "warnings": [
+          "Geometry cannot establish mathematical layout or correctness."
+        ],
+        "component_count": 12,
+        "median_component_height": 19.0,
+        "projection_bands": [
+          [
+            16,
+            37
+          ],
+          [
+            61,
+            87
+          ]
+        ],
+        "merged_bands": [
+          [
+            16,
+            37
+          ],
+          [
+            61,
+            87
+          ]
+        ],
+        "maximum_merged_gap": 6
+      }
+    },
+    "with_oracle_structure_hint": {
+      "status": "candidate",
+      "reason": "Separated similarly sized row bands; not a semantic classification",
+      "rows": [
+        {
+          "id": "row_00",
+          "bbox": [
+            58,
+            13,
+            146,
+            40
+          ],
+          "status": "needs_review",
+          "reading_order": 0
+        },
+        {
+          "id": "row_01",
+          "bbox": [
+            5,
+            58,
+            147,
+            90
+          ],
+          "status": "needs_review",
+          "reading_order": 1
+        }
+      ],
+      "assembly_allowed": true,
+      "diagnostics": {
+        "threshold": "Otsu dark-writing foreground; RGB polarity is not auto-detected",
+        "crop_shape": [
+          104,
+          152
+        ],
+        "source_bbox": [
+          0,
+          0,
+          152,
+          104
+        ],
+        "structure_hint": "aligned",
+        "original_preserved": true,
+        "excluded_analysis_components": [],
+        "warnings": [
+          "Geometry cannot establish mathematical layout or correctness."
+        ],
+        "component_count": 12,
+        "median_component_height": 19.0,
+        "projection_bands": [
+          [
+            16,
+            37
+          ],
+          [
+            61,
+            87
+          ]
+        ],
+        "merged_bands": [
+          [
+            16,
+            37
+          ],
+          [
+            61,
+            87
+          ]
+        ],
+        "maximum_merged_gap": 6
+      }
+    },
+    "notice": "Hints are known diagnostic labels, not auto-detected mathematical structure."
+  },
+  {
+    "id": "control__lines3",
+    "without_hint": {
+      "status": "candidate",
+      "reason": "Separated similarly sized row bands; not a semantic classification",
+      "rows": [
+        {
+          "id": "row_00",
+          "bbox": [
+            5,
+            11,
+            135,
+            44
+          ],
+          "status": "needs_review",
+          "reading_order": 0
+        },
+        {
+          "id": "row_01",
+          "bbox": [
+            5,
+            57,
+            135,
+            90
+          ],
+          "status": "needs_review",
+          "reading_order": 1
+        },
+        {
+          "id": "row_02",
+          "bbox": [
+            61,
+            102,
+            135,
+            130
+          ],
+          "status": "needs_review",
+          "reading_order": 2
+        }
+      ],
+      "assembly_allowed": false,
+      "diagnostics": {
+        "threshold": "Otsu dark-writing foreground; RGB polarity is not auto-detected",
+        "crop_shape": [
+          141,
+          140
+        ],
+        "source_bbox": [
+          0,
+          0,
+          140,
+          141
+        ],
+        "structure_hint": null,
+        "original_preserved": true,
+        "excluded_analysis_components": [],
+        "warnings": [
+          "Geometry cannot establish mathematical layout or correctness."
+        ],
+        "component_count": 16,
+        "median_component_height": 20.0,
+        "projection_bands": [
+          [
+            14,
+            41
+          ],
+          [
+            60,
+            87
+          ],
+          [
+            105,
+            127
+          ]
+        ],
+        "merged_bands": [
+          [
+            14,
+            41
+          ],
+          [
+            60,
+            87
+          ],
+          [
+            105,
+            127
+          ]
+        ],
+        "maximum_merged_gap": 6
+      }
+    },
+    "with_oracle_structure_hint": {
+      "status": "candidate",
+      "reason": "Separated similarly sized row bands; not a semantic classification",
+      "rows": [
+        {
+          "id": "row_00",
+          "bbox": [
+            5,
+            11,
+            135,
+            44
+          ],
+          "status": "needs_review",
+          "reading_order": 0
+        },
+        {
+          "id": "row_01",
+          "bbox": [
+            5,
+            57,
+            135,
+            90
+          ],
+          "status": "needs_review",
+          "reading_order": 1
+        },
+        {
+          "id": "row_02",
+          "bbox": [
+            61,
+            102,
+            135,
+            130
+          ],
+          "status": "needs_review",
+          "reading_order": 2
+        }
+      ],
+      "assembly_allowed": true,
+      "diagnostics": {
+        "threshold": "Otsu dark-writing foreground; RGB polarity is not auto-detected",
+        "crop_shape": [
+          141,
+          140
+        ],
+        "source_bbox": [
+          0,
+          0,
+          140,
+          141
+        ],
+        "structure_hint": "aligned",
+        "original_preserved": true,
+        "excluded_analysis_components": [],
+        "warnings": [
+          "Geometry cannot establish mathematical layout or correctness."
+        ],
+        "component_count": 16,
+        "median_component_height": 20.0,
+        "projection_bands": [
+          [
+            14,
+            41
+          ],
+          [
+            60,
+            87
+          ],
+          [
+            105,
+            127
+          ]
+        ],
+        "merged_bands": [
+          [
+            14,
+            41
+          ],
+          [
+            60,
+            87
+          ],
+          [
+            105,
+            127
+          ]
+        ],
+        "maximum_merged_gap": 6
+      }
+    },
+    "notice": "Hints are known diagnostic labels, not auto-detected mathematical structure."
+  },
+  {
+    "id": "control__sup",
+    "without_hint": {
+      "status": "not_split",
+      "reason": "No sufficiently separated row bands",
+      "rows": [],
+      "assembly_allowed": false,
+      "diagnostics": {
+        "threshold": "Otsu dark-writing foreground; RGB polarity is not auto-detected",
+        "crop_shape": [
+          58,
+          62
+        ],
+        "source_bbox": [
+          0,
+          0,
+          62,
+          58
+        ],
+        "structure_hint": null,
+        "original_preserved": true,
+        "excluded_analysis_components": [],
+        "warnings": [
+          "Geometry cannot establish mathematical layout or correctness."
+        ],
+        "component_count": 2,
+        "median_component_height": 21.0,
+        "projection_bands": [
+          [
+            8,
+            48
+          ]
+        ],
+        "merged_bands": [
+          [
+            8,
+            48
+          ]
+        ],
+        "maximum_merged_gap": 6
+      }
+    },
+    "with_oracle_structure_hint": {
+      "status": "not_split",
+      "reason": "Explicit protected structure hint; keep the entire region",
+      "rows": [],
+      "assembly_allowed": false,
+      "diagnostics": {
+        "threshold": "Otsu dark-writing foreground; RGB polarity is not auto-detected",
+        "crop_shape": [
+          58,
+          62
+        ],
+        "source_bbox": [
+          0,
+          0,
+          62,
+          58
+        ],
+        "structure_hint": "script",
+        "original_preserved": true,
+        "excluded_analysis_components": [],
+        "warnings": [
+          "Geometry cannot establish mathematical layout or correctness."
+        ]
+      }
+    },
+    "notice": "Hints are known diagnostic labels, not auto-detected mathematical structure."
+  },
+  {
+    "id": "control__sub",
+    "without_hint": {
+      "status": "not_split",
+      "reason": "No sufficiently separated row bands",
+      "rows": [],
+      "assembly_allowed": false,
+      "diagnostics": {
+        "threshold": "Otsu dark-writing foreground; RGB polarity is not auto-detected",
+        "crop_shape": [
+          51,
+          59
+        ],
+        "source_bbox": [
+          0,
+          0,
+          59,
+          51
+        ],
+        "structure_hint": null,
+        "original_preserved": true,
+        "excluded_analysis_components": [],
+        "warnings": [
+          "Geometry cannot establish mathematical layout or correctness."
+        ],
+        "component_count": 3,
+        "median_component_height": 17.0,
+        "projection_bands": [
+          [
+            9,
+            41
+          ]
+        ],
+        "merged_bands": [
+          [
+            9,
+            41
+          ]
+        ],
+        "maximum_merged_gap": 5
+      }
+    },
+    "with_oracle_structure_hint": {
+      "status": "not_split",
+      "reason": "Explicit protected structure hint; keep the entire region",
+      "rows": [],
+      "assembly_allowed": false,
+      "diagnostics": {
+        "threshold": "Otsu dark-writing foreground; RGB polarity is not auto-detected",
+        "crop_shape": [
+          51,
+          59
+        ],
+        "source_bbox": [
+          0,
+          0,
+          59,
+          51
+        ],
+        "structure_hint": "script",
+        "original_preserved": true,
+        "excluded_analysis_components": [],
+        "warnings": [
+          "Geometry cannot establish mathematical layout or correctness."
+        ]
+      }
+    },
+    "notice": "Hints are known diagnostic labels, not auto-detected mathematical structure."
+  },
+  {
+    "id": "control__sub_sup",
+    "without_hint": {
+      "status": "not_split",
+      "reason": "No sufficiently separated row bands",
+      "rows": [],
+      "assembly_allowed": false,
+      "diagnostics": {
+        "threshold": "Otsu dark-writing foreground; RGB polarity is not auto-detected",
+        "crop_shape": [
+          67,
+          117
+        ],
+        "source_bbox": [
+          0,
+          0,
+          117,
+          67
+        ],
+        "structure_hint": null,
+        "original_preserved": true,
+        "excluded_analysis_components": [],
+        "warnings": [
+          "Geometry cannot establish mathematical layout or correctness."
+        ],
+        "component_count": 10,
+        "median_component_height": 15.5,
+        "projection_bands": [
+          [
+            13,
+            54
+          ]
+        ],
+        "merged_bands": [
+          [
+            13,
+            54
+          ]
+        ],
+        "maximum_merged_gap": 5
+      }
+    },
+    "with_oracle_structure_hint": {
+      "status": "not_split",
+      "reason": "Explicit protected structure hint; keep the entire region",
+      "rows": [],
+      "assembly_allowed": false,
+      "diagnostics": {
+        "threshold": "Otsu dark-writing foreground; RGB polarity is not auto-detected",
+        "crop_shape": [
+          67,
+          117
+        ],
+        "source_bbox": [
+          0,
+          0,
+          117,
+          67
+        ],
+        "structure_hint": "script",
+        "original_preserved": true,
+        "excluded_analysis_components": [],
+        "warnings": [
+          "Geometry cannot establish mathematical layout or correctness."
+        ]
+      }
+    },
+    "notice": "Hints are known diagnostic labels, not auto-detected mathematical structure."
+  },
+  {
+    "id": "control__complex_scripts",
+    "without_hint": {
+      "status": "not_split",
+      "reason": "No sufficiently separated row bands",
+      "rows": [],
+      "assembly_allowed": false,
+      "diagnostics": {
+        "threshold": "Otsu dark-writing foreground; RGB polarity is not auto-detected",
+        "crop_shape": [
+          73,
+          161
+        ],
+        "source_bbox": [
+          0,
+          0,
+          161,
+          73
+        ],
+        "structure_hint": null,
+        "original_preserved": true,
+        "excluded_analysis_components": [],
+        "warnings": [
+          "Geometry cannot establish mathematical layout or correctness."
+        ],
+        "component_count": 17,
+        "median_component_height": 14.0,
+        "projection_bands": [
+          [
+            15,
+            58
+          ]
+        ],
+        "merged_bands": [
+          [
+            15,
+            58
+          ]
+        ],
+        "maximum_merged_gap": 4
+      }
+    },
+    "with_oracle_structure_hint": {
+      "status": "not_split",
+      "reason": "Explicit protected structure hint; keep the entire region",
+      "rows": [],
+      "assembly_allowed": false,
+      "diagnostics": {
+        "threshold": "Otsu dark-writing foreground; RGB polarity is not auto-detected",
+        "crop_shape": [
+          73,
+          161
+        ],
+        "source_bbox": [
+          0,
+          0,
+          161,
+          73
+        ],
+        "structure_hint": "script",
+        "original_preserved": true,
+        "excluded_analysis_components": [],
+        "warnings": [
+          "Geometry cannot establish mathematical layout or correctness."
+        ]
+      }
+    },
+    "notice": "Hints are known diagnostic labels, not auto-detected mathematical structure."
+  },
+  {
+    "id": "control__set",
+    "without_hint": {
+      "status": "not_split",
+      "reason": "No sufficiently separated row bands",
+      "rows": [],
+      "assembly_allowed": false,
+      "diagnostics": {
+        "threshold": "Otsu dark-writing foreground; RGB polarity is not auto-detected",
+        "crop_shape": [
+          61,
+          171
+        ],
+        "source_bbox": [
+          0,
+          0,
+          171,
+          61
+        ],
+        "structure_hint": null,
+        "original_preserved": true,
+        "excluded_analysis_components": [
+          {
+            "label": 2,
+            "x": 153,
+            "y": 15,
+            "w": 10,
+            "h": 30,
+            "area": 75,
+            "side": "right",
+            "reason": "Tall narrow side component; may be brace/bracket, not classified"
+          }
+        ],
+        "warnings": [
+          "Geometry cannot establish mathematical layout or correctness."
+        ],
+        "component_count": 12,
+        "median_component_height": 20.0,
+        "projection_bands": [
+          [
+            15,
+            45
+          ]
+        ],
+        "merged_bands": [
+          [
+            15,
+            45
+          ]
+        ],
+        "maximum_merged_gap": 6
+      }
+    },
+    "with_oracle_structure_hint": {
+      "status": "not_split",
+      "reason": "No sufficiently separated row bands",
+      "rows": [],
+      "assembly_allowed": false,
+      "diagnostics": {
+        "threshold": "Otsu dark-writing foreground; RGB polarity is not auto-detected",
+        "crop_shape": [
+          61,
+          171
+        ],
+        "source_bbox": [
+          0,
+          0,
+          171,
+          61
+        ],
+        "structure_hint": null,
+        "original_preserved": true,
+        "excluded_analysis_components": [
+          {
+            "label": 2,
+            "x": 153,
+            "y": 15,
+            "w": 10,
+            "h": 30,
+            "area": 75,
+            "side": "right",
+            "reason": "Tall narrow side component; may be brace/bracket, not classified"
+          }
+        ],
+        "warnings": [
+          "Geometry cannot establish mathematical layout or correctness."
+        ],
+        "component_count": 12,
+        "median_component_height": 20.0,
+        "projection_bands": [
+          [
+            15,
+            45
+          ]
+        ],
+        "merged_bands": [
+          [
+            15,
+            45
+          ]
+        ],
+        "maximum_merged_gap": 6
+      }
+    },
+    "notice": "Hints are known diagnostic labels, not auto-detected mathematical structure."
+  },
+  {
+    "id": "control__set_text",
+    "without_hint": {
+      "status": "needs_review",
+      "reason": "Paired side structures may be a matrix; automatic row division withheld",
+      "rows": [],
+      "assembly_allowed": false,
+      "diagnostics": {
+        "threshold": "Otsu dark-writing foreground; RGB polarity is not auto-detected",
+        "crop_shape": [
+          61,
+          485
+        ],
+        "source_bbox": [
+          0,
+          0,
+          485,
+          61
+        ],
+        "structure_hint": null,
+        "original_preserved": true,
+        "excluded_analysis_components": [
+          {
+            "label": 1,
+            "x": 72,
+            "y": 17,
+            "w": 8,
+            "h": 26,
+            "area": 58,
+            "side": "left",
+            "reason": "Tall narrow side component; may be brace/bracket, not classified"
+          },
+          {
+            "label": 3,
+            "x": 468,
+            "y": 17,
+            "w": 8,
+            "h": 26,
+            "area": 59,
+            "side": "right",
+            "reason": "Tall narrow side component; may be brace/bracket, not classified"
+          }
+        ],
+        "warnings": [
+          "Geometry cannot establish mathematical layout or correctness."
+        ],
+        "component_count": 46
+      }
+    },
+    "with_oracle_structure_hint": {
+      "status": "needs_review",
+      "reason": "Paired side structures may be a matrix; automatic row division withheld",
+      "rows": [],
+      "assembly_allowed": false,
+      "diagnostics": {
+        "threshold": "Otsu dark-writing foreground; RGB polarity is not auto-detected",
+        "crop_shape": [
+          61,
+          485
+        ],
+        "source_bbox": [
+          0,
+          0,
+          485,
+          61
+        ],
+        "structure_hint": null,
+        "original_preserved": true,
+        "excluded_analysis_components": [
+          {
+            "label": 1,
+            "x": 72,
+            "y": 17,
+            "w": 8,
+            "h": 26,
+            "area": 58,
+            "side": "left",
+            "reason": "Tall narrow side component; may be brace/bracket, not classified"
+          },
+          {
+            "label": 3,
+            "x": 468,
+            "y": 17,
+            "w": 8,
+            "h": 26,
+            "area": 59,
+            "side": "right",
+            "reason": "Tall narrow side component; may be brace/bracket, not classified"
+          }
+        ],
+        "warnings": [
+          "Geometry cannot establish mathematical layout or correctness."
+        ],
+        "component_count": 46
+      }
+    },
+    "notice": "Hints are known diagnostic labels, not auto-detected mathematical structure."
+  }
+]

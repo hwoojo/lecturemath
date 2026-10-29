@@ -1,0 +1,15 @@
+{
+  "status": "rendered",
+  "engine": "pdflatex+pdftoppm",
+  "engine_version": "pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian)",
+  "path": "/workspace/lecturemath/docs/assets/v251/reference_renders/control_complex_scripts.png",
+  "error": null,
+  "cache_hit": false,
+  "key": "ec5ef5a830af5f1b53d0c2abf5afe957170f6188dbcc4f3f896c99aa019532e5",
+  "png_sha256": "37a2f65d8852729dc18d56ffae0577e1525eb2250fa292d880549eca04d68691",
+  "width": 145,
+  "height": 57,
+  "dpi": 180,
+  "semantic_correctness": "not evaluated",
+  "validation": "math command allowlist, balanced braces/environments, successful pdflatex compilation"
+}

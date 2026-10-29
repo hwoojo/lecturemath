@@ -1,0 +1,1072 @@
+{
+  "model": "UniMERNet",
+  "manifest_sha256": "420902f81a5e38632e6546a871458bd733fb9721f88fea9efb14563f6051e95d",
+  "worker_sha256": "9ee6bda27107e3de170f28b2385c6c5ee587a37395ea4a1744ccfc9e2f340e4e",
+  "weights": {
+    "url": "https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/UniMERNet_infer.tar",
+    "archive_bytes": 1639956480,
+    "archive_sha256": "a84fe248c05363935740c688f8c53597d11dd0b9bc2a8946efecc916a7344033",
+    "directory": "/workspace/lecturemath/models/v2/UniMERNet_infer",
+    "files": {
+      "inference.yml": "b09b361aafce06cbb3b3aa83f5a3e3c51dd54ad01bfa7702a86a0300a57a6941",
+      "inference.json": "fab8cc402d086098f8f154069d80a2c07f43a36891b2468274d86c6e2bb5a6f4",
+      "inference.pdiparams": "3e27e304d2d986df7e82792555d2b0f2706211f79cb8084989b9696304130e9f"
+    }
+  },
+  "run": {
+    "model_load_seconds": 12.489518103000592,
+    "model_load_error": null,
+    "process_seconds": 676.5545833220003,
+    "process_peak_rss_mib": 2286.3125,
+    "versions": {
+      "paddlepaddle": "3.2.2",
+      "paddleocr": "3.3.2",
+      "paddlex": "3.3.11",
+      "numpy": "1.26.4",
+      "opencv-contrib-python": "4.10.0.84"
+    },
+    "kind": "formula",
+    "config": {
+      "formula_model": "UniMERNet",
+      "formula_dir": "/workspace/lecturemath/models/v2/UniMERNet_infer",
+      "threads": 2,
+      "max_rss_mib": 6000
+    },
+    "subprocess_wall_seconds": 678.0100747509996,
+    "supervisor_peak_rss_mib": 2262.3515625
+  },
+  "predictions": [
+    {
+      "id": "control__eq",
+      "latex": "3=3",
+      "status": "ok",
+      "error": null,
+      "seconds": 4.191336853000394,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "control__factorial",
+      "latex": "3!=6",
+      "status": "ok",
+      "error": null,
+      "seconds": 1.873882333000438,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "control__indexed_factorial",
+      "latex": "|S_{3}|=3!=6",
+      "status": "ok",
+      "error": null,
+      "seconds": 3.8869242569999187,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "control__general_factorial",
+      "latex": "|S_{n}|=n!",
+      "status": "ok",
+      "error": null,
+      "seconds": 6.844357351000326,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "control__frac",
+      "latex": "\\frac{a}{b}",
+      "status": "ok",
+      "error": null,
+      "seconds": 2.837902911999663,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "control__frac_sum",
+      "latex": "\\frac{a+b}{c-d}",
+      "status": "ok",
+      "error": null,
+      "seconds": 4.391420965000179,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "control__nested_frac",
+      "latex": "\\frac{1}{1+{\\frac{1}{x}}}",
+      "status": "ok",
+      "error": null,
+      "seconds": 6.9055067910003345,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "control__long_fraction",
+      "latex": "y={\\frac{3-x}{2}}={\\frac{3-{\\frac{1}{3}}}{2}}",
+      "status": "ok",
+      "error": null,
+      "seconds": 16.55832660299984,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "control__vec2",
+      "latex": "\\binom{1}{2}",
+      "status": "ok",
+      "error": null,
+      "seconds": 4.679236687999946,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "control__vec3",
+      "latex": "\\binom{1}{2}",
+      "status": "ok",
+      "error": null,
+      "seconds": 5.177154572999825,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "control__vec_symbolic",
+      "latex": "\\binom{p}{q}",
+      "status": "ok",
+      "error": null,
+      "seconds": 4.876635151999835,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "control__matrix22",
+      "latex": "\\begin{array}{r}{\\left[1\\quad2\\right]}\\\\ {3\\quad4\\big]}\\end{array}",
+      "status": "ok",
+      "error": null,
+      "seconds": 7.528938270999788,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "control__matrix23",
+      "latex": "\\begin{array}{r}{\\left[1\\quad2\\quad3\\right]}\\\\ {4\\quad5\\quad6\\big]}\\end{array}",
+      "status": "ok",
+      "error": null,
+      "seconds": 8.828160555999602,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "control__matrix33",
+      "latex": "\\left[\\begin{array}{l l l}{1}&{2}&{3}\\\\ {4}&{5}&{6}\\\\ {7}&{8}&{9}\\end{array}\\right]",
+      "status": "ok",
+      "error": null,
+      "seconds": 13.684115546000612,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "control__augmented",
+      "latex": "\\left[\\begin{array}{l l}{1}&{-3}\\\\ {2}&{~4}\\end{array}\\middle|\\begin{array}{l}{0}\\\\ {0}\\end{array}\\right]",
+      "status": "ok",
+      "error": null,
+      "seconds": 13.914423529000487,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "control__line1",
+      "latex": "3x=1",
+      "status": "ok",
+      "error": null,
+      "seconds": 2.0253835809999146,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "control__lines2",
+      "latex": "\\begin{array}{r}{3x=1}\\\\ {x+2y=3}\\end{array}",
+      "status": "ok",
+      "error": null,
+      "seconds": 8.085350116999507,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "control__lines3",
+      "latex": "\\begin{array}{r}{x+y=2}\\\\ {x-y=0}\\\\ {z=3}\\end{array}",
+      "status": "ok",
+      "error": null,
+      "seconds": 7.821501843999613,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "control__sup",
+      "latex": "x^{2}",
+      "status": "ok",
+      "error": null,
+      "seconds": 2.3592801129998406,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "control__sub",
+      "latex": "x_{i}",
+      "status": "ok",
+      "error": null,
+      "seconds": 3.936453776000235,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "control__sub_sup",
+      "latex": "x_{i}^{2}+y_{j}^{3}",
+      "status": "ok",
+      "error": null,
+      "seconds": 5.668818178000038,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "control__complex_scripts",
+      "latex": "x_{i+1}^{n-1}+a_{i j}^{(k)}",
+      "status": "ok",
+      "error": null,
+      "seconds": 7.6998949990002075,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "control__set",
+      "latex": "S=\\{1,2,3\\}",
+      "status": "ok",
+      "error": null,
+      "seconds": 3.276983638999809,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "control__set_text",
+      "latex": "S_{3}=\\{A_{3\\times3}\\mid A{\\mathrm{~i s~a~p e r m u t a t i o n~m a t r i x}}\\}",
+      "status": "ok",
+      "error": null,
+      "seconds": 11.77819713900044,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "real__lecture_01_10423__rgb__formula",
+      "latex": "3x=1",
+      "status": "ok",
+      "error": null,
+      "seconds": 7.105550215997937,
+      "evidence": "reused_v25_same_weights"
+    },
+    {
+      "id": "real__lecture_01_10423__rgb__formula_system",
+      "latex": "x+2y=3",
+      "status": "ok",
+      "error": null,
+      "seconds": 4.430792397000914,
+      "evidence": "reused_v25_same_weights"
+    },
+    {
+      "id": "real__lecture_01_10423__b0__formula",
+      "latex": "3x=1",
+      "status": "ok",
+      "error": null,
+      "seconds": 3.414048227001331,
+      "evidence": "reused_v25_same_weights"
+    },
+    {
+      "id": "matched__lecture_01_10423__b0__formula",
+      "latex": "3x=1",
+      "status": "ok",
+      "error": null,
+      "seconds": 3.607465776999561,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "real__lecture_01_10423__b0__formula_system",
+      "latex": "x+2y=3",
+      "status": "ok",
+      "error": null,
+      "seconds": 5.076929654998821,
+      "evidence": "reused_v25_same_weights"
+    },
+    {
+      "id": "matched__lecture_01_10423__b0__formula_system",
+      "latex": "\\begin{array}{r}{3x=1\\bigg\\}}\\\\ {x+2y=3\\bigg\\}}\\end{array}",
+      "status": "ok",
+      "error": null,
+      "seconds": 13.647489378999126,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "real__lecture_02_44601__rgb__formula",
+      "latex": "x+3y=4",
+      "status": "ok",
+      "error": null,
+      "seconds": 5.334793719997833,
+      "evidence": "reused_v25_same_weights"
+    },
+    {
+      "id": "real__lecture_02_44601__rgb__formula_fraction",
+      "latex": "y=\\frac{27}{19}",
+      "status": "ok",
+      "error": null,
+      "seconds": 10.520661109003413,
+      "evidence": "reused_v25_same_weights"
+    },
+    {
+      "id": "real__lecture_02_44601__b0__formula",
+      "latex": "x+3y=4",
+      "status": "ok",
+      "error": null,
+      "seconds": 4.364867031999893,
+      "evidence": "reused_v25_same_weights"
+    },
+    {
+      "id": "matched__lecture_02_44601__b0__formula",
+      "latex": "x+3y=4",
+      "status": "ok",
+      "error": null,
+      "seconds": 5.318099380999229,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "real__lecture_02_44601__b0__formula_fraction",
+      "latex": "y=\\frac{27}{19}",
+      "status": "ok",
+      "error": null,
+      "seconds": 7.282810431999678,
+      "evidence": "reused_v25_same_weights"
+    },
+    {
+      "id": "matched__lecture_02_44601__b0__formula_fraction",
+      "latex": "y=\\frac{27}{19}",
+      "status": "ok",
+      "error": null,
+      "seconds": 10.014792334999584,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "real__nm_lecture_01_19899__rgb__formula",
+      "latex": "3x-y+z=7",
+      "status": "ok",
+      "error": null,
+      "seconds": 5.638207333002356,
+      "evidence": "reused_v25_same_weights"
+    },
+    {
+      "id": "real__nm_lecture_01_19899__rgb__formula_fraction",
+      "latex": "y=\\frac{3-x}{2}=\\frac{3-\\frac{1}{3}}{2}=\\frac{8}{6}",
+      "status": "ok",
+      "error": null,
+      "seconds": 21.673003206997237,
+      "evidence": "reused_v25_same_weights"
+    },
+    {
+      "id": "real__nm_lecture_01_19899__b0__formula",
+      "latex": "3x-y+z=7",
+      "status": "ok",
+      "error": null,
+      "seconds": 4.684463617999427,
+      "evidence": "reused_v25_same_weights"
+    },
+    {
+      "id": "matched__nm_lecture_01_19899__b0__formula",
+      "latex": "3x-y+z=7",
+      "status": "ok",
+      "error": null,
+      "seconds": 6.470645727000374,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "real__nm_lecture_01_19899__b0__formula_fraction",
+      "latex": "y=\\frac{3-x}{2}=\\frac{3-\\frac{1}{3}}{2}=\\frac{8}{6}",
+      "status": "ok",
+      "error": null,
+      "seconds": 21.013643859001604,
+      "evidence": "reused_v25_same_weights"
+    },
+    {
+      "id": "matched__nm_lecture_01_19899__b0__formula_fraction",
+      "latex": "y={\\frac{3-x}{2}}={\\frac{3-{\\frac{1}{3}}}{2}}={\\frac{8}{6}}",
+      "status": "ok",
+      "error": null,
+      "seconds": 34.17850205299965,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "real__lecture_06_47799__rgb__augmented_matrix",
+      "latex": "[1,-3,0]",
+      "status": "ok",
+      "error": null,
+      "seconds": 10.042140557001403,
+      "evidence": "reused_v25_same_weights"
+    },
+    {
+      "id": "real__lecture_06_47799__rgb__real_space",
+      "latex": "R^{2}",
+      "status": "ok",
+      "error": null,
+      "seconds": 9.82081091800137,
+      "evidence": "reused_v25_same_weights"
+    },
+    {
+      "id": "real__lecture_06_47799__rgb__vector_set",
+      "latex": "S=\\{[\\frac{1}{2}],[\\frac{-3}{4}]\\}",
+      "status": "ok",
+      "error": null,
+      "seconds": 20.521278688000166,
+      "evidence": "reused_v25_same_weights"
+    },
+    {
+      "id": "real__lecture_06_47799__rgb__linear_combination",
+      "latex": "c_{1}[1]+c_{2}[3]=[0]",
+      "status": "ok",
+      "error": null,
+      "seconds": 21.584437769000942,
+      "evidence": "reused_v25_same_weights"
+    },
+    {
+      "id": "real__lecture_06_47799__b0__augmented_matrix",
+      "latex": "[\\begin{array}{l l l}{1}&{-3\\vert}&{0}\\\\ {2}&{4}&{0}\\end{array}]",
+      "status": "ok",
+      "error": null,
+      "seconds": 26.675404875000822,
+      "evidence": "reused_v25_same_weights"
+    },
+    {
+      "id": "matched__lecture_06_47799__b0__augmented_matrix",
+      "latex": "\\left[\\begin{array}{l l}{1}&{-3}\\\\ {2}&{~4}\\end{array}\\middle|\\begin{array}{l}{0}\\\\ {0}\\end{array}\\right]",
+      "status": "ok",
+      "error": null,
+      "seconds": 22.65701573899969,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "real__lecture_06_47799__b0__real_space",
+      "latex": "R^{2}",
+      "status": "ok",
+      "error": null,
+      "seconds": 7.29491367099763,
+      "evidence": "reused_v25_same_weights"
+    },
+    {
+      "id": "matched__lecture_06_47799__b0__real_space",
+      "latex": "\\mathbb{R}^{2}",
+      "status": "ok",
+      "error": null,
+      "seconds": 12.678388842999993,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "real__lecture_06_47799__b0__vector_set",
+      "latex": "S=\\{[\\frac{1}{2}],[\\frac{-3}{4}]\\}",
+      "status": "ok",
+      "error": null,
+      "seconds": 22.427162419000524,
+      "evidence": "reused_v25_same_weights"
+    },
+    {
+      "id": "matched__lecture_06_47799__b0__vector_set",
+      "latex": "S=\\left\\{{\\textstyle\\left[1\\atop2\\right]},{\\textstyle\\left[{-3\\atop4}\\right]}\\right\\}",
+      "status": "ok",
+      "error": null,
+      "seconds": 24.405207943000278,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "real__lecture_06_47799__b0__linear_combination",
+      "latex": "c_{1}[2]+c_{2}[3]=[0]",
+      "status": "ok",
+      "error": null,
+      "seconds": 13.208147699999245,
+      "evidence": "reused_v25_same_weights"
+    },
+    {
+      "id": "matched__lecture_06_47799__b0__linear_combination",
+      "latex": "c_{1}\\left[1\\atop2\\right]+c_{2}\\left[-3\\atop4\\right]=\\left[0\\atop0\\right]",
+      "status": "ok",
+      "error": null,
+      "seconds": 16.275818285999776,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "real__lecture_07_67415__rgb__rectangular_matrix",
+      "latex": "[-140]",
+      "status": "ok",
+      "error": null,
+      "seconds": 3.9152895030019863,
+      "evidence": "reused_v25_same_weights"
+    },
+    {
+      "id": "real__lecture_07_67415__rgb__symbolic_vector",
+      "latex": "[\\begin{array}{l}{P}\\\\ {q}\\\\ {r}\\end{array}]",
+      "status": "ok",
+      "error": null,
+      "seconds": 10.251986511000723,
+      "evidence": "reused_v25_same_weights"
+    },
+    {
+      "id": "real__lecture_07_67415__rgb__product_vector",
+      "latex": "[P+2q+3r]",
+      "status": "ok",
+      "error": null,
+      "seconds": 6.212227772000915,
+      "evidence": "reused_v25_same_weights"
+    },
+    {
+      "id": "real__lecture_07_67415__rgb__noncommuting_product",
+      "latex": "A B\\neq B A",
+      "status": "ok",
+      "error": null,
+      "seconds": 14.856862962002197,
+      "evidence": "reused_v25_same_weights"
+    },
+    {
+      "id": "real__lecture_07_67415__b0__rectangular_matrix",
+      "latex": "[-140]",
+      "status": "ok",
+      "error": null,
+      "seconds": 16.103897396998946,
+      "evidence": "reused_v25_same_weights"
+    },
+    {
+      "id": "matched__lecture_07_67415__b0__rectangular_matrix",
+      "latex": "\\left[{\\begin{array}{l l l}{1}&{2}&{3}\\\\ {-1}&{4}&{0}\\end{array}}\\right]",
+      "status": "ok",
+      "error": null,
+      "seconds": 10.676759463999588,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "real__lecture_07_67415__b0__symbolic_vector",
+      "latex": "[\\frac{p}{r}]",
+      "status": "ok",
+      "error": null,
+      "seconds": 11.199577088002115,
+      "evidence": "reused_v25_same_weights"
+    },
+    {
+      "id": "matched__lecture_07_67415__b0__symbolic_vector",
+      "latex": "\\binom{p}{q}",
+      "status": "ok",
+      "error": null,
+      "seconds": 2.5284818569998606,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "real__lecture_07_67415__b0__product_vector",
+      "latex": "[P+2q+3r]",
+      "status": "ok",
+      "error": null,
+      "seconds": 5.022534630999871,
+      "evidence": "reused_v25_same_weights"
+    },
+    {
+      "id": "matched__lecture_07_67415__b0__product_vector",
+      "latex": "\\left[\\begin{array}{c}{p+2q+3r}\\\\ {-p+4q+0\\cdot r}\\end{array}\\right]",
+      "status": "ok",
+      "error": null,
+      "seconds": 12.047028504000082,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "real__lecture_07_67415__b0__noncommuting_product",
+      "latex": "A B\\neq B A.",
+      "status": "ok",
+      "error": null,
+      "seconds": 3.4626752519980073,
+      "evidence": "reused_v25_same_weights"
+    },
+    {
+      "id": "matched__lecture_07_67415__b0__noncommuting_product",
+      "latex": "A B\\neq B A.",
+      "status": "ok",
+      "error": null,
+      "seconds": 2.191200455999933,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "real__lecture_08_53016__rgb__permutation_matrix",
+      "latex": "[100]",
+      "status": "ok",
+      "error": null,
+      "seconds": 3.4899014879993047,
+      "evidence": "reused_v25_same_weights"
+    },
+    {
+      "id": "real__lecture_08_53016__rgb__input_vector",
+      "latex": "[\\begin{array}{l}{x}\\\\ {y}\\\\ {z}\\end{array}]",
+      "status": "ok",
+      "error": null,
+      "seconds": 9.61180660899845,
+      "evidence": "reused_v25_same_weights"
+    },
+    {
+      "id": "real__lecture_08_53016__rgb__set_builder",
+      "latex": "S_{3}=\\{A_{3\\times3}\\vert A i s a p e m u l a d i o n m a t i o n\\}",
+      "status": "ok",
+      "error": null,
+      "seconds": 14.699342032999994,
+      "evidence": "reused_v25_same_weights"
+    },
+    {
+      "id": "real__lecture_08_53016__rgb__cardinality_factorial",
+      "latex": "\\vert S_{3}\\vert=3\\vert=6",
+      "status": "ok",
+      "error": null,
+      "seconds": 8.129110532998311,
+      "evidence": "reused_v25_same_weights"
+    },
+    {
+      "id": "real__lecture_08_53016__b0__permutation_matrix",
+      "latex": "\\left[\\begin{array}{l l}{0}&{0}\\\\ {1}&{0}&{0}\\\\ {0}&{1}&{0}\\end{array}\\right]",
+      "status": "ok",
+      "error": null,
+      "seconds": 39.87767437600269,
+      "evidence": "reused_v25_same_weights"
+    },
+    {
+      "id": "matched__lecture_08_53016__b0__permutation_matrix",
+      "latex": "\\left[\\begin{array}{l l l}{0}&{0}&{1}\\\\ {1}&{0}&{0}\\\\ {0}&{1}&{0}\\end{array}\\right]",
+      "status": "ok",
+      "error": null,
+      "seconds": 13.472337034000702,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "real__lecture_08_53016__b0__input_vector",
+      "latex": "[\\begin{array}{l}{x}\\\\ {y}\\\\ {z}\\end{array}]",
+      "status": "ok",
+      "error": null,
+      "seconds": 15.103457867000543,
+      "evidence": "reused_v25_same_weights"
+    },
+    {
+      "id": "matched__lecture_08_53016__b0__input_vector",
+      "latex": "\\left[{x\\atop y}\\right]",
+      "status": "ok",
+      "error": null,
+      "seconds": 3.153266651999729,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "real__lecture_08_53016__b0__set_builder",
+      "latex": "S_{3}=\\{A_{33}\\vert A i s a p i m u l a t i o n m a\\}",
+      "status": "ok",
+      "error": null,
+      "seconds": 16.34932223499709,
+      "evidence": "reused_v25_same_weights"
+    },
+    {
+      "id": "matched__lecture_08_53016__b0__set_builder",
+      "latex": "S_{3}=\\{A_{3\\times3}\\mid A{\\mathrm{~i s~a~p e r m u t a t i o n~m a t r i x}}\\}",
+      "status": "ok",
+      "error": null,
+      "seconds": 12.319148340000538,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "real__lecture_08_53016__b0__cardinality_factorial",
+      "latex": "\\vert s_{3}\\vert=3\\vert=6",
+      "status": "ok",
+      "error": null,
+      "seconds": 13.262936064002133,
+      "evidence": "reused_v25_same_weights"
+    },
+    {
+      "id": "matched__lecture_08_53016__b0__cardinality_factorial",
+      "latex": "|S_{3}|=3!=6",
+      "status": "ok",
+      "error": null,
+      "seconds": 5.928525809999883,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "sensitivity__lecture_01_10423__rgb__formula_system__pad10",
+      "latex": "x+2y=3",
+      "status": "ok",
+      "error": null,
+      "seconds": 2.448721430999285,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "sensitivity__lecture_01_10423__rgb__formula_system__pad20",
+      "latex": "x+2y=3\\}",
+      "status": "ok",
+      "error": null,
+      "seconds": 5.153372777999721,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "sensitivity__lecture_01_10423__rgb__formula_system__tight",
+      "latex": "x+2y=3",
+      "status": "ok",
+      "error": null,
+      "seconds": 3.865607039000679,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "sensitivity__lecture_01_10423__b0__formula_system__pad10",
+      "latex": "3x=17x+2y=37",
+      "status": "ok",
+      "error": null,
+      "seconds": 3.30805621699983,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "sensitivity__lecture_01_10423__b0__formula_system__pad20",
+      "latex": "\\frac{3x-1}{x+2y=3}\\}",
+      "status": "ok",
+      "error": null,
+      "seconds": 4.551923795000221,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "sensitivity__lecture_01_10423__b0__formula_system__tight",
+      "latex": "x+2y=3",
+      "status": "ok",
+      "error": null,
+      "seconds": 2.1515305290004108,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "sensitivity__lecture_06_47799__rgb__augmented_matrix__pad10",
+      "latex": "[1,-3,0]=-24",
+      "status": "ok",
+      "error": null,
+      "seconds": 3.6787021440004537,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "sensitivity__lecture_06_47799__rgb__augmented_matrix__pad20",
+      "latex": "[1,-3,10]=",
+      "status": "ok",
+      "error": null,
+      "seconds": 3.7977515990005486,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "sensitivity__lecture_06_47799__rgb__augmented_matrix__tight",
+      "latex": "[1,-3,0]",
+      "status": "ok",
+      "error": null,
+      "seconds": 4.882119764999516,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "sensitivity__lecture_06_47799__b0__augmented_matrix__pad10",
+      "latex": "[1,-3,10]-",
+      "status": "ok",
+      "error": null,
+      "seconds": 3.3077515120003227,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "sensitivity__lecture_06_47799__b0__augmented_matrix__pad20",
+      "latex": "[1,-3,10]=",
+      "status": "ok",
+      "error": null,
+      "seconds": 3.4447239069995703,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "sensitivity__lecture_06_47799__b0__augmented_matrix__tight",
+      "latex": "[\\begin{array}{l l l}{1}&{-3\\vert}&{0}\\\\ {2}&{4}&{0}\\end{array}]",
+      "status": "ok",
+      "error": null,
+      "seconds": 10.988667415000236,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "sensitivity__lecture_07_67415__rgb__symbolic_vector__pad10",
+      "latex": "[\\rho]",
+      "status": "ok",
+      "error": null,
+      "seconds": 2.059202806999565,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "sensitivity__lecture_07_67415__rgb__symbolic_vector__pad20",
+      "latex": "=[\\frac{p}{q}]",
+      "status": "ok",
+      "error": null,
+      "seconds": 4.294754141999874,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "sensitivity__lecture_07_67415__rgb__symbolic_vector__tight",
+      "latex": "[\\begin{array}{l}{P}\\\\ {q}\\\\ {r}\\end{array}]",
+      "status": "ok",
+      "error": null,
+      "seconds": 5.5272925700001,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "sensitivity__lecture_07_67415__rgb__symbolic_vector__scale2",
+      "latex": "[\\begin{array}{l}{P}\\\\ {q}\\\\ {r}\\end{array}]",
+      "status": "ok",
+      "error": null,
+      "seconds": 5.64598610899975,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "sensitivity__lecture_07_67415__b0__symbolic_vector__pad10",
+      "latex": "[\\frac{p}{r}]",
+      "status": "ok",
+      "error": null,
+      "seconds": 3.1240718360004394,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "sensitivity__lecture_07_67415__b0__symbolic_vector__pad20",
+      "latex": "=\\binom{p}{r}",
+      "status": "ok",
+      "error": null,
+      "seconds": 2.702818636000302,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "sensitivity__lecture_07_67415__b0__symbolic_vector__tight",
+      "latex": "[\\frac{p}{r}]",
+      "status": "ok",
+      "error": null,
+      "seconds": 2.9214593770002466,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "sensitivity__lecture_07_67415__b0__symbolic_vector__scale2",
+      "latex": "[\\frac{p}{r}]",
+      "status": "ok",
+      "error": null,
+      "seconds": 2.874992388999999,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "sensitivity__lecture_08_53016__rgb__permutation_matrix__pad10",
+      "latex": "[\\begin{array}{l l}{0}&{0}&{1}\\\\ {1}&{0}&{0}\\\\ {0}&{1}&{0}\\end{array}]",
+      "status": "ok",
+      "error": null,
+      "seconds": 13.919163882999783,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "sensitivity__lecture_08_53016__rgb__permutation_matrix__pad20",
+      "latex": "\\left[\\begin{array}{l l l}{0}&{0}&{1}\\\\ {1}&{0}&{0}\\\\ {0}&{1}&{0}\\end{array}\\right]\\left[\\begin{array}{l l l}{\\frac{1}{r}}&{\\frac{1}{\\theta}}&{\\frac{1}{r}}\\\\ {\\frac{1}{\\theta}}&{0}&{\\frac{1}{\\phi}}\\\\ {0}&{1}&{0}\\end{array}\\right]",
+      "status": "ok",
+      "error": null,
+      "seconds": 34.57688097600021,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "sensitivity__lecture_08_53016__rgb__permutation_matrix__tight",
+      "latex": "[100]",
+      "status": "ok",
+      "error": null,
+      "seconds": 2.1110176089996457,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "sensitivity__lecture_08_53016__b0__permutation_matrix__pad10",
+      "latex": "\\left[\\begin{array}{l l l}{0}&{0}&{1}\\\\ {1}&{0}&{0}\\\\ {0}&{1}&{0}\\end{array}\\right]1",
+      "status": "ok",
+      "error": null,
+      "seconds": 13.329070562999732,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "sensitivity__lecture_08_53016__b0__permutation_matrix__pad20",
+      "latex": "|\\limits_{\\left[\\begin{array}{l l l}{0}&{0}&{1}\\\\ {1}&{0}&{0}\\\\ {0}&{1}&{0}\\end{array}\\right]}|\\limits_{\\left[\\begin{array}{l l l}{\\frac{1}{r}}&{\\frac{1}{2}}&{0}\\\\ {0}&{1}&{0}\\\\ {\\frac{1}{3}}&{0}&{1}\\end{array}\\right]}",
+      "status": "ok",
+      "error": null,
+      "seconds": 33.44541042699984,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "sensitivity__lecture_08_53016__b0__permutation_matrix__tight",
+      "latex": "\\left[\\begin{array}{l l}{0}&{0}\\\\ {1}&{0}&{0}\\\\ {0}&{1}&{0}\\end{array}\\right]",
+      "status": "ok",
+      "error": null,
+      "seconds": 11.951675647999764,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "sensitivity__lecture_08_53016__rgb__cardinality_factorial__pad10",
+      "latex": "\\vert S_{3}\\vert=3\\vert=6",
+      "status": "ok",
+      "error": null,
+      "seconds": 5.247281513999951,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "sensitivity__lecture_08_53016__rgb__cardinality_factorial__pad20",
+      "latex": "\\int\\limits_{0}^{\\infty}\\vert\\overline{{S_{3}}}\\vert=31=6",
+      "status": "ok",
+      "error": null,
+      "seconds": 8.02310431800015,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "sensitivity__lecture_08_53016__rgb__cardinality_factorial__tight",
+      "latex": "\\vert S_{3}\\vert=3\\vert=6",
+      "status": "ok",
+      "error": null,
+      "seconds": 4.268749947000288,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "sensitivity__lecture_08_53016__rgb__cardinality_factorial__scale2",
+      "latex": "\\vert S_{3}\\vert=3\\vert=6",
+      "status": "ok",
+      "error": null,
+      "seconds": 4.105363556999691,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "sensitivity__lecture_08_53016__b0__cardinality_factorial__pad10",
+      "latex": "\\vert s_{3}\\vert=31\\approx6",
+      "status": "ok",
+      "error": null,
+      "seconds": 4.037238206999973,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "sensitivity__lecture_08_53016__b0__cardinality_factorial__pad20",
+      "latex": "\\int\\limits_{0}^{1}|\\overline{S_{3}}|=31=6",
+      "status": "ok",
+      "error": null,
+      "seconds": 6.857802095999432,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "sensitivity__lecture_08_53016__b0__cardinality_factorial__tight",
+      "latex": "\\vert s_{3}\\vert=3\\vert=6",
+      "status": "ok",
+      "error": null,
+      "seconds": 3.8746802539999408,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "sensitivity__lecture_08_53016__b0__cardinality_factorial__scale2",
+      "latex": "\\vert s_{3}\\vert=3\\vert=6",
+      "status": "ok",
+      "error": null,
+      "seconds": 4.029750714000329,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "format__vec3__wide_canvas",
+      "latex": "\\binom{1}{2}",
+      "status": "ok",
+      "error": null,
+      "seconds": 2.7756071180001527,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "format__matrix33__wide_canvas",
+      "latex": "\\left[\\begin{array}{l l l}{1}&{2}&{3}\\\\ {4}&{5}&{6}\\\\ {7}&{8}&{9}\\end{array}\\right]",
+      "status": "ok",
+      "error": null,
+      "seconds": 15.737988516999394,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "format__matrix33__inverted",
+      "latex": "\\angle A C B=\\angle C B D",
+      "status": "ok",
+      "error": null,
+      "seconds": 2.5168306909999956,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "format__factorial__wide_canvas",
+      "latex": "3!=6",
+      "status": "ok",
+      "error": null,
+      "seconds": 1.8199527199994918,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "format__factorial__inverted",
+      "latex": "3x=0",
+      "status": "ok",
+      "error": null,
+      "seconds": 1.6995103839999501,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "format__indexed_factorial__wide_canvas",
+      "latex": "|S_{3}|=3!=6",
+      "status": "ok",
+      "error": null,
+      "seconds": 4.0160525809997125,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "format__lines2__wide_canvas",
+      "latex": "\\begin{array}{r}{3x=1}\\\\ {x+2y=3}\\end{array}",
+      "status": "ok",
+      "error": null,
+      "seconds": 5.891093625999929,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "format__set_text__wide_canvas",
+      "latex": "S_{3}=\\{A_{3\\times3}\\mid A{\\mathrm{~i s~a~p e r m u t a t i o n~m a t r i x}}\\}",
+      "status": "ok",
+      "error": null,
+      "seconds": 10.06448075499975,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "split__lines2__row0",
+      "latex": "3x=1",
+      "status": "ok",
+      "error": null,
+      "seconds": 1.6749835199998415,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "split__lines2__row1",
+      "latex": "x+2y=3",
+      "status": "ok",
+      "error": null,
+      "seconds": 2.12874778800051,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "split__lines3__row0",
+      "latex": "x+y=2",
+      "status": "ok",
+      "error": null,
+      "seconds": 1.8782100469998113,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "split__lines3__row1",
+      "latex": "x-y=0",
+      "status": "ok",
+      "error": null,
+      "seconds": 1.9104660610000792,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "split__lines3__row2",
+      "latex": "z=3",
+      "status": "ok",
+      "error": null,
+      "seconds": 1.578320366999833,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "split__matrix22__row0",
+      "latex": "\\left\\lceil1\\quad2\\right\\rceil",
+      "status": "ok",
+      "error": null,
+      "seconds": 2.86173310400045,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "split__matrix22__row1",
+      "latex": "\\lfloor3\\ \\ \\ 4\\rfloor",
+      "status": "ok",
+      "error": null,
+      "seconds": 2.692745673999525,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "split__hand_system__row0",
+      "latex": "3x=1",
+      "status": "ok",
+      "error": null,
+      "seconds": 1.6798288859999957,
+      "evidence": "fresh_v251_inference"
+    },
+    {
+      "id": "split__hand_system__row1",
+      "latex": "x+2y=3",
+      "status": "ok",
+      "error": null,
+      "seconds": 2.2309778050002933,
+      "evidence": "fresh_v251_inference"
+    }
+  ]
+}

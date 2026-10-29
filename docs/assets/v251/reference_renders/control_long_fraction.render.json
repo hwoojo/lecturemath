@@ -1,0 +1,15 @@
+{
+  "status": "rendered",
+  "engine": "pdflatex+pdftoppm",
+  "engine_version": "pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian)",
+  "path": "/workspace/lecturemath/docs/assets/v251/reference_renders/control_long_fraction.png",
+  "error": null,
+  "cache_hit": false,
+  "key": "bec42a9de9ba2b8ac20f31209860f3bb77ae8e18c19c5c84cfba14039f5cb293",
+  "png_sha256": "9402de9c1e5e9a16d8926d6d8a6ec588dfeb529bb436a94fd79ab9dc086024e6",
+  "width": 228,
+  "height": 77,
+  "dpi": 180,
+  "semantic_correctness": "not evaluated",
+  "validation": "math command allowlist, balanced braces/environments, successful pdflatex compilation"
+}

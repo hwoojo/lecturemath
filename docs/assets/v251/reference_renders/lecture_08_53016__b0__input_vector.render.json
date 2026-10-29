@@ -1,0 +1,15 @@
+{
+  "status": "rendered",
+  "engine": "pdflatex+pdftoppm",
+  "engine_version": "pdfTeX 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian)",
+  "path": "/workspace/lecturemath/docs/assets/v251/reference_renders/lecture_08_53016__b0__input_vector.png",
+  "error": null,
+  "cache_hit": false,
+  "key": "61e20066b483d2e1bb61428f7165ea1b203126e6207f59e79298ebcb7cf2212d",
+  "png_sha256": "2771489872eab6fba7ce95f37ca79b4dbaba9fdaf31242aa2c924c803a026dac",
+  "width": 68,
+  "height": 110,
+  "dpi": 180,
+  "semantic_correctness": "not evaluated",
+  "validation": "math command allowlist, balanced braces/environments, successful pdflatex compilation"
+}
